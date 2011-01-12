@@ -45,6 +45,21 @@ package org.robotlegs.utilities.assetloader.patterns.asset
 		/**
 		 * 
 		 */
+		function get bytesLoaded(): uint;
+		
+		/**
+		 * 
+		 */
+		function get bytesTotal(): uint;
+		
+		/**
+		 * 
+		 */
+		function get percentage(): Number;
+		
+		/**
+		 * 
+		 */
 		function load(): void;
 		
 		/**

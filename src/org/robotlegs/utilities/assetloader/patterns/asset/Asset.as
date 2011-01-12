@@ -70,6 +70,27 @@ package org.robotlegs.utilities.assetloader.patterns.asset
 		}
 		
 		/**
+		 * @copy org.robotlegs.utilities.assetloader.patterns.asset.IAsset.bytesLoaded
+		 */
+		public function get bytesLoaded(): uint {
+			return _bytesLoaded;
+		}
+		
+		/**
+		 * @copy org.robotlegs.utilities.assetloader.patterns.asset.IAsset.bytesTotal
+		 */
+		public function get bytesTotal(): uint {
+			return _bytesTotal;
+		}
+		
+		/**
+		 * @copy org.robotlegs.utilities.assetloader.patterns.asset.IAsset.percentage
+		 */
+		public function get percentage(): Number {
+			return ( _bytesLoaded / _bytesTotal ) * 100;
+		}
+		
+		/**
 		 * @private
 		 */
 		protected var _id: String;
@@ -102,6 +123,16 @@ package org.robotlegs.utilities.assetloader.patterns.asset
 		/**
 		 * @private
 		 */
+		protected var _bytesLoaded: uint;
+		
+		/**
+		 * @private
+		 */
+		protected var _bytesTotal: uint;
+		
+		/**
+		 * @private
+		 */
 		protected var _onComplete: Function;
 		
 		/**
@@ -125,6 +156,8 @@ package org.robotlegs.utilities.assetloader.patterns.asset
 			setState( AssetLoaderState.INITIALIZING );
 			
 			_id = id;
+			_bytesLoaded = 0;
+			_bytesTotal = 0;
 			
 			this.url = url;
 			
@@ -261,6 +294,9 @@ package org.robotlegs.utilities.assetloader.patterns.asset
 					dispose();
 					break;
 				case ProgressEvent.PROGRESS:
+					_bytesLoaded = ProgressEvent( evt ).bytesLoaded;
+					_bytesTotal = ProgressEvent( evt ).bytesTotal;
+					
 					if( _closure != null )
 						dispatchEvent( new AssetLoaderEvent( AssetLoaderEvent.ASSET_PROGRESS, this ));
 					break;

@@ -77,6 +77,39 @@ package org.robotlegs.utilities.assetloader.patterns.group
 		}
 		
 		/**
+		 * @copy org.robotlegs.utilities.assetloader.patterns.asset.IAsset.bytesLoaded
+		 */
+		public function get bytesLoaded(): uint {
+			var asset: IAsset;
+			var bytes: uint =  0;
+			
+			for each( asset in assets )
+				bytes += asset.bytesLoaded;
+			
+			return bytes;
+		}
+		
+		/**
+		 * @copy org.robotlegs.utilities.assetloader.patterns.asset.IAsset.bytesTotal
+		 */
+		public function get bytesTotal(): uint {
+			var asset: IAsset;
+			var bytes: uint =  0;
+			
+			for each( asset in assets )
+				bytes += asset.bytesTotal;
+			
+			return bytes;
+		}
+		
+		/**
+		 * @copy org.robotlegs.utilities.assetloader.patterns.asset.IAsset.percentage
+		 */
+		public function get percentage(): Number {
+			return ( bytesLoaded / bytesTotal ) * 100;
+		}
+		
+		/**
 		 * @private
 		 */
 		protected var _id: String;
