@@ -1,8 +1,10 @@
 package org.robotlegs.utilities.router.controller.install
 {
 	import org.robotlegs.mvcs.Command;
+	import org.robotlegs.utilities.router.controller.route.MapEventToRouteCommand;
 	import org.robotlegs.utilities.router.core.IRouter;
 	import org.robotlegs.utilities.router.core.Router;
+	import org.robotlegs.utilities.router.events.RouterEvent;
 
 	/**
 	 * Map dependencies of <code>Router</code>.
@@ -22,6 +24,8 @@ package org.robotlegs.utilities.router.controller.install
 		override public function execute(): void
 		{
 			injector.mapSingletonOf( IRouter, Router );
+			
+			commandMap.mapEvent( RouterEvent.MAP_EVENT_TO_ROUTE, MapEventToRouteCommand, RouterEvent );
 		}
 	}
 }

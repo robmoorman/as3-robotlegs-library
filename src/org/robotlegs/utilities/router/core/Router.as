@@ -41,7 +41,7 @@ package org.robotlegs.utilities.router.core
 			_active = false;
 			_routes = new Vector.<Route>;
 			
-			SWFAddress.addEventListener( SWFAddressEvent.CHANGE, onChange, false, 0, true );
+			SWFAddress.addEventListener( SWFAddressEvent.EXTERNAL_CHANGE, onChange, false, 0, true );
 		}
 		
 		/**
@@ -66,12 +66,15 @@ package org.robotlegs.utilities.router.core
 		/**
 		 * @copy org.robotlegs.utilities.router.core.IRouter.addRoute()
 		 */
-		public function addRoute( type: String ): Route
+		public function addRoute( type: String, commandClass: Class = null ): Route
 		{
 			var route: Route = new Route( type );
 			
 			_routes.push( route );
 			_routes.sort( sortRoutes );
+			
+			if( commandClass )
+				dispatch( new RouterEvent( RouterEvent.MAP_EVENT_TO_ROUTE, { type:type, commandClass:commandClass }));
 			
 			return route;
 		}

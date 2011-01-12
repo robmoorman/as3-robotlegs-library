@@ -2,7 +2,6 @@ package org.robotlegs.utilities.assetloader.core
 {
 	import flash.utils.Dictionary;
 	
-	import org.robotlegs.mvcs.Actor;
 	import org.robotlegs.utilities.assetloader.error.AssetLoaderError;
 	import org.robotlegs.utilities.assetloader.patterns.asset.IAsset;
 	import org.robotlegs.utilities.assetloader.patterns.group.Group;
@@ -14,7 +13,7 @@ package org.robotlegs.utilities.assetloader.core
 	 * 
 	 * @author r.moorman
 	 */
-	public class AssetLoader extends Actor implements IAssetLoader
+	public class AssetLoader implements IAssetLoader
 	{
 		/**
 		 * @private

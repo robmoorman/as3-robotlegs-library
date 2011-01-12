@@ -32,9 +32,10 @@ package org.robotlegs.utilities.router.core
 		 * 
 		 * 
 		 * @param type
+		 * @param commandClass
 		 * @return 
 		 */
-		function addRoute( type: String ): Route;
+		function addRoute( type: String, commandClass: Class = null ): Route;
 		
 		/**
 		 * 

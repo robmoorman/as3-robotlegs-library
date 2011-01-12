@@ -15,6 +15,11 @@ package org.robotlegs.utilities.router.events
 		public static const NO_ROUTE_FOUND: String = 'org.robotlegs.utilities.router.events.RouterEvent.NO_ROUTE_FOUND';
 		
 		/**
+		 * Dispatched when a new <code>Route</code> is added and it should be mapped to a <code>Command</code>.
+		 */
+		public static const MAP_EVENT_TO_ROUTE: String = 'org.robotlegs.utilities.router.events.RouterEvent.MAP_EVENT_TO_ROUTE';
+		
+		/**
 		 * 
 		 * 
 		 * @default null
