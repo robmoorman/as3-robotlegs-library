@@ -1,7 +1,5 @@
 package org.robotlegs.mvcs
 {
-	
-
 	/**
 	 * Abstract <code>MacroCommand</code> implementation.
 	 * 
