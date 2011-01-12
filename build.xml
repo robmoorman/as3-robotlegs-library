@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="as3-robotlegs-library" default="build-all">
+	
+	<property file="./build.properties" />
+	
+	<taskdef resource="flexTasks.tasks" classpath="${FLEX_HOME}/ant/lib/flexTasks.jar" />
+	
+	<target name="build-all">
+		<antcall target="build-swc" />
+		<antcall target="build-tests" />
+	</target>
+	
+	<target name="build-swc">
+		<exec executable="${FLEX_HOME}/bin/compc">
+			<arg line="-output ${dir.bin}/${version}.swc" />
+			<arg line="-include-sources ${dir.src}" />
+			<arg line="-external-library-path+=${dir.libs}" />
+		</exec>
+	</target>
+	
+	<target name="build-tests">
+		<exec executable="${FLEX_HOME}/bin/mxmlc">
+			<arg line="${dir.tests}/UnitTests.mxml" />
+			<arg line="-output ${dir.bin}/${version}-unittests.swf" />
+			<arg line="-source-path ${dir.src}" />
+			<arg line="-library-path+=${dir.libs}" />
+			<arg line="-static-link-runtime-shared-libraries=true" />
+		</exec>
+	</target>
+	
+</project>

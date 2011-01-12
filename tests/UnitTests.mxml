@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:mx="library://ns.adobe.com/flex/mx" xmlns:adobe="http://www.adobe.com/2009/flexUnitUIRunner" creationComplete="onComplete(event)">
+	
+	<fx:Script>
+		<![CDATA[
+			import mx.events.FlexEvent;
+			
+			import org.flexunit.runner.FlexUnitCore;
+			
+			import suites.TestSuite;
+			
+			private var core: FlexUnitCore;
+			
+			private function onComplete( evt: FlexEvent ): void {
+				core = new FlexUnitCore;
+				core.addListener( uiListener );
+				core.run( TestSuite );
+			}
+		]]>
+	</fx:Script>
+	
+	<adobe:TestRunnerBase id="uiListener" />
+	
+</mx:Application>
