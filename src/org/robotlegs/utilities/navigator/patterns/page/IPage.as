@@ -1,5 +1,7 @@
 package org.robotlegs.utilities.navigator.patterns.page
 {
+	import flash.display.DisplayObject;
+
 	/**
 	 * Abstract <code>IPage</code> interface.
 	 * 
@@ -11,5 +13,10 @@ package org.robotlegs.utilities.navigator.patterns.page
 		 * 
 		 */
 		function get name(): String;
+		
+		/**
+		 * 
+		 */
+		function get content(): DisplayObject;
 	}
 }

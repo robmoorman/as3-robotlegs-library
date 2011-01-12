@@ -14,6 +14,11 @@ package org.robotlegs.utilities.navigator.events
 		/**
 		 * 
 		 */
+		public static const NAVIGATE: String = 'org.robotlegs.utilities.navigator.events.NavigatorEvent.NAVIGATE';
+		
+		/**
+		 * 
+		 */
 		public static const TRANSITION_IN_COMPLETE: String = 'org.robotlegs.utilities.navigator.events.NavigatorEvent.TRANSITION_IN_COMPLETE';
 		
 		/**

@@ -1,9 +1,7 @@
 package org.robotlegs.utilities.navigator.patterns.transition
 {
-	import flash.events.IEventDispatcher;
-	
-	import org.robotlegs.utilities.navigator.events.NavigatorEvent;
 	import org.robotlegs.utilities.navigator.patterns.page.IPage;
+	import org.robotlegs.utilities.navigator.utils.NavigatorUtil;
 
 	/**
 	 * Abstract <code>Transition</code> implementation.
@@ -33,7 +31,7 @@ package org.robotlegs.utilities.navigator.patterns.transition
 		 */
 		public function transitionInComplete( page: IPage ): void
 		{
-			( page as IEventDispatcher ).dispatchEvent( new NavigatorEvent( NavigatorEvent.TRANSITION_IN_COMPLETE, page ));
+			NavigatorUtil.setOnTransitionInComplete( page );
 		}
 		
 		/**
@@ -49,7 +47,7 @@ package org.robotlegs.utilities.navigator.patterns.transition
 		 */
 		public function transitionOutComplete( page: IPage ): void
 		{
-			( page as IEventDispatcher ).dispatchEvent( new NavigatorEvent( NavigatorEvent.TRANSITION_OUT_COMPLETE, page ));
+			NavigatorUtil.setOnTransitionOutComplete( page );
 		}
 	}
 }
