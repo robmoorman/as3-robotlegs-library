@@ -2,6 +2,7 @@ package org.robotlegs.utilities
 {
 	import org.robotlegs.core.ICommandMap;
 	import org.robotlegs.utilities.assetloader.controller.install.InstallAssetLoaderCommand;
+	import org.robotlegs.utilities.navigator.controller.install.InstallNavigatorCommand;
 	import org.robotlegs.utilities.router.controller.install.InstallRouterCommand;
 	
 	/**
@@ -31,6 +32,11 @@ package org.robotlegs.utilities
 		public static const ASSET_LOADER: Class = InstallAssetLoaderCommand;
 		
 		/**
+		 * @copy org.robotlegs.utilities.navigator.controller.install.InstallNavigatorCommand
+		 */
+		public static const NAVIGATOR: Class = InstallNavigatorCommand;
+		
+		/**
 		 * @copy org.robotlegs.utilities.router.controller.install.InstallRouterCommand
 		 */
 		public static const ROUTER: Class = InstallRouterCommand;
@@ -46,7 +52,7 @@ package org.robotlegs.utilities
 			var utilityClass: Class;
 			
 			if( utilities.indexOf( ALL ) != -1 )
-				utilities = [ ASSET_LOADER, ROUTER ];
+				utilities = [ ASSET_LOADER, NAVIGATOR, ROUTER ];
 			
 			for each( utilityClass in utilities )
 				commandMap.execute( utilityClass );
