@@ -8,6 +8,7 @@ package org.robotlegs.utilities.assetloader.controller.install
 	 * Map dependencies of <code>AssetLoader</code>.
 	 * 
 	 * <p>The following depedencies are available after executing this <code>Command</code>:</p>
+	 * 
 	 * <ul>
 	 * 	<li><code>IAssetLoader</code></li>
 	 * </ul>
