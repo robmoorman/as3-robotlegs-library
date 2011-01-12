@@ -8,6 +8,8 @@
 	<target name="build-all">
 		<antcall target="build-swc" />
 		<antcall target="build-tests" />
+		<antcall target="clean-asdocs-output" />
+		<antcall target="build-asdocs" />
 	</target>
 	
 	<target name="build-swc">
@@ -25,6 +27,21 @@
 			<arg line="-source-path ${dir.src}" />
 			<arg line="-library-path+=${dir.libs}" />
 			<arg line="-static-link-runtime-shared-libraries=true" />
+		</exec>
+	</target>
+	
+	<target name="clean-asdocs-output">
+		<delete includeEmptyDirs="true">
+			<fileset dir="${dir.asdocs}" includes="**/*" />
+		</delete>
+	</target>
+		
+	<target name="build-asdocs">
+		<exec executable="${FLEX_HOME}/bin/asdoc">
+			<arg line="-output ${dir.asdocs}" />
+			<arg line="-source-path ${dir.src}" />
+			<arg line="-doc-sources ${dir.src}" />
+			<arg line="-external-library-path+=${dir.libs}" />
 		</exec>
 	</target>
 	
