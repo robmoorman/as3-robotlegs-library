@@ -16,6 +16,9 @@ package org.robotlegs.utilities.router.controller.install
 	 */
 	public class InstallRouterCommand extends Command
 	{
+		/**
+		 * @inheritDoc
+		 */
 		override public function execute(): void
 		{
 			injector.mapSingletonOf( IRouter, Router );
