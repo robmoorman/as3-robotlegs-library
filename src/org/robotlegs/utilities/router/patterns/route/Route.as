@@ -92,6 +92,16 @@ package org.robotlegs.utilities.router.patterns.route
 		/**
 		 * 
 		 * 
+		 * @return
+		 */
+		public function toString(): String
+		{
+			return '[Route type="' + type + '"]';
+		}
+		
+		/**
+		 * 
+		 * 
 		 * @param name
 		 * @param parameters
 		 * @return 

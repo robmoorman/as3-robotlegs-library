@@ -22,6 +22,13 @@ package org.robotlegs.utilities.router.core
 		}
 		
 		/**
+		 * @copy org.robotlegs.utilities.router.core.IRouter.pathNames
+		 */	
+		public function get pathNames(): Array {
+			return SWFAddress.getPathNames();
+		}
+		
+		/**
 		 * @private
 		 */
 		private var _active: Boolean;

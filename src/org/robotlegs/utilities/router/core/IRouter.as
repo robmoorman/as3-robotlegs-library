@@ -11,10 +11,13 @@ package org.robotlegs.utilities.router.core
 	{
 		/**
 		 * 
-		 * 
-		 * @return 
 		 */
 		function get active(): Boolean;
+		
+		/**
+		 * 
+		 */
+		function get pathNames(): Array;
 		
 		/**
 		 * 
