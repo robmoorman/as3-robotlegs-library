@@ -50,5 +50,12 @@ package org.robotlegs.utilities.router.core
 		 * @param value
 		 */
 		function changeAddressOnly( value: String ): void;
+		
+		/**
+		 * Change the title of your browser.
+		 * 
+		 * @param value
+		 */
+		function changeBrowserTitle( value: String ): void;
 	}
 }

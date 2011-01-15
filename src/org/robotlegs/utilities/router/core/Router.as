@@ -100,6 +100,14 @@ package org.robotlegs.utilities.router.core
 		}
 		
 		/**
+		 * @copy org.robotlegs.utilities.router.core.IRouter.changeBrowserTitle()
+		 */
+		public function changeBrowserTitle( value: String ): void
+		{
+			SWFAddress.setTitle( value );
+		}
+		
+		/**
 		 * 
 		 * 
 		 * @param x
