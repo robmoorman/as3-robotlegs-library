@@ -48,7 +48,7 @@ package org.robotlegs.utilities.router.core
 			_active = false;
 			_routes = new Vector.<Route>;
 			
-			SWFAddress.addEventListener( SWFAddressEvent.EXTERNAL_CHANGE, onChange, false, 0, true );
+			SWFAddress.addEventListener( SWFAddressEvent.CHANGE, onChange, false, 0, true );
 		}
 		
 		/**

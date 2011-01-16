@@ -17,7 +17,7 @@ package cases.org.robotlegs.utilities.assetloader.controller.install
 		{
 			helper = new ContextHelper( new Sprite );
 			
-			Utilities.mapDepedencies( helper.getCommandMap(), [ Utilities.ASSET_LOADER ]);
+			Utilities.mapDependencies( helper.getCommandMap(), [ Utilities.ASSET_LOADER ]);
 		}
 		
 		[Test]

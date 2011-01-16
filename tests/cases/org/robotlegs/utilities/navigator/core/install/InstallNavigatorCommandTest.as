@@ -19,7 +19,7 @@ package cases.org.robotlegs.utilities.navigator.core.install
 		{
 			helper = new ContextHelper( new Sprite );
 			
-			Utilities.mapDepedencies( helper.getCommandMap(), [ Utilities.NAVIGATOR ]);
+			Utilities.mapDependencies( helper.getCommandMap(), [ Utilities.NAVIGATOR ]);
 		}
 		
 		[Test]

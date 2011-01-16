@@ -47,7 +47,7 @@ package org.robotlegs.utilities
 		 * @param commandMap The <code>ICommandMap</code> of Robotlegs.
 		 * @param utilities The utilities to map the dependencies of, must be one or multiple constants of this <code>Class</code>.
 		 */
-		public static function mapDepedencies( commandMap: ICommandMap, utilities: Array ): void
+		public static function mapDependencies( commandMap: ICommandMap, utilities: Array ): void
 		{
 			var utilityClass: Class;
 			

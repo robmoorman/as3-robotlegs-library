@@ -20,7 +20,7 @@ package cases.org.robotlegs.utilities.router.controller.install
 		{
 			helper = new ContextHelper( new Sprite );
 			
-			Utilities.mapDepedencies( helper.getCommandMap(), [ Utilities.ROUTER ]);
+			Utilities.mapDependencies( helper.getCommandMap(), [ Utilities.ROUTER ]);
 		}
 		
 		[Test]
