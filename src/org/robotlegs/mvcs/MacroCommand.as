@@ -1,5 +1,12 @@
 package org.robotlegs.mvcs
 {
+	import flash.events.Event;
+	import flash.utils.getDefinitionByName;
+	import flash.utils.getQualifiedClassName;
+	
+	import org.robotlegs.core.IReflector;
+	import org.robotlegs.utils.ClassUtil;
+	
 	/**
 	 * Abstract <code>MacroCommand</code> implementation.
 	 * 
@@ -7,10 +14,21 @@ package org.robotlegs.mvcs
 	 */
 	public class MacroCommand extends Command
 	{
+		[Inject]
+		/**
+		 * 
+		 */
+		public var reflector: IReflector;
+		
 		/**
 		 * @private
 		 */
 		private var commands: Vector.<Command>;
+		
+		/**
+		 * @private
+		 */
+		private var events: Vector.<Event>;
 		
 		/**
 		 * Constructor. 
@@ -37,7 +55,17 @@ package org.robotlegs.mvcs
 		 */
 		final public function onPostConstruct(): void
 		{
-			initializeMacroCommand();
+			events = ClassUtil.getEventsFromObject( reflector, this );
+			
+			var event: Event;
+			
+			for each( event in events )
+				injector.mapValue( getDefinitionByName( getQualifiedClassName( event )) as Class, event );
+			
+			initializeMacroCommandCommand();
+			
+			for each( event in events )
+				injector.unmap( getDefinitionByName( getQualifiedClassName( event )) as Class );
 		}
 		
 		/**
@@ -53,7 +81,7 @@ package org.robotlegs.mvcs
 		/**
 		 * 
 		 */
-		protected function initializeMacroCommand(): void
+		protected function initializeMacroCommandCommand(): void
 		{
 			
 		}

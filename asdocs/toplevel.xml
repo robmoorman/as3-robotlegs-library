@@ -1,0 +1,2919 @@
+<asdoc>
+
+<interfaceRec name='IAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/patterns/asset/IAsset.as' namespace='org.robotlegs.utilities.assetloader.patterns.asset' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</interfaceRec>
+<method name='dispose' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:dispose' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='load' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:load' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='setOnComplete' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:setOnComplete' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Function' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[value
+		 ]]></param>
+</method>
+<method name='setOnError' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:setOnError' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Function' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[value
+		 ]]></param>
+</method>
+<method name='setOnProgress' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:setOnProgress' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Function' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[value
+		 ]]></param>
+</method>
+<method name='bytesLoaded' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:bytesLoaded/get' isStatic='false' isFinal='false' isOverride='false'  result_type='uint'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='bytesTotal' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:bytesTotal/get' isStatic='false' isFinal='false' isOverride='false'  result_type='uint'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='closure' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:closure/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Function'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='data' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:data/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Object'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='id' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:id/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='percentage' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:percentage/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='state' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:state/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='url' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:url/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='closure' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:closure/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Function' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='url' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:url/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<classRec name='Asset' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/patterns/asset/Asset.as' namespace='org.robotlegs.utilities.assetloader.patterns.asset' access='public' baseclass='flash.events:EventDispatcher' interfaces='org.robotlegs.utilities.assetloader.patterns.asset:IAsset' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='Asset' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/Asset' isStatic='false' isFinal='false' isOverride='false'  param_names='id;url' param_types='String;String' param_defaults='undefined;undefined' result_type='*'>
+<description><![CDATA[
+		 Constructor.
+		 
+		 ]]></description>
+<param><![CDATA[id
+		 ]]></param>
+<param><![CDATA[url
+		 ]]></param>
+</method>
+<method name='defineEventModel' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/protected:defineEventModel' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<throws><![CDATA[AssetLoaderError
+		 ]]></throws>
+</method>
+<method name='dispose' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/dispose' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.patterns.asset.IAsset.dispose()
+		 ]]></copy>
+</method>
+<method name='load' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/load' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.patterns.asset.IAsset.load()
+		 ]]></copy>
+</method>
+<method name='onAssetProcess' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/protected:onAssetProcess' isStatic='false' isFinal='true' isOverride='false'  param_names='evt' param_types='flash.events:Event' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[evt
+		 ]]></param>
+</method>
+<method name='onComplete' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/protected:onComplete' isStatic='false' isFinal='false' isOverride='false'  param_names='evt' param_types='flash.events:Event' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[evt
+		 ]]></param>
+</method>
+<method name='setOnComplete' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/setOnComplete' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Function' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.patterns.asset.IAsset.setOnComplete()
+		 ]]></copy>
+</method>
+<method name='setOnError' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/setOnError' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Function' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.patterns.asset.IAsset.setOnError()
+		 ]]></copy>
+</method>
+<method name='setOnProgress' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/setOnProgress' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Function' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.patterns.asset.IAsset.setOnProgress()
+		 ]]></copy>
+</method>
+<method name='setState' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/protected:setState' isStatic='false' isFinal='true' isOverride='false'  param_names='state' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[state
+		 ]]></param>
+</method>
+<method name='undefineEventModel' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/protected:undefineEventModel' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='bytesLoaded' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/bytesLoaded/get' isStatic='false' isFinal='false' isOverride='false'  result_type='uint'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.patterns.asset.IAsset.bytesLoaded
+		 ]]></copy>
+</method>
+<method name='bytesTotal' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/bytesTotal/get' isStatic='false' isFinal='false' isOverride='false'  result_type='uint'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.patterns.asset.IAsset.bytesTotal
+		 ]]></copy>
+</method>
+<method name='closure' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/closure/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Function'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.patterns.asset.IAsset.closure
+		 ]]></copy>
+</method>
+<method name='data' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/data/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Object'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.patterns.asset.IAsset.data
+		 ]]></copy>
+</method>
+<method name='id' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/id/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.patterns.asset.IAsset.id
+		 ]]></copy>
+</method>
+<method name='percentage' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/percentage/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.patterns.asset.IAsset.percentage
+		 ]]></copy>
+</method>
+<method name='state' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/state/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.patterns.asset.IAsset.state
+		 ]]></copy>
+</method>
+<method name='url' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/url/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.patterns.asset.IAsset.url
+		 ]]></copy>
+</method>
+<method name='closure' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/closure/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Function' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='url' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/url/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<field name='_bytesLoaded' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/protected:_bytesLoaded' type='uint' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_bytesTotal' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/protected:_bytesTotal' type='uint' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_closure' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/protected:_closure' type='Function' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_data' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/protected:_data' type='Object' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_id' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/protected:_id' type='String' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_loader' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/protected:_loader' type='Object' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_onComplete' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/protected:_onComplete' type='Function' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_onError' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/protected:_onError' type='Function' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_onProgress' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/protected:_onProgress' type='Function' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_state' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/protected:_state' type='String' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_url' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/protected:_url' type='String' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<interfaceRec name='ILocale' fullname='org.robotlegs.utilities.localizer.patterns.locale:ILocale' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/localizer/patterns/locale/ILocale.as' namespace='org.robotlegs.utilities.localizer.patterns.locale' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Abstract <code>ILocale</code> interface.
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</interfaceRec>
+<classRec name='Locale' fullname='org.robotlegs.utilities.localizer.patterns.locale:Locale' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/localizer/patterns/locale/Locale.as' namespace='org.robotlegs.utilities.localizer.patterns.locale' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Abstract <code>Locale</code> implementation.
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='Locale' fullname='org.robotlegs.utilities.localizer.patterns.locale:Locale/Locale' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+<description><![CDATA[
+		 Constructor.
+		 ]]></description>
+</method>
+<interfaceRec name='ILocalizer' fullname='org.robotlegs.utilities.localizer.core:ILocalizer' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/localizer/core/ILocalizer.as' namespace='org.robotlegs.utilities.localizer.core' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Abstract <code>ILocalizer</code> interface.
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</interfaceRec>
+<classRec name='Localizer' fullname='org.robotlegs.utilities.localizer.core:Localizer' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/localizer/core/Localizer.as' namespace='org.robotlegs.utilities.localizer.core' access='public' baseclass='org.robotlegs.mvcs:Actor' interfaces='org.robotlegs.utilities.localizer.core:ILocalizer' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Abstract <code>Localizer</code> implementation.
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='Localizer' fullname='org.robotlegs.utilities.localizer.core:Localizer/Localizer' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+<description><![CDATA[
+		 Constructor.
+		 ]]></description>
+</method>
+<classRec name='AssetLoaderState' fullname='org.robotlegs.utilities.assetloader.core:AssetLoaderState' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/core/AssetLoaderState.as' namespace='org.robotlegs.utilities.assetloader.core' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<field name='FAILED' fullname='org.robotlegs.utilities.assetloader.core:AssetLoaderState/FAILED' type='String' isStatic='true' isConst='true' defaultValue='failed' >
+<description><![CDATA[
+		 
+		 ]]></description>
+</field>
+<field name='INITIALIZING' fullname='org.robotlegs.utilities.assetloader.core:AssetLoaderState/INITIALIZING' type='String' isStatic='true' isConst='true' defaultValue='initializing' >
+<description><![CDATA[
+		 
+		 ]]></description>
+</field>
+<field name='LOADED' fullname='org.robotlegs.utilities.assetloader.core:AssetLoaderState/LOADED' type='String' isStatic='true' isConst='true' defaultValue='loaded' >
+<description><![CDATA[
+		 
+		 ]]></description>
+</field>
+<field name='LOADING' fullname='org.robotlegs.utilities.assetloader.core:AssetLoaderState/LOADING' type='String' isStatic='true' isConst='true' defaultValue='loading' >
+<description><![CDATA[
+		 
+		 ]]></description>
+</field>
+<interfaceRec name='IAssetLoader' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/core/IAssetLoader.as' namespace='org.robotlegs.utilities.assetloader.core' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</interfaceRec>
+<method name='getAssetByUrl' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:getAssetByUrl' isStatic='false' isFinal='false' isOverride='false'  param_names='url' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.assetloader.patterns.asset:IAsset'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[url
+		 ]]></param>
+<return><![CDATA[
+		 ]]></return>
+</method>
+<method name='getAsset' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:getAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.assetloader.patterns.asset:IAsset'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[id
+		 ]]></param>
+<return><![CDATA[
+		 ]]></return>
+</method>
+<method name='getGroup' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:getGroup' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.assetloader.patterns.group:IGroup'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[id
+		 ]]></param>
+<return><![CDATA[
+		 ]]></return>
+</method>
+<method name='hasAssetByUrl' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:hasAssetByUrl' isStatic='false' isFinal='false' isOverride='false'  param_names='url' param_types='String' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[url
+		 ]]></param>
+<return><![CDATA[
+		 ]]></return>
+</method>
+<method name='hasAsset' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:hasAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[id
+		 ]]></param>
+<return><![CDATA[
+		 ]]></return>
+</method>
+<method name='hasGroup' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:hasGroup' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[id
+		 ]]></param>
+<return><![CDATA[
+		 ]]></return>
+</method>
+<method name='loadGroup' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:loadGroup' isStatic='false' isFinal='false' isOverride='false'  param_names='request;closure' param_types='Object;Function' param_defaults='undefined;null' result_type='org.robotlegs.utilities.assetloader.patterns.group:IGroup'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[request
+		 ]]></param>
+<param><![CDATA[closure
+		 ]]></param>
+<return><![CDATA[
+		 ]]></return>
+</method>
+<method name='load' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:load' isStatic='false' isFinal='false' isOverride='false'  param_names='request;closure' param_types='Object;Function' param_defaults='undefined;null' result_type='org.robotlegs.utilities.assetloader.patterns.asset:IAsset'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[request
+		 ]]></param>
+<param><![CDATA[closure
+		 ]]></param>
+<return><![CDATA[
+		 ]]></return>
+</method>
+<method name='removeAssetByUrl' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:removeAssetByUrl' isStatic='false' isFinal='false' isOverride='false'  param_names='url' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[url
+		 ]]></param>
+</method>
+<method name='removeAsset' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:removeAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[id
+		 ]]></param>
+</method>
+<method name='removeGroup' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:removeGroup' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[id
+		 ]]></param>
+</method>
+<classRec name='AssetLoader' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/core/AssetLoader.as' namespace='org.robotlegs.utilities.assetloader.core' access='public' baseclass='Object' interfaces='org.robotlegs.utilities.assetloader.core:IAssetLoader' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='AssetLoader' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/AssetLoader' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+<description><![CDATA[
+		 Constructor.
+		 ]]></description>
+</method>
+<method name='getAssetByUrl' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/getAssetByUrl' isStatic='false' isFinal='false' isOverride='false'  param_names='url' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.assetloader.patterns.asset:IAsset'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.getAssetByUrl();
+		 ]]></copy>
+</method>
+<method name='getAsset' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/getAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.assetloader.patterns.asset:IAsset'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.getAsset();
+		 ]]></copy>
+</method>
+<method name='getGroup' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/getGroup' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.assetloader.patterns.group:IGroup'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.getGroup();
+		 ]]></copy>
+</method>
+<method name='hasAssetByUrl' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/hasAssetByUrl' isStatic='false' isFinal='false' isOverride='false'  param_names='url' param_types='String' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.hasAssetByUrl();
+		 ]]></copy>
+</method>
+<method name='hasAsset' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/hasAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.hasAsset();
+		 ]]></copy>
+</method>
+<method name='hasGroup' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/hasGroup' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.hasGroup();
+		 ]]></copy>
+</method>
+<method name='instantiateAsset' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/protected:instantiateAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='url' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.assetloader.patterns.asset:IAsset'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[url
+		 ]]></param>
+<return><![CDATA[
+		 ]]></return>
+</method>
+<method name='instantiateGroup' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/protected:instantiateGroup' isStatic='false' isFinal='false' isOverride='false'  param_names='urls' param_types='Vector$String' param_defaults='undefined' result_type='org.robotlegs.utilities.assetloader.patterns.group:IGroup'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[urls
+		 ]]></param>
+<return><![CDATA[
+		 ]]></return>
+</method>
+<method name='loadGroup' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/loadGroup' isStatic='false' isFinal='false' isOverride='false'  param_names='request;closure' param_types='Object;Function' param_defaults='undefined;null' result_type='org.robotlegs.utilities.assetloader.patterns.group:IGroup'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.loadGroup();
+		 ]]></copy>
+</method>
+<method name='load' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/load' isStatic='false' isFinal='false' isOverride='false'  param_names='request;closure' param_types='Object;Function' param_defaults='undefined;null' result_type='org.robotlegs.utilities.assetloader.patterns.asset:IAsset'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.load();
+		 ]]></copy>
+</method>
+<method name='removeAssetByUrl' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/removeAssetByUrl' isStatic='false' isFinal='false' isOverride='false'  param_names='url' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.removeAssetByUrl();
+		 ]]></copy>
+</method>
+<method name='removeAsset' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/removeAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.removeAsset();
+		 ]]></copy>
+</method>
+<method name='removeGroup' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/removeGroup' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.removeGroup();
+		 ]]></copy>
+</method>
+<field name='_assetIds' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/private:_assetIds' type='int' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_assetMapByUrl' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/private:_assetMapByUrl' type='flash.utils:Dictionary' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_assetMap' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/private:_assetMap' type='flash.utils:Dictionary' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_groupMap' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/private:_groupMap' type='flash.utils:Dictionary' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<interfaceRec name='IPattern' fullname='org.robotlegs.utilities.router.patterns.pattern:IPattern' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/router/patterns/pattern/IPattern.as' namespace='org.robotlegs.utilities.router.patterns.pattern' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Abstract <code>IPattern</code> interface.
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</interfaceRec>
+<method name='match' fullname='org.robotlegs.utilities.router.patterns.pattern:IPattern/org.robotlegs.utilities.router.patterns.pattern:IPattern:match' isStatic='false' isFinal='false' isOverride='false'  param_names='pathName' param_types='String' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[pathName
+		 ]]></param>
+<return><![CDATA[
+		 ]]></return>
+</method>
+<method name='name' fullname='org.robotlegs.utilities.router.patterns.pattern:IPattern/org.robotlegs.utilities.router.patterns.pattern:IPattern:name/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<return><![CDATA[
+		 ]]></return>
+</method>
+<method name='value' fullname='org.robotlegs.utilities.router.patterns.pattern:IPattern/org.robotlegs.utilities.router.patterns.pattern:IPattern:value/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<return><![CDATA[
+		 ]]></return>
+</method>
+<classRec name='Pattern' fullname='org.robotlegs.utilities.router.patterns.pattern:Pattern' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/router/patterns/pattern/Pattern.as' namespace='org.robotlegs.utilities.router.patterns.pattern' access='public' baseclass='Object' interfaces='org.robotlegs.utilities.router.patterns.pattern:IPattern' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Abstract <code>Pattern</code> implementation.
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='Pattern' fullname='org.robotlegs.utilities.router.patterns.pattern:Pattern/Pattern' isStatic='false' isFinal='false' isOverride='false'  param_names='name;regExp' param_types='String;RegExp' param_defaults='undefined;null' result_type='*'>
+<description><![CDATA[
+		 Constructor.
+		 
+		 ]]></description>
+<param><![CDATA[name
+		 ]]></param>
+<param><![CDATA[regExp
+		 ]]></param>
+</method>
+<method name='match' fullname='org.robotlegs.utilities.router.patterns.pattern:Pattern/match' isStatic='false' isFinal='false' isOverride='false'  param_names='pathName' param_types='String' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.router.patterns.pattern.IPattern.match();
+		 ]]></copy>
+</method>
+<method name='name' fullname='org.robotlegs.utilities.router.patterns.pattern:Pattern/name/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.router.patterns.pattern.IPattern.name;
+		 ]]></copy>
+</method>
+<method name='value' fullname='org.robotlegs.utilities.router.patterns.pattern:Pattern/value/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.router.patterns.pattern.IPattern.value;
+		 ]]></copy>
+</method>
+<field name='_name' fullname='org.robotlegs.utilities.router.patterns.pattern:Pattern/private:_name' type='String' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_regExp' fullname='org.robotlegs.utilities.router.patterns.pattern:Pattern/private:_regExp' type='RegExp' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_value' fullname='org.robotlegs.utilities.router.patterns.pattern:Pattern/private:_value' type='String' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<interfaceRec name='IASyncCommand' fullname='org.robotlegs.core:IASyncCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/core/IASyncCommand.as' namespace='org.robotlegs.core' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Abstract <code>IASyncCommand</code> interface.
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</interfaceRec>
+<method name='setOnComplete' fullname='org.robotlegs.core:IASyncCommand/org.robotlegs.core:IASyncCommand:setOnComplete' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Function' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[value
+		 ]]></param>
+</method>
+<interfaceRec name='IGroup' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/patterns/group/IGroup.as' namespace='org.robotlegs.utilities.assetloader.patterns.group' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</interfaceRec>
+<method name='dispose' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:dispose' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='load' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:load' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='assets' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:assets/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Vector$org.robotlegs.utilities.assetloader.patterns.asset:IAsset'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='bytesLoaded' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:bytesLoaded/get' isStatic='false' isFinal='false' isOverride='false'  result_type='uint'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='bytesTotal' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:bytesTotal/get' isStatic='false' isFinal='false' isOverride='false'  result_type='uint'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='closure' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:closure/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Function'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='id' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:id/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='maxConnections' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:maxConnections/get' isStatic='false' isFinal='false' isOverride='false'  result_type='int'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='percentage' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:percentage/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='state' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:state/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='assets' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:assets/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Vector$org.robotlegs.utilities.assetloader.patterns.asset:IAsset' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='closure' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:closure/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Function' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='id' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:id/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='maxConnections' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:maxConnections/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='int' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<classRec name='Group' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/patterns/group/Group.as' namespace='org.robotlegs.utilities.assetloader.patterns.group' access='public' baseclass='flash.events:EventDispatcher' interfaces='org.robotlegs.utilities.assetloader.patterns.group:IGroup' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='Group' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/Group' isStatic='false' isFinal='false' isOverride='false'  param_names='id;assets' param_types='String;Vector$org.robotlegs.utilities.assetloader.patterns.asset:IAsset' param_defaults='undefined;undefined' result_type='*'>
+<description><![CDATA[
+		 Constructor.
+		 
+		 ]]></description>
+<param><![CDATA[id
+		 ]]></param>
+<param><![CDATA[assets
+		 ]]></param>
+</method>
+<method name='dispose' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/dispose' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.patterns.group.IGroup.dispose()
+		 ]]></copy>
+</method>
+<method name='loadQueuedAsset' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/protected:loadQueuedAsset' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='load' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/load' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.patterns.group.IGroup.load()
+		 ]]></copy>
+</method>
+<method name='onAssetProcess' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/protected:onAssetProcess' isStatic='false' isFinal='true' isOverride='false'  param_names='event' param_types='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[event
+		 ]]></param>
+</method>
+<method name='setState' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/protected:setState' isStatic='false' isFinal='true' isOverride='false'  param_names='state' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[state
+		 ]]></param>
+</method>
+<method name='assets' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/assets/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Vector$org.robotlegs.utilities.assetloader.patterns.asset:IAsset'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.patterns.group.IGroup.assets
+		 ]]></copy>
+</method>
+<method name='bytesLoaded' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/bytesLoaded/get' isStatic='false' isFinal='false' isOverride='false'  result_type='uint'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.patterns.asset.IAsset.bytesLoaded
+		 ]]></copy>
+</method>
+<method name='bytesTotal' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/bytesTotal/get' isStatic='false' isFinal='false' isOverride='false'  result_type='uint'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.patterns.asset.IAsset.bytesTotal
+		 ]]></copy>
+</method>
+<method name='closure' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/closure/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Function'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.patterns.group.IGroup.closure
+		 ]]></copy>
+</method>
+<method name='id' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/id/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.patterns.group.IGroup.id
+		 ]]></copy>
+</method>
+<method name='maxConnections' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/maxConnections/get' isStatic='false' isFinal='false' isOverride='false'  result_type='int'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.patterns.group.IGroup.maxConnections
+		 ]]></copy>
+</method>
+<method name='percentage' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/percentage/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.patterns.asset.IAsset.percentage
+		 ]]></copy>
+</method>
+<method name='state' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/state/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.patterns.group.IGroup.state
+		 ]]></copy>
+</method>
+<method name='assets' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/assets/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Vector$org.robotlegs.utilities.assetloader.patterns.asset:IAsset' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='closure' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/closure/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Function' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='id' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/id/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='maxConnections' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/maxConnections/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='int' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<field name='_assets' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/protected:_assets' type='Vector$org.robotlegs.utilities.assetloader.patterns.asset:IAsset' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_closure' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/protected:_closure' type='Function' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_id' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/protected:_id' type='String' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_maxConnections' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/protected:_maxConnections' type='int' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_queuedAsset' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/protected:_queuedAsset' type='int' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_state' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/protected:_state' type='String' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<classRec name='AssetLoaderEvent' fullname='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/events/AssetLoaderEvent.as' namespace='org.robotlegs.utilities.assetloader.events' access='public' baseclass='flash.events:Event' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='AssetLoaderEvent' fullname='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent/AssetLoaderEvent' isStatic='false' isFinal='false' isOverride='false'  param_names='type;asset;group;bubbles;cancelable' param_types='String;org.robotlegs.utilities.assetloader.patterns.asset:IAsset;org.robotlegs.utilities.assetloader.patterns.group:IGroup;Boolean;Boolean' param_defaults='undefined;null;null;false;false' result_type='*'>
+<description><![CDATA[
+		 Constructor.
+		 
+		 ]]></description>
+<param><![CDATA[type
+		 ]]></param>
+<param><![CDATA[asset
+		 ]]></param>
+<param><![CDATA[group
+		 ]]></param>
+<param><![CDATA[bubbles
+		 ]]></param>
+<param><![CDATA[cancelable
+		 ]]></param>
+</method>
+<method name='clone' fullname='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent/clone' isStatic='false' isFinal='false' isOverride='true'  result_type='flash.events:Event'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<method name='asset' fullname='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent/asset/get' isStatic='false' isFinal='false' isOverride='false'  result_type='org.robotlegs.utilities.assetloader.patterns.asset:IAsset'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='group' fullname='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent/group/get' isStatic='false' isFinal='false' isOverride='false'  result_type='org.robotlegs.utilities.assetloader.patterns.group:IGroup'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='asset' fullname='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent/asset/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='org.robotlegs.utilities.assetloader.patterns.asset:IAsset' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='group' fullname='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent/group/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='org.robotlegs.utilities.assetloader.patterns.group:IGroup' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<field name='ASSET_COMPLETE' fullname='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent/ASSET_COMPLETE' type='String' isStatic='true' isConst='true' defaultValue='org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.ASSET_COMPLETE' >
+<description><![CDATA[
+		 Dispatched when.
+		 ]]></description>
+</field>
+<field name='ASSET_ERROR' fullname='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent/ASSET_ERROR' type='String' isStatic='true' isConst='true' defaultValue='org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.ASSET_ERROR' >
+<description><![CDATA[
+		 Dispatched when.
+		 ]]></description>
+</field>
+<field name='ASSET_PROGRESS' fullname='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent/ASSET_PROGRESS' type='String' isStatic='true' isConst='true' defaultValue='org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.ASSET_PROGRESS' >
+<description><![CDATA[
+		 Dispatched when.
+		 ]]></description>
+</field>
+<field name='GROUP_COMPLETE' fullname='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent/GROUP_COMPLETE' type='String' isStatic='true' isConst='true' defaultValue='org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.GROUP_COMPLETE' >
+<description><![CDATA[
+		 Dispatched when.
+		 ]]></description>
+</field>
+<field name='GROUP_ERROR' fullname='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent/GROUP_ERROR' type='String' isStatic='true' isConst='true' defaultValue='org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.GROUP_ERROR' >
+<description><![CDATA[
+		 Dispatched when.
+		 ]]></description>
+</field>
+<field name='GROUP_PROGRESS' fullname='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent/GROUP_PROGRESS' type='String' isStatic='true' isConst='true' defaultValue='org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.GROUP_PROGRESS' >
+<description><![CDATA[
+		 Dispatched when.
+		 ]]></description>
+</field>
+<field name='_asset' fullname='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent/private:_asset' type='org.robotlegs.utilities.assetloader.patterns.asset:IAsset' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_group' fullname='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent/private:_group' type='org.robotlegs.utilities.assetloader.patterns.group:IGroup' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<classRec name='LocalizerError' fullname='org.robotlegs.utilities.localizer.error:LocalizerError' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/localizer/error/LocalizerError.as' namespace='org.robotlegs.utilities.localizer.error' access='public' baseclass='Error' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='LocalizerError' fullname='org.robotlegs.utilities.localizer.error:LocalizerError/LocalizerError' isStatic='false' isFinal='false' isOverride='false'  param_names='message;id' param_types='*;*' param_defaults=';0' result_type='*'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[message
+		 ]]></param>
+<param><![CDATA[id
+		 ]]></param>
+</method>
+<classRec name='NavigatorError' fullname='org.robotlegs.utilities.navigator.error:NavigatorError' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/navigator/error/NavigatorError.as' namespace='org.robotlegs.utilities.navigator.error' access='public' baseclass='Error' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='NavigatorError' fullname='org.robotlegs.utilities.navigator.error:NavigatorError/NavigatorError' isStatic='false' isFinal='false' isOverride='false'  param_names='message;id' param_types='*;*' param_defaults=';0' result_type='*'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[message
+		 ]]></param>
+<param><![CDATA[id
+		 ]]></param>
+</method>
+<classRec name='AssetLoaderError' fullname='org.robotlegs.utilities.assetloader.error:AssetLoaderError' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/error/AssetLoaderError.as' namespace='org.robotlegs.utilities.assetloader.error' access='public' baseclass='Error' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='AssetLoaderError' fullname='org.robotlegs.utilities.assetloader.error:AssetLoaderError/AssetLoaderError' isStatic='false' isFinal='false' isOverride='false'  param_names='message;id' param_types='*;*' param_defaults=';0' result_type='*'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[message
+		 ]]></param>
+<param><![CDATA[id
+		 ]]></param>
+</method>
+<classRec name='LocalizerEvent' fullname='org.robotlegs.utilities.localizer.events:LocalizerEvent' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/localizer/events/LocalizerEvent.as' namespace='org.robotlegs.utilities.localizer.events' access='public' baseclass='flash.events:Event' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='LocalizerEvent' fullname='org.robotlegs.utilities.localizer.events:LocalizerEvent/LocalizerEvent' isStatic='false' isFinal='false' isOverride='false'  param_names='type;bubbles;cancelable' param_types='String;Boolean;Boolean' param_defaults='undefined;false;false' result_type='*'>
+<description><![CDATA[
+		 Constructor.
+		 
+		 ]]></description>
+<param><![CDATA[type
+		 ]]></param>
+<param><![CDATA[bubbles
+		 ]]></param>
+<param><![CDATA[cancelable
+		 ]]></param>
+</method>
+<method name='clone' fullname='org.robotlegs.utilities.localizer.events:LocalizerEvent/clone' isStatic='false' isFinal='false' isOverride='true'  result_type='flash.events:Event'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<classRec name='RouterEvent' fullname='org.robotlegs.utilities.router.events:RouterEvent' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/router/events/RouterEvent.as' namespace='org.robotlegs.utilities.router.events' access='public' baseclass='flash.events:Event' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='RouterEvent' fullname='org.robotlegs.utilities.router.events:RouterEvent/RouterEvent' isStatic='false' isFinal='false' isOverride='false'  param_names='type;payload;bubbles;cancelable' param_types='String;Object;Boolean;Boolean' param_defaults='undefined;null;false;false' result_type='*'>
+<description><![CDATA[
+		 Constructor.
+		 
+		 ]]></description>
+<param><![CDATA[type
+		 ]]></param>
+<param><![CDATA[payload
+		 ]]></param>
+<param><![CDATA[bubbles
+		 ]]></param>
+<param><![CDATA[cancelable
+		 ]]></param>
+</method>
+<method name='clone' fullname='org.robotlegs.utilities.router.events:RouterEvent/clone' isStatic='false' isFinal='false' isOverride='true'  result_type='flash.events:Event'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<field name='MAP_EVENT_TO_ROUTE' fullname='org.robotlegs.utilities.router.events:RouterEvent/MAP_EVENT_TO_ROUTE' type='String' isStatic='true' isConst='true' defaultValue='org.robotlegs.utilities.router.events.RouterEvent.MAP_EVENT_TO_ROUTE' >
+<description><![CDATA[
+		 Dispatched when a new <code>Route</code> is added and it should be mapped to a <code>Command</code>.
+		 ]]></description>
+</field>
+<field name='NO_ROUTE_FOUND' fullname='org.robotlegs.utilities.router.events:RouterEvent/NO_ROUTE_FOUND' type='String' isStatic='true' isConst='true' defaultValue='org.robotlegs.utilities.router.events.RouterEvent.NO_ROUTE_FOUND' >
+<description><![CDATA[
+		 Dispatched when the changed address doesn't match with any <code>Route</code>.
+		 ]]></description>
+</field>
+<field name='payload' fullname='org.robotlegs.utilities.router.events:RouterEvent/payload' type='Object' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<default><![CDATA[null
+		 ]]></default>
+</field>
+<classRec name='RouterError' fullname='org.robotlegs.utilities.router.error:RouterError' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/router/error/RouterError.as' namespace='org.robotlegs.utilities.router.error' access='public' baseclass='Error' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='RouterError' fullname='org.robotlegs.utilities.router.error:RouterError/RouterError' isStatic='false' isFinal='false' isOverride='false'  param_names='message;id' param_types='*;*' param_defaults=';0' result_type='*'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[message
+		 ]]></param>
+<param><![CDATA[id
+		 ]]></param>
+</method>
+<interfaceRec name='IRouter' fullname='org.robotlegs.utilities.router.core:IRouter' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/router/core/IRouter.as' namespace='org.robotlegs.utilities.router.core' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Abstract <code>IRouter</code> interface.
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</interfaceRec>
+<method name='activate' fullname='org.robotlegs.utilities.router.core:IRouter/org.robotlegs.utilities.router.core:IRouter:activate' isStatic='false' isFinal='false' isOverride='false'  param_names='checkRoutes' param_types='Boolean' param_defaults='true' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[checkRoutes
+		 ]]></param>
+</method>
+<method name='addRoute' fullname='org.robotlegs.utilities.router.core:IRouter/org.robotlegs.utilities.router.core:IRouter:addRoute' isStatic='false' isFinal='false' isOverride='false'  param_names='type;commandClass' param_types='String;Class' param_defaults='undefined;null' result_type='org.robotlegs.utilities.router.patterns.route:Route'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[type
+		 ]]></param>
+<param><![CDATA[commandClass
+		 ]]></param>
+<return><![CDATA[
+		 ]]></return>
+</method>
+<method name='changeAddressOnly' fullname='org.robotlegs.utilities.router.core:IRouter/org.robotlegs.utilities.router.core:IRouter:changeAddressOnly' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[value
+		 ]]></param>
+</method>
+<method name='changeAddress' fullname='org.robotlegs.utilities.router.core:IRouter/org.robotlegs.utilities.router.core:IRouter:changeAddress' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[value
+		 ]]></param>
+</method>
+<method name='changeBrowserTitle' fullname='org.robotlegs.utilities.router.core:IRouter/org.robotlegs.utilities.router.core:IRouter:changeBrowserTitle' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 Change the title of your browser.
+		 
+		 ]]></description>
+<param><![CDATA[value
+		 ]]></param>
+</method>
+<method name='deactivate' fullname='org.robotlegs.utilities.router.core:IRouter/org.robotlegs.utilities.router.core:IRouter:deactivate' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='active' fullname='org.robotlegs.utilities.router.core:IRouter/org.robotlegs.utilities.router.core:IRouter:active/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Boolean'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='pathNames' fullname='org.robotlegs.utilities.router.core:IRouter/org.robotlegs.utilities.router.core:IRouter:pathNames/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Array'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<classRec name='Router' fullname='org.robotlegs.utilities.router.core:Router' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/router/core/Router.as' namespace='org.robotlegs.utilities.router.core' access='public' baseclass='org.robotlegs.mvcs:Actor' interfaces='org.robotlegs.utilities.router.core:IRouter' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Abstract <code>MacroCommand</code> implementation.
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='Router' fullname='org.robotlegs.utilities.router.core:Router/Router' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+<description><![CDATA[
+		 Constructor.
+		 ]]></description>
+</method>
+<method name='activate' fullname='org.robotlegs.utilities.router.core:Router/activate' isStatic='false' isFinal='false' isOverride='false'  param_names='checkRoutes' param_types='Boolean' param_defaults='true' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.router.core.IRouter.activate()
+		 ]]></copy>
+</method>
+<method name='addRoute' fullname='org.robotlegs.utilities.router.core:Router/addRoute' isStatic='false' isFinal='false' isOverride='false'  param_names='type;commandClass' param_types='String;Class' param_defaults='undefined;null' result_type='org.robotlegs.utilities.router.patterns.route:Route'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.router.core.IRouter.addRoute()
+		 ]]></copy>
+</method>
+<method name='changeAddressOnly' fullname='org.robotlegs.utilities.router.core:Router/changeAddressOnly' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.router.core.IRouter.changeAddressOnly()
+		 ]]></copy>
+</method>
+<method name='changeAddress' fullname='org.robotlegs.utilities.router.core:Router/changeAddress' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.router.core.IRouter.changeAddress()
+		 ]]></copy>
+</method>
+<method name='changeBrowserTitle' fullname='org.robotlegs.utilities.router.core:Router/changeBrowserTitle' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.router.core.IRouter.changeBrowserTitle()
+		 ]]></copy>
+</method>
+<method name='checkRoutesOnAddressChange' fullname='org.robotlegs.utilities.router.core:Router/private:checkRoutesOnAddressChange' isStatic='false' isFinal='false' isOverride='false'  param_names='pathNames' param_types='Array' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[pathNames
+		 ]]></param>
+</method>
+<method name='deactivate' fullname='org.robotlegs.utilities.router.core:Router/deactivate' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.router.core.IRouter.deactivate()
+		 ]]></copy>
+</method>
+<method name='getMatchedRoute' fullname='org.robotlegs.utilities.router.core:Router/private:getMatchedRoute' isStatic='false' isFinal='false' isOverride='false'  param_names='pathNames' param_types='Array' param_defaults='undefined' result_type='org.robotlegs.utilities.router.patterns.route:Route'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[pathNames
+		 ]]></param>
+<return><![CDATA[
+		 ]]></return>
+</method>
+<method name='onChange' fullname='org.robotlegs.utilities.router.core:Router/private:onChange' isStatic='false' isFinal='false' isOverride='false'  param_names='evt' param_types='com.asual.swfaddress:SWFAddressEvent' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[evt
+		 ]]></param>
+</method>
+<method name='sortRoutes' fullname='org.robotlegs.utilities.router.core:Router/private:sortRoutes' isStatic='false' isFinal='false' isOverride='false'  param_names='x;y' param_types='org.robotlegs.utilities.router.patterns.route:Route;org.robotlegs.utilities.router.patterns.route:Route' param_defaults='undefined;undefined' result_type='Number'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[x
+		 ]]></param>
+<param><![CDATA[y
+		 ]]></param>
+<return><![CDATA[
+		 ]]></return>
+</method>
+<method name='active' fullname='org.robotlegs.utilities.router.core:Router/active/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Boolean'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.router.core.IRouter.active
+		 ]]></copy>
+</method>
+<method name='pathNames' fullname='org.robotlegs.utilities.router.core:Router/pathNames/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Array'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.router.core.IRouter.pathNames
+		 ]]></copy>
+</method>
+<field name='_active' fullname='org.robotlegs.utilities.router.core:Router/private:_active' type='Boolean' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_routes' fullname='org.robotlegs.utilities.router.core:Router/private:_routes' type='Vector$org.robotlegs.utilities.router.patterns.route:Route' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<classRec name='Route' fullname='org.robotlegs.utilities.router.patterns.route:Route' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/router/patterns/route/Route.as' namespace='org.robotlegs.utilities.router.patterns.route' access='public' baseclass='flash.utils:Proxy' isFinal='false' isDynamic='true' >
+<description><![CDATA[
+	 Abstract <code>Route</code> implementation.
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='Route' fullname='org.robotlegs.utilities.router.patterns.route:Route/Route' isStatic='false' isFinal='false' isOverride='false'  param_names='type' param_types='String' param_defaults='undefined' result_type='*'>
+<description><![CDATA[
+		 Constructor.
+		 
+		 ]]></description>
+<param><![CDATA[type
+		 ]]></param>
+</method>
+<method name='callProperty' fullname='org.robotlegs.utilities.router.patterns.route:Route/flash_proxy:callProperty' isStatic='false' isFinal='false' isOverride='true'  param_names='name;parameters' param_types='*;restParam' param_defaults='undefined;undefined' result_type='*'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[name
+		 ]]></param>
+<param><![CDATA[parameters
+		 ]]></param>
+<return><![CDATA[
+		 ]]></return>
+</method>
+<method name='getPayload' fullname='org.robotlegs.utilities.router.patterns.route:Route/getPayload' isStatic='false' isFinal='false' isOverride='false'  param_names='pathNames' param_types='Array' param_defaults='undefined' result_type='Object'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[pathNames
+		 ]]></param>
+<return><![CDATA[
+		 ]]></return>
+</method>
+<method name='match' fullname='org.robotlegs.utilities.router.patterns.route:Route/match' isStatic='false' isFinal='false' isOverride='false'  param_names='pathNames' param_types='Array' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[pathNames
+		 ]]></param>
+<return><![CDATA[
+		 ]]></return>
+</method>
+<method name='toString' fullname='org.robotlegs.utilities.router.patterns.route:Route/toString' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<return><![CDATA[]]></return>
+</method>
+<method name='length' fullname='org.robotlegs.utilities.router.patterns.route:Route/length/get' isStatic='false' isFinal='false' isOverride='false'  result_type='int'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<return><![CDATA[
+		 ]]></return>
+</method>
+<method name='type' fullname='org.robotlegs.utilities.router.patterns.route:Route/type/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<return><![CDATA[
+		 ]]></return>
+</method>
+<field name='_patterns' fullname='org.robotlegs.utilities.router.patterns.route:Route/private:_patterns' type='Vector$org.robotlegs.utilities.router.patterns.pattern:IPattern' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_type' fullname='org.robotlegs.utilities.router.patterns.route:Route/private:_type' type='String' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<packageRec name='com.asual.swfaddress.null' fullname='com.asual.swfaddress.null'>
+<description><![CDATA[
+
+ ]]></description>
+<author><![CDATA[Rostislav Hristov <http://www.asual.com>
+
+ ]]></author>
+<author><![CDATA[Matthew J Tretter <http://www.exanimo.com>
+
+ ]]></author>
+<author><![CDATA[Piotr Zema <http://felixz.marknaegeli.com>
+
+ ]]></author>
+</packageRec>
+<classRec name='SWFAddressEvent' fullname='com.asual.swfaddress:SWFAddressEvent' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/com/asual/swfaddress/SWFAddressEvent.as' namespace='com.asual.swfaddress' access='public' baseclass='flash.events:Event' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+     Event class for SWFAddress.
+
+     ]]></description>
+</classRec>
+<method name='SWFAddressEvent' fullname='com.asual.swfaddress:SWFAddressEvent/SWFAddressEvent' isStatic='false' isFinal='false' isOverride='false'  param_names='type;bubbles;cancelable' param_types='String;Boolean;Boolean' param_defaults='undefined;false;false' result_type='*'>
+<description><![CDATA[
+
+         Creates a new SWFAddress event.
+
+         ]]></description>
+<param><![CDATA[type Type of the event.
+
+         ]]></param>
+</method>
+<method name='clone' fullname='com.asual.swfaddress:SWFAddressEvent/clone' isStatic='false' isFinal='false' isOverride='true'  result_type='flash.events:Event'>
+<description><![CDATA[
+
+         Creates a copy of the <code>SWFAddressEvent</code> object and sets the value of each parameter to match the original.
+
+         ]]></description>
+</method>
+<method name='toString' fullname='com.asual.swfaddress:SWFAddressEvent/toString' isStatic='false' isFinal='false' isOverride='true'  result_type='String'>
+<description><![CDATA[
+
+         Returns a string that contains all the properties of the SWFAddressEvent object.
+
+         The string has the following format:
+
+         
+
+         <p>[<code>SWFAddressEvent type=<em>value</em> bubbles=<em>value</em>
+
+         cancelable=<em>value</em> eventPhase= value=<em>value</em> path=<em>value</em>
+
+         paths=<em>value</em> parameters=<em>value</em></code>]</p>
+
+         
+
+         ]]></description>
+<return><![CDATA[A string representation of the <code>SWFAddressEvent</code> object.
+
+         ]]></return>
+</method>
+<method name='currentTarget' fullname='com.asual.swfaddress:SWFAddressEvent/currentTarget/get' isStatic='false' isFinal='false' isOverride='true'  result_type='Object'>
+<description><![CDATA[
+
+         The current target of this event.
+
+         ]]></description>
+</method>
+<method name='parameterNames' fullname='com.asual.swfaddress:SWFAddressEvent/parameterNames/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Array'>
+<description><![CDATA[
+
+         The parameters names of this event.
+
+         ]]></description>
+</method>
+<method name='parameters' fullname='com.asual.swfaddress:SWFAddressEvent/parameters/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Object'>
+<description><![CDATA[
+
+         The parameters of this event.
+
+         ]]></description>
+</method>
+<method name='pathNames' fullname='com.asual.swfaddress:SWFAddressEvent/pathNames/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Array'>
+<description><![CDATA[
+
+         The folders in the deep linking path of this event.
+
+         ]]></description>
+</method>
+<method name='path' fullname='com.asual.swfaddress:SWFAddressEvent/path/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+
+         The path of this event.
+
+         ]]></description>
+</method>
+<method name='target' fullname='com.asual.swfaddress:SWFAddressEvent/target/get' isStatic='false' isFinal='false' isOverride='true'  result_type='Object'>
+<description><![CDATA[
+
+         The target of this event.
+
+         ]]></description>
+</method>
+<method name='type' fullname='com.asual.swfaddress:SWFAddressEvent/type/get' isStatic='false' isFinal='false' isOverride='true'  result_type='String'>
+<description><![CDATA[
+
+         The type of this event.
+
+         ]]></description>
+</method>
+<method name='value' fullname='com.asual.swfaddress:SWFAddressEvent/value/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+
+         The value of this event.
+
+         ]]></description>
+</method>
+<field name='CHANGE' fullname='com.asual.swfaddress:SWFAddressEvent/CHANGE' type='String' isStatic='true' isConst='true' defaultValue='change' >
+<description><![CDATA[
+
+         Defines the <code>value</code> of the type property of a <code>change</code> event object.
+
+         ]]></description>
+</field>
+<field name='EXTERNAL_CHANGE' fullname='com.asual.swfaddress:SWFAddressEvent/EXTERNAL_CHANGE' type='String' isStatic='true' isConst='true' defaultValue='externalChange' >
+<description><![CDATA[
+
+         Defines the <code>value</code> of the type property of a <code>externalChange</code> event object.
+
+         ]]></description>
+</field>
+<field name='INIT' fullname='com.asual.swfaddress:SWFAddressEvent/INIT' type='String' isStatic='true' isConst='true' defaultValue='init' >
+<description><![CDATA[
+
+         Defines the <code>value</code> of the type property of a <code>init</code> event object.
+
+         ]]></description>
+</field>
+<field name='INTERNAL_CHANGE' fullname='com.asual.swfaddress:SWFAddressEvent/INTERNAL_CHANGE' type='String' isStatic='true' isConst='true' defaultValue='internalChange' >
+<description><![CDATA[
+
+         Defines the <code>value</code> of the type property of a <code>internalChange</code> event object.
+
+         ]]></description>
+</field>
+<field name='_parameterNames' fullname='com.asual.swfaddress:SWFAddressEvent/private:_parameterNames' type='Array' isStatic='false' isConst='false' >
+</field>
+<field name='_parameters' fullname='com.asual.swfaddress:SWFAddressEvent/private:_parameters' type='Object' isStatic='false' isConst='false' >
+</field>
+<field name='_pathNames' fullname='com.asual.swfaddress:SWFAddressEvent/private:_pathNames' type='Array' isStatic='false' isConst='false' >
+</field>
+<field name='_path' fullname='com.asual.swfaddress:SWFAddressEvent/private:_path' type='String' isStatic='false' isConst='false' >
+</field>
+<field name='_value' fullname='com.asual.swfaddress:SWFAddressEvent/private:_value' type='String' isStatic='false' isConst='false' >
+</field>
+<packageRec name='com.asual.swfaddress.null' fullname='com.asual.swfaddress.null'>
+<description><![CDATA[
+ ]]></description>
+<author><![CDATA[Rostislav Hristov <http://www.asual.com>
+ ]]></author>
+<author><![CDATA[Mark Ross <http://www.therossman.org>
+ ]]></author>
+<author><![CDATA[Piotr Zema <http://felixz.marknaegeli.com>
+ ]]></author>
+</packageRec>
+<classRec name='SWFAddress' fullname='com.asual.swfaddress:SWFAddress' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/com/asual/swfaddress/SWFAddress.as' namespace='com.asual.swfaddress' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+     SWFAddress class. 
+     ]]></description>
+<metadata>
+	<Event owner='com.asual.swfaddress:SWFAddress' name='externalChange' type='com.asual.swfaddress.SWFAddressEvent' >
+<description><![CDATA[
+     Dispatched when value was changed by Browser.
+     ]]></description>
+	</Event>
+</metadata>
+<metadata>
+	<Event owner='com.asual.swfaddress:SWFAddress' name='internalChange' type='com.asual.swfaddress.SWFAddressEvent' >
+<description><![CDATA[
+     Dispatched when value was changed by Flash.
+     ]]></description>
+	</Event>
+</metadata>
+<metadata>
+	<Event owner='com.asual.swfaddress:SWFAddress' name='change' type='com.asual.swfaddress.SWFAddressEvent' >
+<description><![CDATA[
+     Dispatched when any value change.
+     ]]></description>
+	</Event>
+</metadata>
+<metadata>
+	<Event owner='com.asual.swfaddress:SWFAddress' name='init' type='com.asual.swfaddress.SWFAddressEvent' >
+<description><![CDATA[
+     Dispatched when <code>SWFAddress</code> initializes.
+     ]]></description>
+	</Event>
+</metadata>
+</classRec>
+<method name='SWFAddress' fullname='com.asual.swfaddress:SWFAddress/SWFAddress' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+<description><![CDATA[
+         ]]></description>
+<throws><![CDATA[IllegalOperationError The class cannot be instantiated.
+         ]]></throws>
+</method>
+<method name='_callQueue' fullname='com.asual.swfaddress:SWFAddress/private:_callQueue' isStatic='true' isFinal='false' isOverride='false'  param_names='event' param_types='flash.events:TimerEvent' param_defaults='undefined' result_type='void'>
+</method>
+<method name='_call' fullname='com.asual.swfaddress:SWFAddress/private:_call' isStatic='true' isFinal='false' isOverride='false'  param_names='fn;param' param_types='String;Object' param_defaults='undefined;' result_type='void'>
+</method>
+<method name='_check' fullname='com.asual.swfaddress:SWFAddress/private:_check' isStatic='true' isFinal='false' isOverride='false'  param_names='event' param_types='flash.events:TimerEvent' param_defaults='undefined' result_type='void'>
+</method>
+<method name='_dispatchEvent' fullname='com.asual.swfaddress:SWFAddress/private:_dispatchEvent' isStatic='true' isFinal='false' isOverride='false'  param_names='type' param_types='String' param_defaults='undefined' result_type='void'>
+</method>
+<method name='_getValue' fullname='com.asual.swfaddress:SWFAddress/private:_getValue' isStatic='true' isFinal='false' isOverride='false'  result_type='String'>
+</method>
+<method name='_initialize' fullname='com.asual.swfaddress:SWFAddress/private:_initialize' isStatic='true' isFinal='false' isOverride='false'  result_type='Boolean'>
+</method>
+<method name='_setValueInit' fullname='com.asual.swfaddress:SWFAddress/private:_setValueInit' isStatic='true' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+</method>
+<method name='_setValue' fullname='com.asual.swfaddress:SWFAddress/private:_setValue' isStatic='true' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+</method>
+<method name='_strictCheck' fullname='com.asual.swfaddress:SWFAddress/private:_strictCheck' isStatic='true' isFinal='false' isOverride='false'  param_names='value;force' param_types='String;Boolean' param_defaults='undefined;undefined' result_type='String'>
+</method>
+<method name='addEventListener' fullname='com.asual.swfaddress:SWFAddress/addEventListener' isStatic='true' isFinal='false' isOverride='false'  param_names='type;listener;useCapture;priority;useWeakReference' param_types='String;Function;Boolean;int;Boolean' param_defaults='undefined;undefined;false;0;false' result_type='void'>
+<description><![CDATA[
+         Registers an event listener object with an EventDispatcher object so that the listener receives notification of an event. 
+         You can register event listeners on all nodes in the display list for a specific type of event, phase, and priority.
+         ]]></description>
+<param><![CDATA[type The type of event.
+         ]]></param>
+<param><![CDATA[listener The listener function that processes the event. This function must accept an Event object as its only parameter and must return nothing.
+         ]]></param>
+<param><![CDATA[useCapture Determines whether the listener works in the capture phase or the target and bubbling phases.
+         ]]></param>
+<param><![CDATA[priority The priority level of the event listener.
+         ]]></param>
+<param><![CDATA[useWeakReference Determines whether the reference to the listener is strong or weak.
+         ]]></param>
+<throws><![CDATA[ArgumentError The listener specified is not a function. 
+         ]]></throws>
+</method>
+<method name='back' fullname='com.asual.swfaddress:SWFAddress/back' isStatic='true' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+         Loads the previous URL in the history list.
+         ]]></description>
+</method>
+<method name='dispatchEvent' fullname='com.asual.swfaddress:SWFAddress/dispatchEvent' isStatic='true' isFinal='false' isOverride='false'  param_names='event' param_types='flash.events:Event' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+         Dispatches an event to all the registered listeners. 
+         ]]></description>
+<param><![CDATA[event Event object.
+         ]]></param>
+<return><![CDATA[A value of <code>true</code> if a listener of the specified type is registered; <code>false</code> otherwise.
+         ]]></return>
+<throws><![CDATA[Error The event dispatch recursion limit has been reached. 
+         ]]></throws>
+</method>
+<method name='forward' fullname='com.asual.swfaddress:SWFAddress/forward' isStatic='true' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+         Loads the next URL in the history list.
+         ]]></description>
+</method>
+<method name='getBaseURL' fullname='com.asual.swfaddress:SWFAddress/getBaseURL' isStatic='true' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+         Provides the base address of the document. 
+         ]]></description>
+</method>
+<method name='getHistory' fullname='com.asual.swfaddress:SWFAddress/getHistory' isStatic='true' isFinal='false' isOverride='false'  result_type='Boolean'>
+<description><![CDATA[
+         Provides the state of the history setting. 
+         ]]></description>
+</method>
+<method name='getParameterNames' fullname='com.asual.swfaddress:SWFAddress/getParameterNames' isStatic='true' isFinal='false' isOverride='false'  result_type='Array'>
+<description><![CDATA[
+         Provides a list of all the query parameter names.
+         ]]></description>
+</method>
+<method name='getParameter' fullname='com.asual.swfaddress:SWFAddress/getParameter' isStatic='true' isFinal='false' isOverride='false'  param_names='param' param_types='String' param_defaults='undefined' result_type='Object'>
+<description><![CDATA[
+         Provides the value of a specific query parameter as a string or array of strings.
+         ]]></description>
+<param><![CDATA[param Parameter name.
+         ]]></param>
+</method>
+<method name='getPathNames' fullname='com.asual.swfaddress:SWFAddress/getPathNames' isStatic='true' isFinal='false' isOverride='false'  result_type='Array'>
+<description><![CDATA[
+         Provides a list of all the folders in the deep linking path.
+         ]]></description>
+</method>
+<method name='getPath' fullname='com.asual.swfaddress:SWFAddress/getPath' isStatic='true' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+         Provides the deep linking value without the query string.
+         ]]></description>
+</method>
+<method name='getQueryString' fullname='com.asual.swfaddress:SWFAddress/getQueryString' isStatic='true' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+         Provides the query string part of the deep linking value.
+         ]]></description>
+</method>
+<method name='getStatus' fullname='com.asual.swfaddress:SWFAddress/getStatus' isStatic='true' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+         Provides the status of the browser window.
+         ]]></description>
+</method>
+<method name='getStrict' fullname='com.asual.swfaddress:SWFAddress/getStrict' isStatic='true' isFinal='false' isOverride='false'  result_type='Boolean'>
+<description><![CDATA[
+         Provides the state of the strict mode setting. 
+         ]]></description>
+</method>
+<method name='getTitle' fullname='com.asual.swfaddress:SWFAddress/getTitle' isStatic='true' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+         Provides the title of the HTML document.
+         ]]></description>
+</method>
+<method name='getTracker' fullname='com.asual.swfaddress:SWFAddress/getTracker' isStatic='true' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+         Provides the tracker function.
+         ]]></description>
+</method>
+<method name='getValue' fullname='com.asual.swfaddress:SWFAddress/getValue' isStatic='true' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+         Provides the current deep linking value.
+         ]]></description>
+</method>
+<method name='go' fullname='com.asual.swfaddress:SWFAddress/go' isStatic='true' isFinal='false' isOverride='false'  param_names='delta' param_types='int' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+         Loads a URL from the history list.
+         ]]></description>
+<param><![CDATA[delta An integer representing a relative position in the history list.
+         ]]></param>
+</method>
+<method name='hasEventListener' fullname='com.asual.swfaddress:SWFAddress/hasEventListener' isStatic='true' isFinal='false' isOverride='false'  param_names='type' param_types='String' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+         Checks whether the EventDispatcher object has any listeners registered for a specific type of event. This allows you to determine where an EventDispatcher object has 
+         altered handling of an event type in the event flow hierarchy.
+         ]]></description>
+<param><![CDATA[event The type of event.  
+         ]]></param>
+<return><![CDATA[A value of <code>true</code> if a listener of the specified type is registered; <code>false</code> otherwise. 
+         ]]></return>
+</method>
+<method name='href' fullname='com.asual.swfaddress:SWFAddress/href' isStatic='true' isFinal='false' isOverride='false'  param_names='url;target' param_types='String;String' param_defaults='undefined;_self' result_type='void'>
+<description><![CDATA[
+         Opens a new URL in the browser. 
+         ]]></description>
+<param><![CDATA[url The resource to be opened.
+         ]]></param>
+<param><![CDATA[target Target window.
+         ]]></param>
+</method>
+<method name='popup' fullname='com.asual.swfaddress:SWFAddress/popup' isStatic='true' isFinal='false' isOverride='false'  param_names='url;name;options;handler' param_types='String;String;String;String' param_defaults='undefined;popup;&quot;&quot;;' result_type='void'>
+<description><![CDATA[
+         Opens a browser popup window. 
+         ]]></description>
+<param><![CDATA[url Resource location.
+         ]]></param>
+<param><![CDATA[name Name of the popup window.
+         ]]></param>
+<param><![CDATA[options Options which get evaluted and passed to the window.open() method.
+         ]]></param>
+<param><![CDATA[handler Optional JavsScript handler code for popup handling.    
+         ]]></param>
+</method>
+<method name='removeEventListener' fullname='com.asual.swfaddress:SWFAddress/removeEventListener' isStatic='true' isFinal='false' isOverride='false'  param_names='type;listener;useCapture' param_types='String;Function;Boolean' param_defaults='undefined;undefined;false' result_type='void'>
+<description><![CDATA[
+         Removes a listener from the EventDispatcher object. If there is no matching listener registered with the EventDispatcher object, a call to this method has no effect.
+         ]]></description>
+<param><![CDATA[type The type of event. 
+         ]]></param>
+<param><![CDATA[listener The listener object to remove.
+         ]]></param>
+<param><![CDATA[useCapture Specifies whether the listener was registered for the capture phase or the target and bubbling phases. 
+         If the listener was registered for both the capture phase and the target and bubbling phases, two calls to removeEventListener() are required to remove both, 
+         one call with useCapture() set to true, and another call with useCapture() set to false. 
+         ]]></param>
+</method>
+<method name='resetStatus' fullname='com.asual.swfaddress:SWFAddress/resetStatus' isStatic='true' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+         Resets the status of the browser window.
+         ]]></description>
+</method>
+<method name='setHistory' fullname='com.asual.swfaddress:SWFAddress/setHistory' isStatic='true' isFinal='false' isOverride='false'  param_names='history' param_types='Boolean' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+         Enables or disables the creation of history entries.
+         ]]></description>
+<param><![CDATA[history History state.
+         ]]></param>
+</method>
+<method name='setStatus' fullname='com.asual.swfaddress:SWFAddress/setStatus' isStatic='true' isFinal='false' isOverride='false'  param_names='status' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+         Sets the status of the browser window.
+         ]]></description>
+<param><![CDATA[status Status value.
+         ]]></param>
+</method>
+<method name='setStrict' fullname='com.asual.swfaddress:SWFAddress/setStrict' isStatic='true' isFinal='false' isOverride='false'  param_names='strict' param_types='Boolean' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+         Enables or disables the strict mode.
+         ]]></description>
+<param><![CDATA[strict Strict mode state.
+         ]]></param>
+</method>
+<method name='setTitle' fullname='com.asual.swfaddress:SWFAddress/setTitle' isStatic='true' isFinal='false' isOverride='false'  param_names='title' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+         Sets the title of the HTML document.
+         ]]></description>
+<param><![CDATA[title Title value.
+         ]]></param>
+</method>
+<method name='setTracker' fullname='com.asual.swfaddress:SWFAddress/setTracker' isStatic='true' isFinal='false' isOverride='false'  param_names='tracker' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+         Sets a function for page view tracking. The default value is 'urchinTracker'.
+         ]]></description>
+<param><![CDATA[tracker Tracker function.
+         ]]></param>
+</method>
+<method name='setValue' fullname='com.asual.swfaddress:SWFAddress/setValue' isStatic='true' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+         Sets the current deep linking value.
+         ]]></description>
+<param><![CDATA[value A value which will be appended to the base link of the HTML document.
+         ]]></param>
+</method>
+<method name='up' fullname='com.asual.swfaddress:SWFAddress/up' isStatic='true' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+         Navigates one level up in the deep linking path.
+         ]]></description>
+</method>
+<field name='_availability' fullname='com.asual.swfaddress:SWFAddress/private:_availability' type='Boolean' isStatic='true' isConst='false' defaultValue='' >
+</field>
+<field name='_dispatcher' fullname='com.asual.swfaddress:SWFAddress/private:_dispatcher' type='flash.events:EventDispatcher' isStatic='true' isConst='false' defaultValue='unknown' >
+</field>
+<field name='_initChanged' fullname='com.asual.swfaddress:SWFAddress/private:_initChanged' type='Boolean' isStatic='true' isConst='false' defaultValue='false' >
+</field>
+<field name='_initChange' fullname='com.asual.swfaddress:SWFAddress/private:_initChange' type='Boolean' isStatic='true' isConst='false' defaultValue='false' >
+</field>
+<field name='_initTimer' fullname='com.asual.swfaddress:SWFAddress/private:_initTimer' type='flash.utils:Timer' isStatic='true' isConst='false' defaultValue='unknown' >
+</field>
+<field name='_initializer' fullname='com.asual.swfaddress:SWFAddress/private:_initializer' type='Boolean' isStatic='true' isConst='false' defaultValue='unknown' >
+</field>
+<field name='_init' fullname='com.asual.swfaddress:SWFAddress/private:_init' type='Boolean' isStatic='true' isConst='false' defaultValue='false' >
+</field>
+<field name='_queueTimer' fullname='com.asual.swfaddress:SWFAddress/private:_queueTimer' type='flash.utils:Timer' isStatic='true' isConst='false' defaultValue='unknown' >
+</field>
+<field name='_queue' fullname='com.asual.swfaddress:SWFAddress/private:_queue' type='Array' isStatic='true' isConst='false' defaultValue='unknown' >
+</field>
+<field name='_strict' fullname='com.asual.swfaddress:SWFAddress/private:_strict' type='Boolean' isStatic='true' isConst='false' defaultValue='true' >
+</field>
+<field name='_value' fullname='com.asual.swfaddress:SWFAddress/private:_value' type='String' isStatic='true' isConst='false' defaultValue='' >
+</field>
+<field name='onChange' fullname='com.asual.swfaddress:SWFAddress/onChange' type='Function' isStatic='true' isConst='false' >
+<description><![CDATA[
+         Change event.
+         ]]></description>
+</field>
+<field name='onInit' fullname='com.asual.swfaddress:SWFAddress/onInit' type='Function' isStatic='true' isConst='false' >
+<description><![CDATA[
+         Init event.
+         ]]></description>
+</field>
+<classRec name='NavigatorUtil' fullname='org.robotlegs.utilities.navigator.utils:NavigatorUtil' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/navigator/utils/NavigatorUtil.as' namespace='org.robotlegs.utilities.navigator.utils' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Utility to provide consistent <code>Transition</code> methods.
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='setOnTransitionInComplete' fullname='org.robotlegs.utilities.navigator.utils:NavigatorUtil/setOnTransitionInComplete' isStatic='true' isFinal='false' isOverride='false'  param_names='page' param_types='org.robotlegs.utilities.navigator.patterns.page:IPage' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[page
+		 ]]></param>
+</method>
+<method name='setOnTransitionOutComplete' fullname='org.robotlegs.utilities.navigator.utils:NavigatorUtil/setOnTransitionOutComplete' isStatic='true' isFinal='false' isOverride='false'  param_names='page' param_types='org.robotlegs.utilities.navigator.patterns.page:IPage' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[page
+		 ]]></param>
+</method>
+<interfaceRec name='INavigator' fullname='org.robotlegs.utilities.navigator.core:INavigator' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/navigator/core/INavigator.as' namespace='org.robotlegs.utilities.navigator.core' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Abstract <code>INavigator</code> interface.
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</interfaceRec>
+<method name='addPage' fullname='org.robotlegs.utilities.navigator.core:INavigator/org.robotlegs.utilities.navigator.core:INavigator:addPage' isStatic='false' isFinal='false' isOverride='false'  param_names='page;transitionId' param_types='org.robotlegs.utilities.navigator.patterns.page:IPage;String' param_defaults='undefined;null' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[page
+		 ]]></param>
+<param><![CDATA[transitionId
+		 ]]></param>
+</method>
+<method name='addTransition' fullname='org.robotlegs.utilities.navigator.core:INavigator/org.robotlegs.utilities.navigator.core:INavigator:addTransition' isStatic='false' isFinal='false' isOverride='false'  param_names='id;transition;isDefaultTransition' param_types='String;org.robotlegs.utilities.navigator.patterns.transition:ITransition;Boolean' param_defaults='undefined;undefined;false' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[id
+		 ]]></param>
+<param><![CDATA[transition
+		 ]]></param>
+<param><![CDATA[isDefaultTransition
+		 ]]></param>
+</method>
+<method name='getPage' fullname='org.robotlegs.utilities.navigator.core:INavigator/org.robotlegs.utilities.navigator.core:INavigator:getPage' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.navigator.patterns.page:IPage'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[name
+		 ]]></param>
+<return><![CDATA[]]></return>
+</method>
+<method name='getTransitionByPageName' fullname='org.robotlegs.utilities.navigator.core:INavigator/org.robotlegs.utilities.navigator.core:INavigator:getTransitionByPageName' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.navigator.patterns.transition:ITransition'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[name
+		 ]]></param>
+<return><![CDATA[]]></return>
+</method>
+<method name='getTransition' fullname='org.robotlegs.utilities.navigator.core:INavigator/org.robotlegs.utilities.navigator.core:INavigator:getTransition' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.navigator.patterns.transition:ITransition'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[id
+		 ]]></param>
+<return><![CDATA[]]></return>
+</method>
+<method name='hasPage' fullname='org.robotlegs.utilities.navigator.core:INavigator/org.robotlegs.utilities.navigator.core:INavigator:hasPage' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[name
+		 ]]></param>
+<return><![CDATA[]]></return>
+</method>
+<method name='hasTransitionByPageName' fullname='org.robotlegs.utilities.navigator.core:INavigator/org.robotlegs.utilities.navigator.core:INavigator:hasTransitionByPageName' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[name
+		 ]]></param>
+<return><![CDATA[]]></return>
+</method>
+<method name='hasTransition' fullname='org.robotlegs.utilities.navigator.core:INavigator/org.robotlegs.utilities.navigator.core:INavigator:hasTransition' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[id
+		 ]]></param>
+<return><![CDATA[]]></return>
+</method>
+<method name='navigate' fullname='org.robotlegs.utilities.navigator.core:INavigator/org.robotlegs.utilities.navigator.core:INavigator:navigate' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+		 
+		 ]]></description>
+<param><![CDATA[name
+		 ]]></param>
+<return><![CDATA[
+		 ]]></return>
+</method>
+<method name='removePage' fullname='org.robotlegs.utilities.navigator.core:INavigator/org.robotlegs.utilities.navigator.core:INavigator:removePage' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.navigator.patterns.page:IPage'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[name
+		 ]]></param>
+<return><![CDATA[]]></return>
+</method>
+<method name='removeTransitionByPageName' fullname='org.robotlegs.utilities.navigator.core:INavigator/org.robotlegs.utilities.navigator.core:INavigator:removeTransitionByPageName' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.navigator.patterns.transition:ITransition'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[name
+		 ]]></param>
+<return><![CDATA[]]></return>
+</method>
+<method name='removeTransition' fullname='org.robotlegs.utilities.navigator.core:INavigator/org.robotlegs.utilities.navigator.core:INavigator:removeTransition' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.navigator.patterns.transition:ITransition'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[id
+		 ]]></param>
+<return><![CDATA[]]></return>
+</method>
+<method name='choosenPage' fullname='org.robotlegs.utilities.navigator.core:INavigator/org.robotlegs.utilities.navigator.core:INavigator:choosenPage/get' isStatic='false' isFinal='false' isOverride='false'  result_type='org.robotlegs.utilities.navigator.patterns.page:IPage'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='currentPage' fullname='org.robotlegs.utilities.navigator.core:INavigator/org.robotlegs.utilities.navigator.core:INavigator:currentPage/get' isStatic='false' isFinal='false' isOverride='false'  result_type='org.robotlegs.utilities.navigator.patterns.page:IPage'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='defaultTransition' fullname='org.robotlegs.utilities.navigator.core:INavigator/org.robotlegs.utilities.navigator.core:INavigator:defaultTransition/get' isStatic='false' isFinal='false' isOverride='false'  result_type='org.robotlegs.utilities.navigator.patterns.transition:ITransition'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='transitioning' fullname='org.robotlegs.utilities.navigator.core:INavigator/org.robotlegs.utilities.navigator.core:INavigator:transitioning/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Boolean'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='choosenPage' fullname='org.robotlegs.utilities.navigator.core:INavigator/org.robotlegs.utilities.navigator.core:INavigator:choosenPage/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='org.robotlegs.utilities.navigator.patterns.page:IPage' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='currentPage' fullname='org.robotlegs.utilities.navigator.core:INavigator/org.robotlegs.utilities.navigator.core:INavigator:currentPage/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='org.robotlegs.utilities.navigator.patterns.page:IPage' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='defaultTransition' fullname='org.robotlegs.utilities.navigator.core:INavigator/org.robotlegs.utilities.navigator.core:INavigator:defaultTransition/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='org.robotlegs.utilities.navigator.patterns.transition:ITransition' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='transitioning' fullname='org.robotlegs.utilities.navigator.core:INavigator/org.robotlegs.utilities.navigator.core:INavigator:transitioning/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Boolean' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<classRec name='Navigator' fullname='org.robotlegs.utilities.navigator.core:Navigator' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/navigator/core/Navigator.as' namespace='org.robotlegs.utilities.navigator.core' access='public' baseclass='org.robotlegs.mvcs:Actor' interfaces='org.robotlegs.utilities.navigator.core:INavigator' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Abstract <code>Navigator</code> implementation.
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='Navigator' fullname='org.robotlegs.utilities.navigator.core:Navigator/Navigator' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+<description><![CDATA[
+		 Constructor.
+		 ]]></description>
+</method>
+<method name='addPage' fullname='org.robotlegs.utilities.navigator.core:Navigator/addPage' isStatic='false' isFinal='false' isOverride='false'  param_names='page;transitionId' param_types='org.robotlegs.utilities.navigator.patterns.page:IPage;String' param_defaults='undefined;null' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.navigator.core.INavigator.addPage()
+		 ]]></copy>
+</method>
+<method name='addTransition' fullname='org.robotlegs.utilities.navigator.core:Navigator/addTransition' isStatic='false' isFinal='false' isOverride='false'  param_names='id;transition;isDefaultTransition' param_types='String;org.robotlegs.utilities.navigator.patterns.transition:ITransition;Boolean' param_defaults='undefined;undefined;false' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.navigator.core.INavigator.addTransition()
+		 ]]></copy>
+</method>
+<method name='getPage' fullname='org.robotlegs.utilities.navigator.core:Navigator/getPage' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.navigator.patterns.page:IPage'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.navigator.core.INavigator.getPage()
+		 ]]></copy>
+</method>
+<method name='getTransitionByPageName' fullname='org.robotlegs.utilities.navigator.core:Navigator/getTransitionByPageName' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.navigator.patterns.transition:ITransition'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.navigator.core.INavigator.getTransitionByPageName()
+		 ]]></copy>
+</method>
+<method name='getTransition' fullname='org.robotlegs.utilities.navigator.core:Navigator/getTransition' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.navigator.patterns.transition:ITransition'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.navigator.core.INavigator.getTransition()
+		 ]]></copy>
+</method>
+<method name='hasPage' fullname='org.robotlegs.utilities.navigator.core:Navigator/hasPage' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.navigator.core.INavigator.hasPage()
+		 ]]></copy>
+</method>
+<method name='hasTransitionByPageName' fullname='org.robotlegs.utilities.navigator.core:Navigator/hasTransitionByPageName' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.navigator.core.INavigator.hasTransitionByPageName()
+		 ]]></copy>
+</method>
+<method name='hasTransition' fullname='org.robotlegs.utilities.navigator.core:Navigator/hasTransition' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.navigator.core.INavigator.hasTransition()
+		 ]]></copy>
+</method>
+<method name='navigate' fullname='org.robotlegs.utilities.navigator.core:Navigator/navigate' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.navigator.core.INavigator.navigate()
+		 ]]></copy>
+</method>
+<method name='removePage' fullname='org.robotlegs.utilities.navigator.core:Navigator/removePage' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.navigator.patterns.page:IPage'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.navigator.core.INavigator.removePage()
+		 ]]></copy>
+</method>
+<method name='removeTransitionByPageName' fullname='org.robotlegs.utilities.navigator.core:Navigator/removeTransitionByPageName' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.navigator.patterns.transition:ITransition'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.navigator.core.INavigator.removeTransitionByPageName()
+		 ]]></copy>
+</method>
+<method name='removeTransition' fullname='org.robotlegs.utilities.navigator.core:Navigator/removeTransition' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.navigator.patterns.transition:ITransition'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.navigator.core.INavigator.removeTransition()
+		 ]]></copy>
+</method>
+<method name='choosenPage' fullname='org.robotlegs.utilities.navigator.core:Navigator/choosenPage/get' isStatic='false' isFinal='false' isOverride='false'  result_type='org.robotlegs.utilities.navigator.patterns.page:IPage'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.navigator.core.INavigator.choosenPage 
+		 ]]></copy>
+</method>
+<method name='currentPage' fullname='org.robotlegs.utilities.navigator.core:Navigator/currentPage/get' isStatic='false' isFinal='false' isOverride='false'  result_type='org.robotlegs.utilities.navigator.patterns.page:IPage'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.navigator.core.INavigator.currentPage 
+		 ]]></copy>
+</method>
+<method name='defaultTransition' fullname='org.robotlegs.utilities.navigator.core:Navigator/defaultTransition/get' isStatic='false' isFinal='false' isOverride='false'  result_type='org.robotlegs.utilities.navigator.patterns.transition:ITransition'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.navigator.core.INavigator.defaultTransition
+		 ]]></copy>
+</method>
+<method name='transitioning' fullname='org.robotlegs.utilities.navigator.core:Navigator/transitioning/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Boolean'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.navigator.core.INavigator.transitioning
+		 ]]></copy>
+</method>
+<method name='choosenPage' fullname='org.robotlegs.utilities.navigator.core:Navigator/choosenPage/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='org.robotlegs.utilities.navigator.patterns.page:IPage' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='currentPage' fullname='org.robotlegs.utilities.navigator.core:Navigator/currentPage/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='org.robotlegs.utilities.navigator.patterns.page:IPage' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='defaultTransition' fullname='org.robotlegs.utilities.navigator.core:Navigator/defaultTransition/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='org.robotlegs.utilities.navigator.patterns.transition:ITransition' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='transitioning' fullname='org.robotlegs.utilities.navigator.core:Navigator/transitioning/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Boolean' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<field name='_choosenPage' fullname='org.robotlegs.utilities.navigator.core:Navigator/private:_choosenPage' type='org.robotlegs.utilities.navigator.patterns.page:IPage' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_currentPage' fullname='org.robotlegs.utilities.navigator.core:Navigator/private:_currentPage' type='org.robotlegs.utilities.navigator.patterns.page:IPage' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_defaultTransition' fullname='org.robotlegs.utilities.navigator.core:Navigator/private:_defaultTransition' type='org.robotlegs.utilities.navigator.patterns.transition:ITransition' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_navigating' fullname='org.robotlegs.utilities.navigator.core:Navigator/private:_navigating' type='Boolean' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_pageMap' fullname='org.robotlegs.utilities.navigator.core:Navigator/private:_pageMap' type='flash.utils:Dictionary' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_transitionMapByPageName' fullname='org.robotlegs.utilities.navigator.core:Navigator/private:_transitionMapByPageName' type='flash.utils:Dictionary' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_transitionMap' fullname='org.robotlegs.utilities.navigator.core:Navigator/private:_transitionMap' type='flash.utils:Dictionary' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<interfaceRec name='ITransition' fullname='org.robotlegs.utilities.navigator.patterns.transition:ITransition' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/navigator/patterns/transition/ITransition.as' namespace='org.robotlegs.utilities.navigator.patterns.transition' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Abstract <code>ITransition</code> interface.
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</interfaceRec>
+<method name='transitionInComplete' fullname='org.robotlegs.utilities.navigator.patterns.transition:ITransition/org.robotlegs.utilities.navigator.patterns.transition:ITransition:transitionInComplete' isStatic='false' isFinal='false' isOverride='false'  param_names='page' param_types='org.robotlegs.utilities.navigator.patterns.page:IPage' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 ]]></description>
+<param><![CDATA[page
+		 ]]></param>
+</method>
+<method name='transitionIn' fullname='org.robotlegs.utilities.navigator.patterns.transition:ITransition/org.robotlegs.utilities.navigator.patterns.transition:ITransition:transitionIn' isStatic='false' isFinal='false' isOverride='false'  param_names='page' param_types='org.robotlegs.utilities.navigator.patterns.page:IPage' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 ]]></description>
+<param><![CDATA[page
+		 ]]></param>
+</method>
+<method name='transitionOutComplete' fullname='org.robotlegs.utilities.navigator.patterns.transition:ITransition/org.robotlegs.utilities.navigator.patterns.transition:ITransition:transitionOutComplete' isStatic='false' isFinal='false' isOverride='false'  param_names='page' param_types='org.robotlegs.utilities.navigator.patterns.page:IPage' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 ]]></description>
+<param><![CDATA[page
+		 ]]></param>
+</method>
+<method name='transitionOut' fullname='org.robotlegs.utilities.navigator.patterns.transition:ITransition/org.robotlegs.utilities.navigator.patterns.transition:ITransition:transitionOut' isStatic='false' isFinal='false' isOverride='false'  param_names='page' param_types='org.robotlegs.utilities.navigator.patterns.page:IPage' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 ]]></description>
+<param><![CDATA[page
+		 ]]></param>
+</method>
+<classRec name='Transition' fullname='org.robotlegs.utilities.navigator.patterns.transition:Transition' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/navigator/patterns/transition/Transition.as' namespace='org.robotlegs.utilities.navigator.patterns.transition' access='public' baseclass='Object' interfaces='org.robotlegs.utilities.navigator.patterns.transition:ITransition' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Abstract <code>Transition</code> implementation.
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='Transition' fullname='org.robotlegs.utilities.navigator.patterns.transition:Transition/Transition' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+<description><![CDATA[
+		 Constructor.
+		 ]]></description>
+</method>
+<method name='transitionInComplete' fullname='org.robotlegs.utilities.navigator.patterns.transition:Transition/transitionInComplete' isStatic='false' isFinal='false' isOverride='false'  param_names='page' param_types='org.robotlegs.utilities.navigator.patterns.page:IPage' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.navigator.patterns.transition.ITransition.transitionInComplete()
+		 ]]></copy>
+</method>
+<method name='transitionIn' fullname='org.robotlegs.utilities.navigator.patterns.transition:Transition/transitionIn' isStatic='false' isFinal='false' isOverride='false'  param_names='page' param_types='org.robotlegs.utilities.navigator.patterns.page:IPage' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.navigator.patterns.transition.ITransition.transitionIn()
+		 ]]></copy>
+</method>
+<method name='transitionOutComplete' fullname='org.robotlegs.utilities.navigator.patterns.transition:Transition/transitionOutComplete' isStatic='false' isFinal='false' isOverride='false'  param_names='page' param_types='org.robotlegs.utilities.navigator.patterns.page:IPage' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.navigator.patterns.transition.ITransition.transitionOutComplete()
+		 ]]></copy>
+</method>
+<method name='transitionOut' fullname='org.robotlegs.utilities.navigator.patterns.transition:Transition/transitionOut' isStatic='false' isFinal='false' isOverride='false'  param_names='page' param_types='org.robotlegs.utilities.navigator.patterns.page:IPage' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.navigator.patterns.transition.ITransition.transitionOut()
+		 ]]></copy>
+</method>
+<classRec name='NavigatorEvent' fullname='org.robotlegs.utilities.navigator.events:NavigatorEvent' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/navigator/events/NavigatorEvent.as' namespace='org.robotlegs.utilities.navigator.events' access='public' baseclass='flash.events:Event' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='NavigatorEvent' fullname='org.robotlegs.utilities.navigator.events:NavigatorEvent/NavigatorEvent' isStatic='false' isFinal='false' isOverride='false'  param_names='type;page;bubbles;cancelable' param_types='String;org.robotlegs.utilities.navigator.patterns.page:IPage;Boolean;Boolean' param_defaults='undefined;undefined;false;false' result_type='*'>
+<description><![CDATA[
+		 Constructor.
+		 
+		 ]]></description>
+<param><![CDATA[type
+		 ]]></param>
+<param><![CDATA[bubbles
+		 ]]></param>
+<param><![CDATA[cancelable
+		 ]]></param>
+</method>
+<method name='clone' fullname='org.robotlegs.utilities.navigator.events:NavigatorEvent/clone' isStatic='false' isFinal='false' isOverride='true'  result_type='flash.events:Event'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<field name='NAVIGATE' fullname='org.robotlegs.utilities.navigator.events:NavigatorEvent/NAVIGATE' type='String' isStatic='true' isConst='true' defaultValue='org.robotlegs.utilities.navigator.events.NavigatorEvent.NAVIGATE' >
+<description><![CDATA[
+		 
+		 ]]></description>
+</field>
+<field name='TRANSITION_IN_COMPLETE' fullname='org.robotlegs.utilities.navigator.events:NavigatorEvent/TRANSITION_IN_COMPLETE' type='String' isStatic='true' isConst='true' defaultValue='org.robotlegs.utilities.navigator.events.NavigatorEvent.TRANSITION_IN_COMPLETE' >
+<description><![CDATA[
+		 
+		 ]]></description>
+</field>
+<field name='TRANSITION_OUT_COMPLETE' fullname='org.robotlegs.utilities.navigator.events:NavigatorEvent/TRANSITION_OUT_COMPLETE' type='String' isStatic='true' isConst='true' defaultValue='org.robotlegs.utilities.navigator.events.NavigatorEvent.TRANSITION_OUT_COMPLETE' >
+<description><![CDATA[
+		 
+		 ]]></description>
+</field>
+<field name='page' fullname='org.robotlegs.utilities.navigator.events:NavigatorEvent/page' type='org.robotlegs.utilities.navigator.patterns.page:IPage' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<default><![CDATA[null
+		 ]]></default>
+</field>
+<classRec name='ClassUtil' fullname='org.robotlegs.utils:ClassUtil' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utils/ClassUtil.as' namespace='org.robotlegs.utils' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='getEventsFromObject' fullname='org.robotlegs.utils:ClassUtil/getEventsFromObject' isStatic='true' isFinal='false' isOverride='false'  param_names='reflector;value' param_types='org.robotlegs.core:IReflector;Object' param_defaults='undefined;undefined' result_type='Vector$flash.events:Event'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[reflector
+		 ]]></param>
+<param><![CDATA[value
+		 ]]></param>
+<return><![CDATA[
+		 ]]></return>
+</method>
+<classRec name='Utilities' fullname='org.robotlegs.utilities:Utilities' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/Utilities.as' namespace='org.robotlegs.utilities' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Utility to map dependencies of certain utilities.
+	 
+	 <p>Probably the place to do your mappings is in the <code>mapInjections</code> method
+	 of your <code>Context</code>. You can simply call the method <code>mapDepedencies</code>
+	 of <code>Utilities</code> to do all your mappings for the following utilities.</p>
+	 
+	 <ul>
+	 	<li><code>AssetLoader</code></li>
+	 	<li><code>Router</code></li>
+	 </ul>
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='mapDependencies' fullname='org.robotlegs.utilities:Utilities/mapDependencies' isStatic='true' isFinal='false' isOverride='false'  param_names='commandMap;utilities' param_types='org.robotlegs.core:ICommandMap;Array' param_defaults='undefined;undefined' result_type='void'>
+<description><![CDATA[
+		 Map dependencies of certain utilities.
+		 
+		 ]]></description>
+<param><![CDATA[commandMap The <code>ICommandMap</code> of Robotlegs.
+		 ]]></param>
+<param><![CDATA[utilities The utilities to map the dependencies of, must be one or multiple constants of this <code>Class</code>.
+		 ]]></param>
+</method>
+<field name='ALL' fullname='org.robotlegs.utilities:Utilities/ALL' type='String' isStatic='true' isConst='true' defaultValue='all' >
+<description><![CDATA[
+		 Map dependencies of all utilities.
+		 ]]></description>
+</field>
+<field name='ASSET_LOADER' fullname='org.robotlegs.utilities:Utilities/ASSET_LOADER' type='Class' isStatic='true' isConst='true' defaultValue='' >
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.controller.install.InstallAssetLoaderCommand
+		 ]]></copy>
+</field>
+<field name='NAVIGATOR' fullname='org.robotlegs.utilities:Utilities/NAVIGATOR' type='Class' isStatic='true' isConst='true' defaultValue='' >
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.navigator.controller.install.InstallNavigatorCommand
+		 ]]></copy>
+</field>
+<field name='ROUTER' fullname='org.robotlegs.utilities:Utilities/ROUTER' type='Class' isStatic='true' isConst='true' defaultValue='' >
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.router.controller.install.InstallRouterCommand
+		 ]]></copy>
+</field>
+<interfaceRec name='IPage' fullname='org.robotlegs.utilities.navigator.patterns.page:IPage' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/navigator/patterns/page/IPage.as' namespace='org.robotlegs.utilities.navigator.patterns.page' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Abstract <code>IPage</code> interface.
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</interfaceRec>
+<method name='content' fullname='org.robotlegs.utilities.navigator.patterns.page:IPage/org.robotlegs.utilities.navigator.patterns.page:IPage:content/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.display:DisplayObject'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='name' fullname='org.robotlegs.utilities.navigator.patterns.page:IPage/org.robotlegs.utilities.navigator.patterns.page:IPage:name/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<classRec name='Page' fullname='org.robotlegs.utilities.navigator.patterns.page:Page' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/navigator/patterns/page/Page.as' namespace='org.robotlegs.utilities.navigator.patterns.page' access='public' baseclass='flash.display:Sprite' interfaces='org.robotlegs.utilities.navigator.patterns.page:IPage' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Abstract <code>Page</code> implementation.
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='Page' fullname='org.robotlegs.utilities.navigator.patterns.page:Page/Page' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='*'>
+<description><![CDATA[
+		 Constructor.
+		 ]]></description>
+</method>
+<method name='content' fullname='org.robotlegs.utilities.navigator.patterns.page:Page/content/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.display:DisplayObject'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.navigator.patterns.page.IPage.content
+		 ]]></copy>
+</method>
+<classRec name='ASyncCommand' fullname='org.robotlegs.mvcs:ASyncCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/mvcs/ASyncCommand.as' namespace='org.robotlegs.mvcs' access='public' baseclass='org.robotlegs.mvcs:Command' interfaces='org.robotlegs.core:IASyncCommand' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Abstract <code>ASyncCommand</code> implementation.
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='commandComplete' fullname='org.robotlegs.mvcs:ASyncCommand/protected:commandComplete' isStatic='false' isFinal='true' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='setOnComplete' fullname='org.robotlegs.mvcs:ASyncCommand/setOnComplete' isStatic='false' isFinal='true' isOverride='false'  param_names='value' param_types='Function' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.core.IASyncCommand.setOnComplete()
+		 ]]></copy>
+</method>
+<field name='onComplete' fullname='org.robotlegs.mvcs:ASyncCommand/private:onComplete' type='Function' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<classRec name='MacroCommand' fullname='org.robotlegs.mvcs:MacroCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/mvcs/MacroCommand.as' namespace='org.robotlegs.mvcs' access='public' baseclass='org.robotlegs.mvcs:Command' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Abstract <code>MacroCommand</code> implementation.
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='MacroCommand' fullname='org.robotlegs.mvcs:MacroCommand/MacroCommand' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+<description><![CDATA[
+		 Constructor. 
+		 ]]></description>
+</method>
+<method name='addSubCommand' fullname='org.robotlegs.mvcs:MacroCommand/protected:addSubCommand' isStatic='false' isFinal='true' isOverride='false'  param_names='commandClass' param_types='Class' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[commandClass
+		 ]]></param>
+</method>
+<method name='execute' fullname='org.robotlegs.mvcs:MacroCommand/execute' isStatic='false' isFinal='true' isOverride='true'  result_type='void'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='initializeMacroCommandCommand' fullname='org.robotlegs.mvcs:MacroCommand/protected:initializeMacroCommandCommand' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='onPostConstruct' fullname='org.robotlegs.mvcs:MacroCommand/onPostConstruct' isStatic='false' isFinal='true' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<field name='commands' fullname='org.robotlegs.mvcs:MacroCommand/private:commands' type='Vector$org.robotlegs.mvcs:Command' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='events' fullname='org.robotlegs.mvcs:MacroCommand/private:events' type='Vector$flash.events:Event' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='reflector' fullname='org.robotlegs.mvcs:MacroCommand/reflector' type='org.robotlegs.core:IReflector' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 
+		 ]]></description>
+</field>
+<classRec name='ASyncMacroCommand' fullname='org.robotlegs.mvcs:ASyncMacroCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/mvcs/ASyncMacroCommand.as' namespace='org.robotlegs.mvcs' access='public' baseclass='org.robotlegs.mvcs:Command' interfaces='org.robotlegs.core:IASyncCommand' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Abstract <code>ASyncMacroCommand</code> implementation.
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='ASyncMacroCommand' fullname='org.robotlegs.mvcs:ASyncMacroCommand/ASyncMacroCommand' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+<description><![CDATA[
+		 Constructor. 
+		 ]]></description>
+</method>
+<method name='addSubCommand' fullname='org.robotlegs.mvcs:ASyncMacroCommand/protected:addSubCommand' isStatic='false' isFinal='true' isOverride='false'  param_names='commandClass' param_types='Class' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[commandClass
+		 ]]></param>
+</method>
+<method name='executeNextCommand' fullname='org.robotlegs.mvcs:ASyncMacroCommand/protected:executeNextCommand' isStatic='false' isFinal='true' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='execute' fullname='org.robotlegs.mvcs:ASyncMacroCommand/execute' isStatic='false' isFinal='true' isOverride='true'  result_type='void'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='initializeASyncMacroCommand' fullname='org.robotlegs.mvcs:ASyncMacroCommand/protected:initializeASyncMacroCommand' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='onPostConstruct' fullname='org.robotlegs.mvcs:ASyncMacroCommand/onPostConstruct' isStatic='false' isFinal='true' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='setOnComplete' fullname='org.robotlegs.mvcs:ASyncMacroCommand/setOnComplete' isStatic='false' isFinal='true' isOverride='false'  param_names='value' param_types='Function' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.core.IASyncCommand.setOnComplete()
+		 ]]></copy>
+</method>
+<field name='commands' fullname='org.robotlegs.mvcs:ASyncMacroCommand/private:commands' type='Vector$org.robotlegs.mvcs:Command' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='events' fullname='org.robotlegs.mvcs:ASyncMacroCommand/private:events' type='Vector$flash.events:Event' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='onComplete' fullname='org.robotlegs.mvcs:ASyncMacroCommand/private:onComplete' type='Function' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='reflector' fullname='org.robotlegs.mvcs:ASyncMacroCommand/reflector' type='org.robotlegs.core:IReflector' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 
+		 ]]></description>
+</field>
+<classRec name='InstallNavigatorCommand' fullname='org.robotlegs.utilities.navigator.controller.install:InstallNavigatorCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/navigator/controller/install/InstallNavigatorCommand.as' namespace='org.robotlegs.utilities.navigator.controller.install' access='public' baseclass='org.robotlegs.mvcs:Command' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Map dependencies of <code>Navigator</code>.
+	 
+	 <p>The following depedencies are available after executing this <code>Command</code>:</p>
+	 
+	 <ul>
+	 	<li><code>INavigator</code></li>
+	 </ul>
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='execute' fullname='org.robotlegs.utilities.navigator.controller.install:InstallNavigatorCommand/execute' isStatic='false' isFinal='false' isOverride='true'  result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<classRec name='InstallRouterCommand' fullname='org.robotlegs.utilities.router.controller.install:InstallRouterCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/router/controller/install/InstallRouterCommand.as' namespace='org.robotlegs.utilities.router.controller.install' access='public' baseclass='org.robotlegs.mvcs:Command' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Map dependencies of <code>Router</code>.
+	 
+	 <p>The following depedencies are available after executing this <code>Command</code>:</p>
+	 <ul>
+	 	<li><code>IRouter</code></li>
+	 </ul>
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='execute' fullname='org.robotlegs.utilities.router.controller.install:InstallRouterCommand/execute' isStatic='false' isFinal='false' isOverride='true'  result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<classRec name='MapEventToRouteCommand' fullname='org.robotlegs.utilities.router.controller.route:MapEventToRouteCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/router/controller/route/MapEventToRouteCommand.as' namespace='org.robotlegs.utilities.router.controller.route' access='public' baseclass='org.robotlegs.mvcs:Command' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Map a <code>Command</code> to a specific <code>Route</code>.
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='execute' fullname='org.robotlegs.utilities.router.controller.route:MapEventToRouteCommand/execute' isStatic='false' isFinal='false' isOverride='true'  result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<field name='event' fullname='org.robotlegs.utilities.router.controller.route:MapEventToRouteCommand/event' type='org.robotlegs.utilities.router.events:RouterEvent' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 
+		 ]]></description>
+</field>
+<classRec name='InstallAssetLoaderCommand' fullname='org.robotlegs.utilities.assetloader.controller.install:InstallAssetLoaderCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/controller/install/InstallAssetLoaderCommand.as' namespace='org.robotlegs.utilities.assetloader.controller.install' access='public' baseclass='org.robotlegs.mvcs:Command' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Map dependencies of <code>AssetLoader</code>.
+	 
+	 <p>The following depedencies are available after executing this <code>Command</code>:</p>
+	 
+	 <ul>
+	 	<li><code>IAssetLoader</code></li>
+	 </ul>
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='execute' fullname='org.robotlegs.utilities.assetloader.controller.install:InstallAssetLoaderCommand/execute' isStatic='false' isFinal='false' isOverride='true'  result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<classRec name='InstallLocalizerCommand' fullname='org.robotlegs.utilities.localizer.controller.install:InstallLocalizerCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/localizer/controller/install/InstallLocalizerCommand.as' namespace='org.robotlegs.utilities.localizer.controller.install' access='public' baseclass='org.robotlegs.mvcs:Command' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Map dependencies of <code>Localizer</code>.
+	 
+	 <p>The following depedencies are available after executing this <code>Command</code>:</p>
+	 
+	 <ul>
+	 	<li><code>ILocalizer</code></li>
+	 </ul>
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='execute' fullname='org.robotlegs.utilities.localizer.controller.install:InstallLocalizerCommand/execute' isStatic='false' isFinal='false' isOverride='true'  result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<classRec name='NavigateToPageCommand' fullname='org.robotlegs.utilities.navigator.controller.page:NavigateToPageCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/navigator/controller/page/NavigateToPageCommand.as' namespace='org.robotlegs.utilities.navigator.controller.page' access='public' baseclass='org.robotlegs.mvcs:Command' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='execute' fullname='org.robotlegs.utilities.navigator.controller.page:NavigateToPageCommand/execute' isStatic='false' isFinal='false' isOverride='true'  result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<method name='onTransitionInComplete' fullname='org.robotlegs.utilities.navigator.controller.page:NavigateToPageCommand/private:onTransitionInComplete' isStatic='false' isFinal='false' isOverride='false'  param_names='evt' param_types='org.robotlegs.utilities.navigator.events:NavigatorEvent' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[evt
+		 ]]></param>
+</method>
+<method name='onTransitionOutComplete' fullname='org.robotlegs.utilities.navigator.controller.page:NavigateToPageCommand/private:onTransitionOutComplete' isStatic='false' isFinal='false' isOverride='false'  param_names='evt' param_types='org.robotlegs.utilities.navigator.events:NavigatorEvent' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[evt
+		 ]]></param>
+</method>
+<method name='transition' fullname='org.robotlegs.utilities.navigator.controller.page:NavigateToPageCommand/private:transition' isStatic='false' isFinal='false' isOverride='false'  param_names='page;transitionIn' param_types='org.robotlegs.utilities.navigator.patterns.page:IPage;Boolean' param_defaults='undefined;undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[page
+		 ]]></param>
+<param><![CDATA[transition Determine if there should be transitioned in or out.
+		 ]]></param>
+</method>
+<field name='event' fullname='org.robotlegs.utilities.navigator.controller.page:NavigateToPageCommand/event' type='org.robotlegs.utilities.navigator.events:NavigatorEvent' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 
+		 ]]></description>
+</field>
+<field name='navigator' fullname='org.robotlegs.utilities.navigator.controller.page:NavigateToPageCommand/navigator' type='org.robotlegs.utilities.navigator.core:INavigator' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 
+		 ]]></description>
+</field>
+<classRec name='CSSAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:CSSAsset' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/patterns/asset/type/CSSAsset.as' namespace='org.robotlegs.utilities.assetloader.patterns.asset.type' access='public' baseclass='org.robotlegs.utilities.assetloader.patterns.asset:Asset' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='CSSAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:CSSAsset/CSSAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id;url' param_types='String;String' param_defaults='undefined;undefined' result_type='*'>
+<description><![CDATA[
+		 ]]></description>
+<iheritDoc><![CDATA[]]></iheritDoc>
+</method>
+<method name='onComplete' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:CSSAsset/protected:onComplete' isStatic='false' isFinal='false' isOverride='true'  param_names='evt' param_types='flash.events:Event' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<iheritDoc><![CDATA[]]></iheritDoc>
+</method>
+<method name='styleSheet' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:CSSAsset/styleSheet/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.text:StyleSheet'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='url' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:CSSAsset/url/set' isStatic='false' isFinal='false' isOverride='true'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<iheritDoc><![CDATA[]]></iheritDoc>
+</method>
+<field name='_styleSheet' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:CSSAsset/private:_styleSheet' type='flash.text:StyleSheet' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<classRec name='SoundAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:SoundAsset' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/patterns/asset/type/SoundAsset.as' namespace='org.robotlegs.utilities.assetloader.patterns.asset.type' access='public' baseclass='org.robotlegs.utilities.assetloader.patterns.asset:Asset' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='SoundAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:SoundAsset/SoundAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id;url' param_types='String;String' param_defaults='undefined;undefined' result_type='*'>
+<description><![CDATA[
+		 ]]></description>
+<iheritDoc><![CDATA[]]></iheritDoc>
+</method>
+<method name='sound' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:SoundAsset/sound/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.media:Sound'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='url' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:SoundAsset/url/set' isStatic='false' isFinal='false' isOverride='true'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<iheritDoc><![CDATA[]]></iheritDoc>
+</method>
+<classRec name='XMLAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:XMLAsset' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/patterns/asset/type/XMLAsset.as' namespace='org.robotlegs.utilities.assetloader.patterns.asset.type' access='public' baseclass='org.robotlegs.utilities.assetloader.patterns.asset:Asset' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='XMLAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:XMLAsset/XMLAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id;url' param_types='String;String' param_defaults='undefined;undefined' result_type='*'>
+<description><![CDATA[
+		 ]]></description>
+<iheritDoc><![CDATA[]]></iheritDoc>
+</method>
+<method name='onComplete' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:XMLAsset/protected:onComplete' isStatic='false' isFinal='false' isOverride='true'  param_names='evt' param_types='flash.events:Event' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<iheritDoc><![CDATA[]]></iheritDoc>
+</method>
+<method name='xml' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:XMLAsset/xml/get' isStatic='false' isFinal='false' isOverride='false'  result_type='XML'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='url' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:XMLAsset/url/set' isStatic='false' isFinal='false' isOverride='true'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<iheritDoc><![CDATA[]]></iheritDoc>
+</method>
+<field name='_xml' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:XMLAsset/private:_xml' type='XML' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<classRec name='BitmapAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:BitmapAsset' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/patterns/asset/type/BitmapAsset.as' namespace='org.robotlegs.utilities.assetloader.patterns.asset.type' access='public' baseclass='org.robotlegs.utilities.assetloader.patterns.asset:Asset' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='BitmapAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:BitmapAsset/BitmapAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id;url' param_types='String;String' param_defaults='undefined;undefined' result_type='*'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<method name='onComplete' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:BitmapAsset/protected:onComplete' isStatic='false' isFinal='false' isOverride='true'  param_names='evt' param_types='flash.events:Event' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 
+		 ]]></description>
+<param><![CDATA[evt
+		 ]]></param>
+</method>
+<method name='bitmapData' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:BitmapAsset/bitmapData/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.display:BitmapData'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='bitmap' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:BitmapAsset/bitmap/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.display:Bitmap'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='url' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:BitmapAsset/url/set' isStatic='false' isFinal='false' isOverride='true'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<field name='_bitmapData' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:BitmapAsset/private:_bitmapData' type='flash.display:BitmapData' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_bitmap' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:BitmapAsset/private:_bitmap' type='flash.display:Bitmap' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<classRec name='DisplayObjectAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:DisplayObjectAsset' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/patterns/asset/type/DisplayObjectAsset.as' namespace='org.robotlegs.utilities.assetloader.patterns.asset.type' access='public' baseclass='org.robotlegs.utilities.assetloader.patterns.asset:Asset' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='DisplayObjectAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:DisplayObjectAsset/DisplayObjectAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id;url' param_types='String;String' param_defaults='undefined;undefined' result_type='*'>
+<description><![CDATA[
+		 ]]></description>
+<iheritDoc><![CDATA[]]></iheritDoc>
+</method>
+<method name='onComplete' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:DisplayObjectAsset/protected:onComplete' isStatic='false' isFinal='false' isOverride='true'  param_names='evt' param_types='flash.events:Event' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<iheritDoc><![CDATA[]]></iheritDoc>
+</method>
+<method name='displayObject' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:DisplayObjectAsset/displayObject/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.display:DisplayObject'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='url' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:DisplayObjectAsset/url/set' isStatic='false' isFinal='false' isOverride='true'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<iheritDoc><![CDATA[]]></iheritDoc>
+</method>
+<field name='_displayObject' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:DisplayObjectAsset/private:_displayObject' type='flash.display:DisplayObject' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<classRec name='AssetUtil' fullname='org.robotlegs.utilities.assetloader.utils:AssetUtil' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/utils/AssetUtil.as' namespace='org.robotlegs.utilities.assetloader.utils' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='getAssetClassByExtension' fullname='org.robotlegs.utilities.assetloader.utils:AssetUtil/getAssetClassByExtension' isStatic='true' isFinal='false' isOverride='false'  param_names='extension' param_types='String' param_defaults='undefined' result_type='Class'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[extension
+		 ]]></param>
+<return><![CDATA[
+		 ]]></return>
+</method>
+</asdoc>

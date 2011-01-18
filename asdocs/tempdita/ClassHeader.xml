@@ -1,0 +1,1978 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<allClasses>
+   <apiPackage id="com.asual.swfaddress">
+      <apiName>com.asual.swfaddress</apiName>
+      <apiDetail/>
+      <apiClassifier id="com.asual.swfaddress:SWFAddress">
+         <apiName>SWFAddress</apiName>
+         <shortdesc>
+     SWFAddress class.</shortdesc>
+         <prolog>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="SWFAddress,com.asual.swfaddress.SWFAddress,CHANGE,EXTERNAL_CHANGE,INIT,INTERNAL_CHANGE,currentTarget,onChange,onInit,parameterNames,parameters,path,pathNames,target,type,value,addEventListener,back,clone,dispatchEvent,forward,getBaseURL,getHistory,getParameter,getParameterNames,getPath,getPathNames,getQueryString,getStatus,getStrict,getTitle,getTracker,getValue,go,hasEventListener,href,popup,removeEventListener,resetStatus,setHistory,setStatus,setStrict,setTitle,setTracker,setValue,toString,up"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+     SWFAddress class. 
+     </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="Object"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+      <apiClassifier id="com.asual.swfaddress:SWFAddressEvent">
+         <apiName>SWFAddressEvent</apiName>
+         <shortdesc>
+     Event class for SWFAddress.</shortdesc>
+         <prolog>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="SWFAddressEvent,com.asual.swfaddress.SWFAddressEvent,CHANGE,EXTERNAL_CHANGE,INIT,INTERNAL_CHANGE,currentTarget,onChange,onInit,parameterNames,parameters,path,pathNames,target,type,value,addEventListener,back,clone,dispatchEvent,forward,getBaseURL,getHistory,getParameter,getParameterNames,getPath,getPathNames,getQueryString,getStatus,getStrict,getTitle,getTracker,getValue,go,hasEventListener,href,popup,removeEventListener,resetStatus,setHistory,setStatus,setStrict,setTitle,setTracker,setValue,toString,up"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.events:Event</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+     Event class for SWFAddress.
+     </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="flash.events:Event"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.core">
+      <apiName>org.robotlegs.core</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.core:IASyncCommand">
+         <apiName>IASyncCommand</apiName>
+         <shortdesc>
+	 Abstract IASyncCommand interface.</shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="IASyncCommand,org.robotlegs.core.IASyncCommand,setOnComplete"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+            <apiDesc>
+	 Abstract <codeph>IASyncCommand</codeph> interface.
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id=""/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors>
+                  <Implementor id="org.robotlegs.mvcs:ASyncCommand"/>
+                  <Implementor id="org.robotlegs.mvcs:ASyncMacroCommand"/>
+               </Implementors>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.mvcs">
+      <apiName>org.robotlegs.mvcs</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.mvcs:ASyncMacroCommand">
+         <apiName>ASyncMacroCommand</apiName>
+         <shortdesc>
+	 Abstract ASyncMacroCommand implementation.</shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="ASyncMacroCommand,org.robotlegs.mvcs.ASyncMacroCommand,reflector,reflector,addSubCommand,addSubCommand,commandComplete,execute,execute,executeNextCommand,initializeASyncMacroCommand,initializeMacroCommandCommand,onPostConstruct,onPostConstruct,setOnComplete,setOnComplete"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.robotlegs.core:IASyncCommand</apiBaseInterface>
+               <apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 Abstract <codeph>ASyncMacroCommand</codeph> implementation.
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="org.robotlegs.mvcs:Command"/>
+               </Inheritance>
+               <Implements>
+                  <Implement id="org.robotlegs.core:IASyncCommand"/>
+               </Implements>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.mvcs:MacroCommand">
+         <apiName>MacroCommand</apiName>
+         <shortdesc>
+	 Abstract MacroCommand implementation.</shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="MacroCommand,org.robotlegs.mvcs.MacroCommand,reflector,reflector,addSubCommand,addSubCommand,commandComplete,execute,execute,executeNextCommand,initializeASyncMacroCommand,initializeMacroCommandCommand,onPostConstruct,onPostConstruct,setOnComplete,setOnComplete"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 Abstract <codeph>MacroCommand</codeph> implementation.
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="org.robotlegs.mvcs:Command"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.mvcs:ASyncCommand">
+         <apiName>ASyncCommand</apiName>
+         <shortdesc>
+	 Abstract ASyncCommand implementation.</shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="ASyncCommand,org.robotlegs.mvcs.ASyncCommand,addSubCommand,addSubCommand,commandComplete,execute,execute,executeNextCommand,initializeASyncMacroCommand,initializeMacroCommandCommand,onPostConstruct,onPostConstruct,setOnComplete,setOnComplete"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.robotlegs.core:IASyncCommand</apiBaseInterface>
+               <apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 Abstract <codeph>ASyncCommand</codeph> implementation.
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="org.robotlegs.mvcs:Command"/>
+               </Inheritance>
+               <Implements>
+                  <Implement id="org.robotlegs.core:IASyncCommand"/>
+               </Implements>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.assetloader.controller.install">
+      <apiName>org.robotlegs.utilities.assetloader.controller.install</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.assetloader.controller.install:InstallAssetLoaderCommand">
+         <apiName>InstallAssetLoaderCommand</apiName>
+         <shortdesc>
+	 Map dependencies of AssetLoader.</shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="InstallAssetLoaderCommand,org.robotlegs.utilities.assetloader.controller.install.InstallAssetLoaderCommand,execute"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 Map dependencies of <codeph>AssetLoader</codeph>.
+	 
+	 <p>The following depedencies are available after executing this <codeph>Command</codeph>:</p>
+	 
+	              <ul>
+	 	               <li>
+                     <codeph>IAssetLoader</codeph>
+                  </li>
+	              </ul>
+	 
+	           </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="org.robotlegs.mvcs:Command"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.assetloader.core">
+      <apiName>org.robotlegs.utilities.assetloader.core</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.assetloader.core:IAssetLoader">
+         <apiName>IAssetLoader</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="IAssetLoader,org.robotlegs.utilities.assetloader.core.IAssetLoader,getAsset,getAsset,getAssetByUrl,getAssetByUrl,getGroup,getGroup,hasAsset,hasAsset,hasAssetByUrl,hasAssetByUrl,hasGroup,hasGroup,instantiateAsset,instantiateGroup,load,load,loadGroup,loadGroup,removeAsset,removeAsset,removeAssetByUrl,removeAssetByUrl,removeGroup,removeGroup"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id=""/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors>
+                  <Implementor id="org.robotlegs.utilities.assetloader.core:AssetLoader"/>
+               </Implementors>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.utilities.assetloader.core:AssetLoader">
+         <apiName>AssetLoader</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="AssetLoader,org.robotlegs.utilities.assetloader.core.AssetLoader,getAsset,getAsset,getAssetByUrl,getAssetByUrl,getGroup,getGroup,hasAsset,hasAsset,hasAssetByUrl,hasAssetByUrl,hasGroup,hasGroup,instantiateAsset,instantiateGroup,load,load,loadGroup,loadGroup,removeAsset,removeAsset,removeAssetByUrl,removeAssetByUrl,removeGroup,removeGroup"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.robotlegs.utilities.assetloader.core:IAssetLoader</apiBaseInterface>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="Object"/>
+               </Inheritance>
+               <Implements>
+                  <Implement id="org.robotlegs.utilities.assetloader.core:IAssetLoader"/>
+               </Implements>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.utilities.assetloader.core:AssetLoaderState">
+         <apiName>AssetLoaderState</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="AssetLoaderState,org.robotlegs.utilities.assetloader.core.AssetLoaderState,FAILED,INITIALIZING,LOADED,LOADING"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="Object"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.assetloader.error">
+      <apiName>org.robotlegs.utilities.assetloader.error</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.assetloader.error:AssetLoaderError">
+         <apiName>AssetLoaderError</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="AssetLoaderError,org.robotlegs.utilities.assetloader.error.AssetLoaderError"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Error</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="Error"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.assetloader.events">
+      <apiName>org.robotlegs.utilities.assetloader.events</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.assetloader.events:AssetLoaderEvent">
+         <apiName>AssetLoaderEvent</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="AssetLoaderEvent,org.robotlegs.utilities.assetloader.events.AssetLoaderEvent,ASSET_COMPLETE,ASSET_ERROR,ASSET_PROGRESS,GROUP_COMPLETE,GROUP_ERROR,GROUP_PROGRESS,asset,group,clone"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.events:Event</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="flash.events:Event"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.assetloader.patterns.asset.type">
+      <apiName>org.robotlegs.utilities.assetloader.patterns.asset.type</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.assetloader.patterns.asset.type:CSSAsset">
+         <apiName>CSSAsset</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="CSSAsset,org.robotlegs.utilities.assetloader.patterns.asset.type.CSSAsset,bitmap,bitmapData,displayObject,sound,styleSheet,url,url,url,url,url,xml,onComplete,onComplete,onComplete,onComplete"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.robotlegs.utilities.assetloader.patterns.asset:Asset</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="org.robotlegs.utilities.assetloader.patterns.asset:Asset"/>
+                  <Inherit id="flash.events:EventDispatcher"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.utilities.assetloader.patterns.asset.type:DisplayObjectAsset">
+         <apiName>DisplayObjectAsset</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="DisplayObjectAsset,org.robotlegs.utilities.assetloader.patterns.asset.type.DisplayObjectAsset,bitmap,bitmapData,displayObject,sound,styleSheet,url,url,url,url,url,xml,onComplete,onComplete,onComplete,onComplete"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.robotlegs.utilities.assetloader.patterns.asset:Asset</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="org.robotlegs.utilities.assetloader.patterns.asset:Asset"/>
+                  <Inherit id="flash.events:EventDispatcher"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.utilities.assetloader.patterns.asset.type:XMLAsset">
+         <apiName>XMLAsset</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="XMLAsset,org.robotlegs.utilities.assetloader.patterns.asset.type.XMLAsset,bitmap,bitmapData,displayObject,sound,styleSheet,url,url,url,url,url,xml,onComplete,onComplete,onComplete,onComplete"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.robotlegs.utilities.assetloader.patterns.asset:Asset</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="org.robotlegs.utilities.assetloader.patterns.asset:Asset"/>
+                  <Inherit id="flash.events:EventDispatcher"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.utilities.assetloader.patterns.asset.type:SoundAsset">
+         <apiName>SoundAsset</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="SoundAsset,org.robotlegs.utilities.assetloader.patterns.asset.type.SoundAsset,bitmap,bitmapData,displayObject,sound,styleSheet,url,url,url,url,url,xml"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.robotlegs.utilities.assetloader.patterns.asset:Asset</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="org.robotlegs.utilities.assetloader.patterns.asset:Asset"/>
+                  <Inherit id="flash.events:EventDispatcher"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.utilities.assetloader.patterns.asset.type:BitmapAsset">
+         <apiName>BitmapAsset</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="BitmapAsset,org.robotlegs.utilities.assetloader.patterns.asset.type.BitmapAsset,bitmap,bitmapData,displayObject,sound,styleSheet,url,url,url,url,url,xml,onComplete,onComplete,onComplete,onComplete"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.robotlegs.utilities.assetloader.patterns.asset:Asset</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="org.robotlegs.utilities.assetloader.patterns.asset:Asset"/>
+                  <Inherit id="flash.events:EventDispatcher"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.assetloader.patterns.asset">
+      <apiName>org.robotlegs.utilities.assetloader.patterns.asset</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.assetloader.patterns.asset:Asset">
+         <apiName>Asset</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="Asset,org.robotlegs.utilities.assetloader.patterns.asset.Asset,bytesLoaded,bytesLoaded,bytesTotal,bytesTotal,closure,closure,data,data,id,id,percentage,percentage,state,state,url,url,defineEventModel,dispose,dispose,load,load,onAssetProcess,onComplete,setOnComplete,setOnComplete,setOnError,setOnError,setOnProgress,setOnProgress,setState,undefineEventModel"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.robotlegs.utilities.assetloader.patterns.asset:IAsset</apiBaseInterface>
+               <apiBaseClassifier>flash.events:EventDispatcher</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="flash.events:EventDispatcher"/>
+               </Inheritance>
+               <Implements>
+                  <Implement id="org.robotlegs.utilities.assetloader.patterns.asset:IAsset"/>
+               </Implements>
+               <Subclasses>
+                  <class id="org.robotlegs.utilities.assetloader.patterns.asset.type:CSSAsset"/>
+                  <class id="org.robotlegs.utilities.assetloader.patterns.asset.type:DisplayObjectAsset"/>
+                  <class id="org.robotlegs.utilities.assetloader.patterns.asset.type:XMLAsset"/>
+                  <class id="org.robotlegs.utilities.assetloader.patterns.asset.type:SoundAsset"/>
+                  <class id="org.robotlegs.utilities.assetloader.patterns.asset.type:BitmapAsset"/>
+               </Subclasses>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.utilities.assetloader.patterns.asset:IAsset">
+         <apiName>IAsset</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="IAsset,org.robotlegs.utilities.assetloader.patterns.asset.IAsset,bytesLoaded,bytesLoaded,bytesTotal,bytesTotal,closure,closure,data,data,id,id,percentage,percentage,state,state,url,url,defineEventModel,dispose,dispose,load,load,onAssetProcess,onComplete,setOnComplete,setOnComplete,setOnError,setOnError,setOnProgress,setOnProgress,setState,undefineEventModel"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id=""/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors>
+                  <Implementor id="org.robotlegs.utilities.assetloader.patterns.asset:Asset"/>
+               </Implementors>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.assetloader.patterns.group">
+      <apiName>org.robotlegs.utilities.assetloader.patterns.group</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.assetloader.patterns.group:IGroup">
+         <apiName>IGroup</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="IGroup,org.robotlegs.utilities.assetloader.patterns.group.IGroup,assets,assets,bytesLoaded,bytesLoaded,bytesTotal,bytesTotal,closure,closure,id,id,maxConnections,maxConnections,percentage,percentage,state,state,dispose,dispose,load,load,loadQueuedAsset,onAssetProcess,setState"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id=""/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors>
+                  <Implementor id="org.robotlegs.utilities.assetloader.patterns.group:Group"/>
+               </Implementors>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.utilities.assetloader.patterns.group:Group">
+         <apiName>Group</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="Group,org.robotlegs.utilities.assetloader.patterns.group.Group,assets,assets,bytesLoaded,bytesLoaded,bytesTotal,bytesTotal,closure,closure,id,id,maxConnections,maxConnections,percentage,percentage,state,state,dispose,dispose,load,load,loadQueuedAsset,onAssetProcess,setState"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.robotlegs.utilities.assetloader.patterns.group:IGroup</apiBaseInterface>
+               <apiBaseClassifier>flash.events:EventDispatcher</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="flash.events:EventDispatcher"/>
+               </Inheritance>
+               <Implements>
+                  <Implement id="org.robotlegs.utilities.assetloader.patterns.group:IGroup"/>
+               </Implements>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.assetloader.utils">
+      <apiName>org.robotlegs.utilities.assetloader.utils</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.assetloader.utils:AssetUtil">
+         <apiName>AssetUtil</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="AssetUtil,org.robotlegs.utilities.assetloader.utils.AssetUtil,getAssetClassByExtension"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="Object"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.localizer.controller.install">
+      <apiName>org.robotlegs.utilities.localizer.controller.install</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.localizer.controller.install:InstallLocalizerCommand">
+         <apiName>InstallLocalizerCommand</apiName>
+         <shortdesc>
+	 Map dependencies of Localizer.</shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="InstallLocalizerCommand,org.robotlegs.utilities.localizer.controller.install.InstallLocalizerCommand,execute"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 Map dependencies of <codeph>Localizer</codeph>.
+	 
+	 <p>The following depedencies are available after executing this <codeph>Command</codeph>:</p>
+	 
+	              <ul>
+	 	               <li>
+                     <codeph>ILocalizer</codeph>
+                  </li>
+	              </ul>
+	 
+	           </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="org.robotlegs.mvcs:Command"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.localizer.core">
+      <apiName>org.robotlegs.utilities.localizer.core</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.localizer.core:ILocalizer">
+         <apiName>ILocalizer</apiName>
+         <shortdesc>
+	 Abstract ILocalizer interface.</shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="ILocalizer,org.robotlegs.utilities.localizer.core.ILocalizer"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+            <apiDesc>
+	 Abstract <codeph>ILocalizer</codeph> interface.
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id=""/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors>
+                  <Implementor id="org.robotlegs.utilities.localizer.core:Localizer"/>
+               </Implementors>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.utilities.localizer.core:Localizer">
+         <apiName>Localizer</apiName>
+         <shortdesc>
+	 Abstract Localizer implementation.</shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="Localizer,org.robotlegs.utilities.localizer.core.Localizer"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.robotlegs.utilities.localizer.core:ILocalizer</apiBaseInterface>
+               <apiBaseClassifier>org.robotlegs.mvcs:Actor</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 Abstract <codeph>Localizer</codeph> implementation.
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="org.robotlegs.mvcs:Actor"/>
+               </Inheritance>
+               <Implements>
+                  <Implement id="org.robotlegs.utilities.localizer.core:ILocalizer"/>
+               </Implements>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.localizer.error">
+      <apiName>org.robotlegs.utilities.localizer.error</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.localizer.error:LocalizerError">
+         <apiName>LocalizerError</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="LocalizerError,org.robotlegs.utilities.localizer.error.LocalizerError"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Error</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="Error"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.localizer.events">
+      <apiName>org.robotlegs.utilities.localizer.events</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.localizer.events:LocalizerEvent">
+         <apiName>LocalizerEvent</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="LocalizerEvent,org.robotlegs.utilities.localizer.events.LocalizerEvent,clone"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.events:Event</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="flash.events:Event"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.localizer.patterns.locale">
+      <apiName>org.robotlegs.utilities.localizer.patterns.locale</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.localizer.patterns.locale:Locale">
+         <apiName>Locale</apiName>
+         <shortdesc>
+	 Abstract Locale implementation.</shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="Locale,org.robotlegs.utilities.localizer.patterns.locale.Locale"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 Abstract <codeph>Locale</codeph> implementation.
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="Object"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.utilities.localizer.patterns.locale:ILocale">
+         <apiName>ILocale</apiName>
+         <shortdesc>
+	 Abstract ILocale interface.</shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="ILocale,org.robotlegs.utilities.localizer.patterns.locale.ILocale"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+            <apiDesc>
+	 Abstract <codeph>ILocale</codeph> interface.
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id=""/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.navigator.controller.install">
+      <apiName>org.robotlegs.utilities.navigator.controller.install</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.navigator.controller.install:InstallNavigatorCommand">
+         <apiName>InstallNavigatorCommand</apiName>
+         <shortdesc>
+	 Map dependencies of Navigator.</shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="InstallNavigatorCommand,org.robotlegs.utilities.navigator.controller.install.InstallNavigatorCommand,execute"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 Map dependencies of <codeph>Navigator</codeph>.
+	 
+	 <p>The following depedencies are available after executing this <codeph>Command</codeph>:</p>
+	 
+	              <ul>
+	 	               <li>
+                     <codeph>INavigator</codeph>
+                  </li>
+	              </ul>
+	 
+	           </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="org.robotlegs.mvcs:Command"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.navigator.controller.page">
+      <apiName>org.robotlegs.utilities.navigator.controller.page</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.navigator.controller.page:NavigateToPageCommand">
+         <apiName>NavigateToPageCommand</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="NavigateToPageCommand,org.robotlegs.utilities.navigator.controller.page.NavigateToPageCommand,event,navigator,execute"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="org.robotlegs.mvcs:Command"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.navigator.core">
+      <apiName>org.robotlegs.utilities.navigator.core</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.navigator.core:INavigator">
+         <apiName>INavigator</apiName>
+         <shortdesc>
+	 Abstract INavigator interface.</shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="INavigator,org.robotlegs.utilities.navigator.core.INavigator,choosenPage,choosenPage,currentPage,currentPage,defaultTransition,defaultTransition,transitioning,transitioning,addPage,addPage,addTransition,addTransition,getPage,getPage,getTransition,getTransition,getTransitionByPageName,getTransitionByPageName,hasPage,hasPage,hasTransition,hasTransition,hasTransitionByPageName,hasTransitionByPageName,navigate,navigate,removePage,removePage,removeTransition,removeTransition,removeTransitionByPageName,removeTransitionByPageName"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+            <apiDesc>
+	 Abstract <codeph>INavigator</codeph> interface.
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id=""/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors>
+                  <Implementor id="org.robotlegs.utilities.navigator.core:Navigator"/>
+               </Implementors>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.utilities.navigator.core:Navigator">
+         <apiName>Navigator</apiName>
+         <shortdesc>
+	 Abstract Navigator implementation.</shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="Navigator,org.robotlegs.utilities.navigator.core.Navigator,choosenPage,choosenPage,currentPage,currentPage,defaultTransition,defaultTransition,transitioning,transitioning,addPage,addPage,addTransition,addTransition,getPage,getPage,getTransition,getTransition,getTransitionByPageName,getTransitionByPageName,hasPage,hasPage,hasTransition,hasTransition,hasTransitionByPageName,hasTransitionByPageName,navigate,navigate,removePage,removePage,removeTransition,removeTransition,removeTransitionByPageName,removeTransitionByPageName"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.robotlegs.utilities.navigator.core:INavigator</apiBaseInterface>
+               <apiBaseClassifier>org.robotlegs.mvcs:Actor</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 Abstract <codeph>Navigator</codeph> implementation.
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="org.robotlegs.mvcs:Actor"/>
+               </Inheritance>
+               <Implements>
+                  <Implement id="org.robotlegs.utilities.navigator.core:INavigator"/>
+               </Implements>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.navigator.error">
+      <apiName>org.robotlegs.utilities.navigator.error</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.navigator.error:NavigatorError">
+         <apiName>NavigatorError</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="NavigatorError,org.robotlegs.utilities.navigator.error.NavigatorError"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Error</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="Error"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.navigator.events">
+      <apiName>org.robotlegs.utilities.navigator.events</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.navigator.events:NavigatorEvent">
+         <apiName>NavigatorEvent</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="NavigatorEvent,org.robotlegs.utilities.navigator.events.NavigatorEvent,NAVIGATE,TRANSITION_IN_COMPLETE,TRANSITION_OUT_COMPLETE,page,clone"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.events:Event</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="flash.events:Event"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.navigator.patterns.page">
+      <apiName>org.robotlegs.utilities.navigator.patterns.page</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.navigator.patterns.page:Page">
+         <apiName>Page</apiName>
+         <shortdesc>
+	 Abstract Page implementation.</shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="Page,org.robotlegs.utilities.navigator.patterns.page.Page,content,content,name"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.robotlegs.utilities.navigator.patterns.page:IPage</apiBaseInterface>
+               <apiBaseClassifier>flash.display:Sprite</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 Abstract <codeph>Page</codeph> implementation.
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="flash.display:Sprite"/>
+               </Inheritance>
+               <Implements>
+                  <Implement id="org.robotlegs.utilities.navigator.patterns.page:IPage"/>
+               </Implements>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.utilities.navigator.patterns.page:IPage">
+         <apiName>IPage</apiName>
+         <shortdesc>
+	 Abstract IPage interface.</shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="IPage,org.robotlegs.utilities.navigator.patterns.page.IPage,content,content,name"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+            <apiDesc>
+	 Abstract <codeph>IPage</codeph> interface.
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id=""/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors>
+                  <Implementor id="org.robotlegs.utilities.navigator.patterns.page:Page"/>
+               </Implementors>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.navigator.patterns.transition">
+      <apiName>org.robotlegs.utilities.navigator.patterns.transition</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.navigator.patterns.transition:ITransition">
+         <apiName>ITransition</apiName>
+         <shortdesc>
+	 Abstract ITransition interface.</shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="ITransition,org.robotlegs.utilities.navigator.patterns.transition.ITransition,transitionIn,transitionIn,transitionInComplete,transitionInComplete,transitionOut,transitionOut,transitionOutComplete,transitionOutComplete"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+            <apiDesc>
+	 Abstract <codeph>ITransition</codeph> interface.
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id=""/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors>
+                  <Implementor id="org.robotlegs.utilities.navigator.patterns.transition:Transition"/>
+               </Implementors>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.utilities.navigator.patterns.transition:Transition">
+         <apiName>Transition</apiName>
+         <shortdesc>
+	 Abstract Transition implementation.</shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="Transition,org.robotlegs.utilities.navigator.patterns.transition.Transition,transitionIn,transitionIn,transitionInComplete,transitionInComplete,transitionOut,transitionOut,transitionOutComplete,transitionOutComplete"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.robotlegs.utilities.navigator.patterns.transition:ITransition</apiBaseInterface>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 Abstract <codeph>Transition</codeph> implementation.
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="Object"/>
+               </Inheritance>
+               <Implements>
+                  <Implement id="org.robotlegs.utilities.navigator.patterns.transition:ITransition"/>
+               </Implements>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.navigator.utils">
+      <apiName>org.robotlegs.utilities.navigator.utils</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.navigator.utils:NavigatorUtil">
+         <apiName>NavigatorUtil</apiName>
+         <shortdesc>
+	 Utility to provide consistent Transition methods.</shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="NavigatorUtil,org.robotlegs.utilities.navigator.utils.NavigatorUtil,setOnTransitionInComplete,setOnTransitionOutComplete"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 Utility to provide consistent <codeph>Transition</codeph> methods.
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="Object"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.router.controller.install">
+      <apiName>org.robotlegs.utilities.router.controller.install</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.router.controller.install:InstallRouterCommand">
+         <apiName>InstallRouterCommand</apiName>
+         <shortdesc>
+	 Map dependencies of Router.</shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="InstallRouterCommand,org.robotlegs.utilities.router.controller.install.InstallRouterCommand,execute"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 Map dependencies of <codeph>Router</codeph>.
+	 
+	 <p>The following depedencies are available after executing this <codeph>Command</codeph>:</p>
+	              <ul>
+	 	               <li>
+                     <codeph>IRouter</codeph>
+                  </li>
+	              </ul>
+	 
+	           </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="org.robotlegs.mvcs:Command"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.router.controller.route">
+      <apiName>org.robotlegs.utilities.router.controller.route</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.router.controller.route:MapEventToRouteCommand">
+         <apiName>MapEventToRouteCommand</apiName>
+         <shortdesc>
+	 Map a Command to a specific Route.</shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="MapEventToRouteCommand,org.robotlegs.utilities.router.controller.route.MapEventToRouteCommand,event,execute"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 Map a <codeph>Command</codeph> to a specific <codeph>Route</codeph>.
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="org.robotlegs.mvcs:Command"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.router.core">
+      <apiName>org.robotlegs.utilities.router.core</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.router.core:IRouter">
+         <apiName>IRouter</apiName>
+         <shortdesc>
+	 Abstract IRouter interface.</shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="IRouter,org.robotlegs.utilities.router.core.IRouter,active,active,pathNames,pathNames,activate,activate,addRoute,addRoute,changeAddress,changeAddress,changeAddressOnly,changeAddressOnly,changeBrowserTitle,changeBrowserTitle,deactivate,deactivate"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+            <apiDesc>
+	 Abstract <codeph>IRouter</codeph> interface.
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id=""/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors>
+                  <Implementor id="org.robotlegs.utilities.router.core:Router"/>
+               </Implementors>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.utilities.router.core:Router">
+         <apiName>Router</apiName>
+         <shortdesc>
+	 Abstract MacroCommand implementation.</shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="Router,org.robotlegs.utilities.router.core.Router,active,active,pathNames,pathNames,activate,activate,addRoute,addRoute,changeAddress,changeAddress,changeAddressOnly,changeAddressOnly,changeBrowserTitle,changeBrowserTitle,deactivate,deactivate"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.robotlegs.utilities.router.core:IRouter</apiBaseInterface>
+               <apiBaseClassifier>org.robotlegs.mvcs:Actor</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 Abstract <codeph>MacroCommand</codeph> implementation.
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="org.robotlegs.mvcs:Actor"/>
+               </Inheritance>
+               <Implements>
+                  <Implement id="org.robotlegs.utilities.router.core:IRouter"/>
+               </Implements>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.router.error">
+      <apiName>org.robotlegs.utilities.router.error</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.router.error:RouterError">
+         <apiName>RouterError</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="RouterError,org.robotlegs.utilities.router.error.RouterError"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Error</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="Error"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.router.events">
+      <apiName>org.robotlegs.utilities.router.events</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.router.events:RouterEvent">
+         <apiName>RouterEvent</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="RouterEvent,org.robotlegs.utilities.router.events.RouterEvent,MAP_EVENT_TO_ROUTE,NO_ROUTE_FOUND,payload,clone"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.events:Event</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="flash.events:Event"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.router.patterns.pattern">
+      <apiName>org.robotlegs.utilities.router.patterns.pattern</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.router.patterns.pattern:Pattern">
+         <apiName>Pattern</apiName>
+         <shortdesc>
+	 Abstract Pattern implementation.</shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="Pattern,org.robotlegs.utilities.router.patterns.pattern.Pattern,name,name,value,value,match,match"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.robotlegs.utilities.router.patterns.pattern:IPattern</apiBaseInterface>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 Abstract <codeph>Pattern</codeph> implementation.
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="Object"/>
+               </Inheritance>
+               <Implements>
+                  <Implement id="org.robotlegs.utilities.router.patterns.pattern:IPattern"/>
+               </Implements>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.utilities.router.patterns.pattern:IPattern">
+         <apiName>IPattern</apiName>
+         <shortdesc>
+	 Abstract IPattern interface.</shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="IPattern,org.robotlegs.utilities.router.patterns.pattern.IPattern,name,name,value,value,match,match"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+            <apiDesc>
+	 Abstract <codeph>IPattern</codeph> interface.
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id=""/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors>
+                  <Implementor id="org.robotlegs.utilities.router.patterns.pattern:Pattern"/>
+               </Implementors>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.router.patterns.route">
+      <apiName>org.robotlegs.utilities.router.patterns.route</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.router.patterns.route:Route">
+         <apiName>Route</apiName>
+         <shortdesc>
+	 Abstract Route implementation.</shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="Route,org.robotlegs.utilities.router.patterns.route.Route,length,type,callProperty,getPayload,match,toString"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiDynamic/>
+               <apiBaseClassifier>flash.utils:Proxy</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 Abstract <codeph>Route</codeph> implementation.
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="flash.utils:Proxy"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities">
+      <apiName>org.robotlegs.utilities</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities:Utilities">
+         <apiName>Utilities</apiName>
+         <shortdesc>
+	 Utility to map dependencies of certain utilities.</shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="Utilities,org.robotlegs.utilities.Utilities,ALL,ASSET_LOADER,NAVIGATOR,ROUTER,mapDependencies"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 Utility to map dependencies of certain utilities.
+	 
+	 <p>Probably the place to do your mappings is in the <codeph>mapInjections</codeph> method
+	 of your <codeph>Context</codeph>. You can simply call the method <codeph>mapDepedencies</codeph>
+	 of <codeph>Utilities</codeph> to do all your mappings for the following utilities.</p>
+	 
+	              <ul>
+	 	               <li>
+                     <codeph>AssetLoader</codeph>
+                  </li>
+	 	               <li>
+                     <codeph>Router</codeph>
+                  </li>
+	              </ul>
+	 
+	           </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="Object"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utils">
+      <apiName>org.robotlegs.utils</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utils:ClassUtil">
+         <apiName>ClassUtil</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="ClassUtil,org.robotlegs.utils.ClassUtil,getEventsFromObject"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="Object"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+</allClasses>

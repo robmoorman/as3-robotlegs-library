@@ -1,0 +1,14 @@
+<apiPackage id="org.robotlegs.utilities.router.error"><apiName>org.robotlegs.utilities.router.error</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.router.error:RouterError"><apiName>RouterError</apiName><shortdesc>
+	 
+	 
+	 </shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Error</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.utilities.router.error:RouterError:RouterError"><apiName>RouterError</apiName><shortdesc>
+		 
+		 
+		 </shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>message</apiItemName><apiType value="any"/><apiData/><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>id</apiItemName><apiType value="any"/><apiData>0</apiData><apiDesc>	 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor></apiClassifier></apiPackage>

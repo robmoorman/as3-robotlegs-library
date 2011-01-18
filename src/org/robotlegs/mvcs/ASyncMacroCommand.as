@@ -1,6 +1,12 @@
 package org.robotlegs.mvcs
 {
+	import flash.events.Event;
+	import flash.utils.getDefinitionByName;
+	import flash.utils.getQualifiedClassName;
+	
 	import org.robotlegs.core.IASyncCommand;
+	import org.robotlegs.core.IReflector;
+	import org.robotlegs.utils.ClassUtil;
 
 	/**
 	 * Abstract <code>ASyncMacroCommand</code> implementation.
@@ -9,6 +15,12 @@ package org.robotlegs.mvcs
 	 */
 	public class ASyncMacroCommand extends Command implements IASyncCommand
 	{
+		[Inject]
+		/**
+		 * 
+		 */
+		public var reflector: IReflector;
+		
 		/**
 		 * @private
 		 */
@@ -18,6 +30,11 @@ package org.robotlegs.mvcs
 		 * @private
 		 */
 		private var commands: Vector.<Command>;
+		
+		/**
+		 * @private
+		 */
+		private var events: Vector.<Event>;
 		
 		/**
 		 * Constructor. 
@@ -49,7 +66,17 @@ package org.robotlegs.mvcs
 		 */
 		final public function onPostConstruct(): void
 		{
+			events = ClassUtil.getEventsFromObject( reflector, this );
+			
+			var event: Event;
+			
+			for each( event in events )
+				injector.mapValue( getDefinitionByName( getQualifiedClassName( event )) as Class, event );
+			
 			initializeASyncMacroCommand();
+			
+			for each( event in events )
+				injector.unmap( getDefinitionByName( getQualifiedClassName( event )) as Class );
 		}
 		
 		/**

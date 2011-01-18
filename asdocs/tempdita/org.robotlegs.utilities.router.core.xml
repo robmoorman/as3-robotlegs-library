@@ -1,0 +1,71 @@
+<apiPackage id="org.robotlegs.utilities.router.core"><apiName>org.robotlegs.utilities.router.core</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.router.core:IRouter"><apiName>IRouter</apiName><shortdesc>
+	 Abstract IRouter interface.</shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 Abstract <codeph>IRouter</codeph> interface.
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="org.robotlegs.utilities.router.core:IRouter:org.robotlegs.utilities.router.core:IRouter:activate"><apiName>activate</apiName><shortdesc>
+		 
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>checkRoutes</apiItemName><apiType value="Boolean"/><apiData>true</apiData><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.router.core:IRouter:org.robotlegs.utilities.router.core:IRouter:addRoute"><apiName>addRoute</apiName><shortdesc>
+		 
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>
+		 </apiDesc><apiOperationClassifier>org.robotlegs.utilities.router.patterns.route:Route</apiOperationClassifier></apiReturn><apiParam><apiItemName>type</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>commandClass</apiItemName><apiType value="Class"/><apiData>null</apiData><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.router.core:IRouter:org.robotlegs.utilities.router.core:IRouter:changeAddressOnly"><apiName>changeAddressOnly</apiName><shortdesc>
+		 
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>value</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.router.core:IRouter:org.robotlegs.utilities.router.core:IRouter:changeAddress"><apiName>changeAddress</apiName><shortdesc>
+		 
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>value</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.router.core:IRouter:org.robotlegs.utilities.router.core:IRouter:changeBrowserTitle"><apiName>changeBrowserTitle</apiName><shortdesc>
+		 Change the title of your browser.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>value</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Change the title of your browser.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.router.core:IRouter:org.robotlegs.utilities.router.core:IRouter:deactivate"><apiName>deactivate</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.robotlegs.utilities.router.core:IRouter:org.robotlegs.utilities.router.core:IRouter:active:get"><apiName>active</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="Boolean"/></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.router.core:IRouter:org.robotlegs.utilities.router.core:IRouter:pathNames:get"><apiName>pathNames</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="Array"/></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.robotlegs.utilities.router.core:Router"><apiName>Router</apiName><shortdesc>
+	 Abstract MacroCommand implementation.</shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.utilities.router.core:IRouter</apiBaseInterface><apiBaseClassifier>org.robotlegs.mvcs:Actor</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 Abstract <codeph>MacroCommand</codeph> implementation.
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.utilities.router.core:Router:Router"><apiName>Router</apiName><shortdesc>
+		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>
+		 Constructor.
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.robotlegs.utilities.router.core:Router:activate"><apiName>activate</apiName><shortdesc conref="org.robotlegs.utilities.router.core.IRouter.activate()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>checkRoutes</apiItemName><apiType value="Boolean"/><apiData>true</apiData></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.router.core.IRouter.activate()">
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.router.core:Router:addRoute"><apiName>addRoute</apiName><shortdesc conref="org.robotlegs.utilities.router.core.IRouter.addRoute()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiOperationClassifier>org.robotlegs.utilities.router.patterns.route:Route</apiOperationClassifier></apiReturn><apiParam><apiItemName>type</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>commandClass</apiItemName><apiType value="Class"/><apiData>null</apiData></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.router.core.IRouter.addRoute()">
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.router.core:Router:changeAddressOnly"><apiName>changeAddressOnly</apiName><shortdesc conref="org.robotlegs.utilities.router.core.IRouter.changeAddressOnly()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>value</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.router.core.IRouter.changeAddressOnly()">
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.router.core:Router:changeAddress"><apiName>changeAddress</apiName><shortdesc conref="org.robotlegs.utilities.router.core.IRouter.changeAddress()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>value</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.router.core.IRouter.changeAddress()">
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.router.core:Router:changeBrowserTitle"><apiName>changeBrowserTitle</apiName><shortdesc conref="org.robotlegs.utilities.router.core.IRouter.changeBrowserTitle()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>value</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.router.core.IRouter.changeBrowserTitle()">
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.router.core:Router:deactivate"><apiName>deactivate</apiName><shortdesc conref="org.robotlegs.utilities.router.core.IRouter.deactivate()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc conref="org.robotlegs.utilities.router.core.IRouter.deactivate()">
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.robotlegs.utilities.router.core:Router:active:get"><apiName>active</apiName><shortdesc conref="org.robotlegs.utilities.router.core.IRouter.active">
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="Boolean"/></apiValueDef><apiDesc conref="org.robotlegs.utilities.router.core.IRouter.active">
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.router.core:Router:pathNames:get"><apiName>pathNames</apiName><shortdesc conref="org.robotlegs.utilities.router.core.IRouter.pathNames">
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="Array"/></apiValueDef><apiDesc conref="org.robotlegs.utilities.router.core.IRouter.pathNames">
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage>

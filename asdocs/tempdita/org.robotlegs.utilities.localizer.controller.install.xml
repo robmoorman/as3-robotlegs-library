@@ -1,0 +1,14 @@
+<apiPackage id="org.robotlegs.utilities.localizer.controller.install"><apiName>org.robotlegs.utilities.localizer.controller.install</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.localizer.controller.install:InstallLocalizerCommand"><apiName>InstallLocalizerCommand</apiName><shortdesc>
+	 Map dependencies of Localizer.</shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 Map dependencies of <codeph>Localizer</codeph>.
+	 
+	 <p>The following depedencies are available after executing this <codeph>Command</codeph>:</p>
+	 
+	 <ul>
+	 	<li><codeph>ILocalizer</codeph></li>
+	 </ul>
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="org.robotlegs.utilities.localizer.controller.install:InstallLocalizerCommand:execute"><apiName>execute</apiName><shortdesc>
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiIsOverride/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 </apiDesc></apiOperationDetail><apiInheritDoc/></apiOperation></apiClassifier></apiPackage>

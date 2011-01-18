@@ -1,0 +1,30 @@
+<apiPackage id="org.robotlegs.utilities"><apiName>org.robotlegs.utilities</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities:Utilities"><apiName>Utilities</apiName><shortdesc>
+	 Utility to map dependencies of certain utilities.</shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 Utility to map dependencies of certain utilities.
+	 
+	 <p>Probably the place to do your mappings is in the <codeph>mapInjections</codeph> method
+	 of your <codeph>Context</codeph>. You can simply call the method <codeph>mapDepedencies</codeph>
+	 of <codeph>Utilities</codeph> to do all your mappings for the following utilities.</p>
+	 
+	 <ul>
+	 	<li><codeph>AssetLoader</codeph></li>
+	 	<li><codeph>Router</codeph></li>
+	 </ul>
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="org.robotlegs.utilities:Utilities:mapDependencies"><apiName>mapDependencies</apiName><shortdesc>
+		 Map dependencies of certain utilities.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiStatic/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>commandMap</apiItemName><apiType value="org.robotlegs.core:ICommandMap"/><apiDesc>The <codeph>ICommandMap</codeph> of Robotlegs.
+		 </apiDesc></apiParam><apiParam><apiItemName>utilities</apiItemName><apiType value="Array"/><apiDesc>The utilities to map the dependencies of, must be one or multiple constants of this <codeph>Class</codeph>.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Map dependencies of certain utilities.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.robotlegs.utilities:Utilities:ALL"><apiName>ALL</apiName><shortdesc>
+		 Map dependencies of all utilities.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>all</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Map dependencies of all utilities.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities:Utilities:ASSET_LOADER"><apiName>ASSET_LOADER</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.controller.install.InstallAssetLoaderCommand">
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiType value="Class"/></apiValueDef><apiDesc conref="org.robotlegs.utilities.assetloader.controller.install.InstallAssetLoaderCommand">
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities:Utilities:NAVIGATOR"><apiName>NAVIGATOR</apiName><shortdesc conref="org.robotlegs.utilities.navigator.controller.install.InstallNavigatorCommand">
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiType value="Class"/></apiValueDef><apiDesc conref="org.robotlegs.utilities.navigator.controller.install.InstallNavigatorCommand">
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities:Utilities:ROUTER"><apiName>ROUTER</apiName><shortdesc conref="org.robotlegs.utilities.router.controller.install.InstallRouterCommand">
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiType value="Class"/></apiValueDef><apiDesc conref="org.robotlegs.utilities.router.controller.install.InstallRouterCommand">
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage>

@@ -1,0 +1,18 @@
+<apiPackage id="org.robotlegs.utilities.navigator.utils"><apiName>org.robotlegs.utilities.navigator.utils</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.navigator.utils:NavigatorUtil"><apiName>NavigatorUtil</apiName><shortdesc>
+	 Utility to provide consistent Transition methods.</shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 Utility to provide consistent <codeph>Transition</codeph> methods.
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="org.robotlegs.utilities.navigator.utils:NavigatorUtil:setOnTransitionInComplete"><apiName>setOnTransitionInComplete</apiName><shortdesc>
+		 
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiStatic/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>page</apiItemName><apiOperationClassifier>org.robotlegs.utilities.navigator.patterns.page:IPage</apiOperationClassifier><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.navigator.utils:NavigatorUtil:setOnTransitionOutComplete"><apiName>setOnTransitionOutComplete</apiName><shortdesc>
+		 
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiStatic/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>page</apiItemName><apiOperationClassifier>org.robotlegs.utilities.navigator.patterns.page:IPage</apiOperationClassifier><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 
+		 
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier></apiPackage>

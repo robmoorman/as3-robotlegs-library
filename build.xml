@@ -10,6 +10,7 @@
 		<antcall target="build-tests" />
 		<antcall target="clean-asdocs-output" />
 		<antcall target="build-asdocs" />
+		<antcall target="update-swc-with-asdocs" />
 	</target>
 	
 	<target name="build-swc">
@@ -42,7 +43,18 @@
 			<arg line="-source-path ${dir.src}" />
 			<arg line="-doc-sources ${dir.src}" />
 			<arg line="-external-library-path+=${dir.libs}" />
+			<arg line="-keep-xml=true" />
 		</exec>
+	</target>
+	
+	<target name="update-swc-with-asdocs">
+		<zip destfile="${dir.bin}/${version}.swc" update="true">
+			<zipfileset dir="${dir.asdocs}/tempdita" prefix="docs">
+				<include name="*.*" />
+				<exclude name="ASDoc_Config.xml" />
+				<exclude name="overviews.xml" />
+			</zipfileset>
+		</zip>
 	</target>
 	
 </project>

@@ -1,0 +1,38 @@
+<apiPackage id="org.robotlegs.utilities.navigator.patterns.transition"><apiName>org.robotlegs.utilities.navigator.patterns.transition</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.navigator.patterns.transition:ITransition"><apiName>ITransition</apiName><shortdesc>
+	 Abstract ITransition interface.</shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 Abstract <codeph>ITransition</codeph> interface.
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="org.robotlegs.utilities.navigator.patterns.transition:ITransition:org.robotlegs.utilities.navigator.patterns.transition:ITransition:transitionInComplete"><apiName>transitionInComplete</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>page</apiItemName><apiOperationClassifier>org.robotlegs.utilities.navigator.patterns.page:IPage</apiOperationClassifier><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.navigator.patterns.transition:ITransition:org.robotlegs.utilities.navigator.patterns.transition:ITransition:transitionIn"><apiName>transitionIn</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>page</apiItemName><apiOperationClassifier>org.robotlegs.utilities.navigator.patterns.page:IPage</apiOperationClassifier><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.navigator.patterns.transition:ITransition:org.robotlegs.utilities.navigator.patterns.transition:ITransition:transitionOutComplete"><apiName>transitionOutComplete</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>page</apiItemName><apiOperationClassifier>org.robotlegs.utilities.navigator.patterns.page:IPage</apiOperationClassifier><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.navigator.patterns.transition:ITransition:org.robotlegs.utilities.navigator.patterns.transition:ITransition:transitionOut"><apiName>transitionOut</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>page</apiItemName><apiOperationClassifier>org.robotlegs.utilities.navigator.patterns.page:IPage</apiOperationClassifier><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="org.robotlegs.utilities.navigator.patterns.transition:Transition"><apiName>Transition</apiName><shortdesc>
+	 Abstract Transition implementation.</shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.utilities.navigator.patterns.transition:ITransition</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 Abstract <codeph>Transition</codeph> implementation.
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.utilities.navigator.patterns.transition:Transition:Transition"><apiName>Transition</apiName><shortdesc>
+		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>
+		 Constructor.
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.robotlegs.utilities.navigator.patterns.transition:Transition:transitionInComplete"><apiName>transitionInComplete</apiName><shortdesc conref="org.robotlegs.utilities.navigator.patterns.transition.ITransition.transitionInComplete()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>page</apiItemName><apiOperationClassifier>org.robotlegs.utilities.navigator.patterns.page:IPage</apiOperationClassifier></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.navigator.patterns.transition.ITransition.transitionInComplete()">
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.navigator.patterns.transition:Transition:transitionIn"><apiName>transitionIn</apiName><shortdesc conref="org.robotlegs.utilities.navigator.patterns.transition.ITransition.transitionIn()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>page</apiItemName><apiOperationClassifier>org.robotlegs.utilities.navigator.patterns.page:IPage</apiOperationClassifier></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.navigator.patterns.transition.ITransition.transitionIn()">
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.navigator.patterns.transition:Transition:transitionOutComplete"><apiName>transitionOutComplete</apiName><shortdesc conref="org.robotlegs.utilities.navigator.patterns.transition.ITransition.transitionOutComplete()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>page</apiItemName><apiOperationClassifier>org.robotlegs.utilities.navigator.patterns.page:IPage</apiOperationClassifier></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.navigator.patterns.transition.ITransition.transitionOutComplete()">
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.navigator.patterns.transition:Transition:transitionOut"><apiName>transitionOut</apiName><shortdesc conref="org.robotlegs.utilities.navigator.patterns.transition.ITransition.transitionOut()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>page</apiItemName><apiOperationClassifier>org.robotlegs.utilities.navigator.patterns.page:IPage</apiOperationClassifier></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.navigator.patterns.transition.ITransition.transitionOut()">
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier></apiPackage>

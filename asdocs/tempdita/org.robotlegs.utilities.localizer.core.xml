@@ -1,0 +1,14 @@
+<apiPackage id="org.robotlegs.utilities.localizer.core"><apiName>org.robotlegs.utilities.localizer.core</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.localizer.core:ILocalizer"><apiName>ILocalizer</apiName><shortdesc>
+	 Abstract ILocalizer interface.</shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 Abstract <codeph>ILocalizer</codeph> interface.
+	 
+	 </apiDesc></apiClassifierDetail></apiClassifier><apiClassifier id="org.robotlegs.utilities.localizer.core:Localizer"><apiName>Localizer</apiName><shortdesc>
+	 Abstract Localizer implementation.</shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.utilities.localizer.core:ILocalizer</apiBaseInterface><apiBaseClassifier>org.robotlegs.mvcs:Actor</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 Abstract <codeph>Localizer</codeph> implementation.
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.utilities.localizer.core:Localizer:Localizer"><apiName>Localizer</apiName><shortdesc>
+		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>
+		 Constructor.
+		 </apiDesc></apiConstructorDetail></apiConstructor></apiClassifier></apiPackage>
