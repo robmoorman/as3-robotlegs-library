@@ -4,26 +4,12 @@ This package offers your some nifty utilities and extensions for the [Robotlegs 
 
 * Extensions
 	* Commands
-		* MacroCommand
-		* ASyncCommand
-		* ASyncMacroCommand
+		* [MacroCommand](https://github.com/moorinteractive/as3-robotlegs-library/wiki/macrocommand)
+		* [ASyncCommand](https://github.com/moorinteractive/as3-robotlegs-library/wiki/asynccommand)
+		* [ASyncMacroCommand](https://github.com/moorinteractive/as3-robotlegs-library/wiki/asyncmacrocommand)
 * Utilities
-	* AssetLoader
-	* Navigator
-	* Router
+	* [AssetLoader](https://github.com/moorinteractive/as3-robotlegs-library/wiki/assetloader)
+	* [Navigator](https://github.com/moorinteractive/as3-robotlegs-library/wiki/navigator)
+	* [Router](https://github.com/moorinteractive/as3-robotlegs-library/wiki/router)
 
-## Extensions
-
-### MacroCommand
-
-### ASyncCommand
-
-### ASyncMacroCommand
-
-## Utilities
-
-### AssetLoader
-
-### Navigator
-
-### Router
+For further documentation, please read our [wiki pages](https://github.com/moorinteractive/as3-robotlegs-library/wiki).
