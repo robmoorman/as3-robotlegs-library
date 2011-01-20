@@ -2,7 +2,7 @@
 
 * v0.0.2
 	* Fixed ASDocs in swc
-	* Added `TransitionEvent.TRANSITION_IN` and `TransitionEvent.TRANSITION_IN` dispatching on page navigation
+	* Added `NavigatorEvent.TRANSITION_IN` and `NavigatorEvent.TRANSITION_OUT` dispatching on page navigation
 
 * v0.0.1
 	* Prototype
