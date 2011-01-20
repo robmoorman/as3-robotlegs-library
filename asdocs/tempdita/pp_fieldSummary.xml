@@ -471,9 +471,17 @@
 		 
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.navigator.events.NavigatorEvent.TRANSITION_IN_COMPLETE</apiData><apiType value="String"/></apiValueDef><apiDesc>
 		 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.navigator.events:NavigatorEvent:TRANSITION_IN"><apiName>TRANSITION_IN</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.navigator.events.NavigatorEvent.TRANSITION_IN</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.navigator.events:NavigatorEvent:TRANSITION_OUT_COMPLETE"><apiName>TRANSITION_OUT_COMPLETE</apiName><shortdesc>
 		 
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.navigator.events.NavigatorEvent.TRANSITION_OUT_COMPLETE</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.navigator.events:NavigatorEvent:TRANSITION_OUT"><apiName>TRANSITION_OUT</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.navigator.events.NavigatorEvent.TRANSITION_OUT</apiData><apiType value="String"/></apiValueDef><apiDesc>
 		 
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.navigator.events:NavigatorEvent:page"><apiName>page</apiName><shortdesc>
 		 

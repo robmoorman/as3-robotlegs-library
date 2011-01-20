@@ -64,6 +64,8 @@ package org.robotlegs.utilities.navigator.controller.page
 			
 			IEventDispatcher( page ).addEventListener( type, closure );
 			
+			IEventDispatcher( page ).dispatchEvent( new NavigatorEvent( transitionIn ? NavigatorEvent.TRANSITION_IN : NavigatorEvent.TRANSITION_OUT, page ));
+			
 			if( page is ITransition ) {
 				ITransition( page )[ property ]( page );
 			}

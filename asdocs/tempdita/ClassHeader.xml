@@ -1325,7 +1325,7 @@
             <asMetadata/>
          </prolog>
             <meta name="keywords"
-               content="NavigatorEvent,org.robotlegs.utilities.navigator.events.NavigatorEvent,NAVIGATE,TRANSITION_IN_COMPLETE,TRANSITION_OUT_COMPLETE,page,clone"/>
+               content="NavigatorEvent,org.robotlegs.utilities.navigator.events.NavigatorEvent,NAVIGATE,TRANSITION_IN,TRANSITION_IN_COMPLETE,TRANSITION_OUT,TRANSITION_OUT_COMPLETE,page,clone"/>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiAccess value="public"/>

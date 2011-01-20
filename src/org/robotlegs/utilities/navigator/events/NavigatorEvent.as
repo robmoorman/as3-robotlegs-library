@@ -19,7 +19,17 @@ package org.robotlegs.utilities.navigator.events
 		/**
 		 * 
 		 */
+		public static const TRANSITION_IN: String = 'org.robotlegs.utilities.navigator.events.NavigatorEvent.TRANSITION_IN';
+		
+		/**
+		 * 
+		 */
 		public static const TRANSITION_IN_COMPLETE: String = 'org.robotlegs.utilities.navigator.events.NavigatorEvent.TRANSITION_IN_COMPLETE';
+		
+		/**
+		 * 
+		 */
+		public static const TRANSITION_OUT: String = 'org.robotlegs.utilities.navigator.events.NavigatorEvent.TRANSITION_OUT';
 		
 		/**
 		 * 

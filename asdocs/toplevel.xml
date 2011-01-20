@@ -2325,7 +2325,17 @@
 		 
 		 ]]></description>
 </field>
+<field name='TRANSITION_IN' fullname='org.robotlegs.utilities.navigator.events:NavigatorEvent/TRANSITION_IN' type='String' isStatic='true' isConst='true' defaultValue='org.robotlegs.utilities.navigator.events.NavigatorEvent.TRANSITION_IN' >
+<description><![CDATA[
+		 
+		 ]]></description>
+</field>
 <field name='TRANSITION_OUT_COMPLETE' fullname='org.robotlegs.utilities.navigator.events:NavigatorEvent/TRANSITION_OUT_COMPLETE' type='String' isStatic='true' isConst='true' defaultValue='org.robotlegs.utilities.navigator.events.NavigatorEvent.TRANSITION_OUT_COMPLETE' >
+<description><![CDATA[
+		 
+		 ]]></description>
+</field>
+<field name='TRANSITION_OUT' fullname='org.robotlegs.utilities.navigator.events:NavigatorEvent/TRANSITION_OUT' type='String' isStatic='true' isConst='true' defaultValue='org.robotlegs.utilities.navigator.events.NavigatorEvent.TRANSITION_OUT' >
 <description><![CDATA[
 		 
 		 ]]></description>
