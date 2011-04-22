@@ -1,0 +1,18 @@
+<apiPackage id="org.robotlegs.utilities.localizer.controller.data"><apiName>org.robotlegs.utilities.localizer.controller.data</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.localizer.controller.data:LocalizeDataCommand"><apiName>LocalizeDataCommand</apiName><shortdesc>
+	 
+	 
+	 </shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="org.robotlegs.utilities.localizer.controller.data:LocalizeDataCommand:execute"><apiName>execute</apiName><shortdesc>
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiIsOverride/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 </apiDesc></apiOperationDetail><apiInheritDoc/></apiOperation><apiValue id="org.robotlegs.utilities.localizer.controller.data:LocalizeDataCommand:event"><apiName>event</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.localizer.events:LocalizerEvent</apiValueClassifier></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.localizer.controller.data:LocalizeDataCommand:localizer"><apiName>localizer</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.localizer.core:ILocalizer</apiValueClassifier></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage>

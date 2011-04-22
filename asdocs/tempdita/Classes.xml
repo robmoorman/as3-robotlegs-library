@@ -222,6 +222,12 @@
 	 
 	 </apiDesc>
          </apiClassifierDetail>
+         <related-links>
+            <link href=""
+                  invalidHref="https.//github.com/moorinteractive/as3-robotlegs-library/wiki/assetloader.xml">
+               <linktext>https://github.com/moorinteractive/as3-robotlegs-library/wiki/assetloader</linktext>
+            </link>
+         </related-links>
          <Keywords>
             <meta name="keywords"
                   content="IAssetLoader,org.robotlegs.utilities.assetloader.core.IAssetLoader,getAsset,getAsset,getAssetByUrl,getAssetByUrl,getGroup,getGroup,hasAsset,hasAsset,hasAssetByUrl,hasAssetByUrl,hasGroup,hasGroup,instantiateAsset,instantiateGroup,load,load,loadGroup,loadGroup,removeAsset,removeAsset,removeAssetByUrl,removeAssetByUrl,removeGroup,removeGroup"/>
@@ -250,6 +256,12 @@
 	 
 	 </apiDesc>
          </apiClassifierDetail>
+         <related-links>
+            <link href=""
+                  invalidHref="https.//github.com/moorinteractive/as3-robotlegs-library/wiki/assetloader.xml">
+               <linktext>https://github.com/moorinteractive/as3-robotlegs-library/wiki/assetloader</linktext>
+            </link>
+         </related-links>
          <Keywords>
             <meta name="keywords"
                   content="AssetLoader,org.robotlegs.utilities.assetloader.core.AssetLoader,getAsset,getAsset,getAssetByUrl,getAssetByUrl,getGroup,getGroup,hasAsset,hasAsset,hasAssetByUrl,hasAssetByUrl,hasGroup,hasGroup,instantiateAsset,instantiateGroup,load,load,loadGroup,loadGroup,removeAsset,removeAsset,removeAssetByUrl,removeAssetByUrl,removeGroup,removeGroup"/>
@@ -635,6 +647,37 @@
          </Keywords>
       </apiClassifier>
    </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.localizer.controller.data">
+      <apiName>org.robotlegs.utilities.localizer.controller.data</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.localizer.controller.data:LocalizeDataCommand">
+         <apiName>LocalizeDataCommand</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+         </apiClassifierDetail>
+         <Keywords>
+            <meta name="keywords"
+                  content="LocalizeDataCommand,org.robotlegs.utilities.localizer.controller.data.LocalizeDataCommand,event,localizer,execute"/>
+         </Keywords>
+      </apiClassifier>
+   </apiPackage>
    <apiPackage id="org.robotlegs.utilities.localizer.controller.install">
       <apiName>org.robotlegs.utilities.localizer.controller.install</apiName>
       <apiDetail/>
@@ -696,9 +739,15 @@
 	 
 	 </apiDesc>
          </apiClassifierDetail>
+         <related-links>
+            <link href=""
+                  invalidHref="https.//github.com/moorinteractive/as3-robotlegs-library/wiki/localizer.xml">
+               <linktext>https://github.com/moorinteractive/as3-robotlegs-library/wiki/localizer</linktext>
+            </link>
+         </related-links>
          <Keywords>
             <meta name="keywords"
-                  content="ILocalizer,org.robotlegs.utilities.localizer.core.ILocalizer"/>
+                  content="ILocalizer,org.robotlegs.utilities.localizer.core.ILocalizer,iterateObjectsInCustomData,iterateObjectsInCustomData,addLocale,addLocale,getLocale,getLocale,hasLocale,hasLocale,localize,localize,localizeCustomData,localizeCustomData,removeLocale,removeLocale"/>
          </Keywords>
       </apiClassifier>
       <apiClassifier id="org.robotlegs.utilities.localizer.core:Localizer">
@@ -722,9 +771,15 @@
 	 
 	 </apiDesc>
          </apiClassifierDetail>
+         <related-links>
+            <link href=""
+                  invalidHref="https.//github.com/moorinteractive/as3-robotlegs-library/wiki/localizer.xml">
+               <linktext>https://github.com/moorinteractive/as3-robotlegs-library/wiki/localizer</linktext>
+            </link>
+         </related-links>
          <Keywords>
             <meta name="keywords"
-                  content="Localizer,org.robotlegs.utilities.localizer.core.Localizer"/>
+                  content="Localizer,org.robotlegs.utilities.localizer.core.Localizer,iterateObjectsInCustomData,iterateObjectsInCustomData,addLocale,addLocale,getLocale,getLocale,hasLocale,hasLocale,localize,localize,localizeCustomData,localizeCustomData,removeLocale,removeLocale"/>
          </Keywords>
       </apiClassifier>
    </apiPackage>
@@ -786,7 +841,7 @@
          </apiClassifierDetail>
          <Keywords>
             <meta name="keywords"
-                  content="LocalizerEvent,org.robotlegs.utilities.localizer.events.LocalizerEvent,clone"/>
+                  content="LocalizerEvent,org.robotlegs.utilities.localizer.events.LocalizerEvent,LOCALIZE_DATA,data,locale,prefix,clone"/>
          </Keywords>
       </apiClassifier>
    </apiPackage>
@@ -806,6 +861,7 @@
             <apiClassifierDef>
                <apiAccess value="public"/>
                <apiStatic/>
+               <apiBaseInterface>org.robotlegs.utilities.localizer.patterns.locale:ILocale</apiBaseInterface>
                <apiBaseClassifier>Object</apiBaseClassifier>
             </apiClassifierDef>
             <apiDesc>
@@ -815,7 +871,7 @@
          </apiClassifierDetail>
          <Keywords>
             <meta name="keywords"
-                  content="Locale,org.robotlegs.utilities.localizer.patterns.locale.Locale"/>
+                  content="Locale,org.robotlegs.utilities.localizer.patterns.locale.Locale,code,code,data,data"/>
          </Keywords>
       </apiClassifier>
       <apiClassifier id="org.robotlegs.utilities.localizer.patterns.locale:ILocale">
@@ -841,7 +897,7 @@
          </apiClassifierDetail>
          <Keywords>
             <meta name="keywords"
-                  content="ILocale,org.robotlegs.utilities.localizer.patterns.locale.ILocale"/>
+                  content="ILocale,org.robotlegs.utilities.localizer.patterns.locale.ILocale,code,code,data,data"/>
          </Keywords>
       </apiClassifier>
    </apiPackage>
@@ -937,6 +993,12 @@
 	 
 	 </apiDesc>
          </apiClassifierDetail>
+         <related-links>
+            <link href=""
+                  invalidHref="https.//github.com/moorinteractive/as3-robotlegs-library/wiki/navigator.xml">
+               <linktext>https://github.com/moorinteractive/as3-robotlegs-library/wiki/navigator</linktext>
+            </link>
+         </related-links>
          <Keywords>
             <meta name="keywords"
                   content="INavigator,org.robotlegs.utilities.navigator.core.INavigator,choosenPage,choosenPage,currentPage,currentPage,defaultTransition,defaultTransition,transitioning,transitioning,addPage,addPage,addTransition,addTransition,getPage,getPage,getTransition,getTransition,getTransitionByPageName,getTransitionByPageName,hasPage,hasPage,hasTransition,hasTransition,hasTransitionByPageName,hasTransitionByPageName,navigate,navigate,removePage,removePage,removeTransition,removeTransition,removeTransitionByPageName,removeTransitionByPageName"/>
@@ -963,6 +1025,12 @@
 	 
 	 </apiDesc>
          </apiClassifierDetail>
+         <related-links>
+            <link href=""
+                  invalidHref="https.//github.com/moorinteractive/as3-robotlegs-library/wiki/navigator.xml">
+               <linktext>https://github.com/moorinteractive/as3-robotlegs-library/wiki/navigator</linktext>
+            </link>
+         </related-links>
          <Keywords>
             <meta name="keywords"
                   content="Navigator,org.robotlegs.utilities.navigator.core.Navigator,choosenPage,choosenPage,currentPage,currentPage,defaultTransition,defaultTransition,transitioning,transitioning,addPage,addPage,addTransition,addTransition,getPage,getPage,getTransition,getTransition,getTransitionByPageName,getTransitionByPageName,hasPage,hasPage,hasTransition,hasTransition,hasTransitionByPageName,hasTransitionByPageName,navigate,navigate,removePage,removePage,removeTransition,removeTransition,removeTransitionByPageName,removeTransitionByPageName"/>
@@ -1261,6 +1329,12 @@
 	 
 	 </apiDesc>
          </apiClassifierDetail>
+         <related-links>
+            <link href=""
+                  invalidHref="https.//github.com/moorinteractive/as3-robotlegs-library/wiki/router.xml">
+               <linktext>https://github.com/moorinteractive/as3-robotlegs-library/wiki/router</linktext>
+            </link>
+         </related-links>
          <Keywords>
             <meta name="keywords"
                   content="IRouter,org.robotlegs.utilities.router.core.IRouter,active,active,pathNames,pathNames,activate,activate,addRoute,addRoute,changeAddress,changeAddress,changeAddressOnly,changeAddressOnly,changeBrowserTitle,changeBrowserTitle,deactivate,deactivate"/>
@@ -1287,6 +1361,12 @@
 	 
 	 </apiDesc>
          </apiClassifierDetail>
+         <related-links>
+            <link href=""
+                  invalidHref="https.//github.com/moorinteractive/as3-robotlegs-library/wiki/router.xml">
+               <linktext>https://github.com/moorinteractive/as3-robotlegs-library/wiki/router</linktext>
+            </link>
+         </related-links>
          <Keywords>
             <meta name="keywords"
                   content="Router,org.robotlegs.utilities.router.core.Router,active,active,pathNames,pathNames,activate,activate,addRoute,addRoute,changeAddress,changeAddress,changeAddressOnly,changeAddressOnly,changeBrowserTitle,changeBrowserTitle,deactivate,deactivate"/>
@@ -1478,7 +1558,7 @@
          </apiClassifierDetail>
          <Keywords>
             <meta name="keywords"
-                  content="Utilities,org.robotlegs.utilities.Utilities,ALL,ASSET_LOADER,NAVIGATOR,ROUTER,mapDependencies"/>
+                  content="Utilities,org.robotlegs.utilities.Utilities,ALL,ASSET_LOADER,LOCALIZER,NAVIGATOR,ROUTER,mapDependencies"/>
          </Keywords>
       </apiClassifier>
    </apiPackage>

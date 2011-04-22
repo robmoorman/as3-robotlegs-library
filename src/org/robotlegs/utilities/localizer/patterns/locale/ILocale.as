@@ -7,6 +7,14 @@ package org.robotlegs.utilities.localizer.patterns.locale
 	 */
 	public interface ILocale
 	{
+		/**
+		 * 
+		 */
+		function get code(): String;
 		
+		/**
+		 * 
+		 */
+		function get data(): Object;
 	}
 }

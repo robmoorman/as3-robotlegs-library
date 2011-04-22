@@ -7,6 +7,7 @@ package org.robotlegs.utilities.assetloader.core
 	 * 
 	 * 
 	 * @author r.moorman
+	 * @see https://github.com/moorinteractive/as3-robotlegs-library/wiki/assetloader
 	 */
 	public interface IAssetLoader
 	{

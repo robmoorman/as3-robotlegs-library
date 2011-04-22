@@ -332,7 +332,22 @@
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 
 	 
-	 </apiDesc></apiClassifierDetail></apiClassifier></apiPackage><apiPackage id="org.robotlegs.utilities.localizer.controller.install"><apiName>org.robotlegs.utilities.localizer.controller.install</apiName><apiClassifier id="org.robotlegs.utilities.localizer.controller.install:InstallLocalizerCommand"><apiName>InstallLocalizerCommand</apiName><shortdesc>
+	 </apiDesc></apiClassifierDetail></apiClassifier></apiPackage><apiPackage id="org.robotlegs.utilities.localizer.controller.data"><apiName>org.robotlegs.utilities.localizer.controller.data</apiName><apiClassifier id="org.robotlegs.utilities.localizer.controller.data:LocalizeDataCommand"><apiName>LocalizeDataCommand</apiName><shortdesc>
+	 
+	 
+	 </shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 
+	 
+	 </apiDesc></apiClassifierDetail><apiValue id="org.robotlegs.utilities.localizer.controller.data:LocalizeDataCommand:event"><apiName>event</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.localizer.events:LocalizerEvent</apiValueClassifier></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.localizer.controller.data:LocalizeDataCommand:localizer"><apiName>localizer</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.localizer.core:ILocalizer</apiValueClassifier></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage><apiPackage id="org.robotlegs.utilities.localizer.controller.install"><apiName>org.robotlegs.utilities.localizer.controller.install</apiName><apiClassifier id="org.robotlegs.utilities.localizer.controller.install:InstallLocalizerCommand"><apiName>InstallLocalizerCommand</apiName><shortdesc>
 	 Map dependencies of Localizer.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Map dependencies of <codeph>Localizer</codeph>.
@@ -348,12 +363,16 @@
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
 	 Abstract <codeph>ILocalizer</codeph> interface.
 	 
-	 </apiDesc></apiClassifierDetail></apiClassifier><apiClassifier id="org.robotlegs.utilities.localizer.core:Localizer"><apiName>Localizer</apiName><shortdesc>
+	 </apiDesc></apiClassifierDetail><apiValue id="org.robotlegs.utilities.localizer.core:ILocalizer:org.robotlegs.utilities.localizer.core:ILocalizer:iterateObjectsInCustomData:get"><apiName>iterateObjectsInCustomData</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Boolean"/></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.robotlegs.utilities.localizer.core:Localizer"><apiName>Localizer</apiName><shortdesc>
 	 Abstract Localizer implementation.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.utilities.localizer.core:ILocalizer</apiBaseInterface><apiBaseClassifier>org.robotlegs.mvcs:Actor</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Abstract <codeph>Localizer</codeph> implementation.
 	 
-	 </apiDesc></apiClassifierDetail></apiClassifier></apiPackage><apiPackage id="org.robotlegs.utilities.localizer.error"><apiName>org.robotlegs.utilities.localizer.error</apiName><apiClassifier id="org.robotlegs.utilities.localizer.error:LocalizerError"><apiName>LocalizerError</apiName><shortdesc>
+	 </apiDesc></apiClassifierDetail><apiValue id="org.robotlegs.utilities.localizer.core:Localizer:iterateObjectsInCustomData:get"><apiName>iterateObjectsInCustomData</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Boolean"/></apiValueDef><apiDesc/></apiValueDetail></apiValue></apiClassifier></apiPackage><apiPackage id="org.robotlegs.utilities.localizer.error"><apiName>org.robotlegs.utilities.localizer.error</apiName><apiClassifier id="org.robotlegs.utilities.localizer.error:LocalizerError"><apiName>LocalizerError</apiName><shortdesc>
 	 
 	 
 	 </shortdesc><prolog><author>r.moorman
@@ -367,17 +386,50 @@
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>flash.events:Event</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 
 	 
-	 </apiDesc></apiClassifierDetail></apiClassifier></apiPackage><apiPackage id="org.robotlegs.utilities.localizer.patterns.locale"><apiName>org.robotlegs.utilities.localizer.patterns.locale</apiName><apiClassifier id="org.robotlegs.utilities.localizer.patterns.locale:Locale"><apiName>Locale</apiName><shortdesc>
+	 </apiDesc></apiClassifierDetail><apiValue id="org.robotlegs.utilities.localizer.events:LocalizerEvent:LOCALIZE_DATA"><apiName>LOCALIZE_DATA</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.localizer.events.LocalizerEvent.LOCALIZE_DATA</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.localizer.events:LocalizerEvent:data"><apiName>data</apiName><shortdesc>
+		 
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiType value="Object"/><apiDefaultValue>null
+		 </apiDefaultValue></apiValueDef><apiDesc>
+		 
+		 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.localizer.events:LocalizerEvent:locale"><apiName>locale</apiName><shortdesc>
+		 
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.localizer.patterns.locale:ILocale</apiValueClassifier><apiDefaultValue>null
+		 </apiDefaultValue></apiValueDef><apiDesc>
+		 
+		 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.localizer.events:LocalizerEvent:prefix"><apiName>prefix</apiName><shortdesc>
+		 
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiType value="String"/><apiDefaultValue>null
+		 </apiDefaultValue></apiValueDef><apiDesc>
+		 
+		 
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage><apiPackage id="org.robotlegs.utilities.localizer.patterns.locale"><apiName>org.robotlegs.utilities.localizer.patterns.locale</apiName><apiClassifier id="org.robotlegs.utilities.localizer.patterns.locale:Locale"><apiName>Locale</apiName><shortdesc>
 	 Abstract Locale implementation.</shortdesc><prolog><author>r.moorman
-	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.utilities.localizer.patterns.locale:ILocale</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Abstract <codeph>Locale</codeph> implementation.
 	 
-	 </apiDesc></apiClassifierDetail></apiClassifier><apiClassifier id="org.robotlegs.utilities.localizer.patterns.locale:ILocale"><apiName>ILocale</apiName><shortdesc>
+	 </apiDesc></apiClassifierDetail><apiValue id="org.robotlegs.utilities.localizer.patterns.locale:Locale:code:get"><apiName>code</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc/></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.localizer.patterns.locale:Locale:data:get"><apiName>data</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="Object"/></apiValueDef><apiDesc/></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.robotlegs.utilities.localizer.patterns.locale:ILocale"><apiName>ILocale</apiName><shortdesc>
 	 Abstract ILocale interface.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
 	 Abstract <codeph>ILocale</codeph> interface.
 	 
-	 </apiDesc></apiClassifierDetail></apiClassifier></apiPackage><apiPackage id="org.robotlegs.utilities.navigator.controller.install"><apiName>org.robotlegs.utilities.navigator.controller.install</apiName><apiClassifier id="org.robotlegs.utilities.navigator.controller.install:InstallNavigatorCommand"><apiName>InstallNavigatorCommand</apiName><shortdesc>
+	 </apiDesc></apiClassifierDetail><apiValue id="org.robotlegs.utilities.localizer.patterns.locale:ILocale:org.robotlegs.utilities.localizer.patterns.locale:ILocale:code:get"><apiName>code</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.localizer.patterns.locale:ILocale:org.robotlegs.utilities.localizer.patterns.locale:ILocale:data:get"><apiName>data</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="Object"/></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage><apiPackage id="org.robotlegs.utilities.navigator.controller.install"><apiName>org.robotlegs.utilities.navigator.controller.install</apiName><apiClassifier id="org.robotlegs.utilities.navigator.controller.install:InstallNavigatorCommand"><apiName>InstallNavigatorCommand</apiName><shortdesc>
 	 Map dependencies of Navigator.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Map dependencies of <codeph>Navigator</codeph>.
@@ -623,7 +675,7 @@
 	 </apiDesc></apiClassifierDetail><apiValue id="org.robotlegs.utilities:Utilities:ALL"><apiName>ALL</apiName><shortdesc>
 		 Map dependencies of all utilities.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>all</apiData><apiType value="String"/></apiValueDef><apiDesc>
 		 Map dependencies of all utilities.
-		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities:Utilities:ASSET_LOADER"><apiName>ASSET_LOADER</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiType value="Class"/></apiValueDef><apiDesc/></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities:Utilities:NAVIGATOR"><apiName>NAVIGATOR</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiType value="Class"/></apiValueDef><apiDesc/></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities:Utilities:ROUTER"><apiName>ROUTER</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiType value="Class"/></apiValueDef><apiDesc/></apiValueDetail></apiValue></apiClassifier></apiPackage><apiPackage id="org.robotlegs.utils"><apiName>org.robotlegs.utils</apiName><apiClassifier id="org.robotlegs.utils:ClassUtil"><apiName>ClassUtil</apiName><shortdesc>
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities:Utilities:ASSET_LOADER"><apiName>ASSET_LOADER</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiType value="Class"/></apiValueDef><apiDesc/></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities:Utilities:LOCALIZER"><apiName>LOCALIZER</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiType value="Class"/></apiValueDef><apiDesc/></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities:Utilities:NAVIGATOR"><apiName>NAVIGATOR</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiType value="Class"/></apiValueDef><apiDesc/></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities:Utilities:ROUTER"><apiName>ROUTER</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiType value="Class"/></apiValueDef><apiDesc/></apiValueDetail></apiValue></apiClassifier></apiPackage><apiPackage id="org.robotlegs.utils"><apiName>org.robotlegs.utils</apiName><apiClassifier id="org.robotlegs.utils:ClassUtil"><apiName>ClassUtil</apiName><shortdesc>
 	 
 	 
 	 </shortdesc><prolog><author>r.moorman

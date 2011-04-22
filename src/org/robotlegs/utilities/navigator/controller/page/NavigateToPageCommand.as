@@ -3,7 +3,6 @@ package org.robotlegs.utilities.navigator.controller.page
 	import flash.events.IEventDispatcher;
 	
 	import org.robotlegs.mvcs.Command;
-	import org.robotlegs.mvcs.Context;
 	import org.robotlegs.utilities.navigator.core.INavigator;
 	import org.robotlegs.utilities.navigator.error.NavigatorError;
 	import org.robotlegs.utilities.navigator.events.NavigatorEvent;

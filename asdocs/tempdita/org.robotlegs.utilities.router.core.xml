@@ -3,7 +3,7 @@
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
 	 Abstract <codeph>IRouter</codeph> interface.
 	 
-	 </apiDesc></apiClassifierDetail><apiOperation id="org.robotlegs.utilities.router.core:IRouter:org.robotlegs.utilities.router.core:IRouter:activate"><apiName>activate</apiName><shortdesc>
+	 </apiDesc></apiClassifierDetail><related-links><link href="" invalidHref="https.//github.com/moorinteractive/as3-robotlegs-library/wiki/router.xml"><linktext>https://github.com/moorinteractive/as3-robotlegs-library/wiki/router</linktext></link></related-links><apiOperation id="org.robotlegs.utilities.router.core:IRouter:org.robotlegs.utilities.router.core:IRouter:activate"><apiName>activate</apiName><shortdesc>
 		 
 		 
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>checkRoutes</apiItemName><apiType value="Boolean"/><apiData>true</apiData><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
@@ -49,7 +49,7 @@
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.utilities.router.core:IRouter</apiBaseInterface><apiBaseClassifier>org.robotlegs.mvcs:Actor</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Abstract <codeph>MacroCommand</codeph> implementation.
 	 
-	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.utilities.router.core:Router:Router"><apiName>Router</apiName><shortdesc>
+	 </apiDesc></apiClassifierDetail><related-links><link href="" invalidHref="https.//github.com/moorinteractive/as3-robotlegs-library/wiki/router.xml"><linktext>https://github.com/moorinteractive/as3-robotlegs-library/wiki/router</linktext></link></related-links><apiConstructor id="org.robotlegs.utilities.router.core:Router:Router"><apiName>Router</apiName><shortdesc>
 		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>
 		 Constructor.
 		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.robotlegs.utilities.router.core:Router:activate"><apiName>activate</apiName><shortdesc conref="org.robotlegs.utilities.router.core.IRouter.activate()">

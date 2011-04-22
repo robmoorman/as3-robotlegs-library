@@ -490,6 +490,27 @@
 	 </apiDesc>
       </apiClassifier>
    </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.localizer.controller.data">
+      <apiName>org.robotlegs.utilities.localizer.controller.data</apiName>
+      <apiClassifier id="org.robotlegs.utilities.localizer.controller.data:LocalizeDataCommand">
+         <apiName>LocalizeDataCommand</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 
+	 
+	 </apiDesc>
+      </apiClassifier>
+   </apiPackage>
    <apiPackage id="org.robotlegs.utilities.localizer.controller.install">
       <apiName>org.robotlegs.utilities.localizer.controller.install</apiName>
       <apiClassifier id="org.robotlegs.utilities.localizer.controller.install:InstallLocalizerCommand">
@@ -606,6 +627,7 @@
             <apiClassifierDef>
                <apiAccess value="public"/>
                <apiStatic/>
+               <apiBaseInterface>org.robotlegs.utilities.localizer.patterns.locale:ILocale</apiBaseInterface>
                <apiBaseClassifier>Object</apiBaseClassifier>
             </apiClassifierDef>
          </apiClassifierDetail>

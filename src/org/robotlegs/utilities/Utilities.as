@@ -4,6 +4,7 @@ package org.robotlegs.utilities
 	import org.robotlegs.utilities.assetloader.controller.install.InstallAssetLoaderCommand;
 	import org.robotlegs.utilities.navigator.controller.install.InstallNavigatorCommand;
 	import org.robotlegs.utilities.router.controller.install.InstallRouterCommand;
+	import org.robotlegs.utilities.localizer.controller.install.InstallLocalizerCommand;
 	
 	/**
 	 * Utility to map dependencies of certain utilities.
@@ -32,6 +33,11 @@ package org.robotlegs.utilities
 		public static const ASSET_LOADER: Class = InstallAssetLoaderCommand;
 		
 		/**
+		 * @copy import org.robotlegs.utilities.localizer.controller.install.InstallLocalizerCommand
+		 */
+		public static const LOCALIZER: Class = InstallLocalizerCommand;
+		
+		/**
 		 * @copy org.robotlegs.utilities.navigator.controller.install.InstallNavigatorCommand
 		 */
 		public static const NAVIGATOR: Class = InstallNavigatorCommand;
@@ -52,7 +58,7 @@ package org.robotlegs.utilities
 			var utilityClass: Class;
 			
 			if( utilities.indexOf( ALL ) != -1 )
-				utilities = [ ASSET_LOADER, NAVIGATOR, ROUTER ];
+				utilities = [ ASSET_LOADER, LOCALIZER, NAVIGATOR, ROUTER ];
 			
 			for each( utilityClass in utilities )
 				commandMap.execute( utilityClass );

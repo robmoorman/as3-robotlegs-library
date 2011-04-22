@@ -7,6 +7,7 @@ package org.robotlegs.utilities.navigator.core
 	 * Abstract <code>INavigator</code> interface.
 	 * 
 	 * @author r.moorman
+	 * @see https://github.com/moorinteractive/as3-robotlegs-library/wiki/navigator
 	 */
 	public interface INavigator
 	{

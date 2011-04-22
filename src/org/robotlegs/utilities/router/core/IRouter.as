@@ -6,6 +6,7 @@ package org.robotlegs.utilities.router.core
 	 * Abstract <code>IRouter</code> interface.
 	 * 
 	 * @author r.moorman
+	 * @see https://github.com/moorinteractive/as3-robotlegs-library/wiki/router
 	 */
 	public interface IRouter
 	{

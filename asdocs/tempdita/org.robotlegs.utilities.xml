@@ -23,6 +23,8 @@
 		 Map dependencies of all utilities.
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities:Utilities:ASSET_LOADER"><apiName>ASSET_LOADER</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.controller.install.InstallAssetLoaderCommand">
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiType value="Class"/></apiValueDef><apiDesc conref="org.robotlegs.utilities.assetloader.controller.install.InstallAssetLoaderCommand">
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities:Utilities:LOCALIZER"><apiName>LOCALIZER</apiName><shortdesc conref="importorg.robotlegs.utilities.localizer.controller.install.InstallLocalizerCommand">
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiType value="Class"/></apiValueDef><apiDesc conref="importorg.robotlegs.utilities.localizer.controller.install.InstallLocalizerCommand">
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities:Utilities:NAVIGATOR"><apiName>NAVIGATOR</apiName><shortdesc conref="org.robotlegs.utilities.navigator.controller.install.InstallNavigatorCommand">
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiType value="Class"/></apiValueDef><apiDesc conref="org.robotlegs.utilities.navigator.controller.install.InstallNavigatorCommand">
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities:Utilities:ROUTER"><apiName>ROUTER</apiName><shortdesc conref="org.robotlegs.utilities.router.controller.install.InstallRouterCommand">

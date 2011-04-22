@@ -298,7 +298,17 @@
 <author><![CDATA[r.moorman
 	 ]]></author>
 </interfaceRec>
-<classRec name='Locale' fullname='org.robotlegs.utilities.localizer.patterns.locale:Locale' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/localizer/patterns/locale/Locale.as' namespace='org.robotlegs.utilities.localizer.patterns.locale' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
+<method name='code' fullname='org.robotlegs.utilities.localizer.patterns.locale:ILocale/org.robotlegs.utilities.localizer.patterns.locale:ILocale:code/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='data' fullname='org.robotlegs.utilities.localizer.patterns.locale:ILocale/org.robotlegs.utilities.localizer.patterns.locale:ILocale:data/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Object'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<classRec name='Locale' fullname='org.robotlegs.utilities.localizer.patterns.locale:Locale' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/localizer/patterns/locale/Locale.as' namespace='org.robotlegs.utilities.localizer.patterns.locale' access='public' baseclass='Object' interfaces='org.robotlegs.utilities.localizer.patterns.locale:ILocale' isFinal='false' isDynamic='false' >
 <description><![CDATA[
 	 Abstract <code>Locale</code> implementation.
 	 
@@ -306,11 +316,33 @@
 <author><![CDATA[r.moorman
 	 ]]></author>
 </classRec>
-<method name='Locale' fullname='org.robotlegs.utilities.localizer.patterns.locale:Locale/Locale' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+<method name='Locale' fullname='org.robotlegs.utilities.localizer.patterns.locale:Locale/Locale' isStatic='false' isFinal='false' isOverride='false'  param_names='code;data' param_types='String;Object' param_defaults='undefined;undefined' result_type='*'>
 <description><![CDATA[
 		 Constructor.
 		 ]]></description>
 </method>
+<method name='code' fullname='org.robotlegs.utilities.localizer.patterns.locale:Locale/code/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.localizer.patterns.locale.ILocale.code
+		 ]]></copy>
+</method>
+<method name='data' fullname='org.robotlegs.utilities.localizer.patterns.locale:Locale/data/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Object'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.localizer.patterns.locale.ILocale.data
+		 ]]></copy>
+</method>
+<field name='_code' fullname='org.robotlegs.utilities.localizer.patterns.locale:Locale/private:_code' type='String' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_data' fullname='org.robotlegs.utilities.localizer.patterns.locale:Locale/private:_data' type='Object' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
 <interfaceRec name='ILocalizer' fullname='org.robotlegs.utilities.localizer.core:ILocalizer' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/localizer/core/ILocalizer.as' namespace='org.robotlegs.utilities.localizer.core' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
 <description><![CDATA[
 	 Abstract <code>ILocalizer</code> interface.
@@ -318,7 +350,74 @@
 	 ]]></description>
 <author><![CDATA[r.moorman
 	 ]]></author>
+<see><![CDATA[https://github.com/moorinteractive/as3-robotlegs-library/wiki/localizer
+	 ]]></see>
 </interfaceRec>
+<method name='addLocale' fullname='org.robotlegs.utilities.localizer.core:ILocalizer/org.robotlegs.utilities.localizer.core:ILocalizer:addLocale' isStatic='false' isFinal='false' isOverride='false'  param_names='code;data' param_types='String;Object' param_defaults='undefined;undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[code
+		 ]]></param>
+<param><![CDATA[data
+		 ]]></param>
+</method>
+<method name='getLocale' fullname='org.robotlegs.utilities.localizer.core:ILocalizer/org.robotlegs.utilities.localizer.core:ILocalizer:getLocale' isStatic='false' isFinal='false' isOverride='false'  param_names='code' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.localizer.patterns.locale:ILocale'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[code
+		 ]]></param>
+<return><![CDATA[]]></return>
+</method>
+<method name='hasLocale' fullname='org.robotlegs.utilities.localizer.core:ILocalizer/org.robotlegs.utilities.localizer.core:ILocalizer:hasLocale' isStatic='false' isFinal='false' isOverride='false'  param_names='code' param_types='String' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[code
+		 ]]></param>
+<return><![CDATA[]]></return>
+</method>
+<method name='localizeCustomData' fullname='org.robotlegs.utilities.localizer.core:ILocalizer/org.robotlegs.utilities.localizer.core:ILocalizer:localizeCustomData' isStatic='false' isFinal='false' isOverride='false'  param_names='data;prefix' param_types='Object;String' param_defaults='undefined;' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[data
+		 ]]></param>
+<param><![CDATA[prefix
+		 ]]></param>
+</method>
+<method name='localize' fullname='org.robotlegs.utilities.localizer.core:ILocalizer/org.robotlegs.utilities.localizer.core:ILocalizer:localize' isStatic='false' isFinal='false' isOverride='false'  param_names='code' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[code
+		 ]]></param>
+</method>
+<method name='removeLocale' fullname='org.robotlegs.utilities.localizer.core:ILocalizer/org.robotlegs.utilities.localizer.core:ILocalizer:removeLocale' isStatic='false' isFinal='false' isOverride='false'  param_names='code' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.localizer.patterns.locale:ILocale'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[code
+		 ]]></param>
+<return><![CDATA[]]></return>
+</method>
+<method name='iterateObjectsInCustomData' fullname='org.robotlegs.utilities.localizer.core:ILocalizer/org.robotlegs.utilities.localizer.core:ILocalizer:iterateObjectsInCustomData/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Boolean'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='iterateObjectsInCustomData' fullname='org.robotlegs.utilities.localizer.core:ILocalizer/org.robotlegs.utilities.localizer.core:ILocalizer:iterateObjectsInCustomData/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Boolean' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
 <classRec name='Localizer' fullname='org.robotlegs.utilities.localizer.core:Localizer' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/localizer/core/Localizer.as' namespace='org.robotlegs.utilities.localizer.core' access='public' baseclass='org.robotlegs.mvcs:Actor' interfaces='org.robotlegs.utilities.localizer.core:ILocalizer' isFinal='false' isDynamic='false' >
 <description><![CDATA[
 	 Abstract <code>Localizer</code> implementation.
@@ -326,12 +425,71 @@
 	 ]]></description>
 <author><![CDATA[r.moorman
 	 ]]></author>
+<see><![CDATA[https://github.com/moorinteractive/as3-robotlegs-library/wiki/localizer
+	 ]]></see>
 </classRec>
 <method name='Localizer' fullname='org.robotlegs.utilities.localizer.core:Localizer/Localizer' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
 <description><![CDATA[
 		 Constructor.
 		 ]]></description>
 </method>
+<method name='addLocale' fullname='org.robotlegs.utilities.localizer.core:Localizer/addLocale' isStatic='false' isFinal='false' isOverride='false'  param_names='code;data' param_types='String;Object' param_defaults='undefined;undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.localizer.core.ILocalizer.addLocale()
+		 ]]></copy>
+</method>
+<method name='getLocale' fullname='org.robotlegs.utilities.localizer.core:Localizer/getLocale' isStatic='false' isFinal='false' isOverride='false'  param_names='code' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.localizer.patterns.locale:ILocale'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.localizer.core.ILocalizer.getLocale()
+		 ]]></copy>
+</method>
+<method name='hasLocale' fullname='org.robotlegs.utilities.localizer.core:Localizer/hasLocale' isStatic='false' isFinal='false' isOverride='false'  param_names='code' param_types='String' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.localizer.core.ILocalizer.hasLocale()
+		 ]]></copy>
+</method>
+<method name='localizeCustomData' fullname='org.robotlegs.utilities.localizer.core:Localizer/localizeCustomData' isStatic='false' isFinal='false' isOverride='false'  param_names='data;prefix' param_types='Object;String' param_defaults='undefined;' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.localizer.core.ILocalizer.localizeCustomData()
+		 ]]></copy>
+</method>
+<method name='localize' fullname='org.robotlegs.utilities.localizer.core:Localizer/localize' isStatic='false' isFinal='false' isOverride='false'  param_names='code' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.localizer.core.ILocalizer.localize()
+		 ]]></copy>
+</method>
+<method name='removeLocale' fullname='org.robotlegs.utilities.localizer.core:Localizer/removeLocale' isStatic='false' isFinal='false' isOverride='false'  param_names='code' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.localizer.patterns.locale:ILocale'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.localizer.core.ILocalizer.removeLocale()
+		 ]]></copy>
+</method>
+<method name='iterateObjectsInCustomData' fullname='org.robotlegs.utilities.localizer.core:Localizer/iterateObjectsInCustomData/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Boolean'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.localizer.core.ILocalizer.iterateObjectsInCustomData
+		 ]]></copy>
+</method>
+<method name='iterateObjectsInCustomData' fullname='org.robotlegs.utilities.localizer.core:Localizer/iterateObjectsInCustomData/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Boolean' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<field name='_iterateObjectsInCustomData' fullname='org.robotlegs.utilities.localizer.core:Localizer/private:_iterateObjectsInCustomData' type='Boolean' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_localeMap' fullname='org.robotlegs.utilities.localizer.core:Localizer/private:_localeMap' type='flash.utils:Dictionary' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
 <classRec name='AssetLoaderState' fullname='org.robotlegs.utilities.assetloader.core:AssetLoaderState' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/core/AssetLoaderState.as' namespace='org.robotlegs.utilities.assetloader.core' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
 <description><![CDATA[
 	 
@@ -367,6 +525,8 @@
 	 ]]></description>
 <author><![CDATA[r.moorman
 	 ]]></author>
+<see><![CDATA[https://github.com/moorinteractive/as3-robotlegs-library/wiki/assetloader
+	 ]]></see>
 </interfaceRec>
 <method name='getAssetByUrl' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:getAssetByUrl' isStatic='false' isFinal='false' isOverride='false'  param_names='url' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.assetloader.patterns.asset:IAsset'>
 <description><![CDATA[
@@ -483,6 +643,8 @@
 	 ]]></description>
 <author><![CDATA[r.moorman
 	 ]]></author>
+<see><![CDATA[https://github.com/moorinteractive/as3-robotlegs-library/wiki/assetloader
+	 ]]></see>
 </classRec>
 <method name='AssetLoader' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/AssetLoader' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
 <description><![CDATA[
@@ -1074,12 +1236,16 @@
 <author><![CDATA[r.moorman
 	 ]]></author>
 </classRec>
-<method name='LocalizerEvent' fullname='org.robotlegs.utilities.localizer.events:LocalizerEvent/LocalizerEvent' isStatic='false' isFinal='false' isOverride='false'  param_names='type;bubbles;cancelable' param_types='String;Boolean;Boolean' param_defaults='undefined;false;false' result_type='*'>
+<method name='LocalizerEvent' fullname='org.robotlegs.utilities.localizer.events:LocalizerEvent/LocalizerEvent' isStatic='false' isFinal='false' isOverride='false'  param_names='type;locale;data;prefix;bubbles;cancelable' param_types='String;org.robotlegs.utilities.localizer.patterns.locale:ILocale;Object;String;Boolean;Boolean' param_defaults='undefined;undefined;null;;false;false' result_type='*'>
 <description><![CDATA[
 		 Constructor.
 		 
 		 ]]></description>
 <param><![CDATA[type
+		 ]]></param>
+<param><![CDATA[locale
+		 ]]></param>
+<param><![CDATA[prefix
 		 ]]></param>
 <param><![CDATA[bubbles
 		 ]]></param>
@@ -1091,6 +1257,35 @@
 		 ]]></description>
 <inheritDoc><![CDATA[]]></inheritDoc>
 </method>
+<field name='LOCALIZE_DATA' fullname='org.robotlegs.utilities.localizer.events:LocalizerEvent/LOCALIZE_DATA' type='String' isStatic='true' isConst='true' defaultValue='org.robotlegs.utilities.localizer.events.LocalizerEvent.LOCALIZE_DATA' >
+<description><![CDATA[
+		 
+		 ]]></description>
+</field>
+<field name='data' fullname='org.robotlegs.utilities.localizer.events:LocalizerEvent/data' type='Object' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<default><![CDATA[null
+		 ]]></default>
+</field>
+<field name='locale' fullname='org.robotlegs.utilities.localizer.events:LocalizerEvent/locale' type='org.robotlegs.utilities.localizer.patterns.locale:ILocale' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<default><![CDATA[null
+		 ]]></default>
+</field>
+<field name='prefix' fullname='org.robotlegs.utilities.localizer.events:LocalizerEvent/prefix' type='String' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<default><![CDATA[null
+		 ]]></default>
+</field>
 <classRec name='RouterEvent' fullname='org.robotlegs.utilities.router.events:RouterEvent' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/router/events/RouterEvent.as' namespace='org.robotlegs.utilities.router.events' access='public' baseclass='flash.events:Event' isFinal='false' isDynamic='false' >
 <description><![CDATA[
 	 
@@ -1161,6 +1356,8 @@
 	 ]]></description>
 <author><![CDATA[r.moorman
 	 ]]></author>
+<see><![CDATA[https://github.com/moorinteractive/as3-robotlegs-library/wiki/router
+	 ]]></see>
 </interfaceRec>
 <method name='activate' fullname='org.robotlegs.utilities.router.core:IRouter/org.robotlegs.utilities.router.core:IRouter:activate' isStatic='false' isFinal='false' isOverride='false'  param_names='checkRoutes' param_types='Boolean' param_defaults='true' result_type='void'>
 <description><![CDATA[
@@ -1228,6 +1425,8 @@
 	 ]]></description>
 <author><![CDATA[r.moorman
 	 ]]></author>
+<see><![CDATA[https://github.com/moorinteractive/as3-robotlegs-library/wiki/router
+	 ]]></see>
 </classRec>
 <method name='Router' fullname='org.robotlegs.utilities.router.core:Router/Router' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
 <description><![CDATA[
@@ -1900,6 +2099,8 @@
 	 ]]></description>
 <author><![CDATA[r.moorman
 	 ]]></author>
+<see><![CDATA[https://github.com/moorinteractive/as3-robotlegs-library/wiki/navigator
+	 ]]></see>
 </interfaceRec>
 <method name='addPage' fullname='org.robotlegs.utilities.navigator.core:INavigator/org.robotlegs.utilities.navigator.core:INavigator:addPage' isStatic='false' isFinal='false' isOverride='false'  param_names='page;transitionId' param_types='org.robotlegs.utilities.navigator.patterns.page:IPage;String' param_defaults='undefined;null' result_type='void'>
 <description><![CDATA[
@@ -2060,6 +2261,8 @@
 	 ]]></description>
 <author><![CDATA[r.moorman
 	 ]]></author>
+<see><![CDATA[https://github.com/moorinteractive/as3-robotlegs-library/wiki/navigator
+	 ]]></see>
 </classRec>
 <method name='Navigator' fullname='org.robotlegs.utilities.navigator.core:Navigator/Navigator' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
 <description><![CDATA[
@@ -2406,6 +2609,12 @@
 <copy><![CDATA[org.robotlegs.utilities.assetloader.controller.install.InstallAssetLoaderCommand
 		 ]]></copy>
 </field>
+<field name='LOCALIZER' fullname='org.robotlegs.utilities:Utilities/LOCALIZER' type='Class' isStatic='true' isConst='true' defaultValue='' >
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[import org.robotlegs.utilities.localizer.controller.install.InstallLocalizerCommand
+		 ]]></copy>
+</field>
 <field name='NAVIGATOR' fullname='org.robotlegs.utilities:Utilities/NAVIGATOR' type='Class' isStatic='true' isConst='true' defaultValue='' >
 <description><![CDATA[
 		 ]]></description>
@@ -2735,6 +2944,57 @@
 		 ]]></description>
 </field>
 <field name='navigator' fullname='org.robotlegs.utilities.navigator.controller.page:NavigateToPageCommand/navigator' type='org.robotlegs.utilities.navigator.core:INavigator' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 
+		 ]]></description>
+</field>
+<classRec name='LocalizeDataCommand' fullname='org.robotlegs.utilities.localizer.controller.data:LocalizeDataCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/localizer/controller/data/LocalizeDataCommand.as' namespace='org.robotlegs.utilities.localizer.controller.data' access='public' baseclass='org.robotlegs.mvcs:Command' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='execute' fullname='org.robotlegs.utilities.localizer.controller.data:LocalizeDataCommand/execute' isStatic='false' isFinal='false' isOverride='true'  result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<method name='iterateChilds' fullname='org.robotlegs.utilities.localizer.controller.data:LocalizeDataCommand/private:iterateChilds' isStatic='false' isFinal='false' isOverride='false'  param_names='data;prefix' param_types='XML;String' param_defaults='undefined;undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<data><![CDATA[]]></data>
+<prefix><![CDATA[]]></prefix>
+</method>
+<method name='iterateProperties' fullname='org.robotlegs.utilities.localizer.controller.data:LocalizeDataCommand/private:iterateProperties' isStatic='false' isFinal='false' isOverride='false'  param_names='data;prefix' param_types='Object;String' param_defaults='undefined;undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<data><![CDATA[]]></data>
+<prefix><![CDATA[]]></prefix>
+</method>
+<method name='mapValue' fullname='org.robotlegs.utilities.localizer.controller.data:LocalizeDataCommand/private:mapValue' isStatic='false' isFinal='false' isOverride='false'  param_names='name;value;prefix' param_types='String;Object;String' param_defaults='undefined;undefined;undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[value The name under which the value should be mapped.
+		 ]]></param>
+<param><![CDATA[value The value to map.
+		 ]]></param>
+<param><![CDATA[prefix
+		 ]]></param>
+</method>
+<field name='event' fullname='org.robotlegs.utilities.localizer.controller.data:LocalizeDataCommand/event' type='org.robotlegs.utilities.localizer.events:LocalizerEvent' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 
+		 ]]></description>
+</field>
+<field name='localizer' fullname='org.robotlegs.utilities.localizer.controller.data:LocalizeDataCommand/localizer' type='org.robotlegs.utilities.localizer.core:ILocalizer' isStatic='false' isConst='false' >
 <description><![CDATA[
 		 
 		 ]]></description>
