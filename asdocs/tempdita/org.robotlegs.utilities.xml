@@ -13,6 +13,7 @@
 	 	<li><codeph>Localizer</codeph></li>
 	 	<li><codeph>Navigator</codeph></li>
 	 	<li><codeph>Router</codeph></li>
+	 	<li><codeph>Styles</codeph></li>
 	 </ul>
 	 
 	 </apiDesc></apiClassifierDetail><apiOperation id="org.robotlegs.utilities:Utilities:mapDependencies"><apiName>mapDependencies</apiName><shortdesc>
@@ -34,4 +35,6 @@
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiType value="Class"/></apiValueDef><apiDesc conref="org.robotlegs.utilities.navigator.controller.install.InstallNavigatorCommand">
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities:Utilities:ROUTER"><apiName>ROUTER</apiName><shortdesc conref="org.robotlegs.utilities.router.controller.install.InstallRouterCommand">
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiType value="Class"/></apiValueDef><apiDesc conref="org.robotlegs.utilities.router.controller.install.InstallRouterCommand">
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities:Utilities:STYLES"><apiName>STYLES</apiName><shortdesc conref="org.robotlegs.utilities.styles.controller.install.InstallStylesCommand">
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiType value="Class"/></apiValueDef><apiDesc conref="org.robotlegs.utilities.styles.controller.install.InstallStylesCommand">
 		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage>

@@ -794,7 +794,74 @@
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
 		 
 		 
-		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage><apiPackage id="org.robotlegs.utilities"><apiName>org.robotlegs.utilities</apiName><apiClassifier id="org.robotlegs.utilities:Utilities"><apiName>Utilities</apiName><shortdesc>
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage><apiPackage id="org.robotlegs.utilities.styles.controller.install"><apiName>org.robotlegs.utilities.styles.controller.install</apiName><apiClassifier id="org.robotlegs.utilities.styles.controller.install:InstallStylesCommand"><apiName>InstallStylesCommand</apiName><shortdesc>
+	 Map dependencies of Styles.</shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 Map dependencies of <codeph>Styles</codeph>.
+	 
+	 <p>The following depedencies are available after executing this <codeph>Command</codeph>:</p>
+	 
+	 <ul>
+	 	<li><codeph>IStyles</codeph></li>
+	 </ul>
+	 
+	 </apiDesc></apiClassifierDetail><apiValue id="org.robotlegs.utilities.styles.controller.install:InstallStylesCommand:viewMap"><apiName>viewMap</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiType value="org.robotlegs.core:IViewMap"/></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage><apiPackage id="org.robotlegs.utilities.styles.core"><apiName>org.robotlegs.utilities.styles.core</apiName><apiClassifier id="org.robotlegs.utilities.styles.core:IStyles"><apiName>IStyles</apiName><shortdesc>
+	 
+	 
+	 </shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 
+	 
+	 </apiDesc></apiClassifierDetail><apiValue id="org.robotlegs.utilities.styles.core:IStyles:org.robotlegs.utilities.styles.core:IStyles:styleSheet:get"><apiName>styleSheet</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="flash.text:StyleSheet"/></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.robotlegs.utilities.styles.core:Styles"><apiName>Styles</apiName><shortdesc>
+	 
+	 
+	 </shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.utilities.styles.core:IStyles</apiBaseInterface><apiBaseClassifier>org.robotlegs.mvcs:Actor</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 
+	 
+	 </apiDesc></apiClassifierDetail><apiValue id="org.robotlegs.utilities.styles.core:Styles:assetLoader"><apiName>assetLoader</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.assetloader.core:IAssetLoader</apiValueClassifier></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.styles.core:Styles:styleSheet:get"><apiName>styleSheet</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="flash.text:StyleSheet"/></apiValueDef><apiDesc/><apiDesc>
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage><apiPackage id="org.robotlegs.utilities.styles.error"><apiName>org.robotlegs.utilities.styles.error</apiName><apiClassifier id="org.robotlegs.utilities.styles.error:StylesError"><apiName>StylesError</apiName><shortdesc>
+	 
+	 
+	 </shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Error</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 
+	 
+	 </apiDesc></apiClassifierDetail></apiClassifier></apiPackage><apiPackage id="org.robotlegs.utilities.styles.events"><apiName>org.robotlegs.utilities.styles.events</apiName><apiClassifier id="org.robotlegs.utilities.styles.events:StylesEvent"><apiName>StylesEvent</apiName><shortdesc>
+	 
+	 
+	 </shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>flash.events:Event</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 
+	 
+	 </apiDesc></apiClassifierDetail></apiClassifier></apiPackage><apiPackage id="org.robotlegs.utilities.styles.view"><apiName>org.robotlegs.utilities.styles.view</apiName><apiClassifier id="org.robotlegs.utilities.styles.view:StylesTextfield"><apiName>StylesTextfield</apiName><shortdesc>
+	 
+	 
+	 </shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>flash.text:TextField</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 
+	 
+	 </apiDesc></apiClassifierDetail><apiValue id="org.robotlegs.utilities.styles.view:StylesTextfield:styles"><apiName>styles</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.styles.core:IStyles</apiValueClassifier></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.styles.view:StylesTextfield:htmlText:set"><apiName>htmlText</apiName><shortdesc>
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiIsOverride/><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="write"/><apiType value="String"/></apiValueDef><apiDesc>
+		 </apiDesc></apiValueDetail><apiInheritDoc/></apiValue><apiValue id="org.robotlegs.utilities.styles.view:StylesTextfield:text:set"><apiName>text</apiName><shortdesc>
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiIsOverride/><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="write"/><apiType value="String"/></apiValueDef><apiDesc>
+		 </apiDesc></apiValueDetail><apiInheritDoc/></apiValue></apiClassifier></apiPackage><apiPackage id="org.robotlegs.utilities"><apiName>org.robotlegs.utilities</apiName><apiClassifier id="org.robotlegs.utilities:Utilities"><apiName>Utilities</apiName><shortdesc>
 	 Utility to map dependencies of certain utilities.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Utility to map dependencies of certain utilities.
@@ -809,6 +876,7 @@
 	 	<li><codeph>Localizer</codeph></li>
 	 	<li><codeph>Navigator</codeph></li>
 	 	<li><codeph>Router</codeph></li>
+	 	<li><codeph>Styles</codeph></li>
 	 </ul>
 	 
 	 </apiDesc></apiClassifierDetail><apiValue id="org.robotlegs.utilities:Utilities:ALL"><apiName>ALL</apiName><shortdesc>
@@ -819,6 +887,7 @@
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities:Utilities:LOCALIZER"><apiName>LOCALIZER</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiType value="Class"/></apiValueDef><apiDesc/><apiDesc>
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities:Utilities:NAVIGATOR"><apiName>NAVIGATOR</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiType value="Class"/></apiValueDef><apiDesc/><apiDesc>
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities:Utilities:ROUTER"><apiName>ROUTER</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiType value="Class"/></apiValueDef><apiDesc/><apiDesc>
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities:Utilities:STYLES"><apiName>STYLES</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiType value="Class"/></apiValueDef><apiDesc/><apiDesc>
 		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage><apiPackage id="org.robotlegs.utils"><apiName>org.robotlegs.utils</apiName><apiClassifier id="org.robotlegs.utils:ClassUtil"><apiName>ClassUtil</apiName><shortdesc>
 	 
 	 

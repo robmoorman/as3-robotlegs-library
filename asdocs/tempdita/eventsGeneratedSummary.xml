@@ -1255,6 +1255,137 @@
 	 </apiDesc>
       </apiClassifier>
    </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.styles.controller.install">
+      <apiName>org.robotlegs.utilities.styles.controller.install</apiName>
+      <apiClassifier id="org.robotlegs.utilities.styles.controller.install:InstallStylesCommand">
+         <apiName>InstallStylesCommand</apiName>
+         <shortdesc>
+	 Map dependencies of Styles.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 Map dependencies of <codeph>Styles</codeph>.
+	 
+	 <p>The following depedencies are available after executing this <codeph>Command</codeph>:</p>
+	 
+	           <ul>
+	 	            <li>
+                  <codeph>IStyles</codeph>
+               </li>
+	           </ul>
+	 
+	        </apiDesc>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.styles.core">
+      <apiName>org.robotlegs.utilities.styles.core</apiName>
+      <apiClassifier id="org.robotlegs.utilities.styles.core:IStyles">
+         <apiName>IStyles</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 
+	 
+	 </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.utilities.styles.core:Styles">
+         <apiName>Styles</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.robotlegs.utilities.styles.core:IStyles</apiBaseInterface>
+               <apiBaseClassifier>org.robotlegs.mvcs:Actor</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 
+	 
+	 </apiDesc>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.styles.error">
+      <apiName>org.robotlegs.utilities.styles.error</apiName>
+      <apiClassifier id="org.robotlegs.utilities.styles.error:StylesError">
+         <apiName>StylesError</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Error</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 
+	 
+	 </apiDesc>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.styles.events">
+      <apiName>org.robotlegs.utilities.styles.events</apiName>
+      <apiClassifier id="org.robotlegs.utilities.styles.events:StylesEvent">
+         <apiName>StylesEvent</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.events:Event</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 
+	 
+	 </apiDesc>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.styles.view">
+      <apiName>org.robotlegs.utilities.styles.view</apiName>
+      <apiClassifier id="org.robotlegs.utilities.styles.view:StylesTextfield">
+         <apiName>StylesTextfield</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.text:TextField</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 
+	 
+	 </apiDesc>
+      </apiClassifier>
+   </apiPackage>
    <apiPackage id="org.robotlegs.utilities">
       <apiName>org.robotlegs.utilities</apiName>
       <apiClassifier id="org.robotlegs.utilities:Utilities">
@@ -1290,6 +1421,9 @@
                </li>
 	 	            <li>
                   <codeph>Router</codeph>
+               </li>
+	 	            <li>
+                  <codeph>Styles</codeph>
                </li>
 	           </ul>
 	 

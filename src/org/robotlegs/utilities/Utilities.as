@@ -6,6 +6,7 @@ package org.robotlegs.utilities
 	import org.robotlegs.utilities.localizer.controller.install.InstallLocalizerCommand;
 	import org.robotlegs.utilities.navigator.controller.install.InstallNavigatorCommand;
 	import org.robotlegs.utilities.router.controller.install.InstallRouterCommand;
+	import org.robotlegs.utilities.styles.controller.install.InstallStylesCommand;
 	
 	/**
 	 * Utility to map dependencies of certain utilities.
@@ -20,6 +21,7 @@ package org.robotlegs.utilities
 	 * 	<li><code>Localizer</code></li>
 	 * 	<li><code>Navigator</code></li>
 	 * 	<li><code>Router</code></li>
+	 * 	<li><code>Styles</code></li>
 	 * </ul>
 	 * 
 	 * @author r.moorman
@@ -57,6 +59,11 @@ package org.robotlegs.utilities
 		public static const ROUTER: Class = InstallRouterCommand;
 		
 		/**
+		 * @copy org.robotlegs.utilities.styles.controller.install.InstallStylesCommand
+		 */
+		public static const STYLES: Class = InstallStylesCommand;
+		
+		/**
 		 * Map dependencies of certain utilities.
 		 * 
 		 * @param commandMap The <code>ICommandMap</code> of Robotlegs.
@@ -66,11 +73,13 @@ package org.robotlegs.utilities
 		{
 			var utilityClass: Class;
 			
-			if( utilities.indexOf( ALL ) != -1 )
-				utilities = [ ASSET_LOADER, LAYERS, LOCALIZER, NAVIGATOR, ROUTER ];
+			if( utilities.indexOf( ALL ) != -1 ) {
+				utilities = [ ASSET_LOADER, LAYERS, LOCALIZER, NAVIGATOR, ROUTER, STYLES ];
+			}
 			
-			for each( utilityClass in utilities )
+			for each( utilityClass in utilities ) {
 				commandMap.execute( utilityClass );
+			}
 		}
 	}
 }

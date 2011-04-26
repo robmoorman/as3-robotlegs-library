@@ -1174,6 +1174,31 @@
 		 ]]></description>
 <private><![CDATA[]]></private>
 </field>
+<classRec name='StylesEvent' fullname='org.robotlegs.utilities.styles.events:StylesEvent' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/styles/events/StylesEvent.as' namespace='org.robotlegs.utilities.styles.events' access='public' baseclass='flash.events:Event' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='StylesEvent' fullname='org.robotlegs.utilities.styles.events:StylesEvent/StylesEvent' isStatic='false' isFinal='false' isOverride='false'  param_names='type;bubbles;cancelable' param_types='String;Boolean;Boolean' param_defaults='undefined;false;false' result_type='*'>
+<description><![CDATA[
+		 Constructor.
+		 
+		 ]]></description>
+<param><![CDATA[type
+		 ]]></param>
+<param><![CDATA[bubbles
+		 ]]></param>
+<param><![CDATA[cancelable
+		 ]]></param>
+</method>
+<method name='clone' fullname='org.robotlegs.utilities.styles.events:StylesEvent/clone' isStatic='false' isFinal='false' isOverride='true'  result_type='flash.events:Event'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
 <classRec name='LocalizerError' fullname='org.robotlegs.utilities.localizer.error:LocalizerError' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/localizer/error/LocalizerError.as' namespace='org.robotlegs.utilities.localizer.error' access='public' baseclass='Error' isFinal='false' isDynamic='false' >
 <description><![CDATA[
 	 
@@ -1219,6 +1244,24 @@
 	 ]]></author>
 </classRec>
 <method name='AssetLoaderError' fullname='org.robotlegs.utilities.assetloader.error:AssetLoaderError/AssetLoaderError' isStatic='false' isFinal='false' isOverride='false'  param_names='message;id' param_types='*;*' param_defaults=';0' result_type='*'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[message
+		 ]]></param>
+<param><![CDATA[id
+		 ]]></param>
+</method>
+<classRec name='StylesError' fullname='org.robotlegs.utilities.styles.error:StylesError' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/styles/error/StylesError.as' namespace='org.robotlegs.utilities.styles.error' access='public' baseclass='Error' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='StylesError' fullname='org.robotlegs.utilities.styles.error:StylesError/StylesError' isStatic='false' isFinal='false' isOverride='false'  param_names='message;id' param_types='*;*' param_defaults=';0' result_type='*'>
 <description><![CDATA[
 		 
 		 
@@ -2734,6 +2777,96 @@
 <default><![CDATA[null
 		 ]]></default>
 </field>
+<interfaceRec name='IStyles' fullname='org.robotlegs.utilities.styles.core:IStyles' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/styles/core/IStyles.as' namespace='org.robotlegs.utilities.styles.core' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</interfaceRec>
+<method name='addStyle' fullname='org.robotlegs.utilities.styles.core:IStyles/org.robotlegs.utilities.styles.core:IStyles:addStyle' isStatic='false' isFinal='false' isOverride='false'  param_names='styleSheet' param_types='flash.text:StyleSheet' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[styleSheet
+		 ]]></param>
+</method>
+<method name='loadStyle' fullname='org.robotlegs.utilities.styles.core:IStyles/org.robotlegs.utilities.styles.core:IStyles:loadStyle' isStatic='false' isFinal='false' isOverride='false'  param_names='url;closure' param_types='String;Function' param_defaults='undefined;null' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[url
+		 ]]></param>
+<param><![CDATA[closure
+		 ]]></param>
+</method>
+<method name='styleSheet' fullname='org.robotlegs.utilities.styles.core:IStyles/org.robotlegs.utilities.styles.core:IStyles:styleSheet/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.text:StyleSheet'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<classRec name='Styles' fullname='org.robotlegs.utilities.styles.core:Styles' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/styles/core/Styles.as' namespace='org.robotlegs.utilities.styles.core' access='public' baseclass='org.robotlegs.mvcs:Actor' interfaces='org.robotlegs.utilities.styles.core:IStyles' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='Styles' fullname='org.robotlegs.utilities.styles.core:Styles/Styles' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+<description><![CDATA[
+		 Constructor.
+		 ]]></description>
+</method>
+<method name='addStyle' fullname='org.robotlegs.utilities.styles.core:Styles/addStyle' isStatic='false' isFinal='false' isOverride='false'  param_names='styleSheet' param_types='flash.text:StyleSheet' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.styles.core.IStyles.addStyle()
+		 ]]></copy>
+</method>
+<method name='loadStyle' fullname='org.robotlegs.utilities.styles.core:Styles/loadStyle' isStatic='false' isFinal='false' isOverride='false'  param_names='url;closure' param_types='String;Function' param_defaults='undefined;null' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.styles.core.IStyles.loadStyle()
+		 ]]></copy>
+</method>
+<method name='onStyleProgress' fullname='org.robotlegs.utilities.styles.core:Styles/private:onStyleProgress' isStatic='false' isFinal='false' isOverride='false'  param_names='evt' param_types='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[evt
+		 ]]></param>
+</method>
+<method name='styleSheet' fullname='org.robotlegs.utilities.styles.core:Styles/styleSheet/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.text:StyleSheet'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.styles.core.IStyles.styleSheet
+		 ]]></copy>
+</method>
+<field name='_closure' fullname='org.robotlegs.utilities.styles.core:Styles/private:_closure' type='Function' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_styleMap' fullname='org.robotlegs.utilities.styles.core:Styles/private:_styleMap' type='flash.utils:Dictionary' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_styleSheet' fullname='org.robotlegs.utilities.styles.core:Styles/private:_styleSheet' type='flash.text:StyleSheet' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='assetLoader' fullname='org.robotlegs.utilities.styles.core:Styles/assetLoader' type='org.robotlegs.utilities.assetloader.core:IAssetLoader' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 
+		 ]]></description>
+</field>
 <classRec name='ClassUtil' fullname='org.robotlegs.utils:ClassUtil' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utils/ClassUtil.as' namespace='org.robotlegs.utils' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
 <description><![CDATA[
 	 
@@ -2754,6 +2887,37 @@
 <return><![CDATA[
 		 ]]></return>
 </method>
+<interfaceRec name='ILayer' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/layers/patterns/layer/ILayer.as' namespace='org.robotlegs.utilities.layers.patterns.layer' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</interfaceRec>
+<method name='addChildAt' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:addChildAt' isStatic='false' isFinal='false' isOverride='false'  param_names='child;index' param_types='flash.display:DisplayObject;int' param_defaults='undefined;undefined' result_type='flash.display:DisplayObject'>
+</method>
+<method name='addChild' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:addChild' isStatic='false' isFinal='false' isOverride='false'  param_names='child' param_types='flash.display:DisplayObject' param_defaults='undefined' result_type='flash.display:DisplayObject'>
+</method>
+<method name='getChildAt' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:getChildAt' isStatic='false' isFinal='false' isOverride='false'  param_names='index' param_types='int' param_defaults='undefined' result_type='flash.display:DisplayObject'>
+</method>
+<method name='getChildByName' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:getChildByName' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='flash.display:DisplayObject'>
+</method>
+<method name='getChildIndex' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:getChildIndex' isStatic='false' isFinal='false' isOverride='false'  param_names='child' param_types='flash.display:DisplayObject' param_defaults='undefined' result_type='int'>
+</method>
+<method name='removeChildAt' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:removeChildAt' isStatic='false' isFinal='false' isOverride='false'  param_names='index' param_types='int' param_defaults='undefined' result_type='flash.display:DisplayObject'>
+</method>
+<method name='removeChild' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:removeChild' isStatic='false' isFinal='false' isOverride='false'  param_names='child' param_types='flash.display:DisplayObject' param_defaults='undefined' result_type='flash.display:DisplayObject'>
+</method>
+<method name='name' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:name/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 The name of the layer.
+		 ]]></description>
+</method>
+<classRec name='Layer' fullname='org.robotlegs.utilities.layers.patterns.layer:Layer' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/layers/patterns/layer/Layer.as' namespace='org.robotlegs.utilities.layers.patterns.layer' access='public' baseclass='flash.display:Sprite' interfaces='org.robotlegs.utilities.layers.patterns.layer:ILayer' isFinal='false' isDynamic='false' >
+</classRec>
+<method name='Layer' fullname='org.robotlegs.utilities.layers.patterns.layer:Layer/Layer' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='*'>
+</method>
 <classRec name='Utilities' fullname='org.robotlegs.utilities:Utilities' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/Utilities.as' namespace='org.robotlegs.utilities' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
 <description><![CDATA[
 	 Utility to map dependencies of certain utilities.
@@ -2768,6 +2932,7 @@
 	 	<li><code>Localizer</code></li>
 	 	<li><code>Navigator</code></li>
 	 	<li><code>Router</code></li>
+	 	<li><code>Styles</code></li>
 	 </ul>
 	 
 	 ]]></description>
@@ -2819,37 +2984,12 @@
 <copy><![CDATA[org.robotlegs.utilities.router.controller.install.InstallRouterCommand
 		 ]]></copy>
 </field>
-<interfaceRec name='ILayer' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/layers/patterns/layer/ILayer.as' namespace='org.robotlegs.utilities.layers.patterns.layer' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<field name='STYLES' fullname='org.robotlegs.utilities:Utilities/STYLES' type='Class' isStatic='true' isConst='true' defaultValue='' >
 <description><![CDATA[
-	 
-	 
-	 ]]></description>
-<author><![CDATA[r.moorman
-	 ]]></author>
-</interfaceRec>
-<method name='addChildAt' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:addChildAt' isStatic='false' isFinal='false' isOverride='false'  param_names='child;index' param_types='flash.display:DisplayObject;int' param_defaults='undefined;undefined' result_type='flash.display:DisplayObject'>
-</method>
-<method name='addChild' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:addChild' isStatic='false' isFinal='false' isOverride='false'  param_names='child' param_types='flash.display:DisplayObject' param_defaults='undefined' result_type='flash.display:DisplayObject'>
-</method>
-<method name='getChildAt' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:getChildAt' isStatic='false' isFinal='false' isOverride='false'  param_names='index' param_types='int' param_defaults='undefined' result_type='flash.display:DisplayObject'>
-</method>
-<method name='getChildByName' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:getChildByName' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='flash.display:DisplayObject'>
-</method>
-<method name='getChildIndex' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:getChildIndex' isStatic='false' isFinal='false' isOverride='false'  param_names='child' param_types='flash.display:DisplayObject' param_defaults='undefined' result_type='int'>
-</method>
-<method name='removeChildAt' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:removeChildAt' isStatic='false' isFinal='false' isOverride='false'  param_names='index' param_types='int' param_defaults='undefined' result_type='flash.display:DisplayObject'>
-</method>
-<method name='removeChild' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:removeChild' isStatic='false' isFinal='false' isOverride='false'  param_names='child' param_types='flash.display:DisplayObject' param_defaults='undefined' result_type='flash.display:DisplayObject'>
-</method>
-<method name='name' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:name/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
-<description><![CDATA[
-		 The name of the layer.
 		 ]]></description>
-</method>
-<classRec name='Layer' fullname='org.robotlegs.utilities.layers.patterns.layer:Layer' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/layers/patterns/layer/Layer.as' namespace='org.robotlegs.utilities.layers.patterns.layer' access='public' baseclass='flash.display:Sprite' interfaces='org.robotlegs.utilities.layers.patterns.layer:ILayer' isFinal='false' isDynamic='false' >
-</classRec>
-<method name='Layer' fullname='org.robotlegs.utilities.layers.patterns.layer:Layer/Layer' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='*'>
-</method>
+<copy><![CDATA[org.robotlegs.utilities.styles.controller.install.InstallStylesCommand
+		 ]]></copy>
+</field>
 <interfaceRec name='IPage' fullname='org.robotlegs.utilities.navigator.patterns.page:IPage' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/navigator/patterns/page/IPage.as' namespace='org.robotlegs.utilities.navigator.patterns.page' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
 <description><![CDATA[
 	 Abstract <code>IPage</code> interface.
@@ -3276,6 +3416,49 @@
 		 
 		 ]]></description>
 </field>
+<classRec name='InstallLayersCommand' fullname='org.robotlegs.utilities.layers.controller.install:InstallLayersCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/layers/controller/install/InstallLayersCommand.as' namespace='org.robotlegs.utilities.layers.controller.install' access='public' baseclass='org.robotlegs.mvcs:Command' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Map dependencies of <code>Layers</code>.
+	 
+	 <p>The following depedencies are available after executing this <code>Command</code>:</p>
+	 
+	 <ul>
+	 	<li><code>ILayers</code></li>
+	 </ul>
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='execute' fullname='org.robotlegs.utilities.layers.controller.install:InstallLayersCommand/execute' isStatic='false' isFinal='false' isOverride='true'  result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<classRec name='InstallStylesCommand' fullname='org.robotlegs.utilities.styles.controller.install:InstallStylesCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/styles/controller/install/InstallStylesCommand.as' namespace='org.robotlegs.utilities.styles.controller.install' access='public' baseclass='org.robotlegs.mvcs:Command' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Map dependencies of <code>Styles</code>.
+	 
+	 <p>The following depedencies are available after executing this <code>Command</code>:</p>
+	 
+	 <ul>
+	 	<li><code>IStyles</code></li>
+	 </ul>
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='execute' fullname='org.robotlegs.utilities.styles.controller.install:InstallStylesCommand/execute' isStatic='false' isFinal='false' isOverride='true'  result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<field name='viewMap' fullname='org.robotlegs.utilities.styles.controller.install:InstallStylesCommand/viewMap' type='org.robotlegs.core:IViewMap' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 
+		 ]]></description>
+</field>
 <classRec name='CSSAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:CSSAsset' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/patterns/asset/type/CSSAsset.as' namespace='org.robotlegs.utilities.assetloader.patterns.asset.type' access='public' baseclass='org.robotlegs.utilities.assetloader.patterns.asset:Asset' isFinal='false' isDynamic='false' >
 <description><![CDATA[
 	 
@@ -3445,25 +3628,6 @@
 		 ]]></description>
 <private><![CDATA[]]></private>
 </field>
-<classRec name='InstallLayersCommand' fullname='org.robotlegs.utilities.layers.controller.install:InstallLayersCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/layers/controller/install/InstallLayersCommand.as' namespace='org.robotlegs.utilities.layers.controller.install' access='public' baseclass='org.robotlegs.mvcs:Command' isFinal='false' isDynamic='false' >
-<description><![CDATA[
-	 Map dependencies of <code>Layers</code>.
-	 
-	 <p>The following depedencies are available after executing this <code>Command</code>:</p>
-	 
-	 <ul>
-	 	<li><code>ILayers</code></li>
-	 </ul>
-	 
-	 ]]></description>
-<author><![CDATA[r.moorman
-	 ]]></author>
-</classRec>
-<method name='execute' fullname='org.robotlegs.utilities.layers.controller.install:InstallLayersCommand/execute' isStatic='false' isFinal='false' isOverride='true'  result_type='void'>
-<description><![CDATA[
-		 ]]></description>
-<inheritDoc><![CDATA[]]></inheritDoc>
-</method>
 <classRec name='AssetUtil' fullname='org.robotlegs.utilities.assetloader.utils:AssetUtil' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/utils/AssetUtil.as' namespace='org.robotlegs.utilities.assetloader.utils' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
 <description><![CDATA[
 	 
@@ -3482,4 +3646,52 @@
 <return><![CDATA[
 		 ]]></return>
 </method>
+<classRec name='StylesTextfield' fullname='org.robotlegs.utilities.styles.view:StylesTextfield' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/styles/view/StylesTextfield.as' namespace='org.robotlegs.utilities.styles.view' access='public' baseclass='flash.text:TextField' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='StylesTextfield' fullname='org.robotlegs.utilities.styles.view:StylesTextfield/StylesTextfield' isStatic='false' isFinal='false' isOverride='false'  param_names='styleName;autoSize' param_types='String;String' param_defaults='null;unknown' result_type='*'>
+<description><![CDATA[
+		 Constructor.
+		 
+		 ]]></description>
+<param><![CDATA[styleName
+		 ]]></param>
+<param><![CDATA[autoSize
+		 ]]></param>
+</method>
+<method name='onPostConstruct' fullname='org.robotlegs.utilities.styles.view:StylesTextfield/onPostConstruct' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
+<method name='htmlText' fullname='org.robotlegs.utilities.styles.view:StylesTextfield/htmlText/set' isStatic='false' isFinal='false' isOverride='true'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<method name='text' fullname='org.robotlegs.utilities.styles.view:StylesTextfield/text/set' isStatic='false' isFinal='false' isOverride='true'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<field name='_styleName' fullname='org.robotlegs.utilities.styles.view:StylesTextfield/private:_styleName' type='String' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_text' fullname='org.robotlegs.utilities.styles.view:StylesTextfield/private:_text' type='String' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='styles' fullname='org.robotlegs.utilities.styles.view:StylesTextfield/styles' type='org.robotlegs.utilities.styles.core:IStyles' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 
+		 ]]></description>
+</field>
 </asdoc>

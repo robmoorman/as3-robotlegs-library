@@ -1,0 +1,44 @@
+<apiPackage id="org.robotlegs.utilities.styles.core"><apiName>org.robotlegs.utilities.styles.core</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.styles.core:IStyles"><apiName>IStyles</apiName><shortdesc>
+	 
+	 
+	 </shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="org.robotlegs.utilities.styles.core:IStyles:org.robotlegs.utilities.styles.core:IStyles:addStyle"><apiName>addStyle</apiName><shortdesc>
+		 
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>styleSheet</apiItemName><apiType value="flash.text:StyleSheet"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.styles.core:IStyles:org.robotlegs.utilities.styles.core:IStyles:loadStyle"><apiName>loadStyle</apiName><shortdesc>
+		 
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>url</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>closure</apiItemName><apiType value="Function"/><apiData>null</apiData><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.robotlegs.utilities.styles.core:IStyles:org.robotlegs.utilities.styles.core:IStyles:styleSheet:get"><apiName>styleSheet</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="flash.text:StyleSheet"/></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.robotlegs.utilities.styles.core:Styles"><apiName>Styles</apiName><shortdesc>
+	 
+	 
+	 </shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.utilities.styles.core:IStyles</apiBaseInterface><apiBaseClassifier>org.robotlegs.mvcs:Actor</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.utilities.styles.core:Styles:Styles"><apiName>Styles</apiName><shortdesc>
+		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>
+		 Constructor.
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.robotlegs.utilities.styles.core:Styles:addStyle"><apiName>addStyle</apiName><shortdesc conref="org.robotlegs.utilities.styles.core.IStyles.addStyle()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>styleSheet</apiItemName><apiType value="flash.text:StyleSheet"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.styles.core.IStyles.addStyle()">
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.styles.core:Styles:loadStyle"><apiName>loadStyle</apiName><shortdesc conref="org.robotlegs.utilities.styles.core.IStyles.loadStyle()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>closure</apiItemName><apiType value="Function"/><apiData>null</apiData></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.styles.core.IStyles.loadStyle()">
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.robotlegs.utilities.styles.core:Styles:assetLoader"><apiName>assetLoader</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.assetloader.core:IAssetLoader</apiValueClassifier></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.styles.core:Styles:styleSheet:get"><apiName>styleSheet</apiName><shortdesc conref="org.robotlegs.utilities.styles.core.IStyles.styleSheet">
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="flash.text:StyleSheet"/></apiValueDef><apiDesc conref="org.robotlegs.utilities.styles.core.IStyles.styleSheet">
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage>

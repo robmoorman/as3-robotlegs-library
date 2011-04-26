@@ -1815,6 +1815,196 @@
          </Keywords>
       </apiClassifier>
    </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.styles.controller.install">
+      <apiName>org.robotlegs.utilities.styles.controller.install</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.styles.controller.install:InstallStylesCommand">
+         <apiName>InstallStylesCommand</apiName>
+         <shortdesc>
+	 Map dependencies of Styles.</shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 Map dependencies of <codeph>Styles</codeph>.
+	 
+	 <p>The following depedencies are available after executing this <codeph>Command</codeph>:</p>
+	 
+	              <ul>
+	 	               <li>
+                     <codeph>IStyles</codeph>
+                  </li>
+	              </ul>
+	 
+	           </apiDesc>
+         </apiClassifierDetail>
+         <Keywords>
+            <meta name="keywords"
+                  content="InstallStylesCommand,org.robotlegs.utilities.styles.controller.install.InstallStylesCommand,viewMap,execute"/>
+         </Keywords>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.styles.core">
+      <apiName>org.robotlegs.utilities.styles.core</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.styles.core:IStyles">
+         <apiName>IStyles</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+         </apiClassifierDetail>
+         <Keywords>
+            <meta name="keywords"
+                  content="IStyles,org.robotlegs.utilities.styles.core.IStyles,assetLoader,styleSheet,styleSheet,addStyle,addStyle,loadStyle,loadStyle"/>
+         </Keywords>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.utilities.styles.core:Styles">
+         <apiName>Styles</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.robotlegs.utilities.styles.core:IStyles</apiBaseInterface>
+               <apiBaseClassifier>org.robotlegs.mvcs:Actor</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+         </apiClassifierDetail>
+         <Keywords>
+            <meta name="keywords"
+                  content="Styles,org.robotlegs.utilities.styles.core.Styles,assetLoader,styleSheet,styleSheet,addStyle,addStyle,loadStyle,loadStyle"/>
+         </Keywords>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.styles.error">
+      <apiName>org.robotlegs.utilities.styles.error</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.styles.error:StylesError">
+         <apiName>StylesError</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Error</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+         </apiClassifierDetail>
+         <Keywords>
+            <meta name="keywords"
+                  content="StylesError,org.robotlegs.utilities.styles.error.StylesError"/>
+         </Keywords>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.styles.events">
+      <apiName>org.robotlegs.utilities.styles.events</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.styles.events:StylesEvent">
+         <apiName>StylesEvent</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.events:Event</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+         </apiClassifierDetail>
+         <Keywords>
+            <meta name="keywords"
+                  content="StylesEvent,org.robotlegs.utilities.styles.events.StylesEvent,clone"/>
+         </Keywords>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.utilities.styles.view">
+      <apiName>org.robotlegs.utilities.styles.view</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.utilities.styles.view:StylesTextfield">
+         <apiName>StylesTextfield</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.text:TextField</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+         </apiClassifierDetail>
+         <Keywords>
+            <meta name="keywords"
+                  content="StylesTextfield,org.robotlegs.utilities.styles.view.StylesTextfield,htmlText,styles,text,onPostConstruct"/>
+         </Keywords>
+      </apiClassifier>
+   </apiPackage>
    <apiPackage id="org.robotlegs.utilities">
       <apiName>org.robotlegs.utilities</apiName>
       <apiDetail/>
@@ -1856,13 +2046,16 @@
 	 	               <li>
                      <codeph>Router</codeph>
                   </li>
+	 	               <li>
+                     <codeph>Styles</codeph>
+                  </li>
 	              </ul>
 	 
 	           </apiDesc>
          </apiClassifierDetail>
          <Keywords>
             <meta name="keywords"
-                  content="Utilities,org.robotlegs.utilities.Utilities,ALL,ASSET_LOADER,LAYERS,LOCALIZER,NAVIGATOR,ROUTER,mapDependencies"/>
+                  content="Utilities,org.robotlegs.utilities.Utilities,ALL,ASSET_LOADER,LAYERS,LOCALIZER,NAVIGATOR,ROUTER,STYLES,mapDependencies"/>
          </Keywords>
       </apiClassifier>
    </apiPackage>

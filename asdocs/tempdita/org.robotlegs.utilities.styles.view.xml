@@ -1,0 +1,24 @@
+<apiPackage id="org.robotlegs.utilities.styles.view"><apiName>org.robotlegs.utilities.styles.view</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.styles.view:StylesTextfield"><apiName>StylesTextfield</apiName><shortdesc>
+	 
+	 
+	 </shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>flash.text:TextField</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.utilities.styles.view:StylesTextfield:StylesTextfield"><apiName>StylesTextfield</apiName><shortdesc>
+		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>styleName</apiItemName><apiType value="String"/><apiData>null</apiData><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>autoSize</apiItemName><apiType value="String"/><apiData>unknown</apiData><apiDesc>	 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.robotlegs.utilities.styles.view:StylesTextfield:onPostConstruct"><apiName>onPostConstruct</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.robotlegs.utilities.styles.view:StylesTextfield:styles"><apiName>styles</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.styles.core:IStyles</apiValueClassifier></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.styles.view:StylesTextfield:htmlText:set"><apiName>htmlText</apiName><shortdesc>
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiIsOverride/><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="write"/><apiType value="String"/></apiValueDef><apiDesc>
+		 </apiDesc></apiValueDetail><apiInheritDoc/></apiValue><apiValue id="org.robotlegs.utilities.styles.view:StylesTextfield:text:set"><apiName>text</apiName><shortdesc>
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiIsOverride/><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="write"/><apiType value="String"/></apiValueDef><apiDesc>
+		 </apiDesc></apiValueDetail><apiInheritDoc/></apiValue></apiClassifier></apiPackage>
