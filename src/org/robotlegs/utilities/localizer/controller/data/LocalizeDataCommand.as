@@ -94,7 +94,7 @@ package org.robotlegs.utilities.localizer.controller.data
 					mapValue( child.name().toString(), child.toString(), prefix );
 				}
 				else {
-					mapValue( child.name().toString(), child.toString(), prefix );
+					mapValue( child.name().toString(), child, prefix );
 					
 					iterateChilds( child, prefix + child.name().toString() + '.' );
 				}
