@@ -59,6 +59,8 @@ package org.robotlegs.utilities.styles.view
 			
 			_styleName = styleName;
 			
+			embedFonts = true;
+			
 			this.autoSize = autoSize;
 		}
 		

@@ -43,7 +43,7 @@ package org.robotlegs.utilities.localizer.controller.data
 			}
 			else if( event.data ) {
 				data = event.data;
-				prefix = event.prefix + '.';
+				prefix = event.prefix.length ? event.prefix + '.' : '';
 			}
 			else {
 				throw new LocalizerError( 'LocalizerEvent does not have data provided!' );
