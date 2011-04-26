@@ -1,0 +1,18 @@
+<apiPackage id="org.robotlegs.utilities.navigator.controller.page"><apiName>org.robotlegs.utilities.navigator.controller.page</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.navigator.controller.page:NavigateToPageCommand"><apiName>NavigateToPageCommand</apiName><shortdesc>
+	 
+	 
+	 </shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="org.robotlegs.utilities.navigator.controller.page:NavigateToPageCommand:execute"><apiName>execute</apiName><shortdesc>
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiIsOverride/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 </apiDesc></apiOperationDetail><apiInheritDoc/></apiOperation><apiValue id="org.robotlegs.utilities.navigator.controller.page:NavigateToPageCommand:event"><apiName>event</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.navigator.events:NavigatorEvent</apiValueClassifier></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.navigator.controller.page:NavigateToPageCommand:navigator"><apiName>navigator</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.navigator.core:INavigator</apiValueClassifier></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage>

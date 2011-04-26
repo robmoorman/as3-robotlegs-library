@@ -1,0 +1,41 @@
+<apiPackage id="org.robotlegs.utilities.navigator.events"><apiName>org.robotlegs.utilities.navigator.events</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.navigator.events:NavigatorEvent"><apiName>NavigatorEvent</apiName><shortdesc>
+	 
+	 
+	 </shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>flash.events:Event</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.utilities.navigator.events:NavigatorEvent:NavigatorEvent"><apiName>NavigatorEvent</apiName><shortdesc>
+		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>type</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>page</apiItemName><apiOperationClassifier>org.robotlegs.utilities.navigator.patterns.page:IPage</apiOperationClassifier><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>bubbles</apiItemName><apiType value="Boolean"/><apiData>false</apiData><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>cancelable</apiItemName><apiType value="Boolean"/><apiData>false</apiData></apiParam></apiConstructorDef><apiDesc>
+		 Constructor.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.robotlegs.utilities.navigator.events:NavigatorEvent:clone"><apiName>clone</apiName><shortdesc>
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiIsOverride/><apiReturn><apiType value="flash.events:Event"/></apiReturn></apiOperationDef><apiDesc>
+		 </apiDesc></apiOperationDetail><apiInheritDoc/></apiOperation><apiValue id="org.robotlegs.utilities.navigator.events:NavigatorEvent:NAVIGATE"><apiName>NAVIGATE</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.navigator.events.NavigatorEvent.NAVIGATE</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.navigator.events:NavigatorEvent:TRANSITION_IN_COMPLETE"><apiName>TRANSITION_IN_COMPLETE</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.navigator.events.NavigatorEvent.TRANSITION_IN_COMPLETE</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.navigator.events:NavigatorEvent:TRANSITION_IN"><apiName>TRANSITION_IN</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.navigator.events.NavigatorEvent.TRANSITION_IN</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.navigator.events:NavigatorEvent:TRANSITION_OUT_COMPLETE"><apiName>TRANSITION_OUT_COMPLETE</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.navigator.events.NavigatorEvent.TRANSITION_OUT_COMPLETE</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.navigator.events:NavigatorEvent:TRANSITION_OUT"><apiName>TRANSITION_OUT</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.navigator.events.NavigatorEvent.TRANSITION_OUT</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.navigator.events:NavigatorEvent:page"><apiName>page</apiName><shortdesc>
+		 
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.navigator.patterns.page:IPage</apiValueClassifier><apiDefaultValue>null
+		 </apiDefaultValue></apiValueDef><apiDesc>
+		 
+		 
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage>

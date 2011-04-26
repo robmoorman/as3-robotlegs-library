@@ -1,0 +1,40 @@
+<apiPackage id="org.robotlegs.utilities.router.patterns.pattern"><apiName>org.robotlegs.utilities.router.patterns.pattern</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.router.patterns.pattern:Pattern"><apiName>Pattern</apiName><shortdesc>
+	 Abstract Pattern implementation.</shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.utilities.router.patterns.pattern:IPattern</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 Abstract <codeph>Pattern</codeph> implementation.
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.utilities.router.patterns.pattern:Pattern:Pattern"><apiName>Pattern</apiName><shortdesc>
+		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>name</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>regExp</apiItemName><apiType value="RegExp"/><apiData>null</apiData><apiDesc>	 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.robotlegs.utilities.router.patterns.pattern:Pattern:match"><apiName>match</apiName><shortdesc conref="org.robotlegs.utilities.router.patterns.pattern.IPattern.match();">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>pathName</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.router.patterns.pattern.IPattern.match();">
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.robotlegs.utilities.router.patterns.pattern:Pattern:name:get"><apiName>name</apiName><shortdesc conref="org.robotlegs.utilities.router.patterns.pattern.IPattern.name;">
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc conref="org.robotlegs.utilities.router.patterns.pattern.IPattern.name;">
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.router.patterns.pattern:Pattern:value:get"><apiName>value</apiName><shortdesc conref="org.robotlegs.utilities.router.patterns.pattern.IPattern.value;">
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc conref="org.robotlegs.utilities.router.patterns.pattern.IPattern.value;">
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.robotlegs.utilities.router.patterns.pattern:IPattern"><apiName>IPattern</apiName><shortdesc>
+	 Abstract IPattern interface.</shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 Abstract <codeph>IPattern</codeph> interface.
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="org.robotlegs.utilities.router.patterns.pattern:IPattern:org.robotlegs.utilities.router.patterns.pattern:IPattern:match"><apiName>match</apiName><shortdesc>
+		 
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>
+		 </apiDesc><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>pathName</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.robotlegs.utilities.router.patterns.pattern:IPattern:org.robotlegs.utilities.router.patterns.pattern:IPattern:name:get"><apiName>name</apiName><shortdesc>
+		 
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
+		 
+		 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.router.patterns.pattern:IPattern:org.robotlegs.utilities.router.patterns.pattern:IPattern:value:get"><apiName>value</apiName><shortdesc>
+		 
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
+		 
+		 
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage>

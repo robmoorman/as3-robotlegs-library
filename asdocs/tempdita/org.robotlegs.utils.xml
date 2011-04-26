@@ -1,0 +1,15 @@
+<apiPackage id="org.robotlegs.utils"><apiName>org.robotlegs.utils</apiName><apiDetail/><apiClassifier id="org.robotlegs.utils:ClassUtil"><apiName>ClassUtil</apiName><shortdesc>
+	 
+	 
+	 </shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="org.robotlegs.utils:ClassUtil:getEventsFromObject"><apiName>getEventsFromObject</apiName><shortdesc>
+		 
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiStatic/><apiReturn><apiDesc>
+		 </apiDesc><apiType value="Vector$flash.events:Event"/></apiReturn><apiParam><apiItemName>reflector</apiItemName><apiType value="org.robotlegs.core:IReflector"/><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>value</apiItemName><apiType value="Object"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 
+		 
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier></apiPackage>

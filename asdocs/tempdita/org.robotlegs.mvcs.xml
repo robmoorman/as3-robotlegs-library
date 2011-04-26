@@ -1,0 +1,78 @@
+<apiPackage id="org.robotlegs.mvcs"><apiName>org.robotlegs.mvcs</apiName><apiDetail/><apiClassifier id="org.robotlegs.mvcs:ASyncMacroCommand"><apiName>ASyncMacroCommand</apiName><shortdesc>
+	 Abstract ASyncMacroCommand implementation.</shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.core:IASyncCommand</apiBaseInterface><apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 Abstract <codeph>ASyncMacroCommand</codeph> implementation.
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.mvcs:ASyncMacroCommand:ASyncMacroCommand"><apiName>ASyncMacroCommand</apiName><shortdesc>
+		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>
+		 Constructor. 
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.robotlegs.mvcs:ASyncMacroCommand:protected:addSubCommand"><apiName>addSubCommand</apiName><shortdesc>
+		 
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiFinal/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>commandClass</apiItemName><apiType value="Class"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.mvcs:ASyncMacroCommand:protected:executeNextCommand"><apiName>executeNextCommand</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiFinal/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.mvcs:ASyncMacroCommand:execute"><apiName>execute</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiFinal/><apiIsOverride/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.mvcs:ASyncMacroCommand:protected:initializeASyncMacroCommand"><apiName>initializeASyncMacroCommand</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.mvcs:ASyncMacroCommand:onPostConstruct"><apiName>onPostConstruct</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiFinal/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.mvcs:ASyncMacroCommand:setOnComplete"><apiName>setOnComplete</apiName><shortdesc conref="org.robotlegs.core.IASyncCommand.setOnComplete()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiFinal/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>value</apiItemName><apiType value="Function"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.core.IASyncCommand.setOnComplete()">
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.robotlegs.mvcs:ASyncMacroCommand:reflector"><apiName>reflector</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiType value="org.robotlegs.core:IReflector"/></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.robotlegs.mvcs:MacroCommand"><apiName>MacroCommand</apiName><shortdesc>
+	 Abstract MacroCommand implementation.</shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 Abstract <codeph>MacroCommand</codeph> implementation.
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.mvcs:MacroCommand:MacroCommand"><apiName>MacroCommand</apiName><shortdesc>
+		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>
+		 Constructor. 
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.robotlegs.mvcs:MacroCommand:protected:addSubCommand"><apiName>addSubCommand</apiName><shortdesc>
+		 
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiFinal/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>commandClass</apiItemName><apiType value="Class"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.mvcs:MacroCommand:execute"><apiName>execute</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiFinal/><apiIsOverride/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.mvcs:MacroCommand:protected:initializeMacroCommandCommand"><apiName>initializeMacroCommandCommand</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.mvcs:MacroCommand:onPostConstruct"><apiName>onPostConstruct</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiFinal/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.robotlegs.mvcs:MacroCommand:reflector"><apiName>reflector</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiType value="org.robotlegs.core:IReflector"/></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.robotlegs.mvcs:ASyncCommand"><apiName>ASyncCommand</apiName><shortdesc>
+	 Abstract ASyncCommand implementation.</shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.core:IASyncCommand</apiBaseInterface><apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 Abstract <codeph>ASyncCommand</codeph> implementation.
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="org.robotlegs.mvcs:ASyncCommand:protected:commandComplete"><apiName>commandComplete</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiFinal/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.mvcs:ASyncCommand:setOnComplete"><apiName>setOnComplete</apiName><shortdesc conref="org.robotlegs.core.IASyncCommand.setOnComplete()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiFinal/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>value</apiItemName><apiType value="Function"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.core.IASyncCommand.setOnComplete()">
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier></apiPackage>
