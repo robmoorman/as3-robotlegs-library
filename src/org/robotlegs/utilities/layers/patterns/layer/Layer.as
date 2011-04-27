@@ -10,5 +10,17 @@ package org.robotlegs.utilities.layers.patterns.layer
 			
 			this.name = name;
 		}
+		
+		public function lock(): void
+		{
+			mouseChildren = false;
+			mouseEnabled = false;
+		}
+		
+		public function unlock(): void
+		{
+			mouseChildren = true;
+			mouseEnabled = true;
+		}
 	}
 }

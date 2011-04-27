@@ -1175,7 +1175,7 @@
             <asMetadata/>
          </prolog>
             <meta name="keywords"
-               content="Layer,org.robotlegs.utilities.layers.patterns.layer.Layer"/>
+               content="Layer,org.robotlegs.utilities.layers.patterns.layer.Layer,addChildAt,addChild,getChildAt,getChildByName,getChildIndex,lock,lock,removeChildAt,removeChild,unlock,unlock"/>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiAccess value="public"/>
@@ -1209,7 +1209,7 @@
             <asMetadata/>
          </prolog>
             <meta name="keywords"
-               content="ILayer,org.robotlegs.utilities.layers.patterns.layer.ILayer,name,addChildAt,addChild,getChildAt,getChildByName,getChildIndex,removeChildAt,removeChild"/>
+               content="ILayer,org.robotlegs.utilities.layers.patterns.layer.ILayer,name,addChildAt,addChild,getChildAt,getChildByName,getChildIndex,lock,lock,removeChildAt,removeChild,unlock,unlock"/>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiInterface/>

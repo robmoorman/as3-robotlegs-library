@@ -2905,9 +2905,19 @@
 </method>
 <method name='getChildIndex' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:getChildIndex' isStatic='false' isFinal='false' isOverride='false'  param_names='child' param_types='flash.display:DisplayObject' param_defaults='undefined' result_type='int'>
 </method>
+<method name='lock' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:lock' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 Lock the user interface of the layer.
+		 ]]></description>
+</method>
 <method name='removeChildAt' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:removeChildAt' isStatic='false' isFinal='false' isOverride='false'  param_names='index' param_types='int' param_defaults='undefined' result_type='flash.display:DisplayObject'>
 </method>
 <method name='removeChild' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:removeChild' isStatic='false' isFinal='false' isOverride='false'  param_names='child' param_types='flash.display:DisplayObject' param_defaults='undefined' result_type='flash.display:DisplayObject'>
+</method>
+<method name='unlock' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:unlock' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 Unlock the user interface of the layer.
+		 ]]></description>
 </method>
 <method name='name' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:name/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
 <description><![CDATA[
@@ -2917,6 +2927,10 @@
 <classRec name='Layer' fullname='org.robotlegs.utilities.layers.patterns.layer:Layer' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/layers/patterns/layer/Layer.as' namespace='org.robotlegs.utilities.layers.patterns.layer' access='public' baseclass='flash.display:Sprite' interfaces='org.robotlegs.utilities.layers.patterns.layer:ILayer' isFinal='false' isDynamic='false' >
 </classRec>
 <method name='Layer' fullname='org.robotlegs.utilities.layers.patterns.layer:Layer/Layer' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='*'>
+</method>
+<method name='lock' fullname='org.robotlegs.utilities.layers.patterns.layer:Layer/lock' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+</method>
+<method name='unlock' fullname='org.robotlegs.utilities.layers.patterns.layer:Layer/unlock' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
 </method>
 <classRec name='Utilities' fullname='org.robotlegs.utilities:Utilities' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/Utilities.as' namespace='org.robotlegs.utilities' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
 <description><![CDATA[

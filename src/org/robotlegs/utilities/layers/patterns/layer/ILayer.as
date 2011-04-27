@@ -14,6 +14,16 @@ package org.robotlegs.utilities.layers.patterns.layer
 		 */
 		function get name(): String;
 		
+		/**
+		 * Lock the user interface of the layer.
+		 */
+		function lock(): void;
+		
+		/**
+		 * Unlock the user interface of the layer.
+		 */
+		function unlock(): void;
+		
 		function addChild( child: DisplayObject ): DisplayObject;
 		function addChildAt( child: DisplayObject, index: int ): DisplayObject;
 		
