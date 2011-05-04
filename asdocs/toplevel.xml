@@ -3101,7 +3101,7 @@
 		 
 		 ]]></description>
 </method>
-<field name='commands' fullname='org.robotlegs.mvcs:MacroCommand/private:commands' type='Vector$org.robotlegs.mvcs:Command' isStatic='false' isConst='false' >
+<field name='commandClasses' fullname='org.robotlegs.mvcs:MacroCommand/private:commandClasses' type='Vector$Class' isStatic='false' isConst='false' >
 <description><![CDATA[
 		 ]]></description>
 <private><![CDATA[]]></private>
@@ -3163,7 +3163,7 @@
 <copy><![CDATA[org.robotlegs.core.IASyncCommand.setOnComplete()
 		 ]]></copy>
 </method>
-<field name='commands' fullname='org.robotlegs.mvcs:ASyncMacroCommand/private:commands' type='Vector$org.robotlegs.mvcs:Command' isStatic='false' isConst='false' >
+<field name='commandClasses' fullname='org.robotlegs.mvcs:ASyncMacroCommand/private:commandClasses' type='Vector$Class' isStatic='false' isConst='false' >
 <description><![CDATA[
 		 ]]></description>
 <private><![CDATA[]]></private>

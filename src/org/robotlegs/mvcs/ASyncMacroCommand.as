@@ -29,7 +29,7 @@ package org.robotlegs.mvcs
 		/**
 		 * @private
 		 */
-		private var commands: Vector.<Command>;
+		private var commandClasses: Vector.<Class>;
 		
 		/**
 		 * @private
@@ -41,7 +41,7 @@ package org.robotlegs.mvcs
 		 */
 		public function ASyncMacroCommand()
 		{
-			commands = new Vector.<Command>;
+			commandClasses = new Vector.<Class>;
 		}
 		
 		/**
@@ -66,17 +66,7 @@ package org.robotlegs.mvcs
 		 */
 		final public function onPostConstruct(): void
 		{
-			events = ClassUtil.getEventsFromObject( reflector, this );
-			
-			var event: Event;
-			
-			for each( event in events )
-				injector.mapValue( getDefinitionByName( getQualifiedClassName( event )) as Class, event );
-			
 			initializeASyncMacroCommand();
-			
-			for each( event in events )
-				injector.unmap( getDefinitionByName( getQualifiedClassName( event )) as Class );
 		}
 		
 		/**
@@ -84,8 +74,15 @@ package org.robotlegs.mvcs
 		 */
 		final protected function executeNextCommand(): void
 		{
-			if( commands.length ) {
-				var command: Command = commands.shift();
+			events = ClassUtil.getEventsFromObject( reflector, this );
+			
+			var event: Event;
+			
+			for each( event in events )
+				injector.mapValue( getDefinitionByName( getQualifiedClassName( event )) as Class, event );
+			
+			if( commandClasses.length ) {
+				var command: Command = injector.instantiate( commandClasses.shift() as Class ) as Command;
 				var commandIsASync: Boolean = command is IASyncCommand;
 				
 				if( commandIsASync )
@@ -102,6 +99,9 @@ package org.robotlegs.mvcs
 				
 				onComplete = null;
 			}
+			
+			for each( event in events )
+				injector.unmap( getDefinitionByName( getQualifiedClassName( event )) as Class );
 		}
 		
 		/**
@@ -111,7 +111,7 @@ package org.robotlegs.mvcs
 		 */
 		final protected function addSubCommand( commandClass: Class ): void
 		{
-			commands.push( injector.instantiate( commandClass ));
+			commandClasses.push( commandClass );
 		}
 		
 		/**

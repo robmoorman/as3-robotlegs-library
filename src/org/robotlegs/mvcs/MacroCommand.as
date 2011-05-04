@@ -23,7 +23,7 @@ package org.robotlegs.mvcs
 		/**
 		 * @private
 		 */
-		private var commands: Vector.<Command>;
+		private var commandClasses: Vector.<Class>;
 		
 		/**
 		 * @private
@@ -35,25 +35,13 @@ package org.robotlegs.mvcs
 		 */
 		public function MacroCommand()
 		{
-			commands = new Vector.<Command>;
+			commandClasses = new Vector.<Class>;
 		}
 		
 		/**
 		 * 
 		 */
 		final override public function execute(): void
-		{
-			while( commands.length ) {
-				var command: Command = commands.shift();
-				command.execute();
-			}
-		}
-		
-		[PostConstruct]
-		/**
-		 * 
-		 */
-		final public function onPostConstruct(): void
 		{
 			events = ClassUtil.getEventsFromObject( reflector, this );
 			
@@ -62,10 +50,22 @@ package org.robotlegs.mvcs
 			for each( event in events )
 				injector.mapValue( getDefinitionByName( getQualifiedClassName( event )) as Class, event );
 			
-			initializeMacroCommandCommand();
+			while( commandClasses.length ) {
+				var command: Command = injector.instantiate( commandClasses.shift() as Class ) as Command;
+				command.execute();
+			}
 			
 			for each( event in events )
 				injector.unmap( getDefinitionByName( getQualifiedClassName( event )) as Class );
+		}
+		
+		[PostConstruct]
+		/**
+		 * 
+		 */
+		final public function onPostConstruct(): void
+		{
+			initializeMacroCommandCommand();
 		}
 		
 		/**
@@ -75,7 +75,7 @@ package org.robotlegs.mvcs
 		 */
 		final protected function addSubCommand( commandClass: Class ): void
 		{
-			commands.push( injector.instantiate( commandClass ));
+			commandClasses.push( commandClass );
 		}
 		
 		/**
