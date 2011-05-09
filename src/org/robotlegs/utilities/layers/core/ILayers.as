@@ -47,5 +47,15 @@ package org.robotlegs.utilities.layers.core
 		 * @param index
 		 */
 		function transferLayer( name: String, index: int ): ILayer;
+		
+		/**
+		 * Lock the user interface of all layers.
+		 */
+		function lock(): void;
+		
+		/**
+		 * Lock the user interface of all layers.
+		 */
+		function unlock(): void;
 	}
 }

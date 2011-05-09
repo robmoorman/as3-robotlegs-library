@@ -797,7 +797,7 @@
          </apiClassifierDetail>
          <Keywords>
             <meta name="keywords"
-                  content="Layers,org.robotlegs.utilities.layers.core.Layers,addLayer,addLayer,getLayer,getLayer,hasLayer,hasLayer,removeLayer,removeLayer,transferLayer,transferLayer"/>
+                  content="Layers,org.robotlegs.utilities.layers.core.Layers,addLayer,addLayer,getLayer,getLayer,hasLayer,hasLayer,lock,lock,removeLayer,removeLayer,transferLayer,transferLayer,unlock,unlock"/>
          </Keywords>
       </apiClassifier>
       <apiClassifier id="org.robotlegs.utilities.layers.core:ILayers">
@@ -825,7 +825,7 @@
          </apiClassifierDetail>
          <Keywords>
             <meta name="keywords"
-                  content="ILayers,org.robotlegs.utilities.layers.core.ILayers,addLayer,addLayer,getLayer,getLayer,hasLayer,hasLayer,removeLayer,removeLayer,transferLayer,transferLayer"/>
+                  content="ILayers,org.robotlegs.utilities.layers.core.ILayers,addLayer,addLayer,getLayer,getLayer,hasLayer,hasLayer,lock,lock,removeLayer,removeLayer,transferLayer,transferLayer,unlock,unlock"/>
          </Keywords>
       </apiClassifier>
    </apiPackage>

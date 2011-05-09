@@ -88,5 +88,29 @@ package org.robotlegs.utilities.layers.core
 			
 			return layer;
 		}
+		
+		/**
+		 * @copy org.robotlegs.utilities.layers.core.ILayers.lock()
+		 */
+		public function lock(): void
+		{
+			var layer: ILayer;
+			
+			for each( layer in _layerMap ) {
+				layer.lock();
+			}
+		}
+		
+		/**
+		 * @copy org.robotlegs.utilities.layers.core.ILayers.unlock()
+		 */
+		public function unlock(): void
+		{
+			var layer: ILayer;
+			
+			for each( layer in _layerMap ) {
+				layer.unlock();
+			}
+		}
 	}
 }

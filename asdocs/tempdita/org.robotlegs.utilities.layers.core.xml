@@ -14,10 +14,14 @@
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiOperationClassifier>org.robotlegs.utilities.layers.patterns.layer:ILayer</apiOperationClassifier></apiReturn><apiParam><apiItemName>name</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.layers.core.ILayers.getLayer()">
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.layers.core:Layers:hasLayer"><apiName>hasLayer</apiName><shortdesc conref="org.robotlegs.utilities.layers.core.ILayers.hasLayer()">
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>name</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.layers.core.ILayers.hasLayer()">
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.layers.core:Layers:lock"><apiName>lock</apiName><shortdesc conref="org.robotlegs.utilities.layers.core.ILayers.lock()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc conref="org.robotlegs.utilities.layers.core.ILayers.lock()">
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.layers.core:Layers:removeLayer"><apiName>removeLayer</apiName><shortdesc conref="org.robotlegs.utilities.layers.core.ILayers.removeLayer()">
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiOperationClassifier>org.robotlegs.utilities.layers.patterns.layer:ILayer</apiOperationClassifier></apiReturn><apiParam><apiItemName>name</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.layers.core.ILayers.removeLayer()">
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.layers.core:Layers:transferLayer"><apiName>transferLayer</apiName><shortdesc conref="org.robotlegs.utilities.layers.core.ILayers.transferLayer()">
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiOperationClassifier>org.robotlegs.utilities.layers.patterns.layer:ILayer</apiOperationClassifier></apiReturn><apiParam><apiItemName>name</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>index</apiItemName><apiType value="int"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.layers.core.ILayers.transferLayer()">
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.layers.core:Layers:unlock"><apiName>unlock</apiName><shortdesc conref="org.robotlegs.utilities.layers.core.ILayers.unlock()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc conref="org.robotlegs.utilities.layers.core.ILayers.unlock()">
 		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="org.robotlegs.utilities.layers.core:ILayers"><apiName>ILayers</apiName><shortdesc>
 	 
 	 
@@ -46,6 +50,9 @@
 		 </apiDesc><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>name</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
 		 
 		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.layers.core:ILayers:org.robotlegs.utilities.layers.core:ILayers:lock"><apiName>lock</apiName><shortdesc>
+		 Lock the user interface of all layers.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 Lock the user interface of all layers.
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.layers.core:ILayers:org.robotlegs.utilities.layers.core:ILayers:removeLayer"><apiName>removeLayer</apiName><shortdesc>
 		 
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>
@@ -57,4 +64,7 @@
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiOperationClassifier>org.robotlegs.utilities.layers.patterns.layer:ILayer</apiOperationClassifier></apiReturn><apiParam><apiItemName>name</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>index</apiItemName><apiType value="int"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
 		 
 		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.layers.core:ILayers:org.robotlegs.utilities.layers.core:ILayers:unlock"><apiName>unlock</apiName><shortdesc>
+		 Lock the user interface of all layers.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 Lock the user interface of all layers.
 		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier></apiPackage>

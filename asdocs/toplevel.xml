@@ -2592,6 +2592,11 @@
 <return><![CDATA[
 		 ]]></return>
 </method>
+<method name='lock' fullname='org.robotlegs.utilities.layers.core:ILayers/org.robotlegs.utilities.layers.core:ILayers:lock' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 Lock the user interface of all layers.
+		 ]]></description>
+</method>
 <method name='removeLayer' fullname='org.robotlegs.utilities.layers.core:ILayers/org.robotlegs.utilities.layers.core:ILayers:removeLayer' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.layers.patterns.layer:ILayer'>
 <description><![CDATA[
 		 
@@ -2610,6 +2615,11 @@
 		 ]]></param>
 <param><![CDATA[index
 		 ]]></param>
+</method>
+<method name='unlock' fullname='org.robotlegs.utilities.layers.core:ILayers/org.robotlegs.utilities.layers.core:ILayers:unlock' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 Lock the user interface of all layers.
+		 ]]></description>
 </method>
 <classRec name='Layers' fullname='org.robotlegs.utilities.layers.core:Layers' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/layers/core/Layers.as' namespace='org.robotlegs.utilities.layers.core' access='public' baseclass='org.robotlegs.mvcs:Actor' interfaces='org.robotlegs.utilities.layers.core:ILayers' isFinal='false' isDynamic='false' >
 <description><![CDATA[
@@ -2642,6 +2652,12 @@
 <copy><![CDATA[org.robotlegs.utilities.layers.core.ILayers.hasLayer()
 		 ]]></copy>
 </method>
+<method name='lock' fullname='org.robotlegs.utilities.layers.core:Layers/lock' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.layers.core.ILayers.lock()
+		 ]]></copy>
+</method>
 <method name='removeLayer' fullname='org.robotlegs.utilities.layers.core:Layers/removeLayer' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.layers.patterns.layer:ILayer'>
 <description><![CDATA[
 		 ]]></description>
@@ -2652,6 +2668,12 @@
 <description><![CDATA[
 		 ]]></description>
 <copy><![CDATA[org.robotlegs.utilities.layers.core.ILayers.transferLayer()
+		 ]]></copy>
+</method>
+<method name='unlock' fullname='org.robotlegs.utilities.layers.core:Layers/unlock' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.layers.core.ILayers.unlock()
 		 ]]></copy>
 </method>
 <field name='_layerMap' fullname='org.robotlegs.utilities.layers.core:Layers/private:_layerMap' type='flash.utils:Dictionary' isStatic='false' isConst='false' >
