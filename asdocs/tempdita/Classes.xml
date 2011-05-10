@@ -1260,7 +1260,7 @@
          </apiClassifierDetail>
          <Keywords>
             <meta name="keywords"
-                  content="NavigateToPageCommand,org.robotlegs.utilities.navigator.controller.page.NavigateToPageCommand,event,navigator,execute"/>
+                  content="NavigateToPageCommand,org.robotlegs.utilities.navigator.controller.page.NavigateToPageCommand,event,layers,navigator,execute"/>
          </Keywords>
       </apiClassifier>
    </apiPackage>
@@ -1296,7 +1296,7 @@
          </related-links>
          <Keywords>
             <meta name="keywords"
-                  content="INavigator,org.robotlegs.utilities.navigator.core.INavigator,choosenPage,choosenPage,currentPage,currentPage,defaultTransition,defaultTransition,transitioning,transitioning,addPage,addPage,addTransition,addTransition,getPage,getPage,getTransition,getTransition,getTransitionByPageName,getTransitionByPageName,hasPage,hasPage,hasTransition,hasTransition,hasTransitionByPageName,hasTransitionByPageName,navigate,navigate,removePage,removePage,removeTransition,removeTransition,removeTransitionByPageName,removeTransitionByPageName"/>
+                  content="INavigator,org.robotlegs.utilities.navigator.core.INavigator,choosenPage,choosenPage,currentPage,currentPage,defaultTransition,defaultTransition,lockLayersWhileTransitioning,lockLayersWhileTransitioning,transitioning,transitioning,addPage,addPage,addTransition,addTransition,getPage,getPage,getTransition,getTransition,getTransitionByPageName,getTransitionByPageName,hasPage,hasPage,hasTransition,hasTransition,hasTransitionByPageName,hasTransitionByPageName,navigate,navigate,removePage,removePage,removeTransition,removeTransition,removeTransitionByPageName,removeTransitionByPageName"/>
          </Keywords>
       </apiClassifier>
       <apiClassifier id="org.robotlegs.utilities.navigator.core:Navigator">
@@ -1328,7 +1328,7 @@
          </related-links>
          <Keywords>
             <meta name="keywords"
-                  content="Navigator,org.robotlegs.utilities.navigator.core.Navigator,choosenPage,choosenPage,currentPage,currentPage,defaultTransition,defaultTransition,transitioning,transitioning,addPage,addPage,addTransition,addTransition,getPage,getPage,getTransition,getTransition,getTransitionByPageName,getTransitionByPageName,hasPage,hasPage,hasTransition,hasTransition,hasTransitionByPageName,hasTransitionByPageName,navigate,navigate,removePage,removePage,removeTransition,removeTransition,removeTransitionByPageName,removeTransitionByPageName"/>
+                  content="Navigator,org.robotlegs.utilities.navigator.core.Navigator,choosenPage,choosenPage,currentPage,currentPage,defaultTransition,defaultTransition,lockLayersWhileTransitioning,lockLayersWhileTransitioning,transitioning,transitioning,addPage,addPage,addTransition,addTransition,getPage,getPage,getTransition,getTransition,getTransitionByPageName,getTransitionByPageName,hasPage,hasPage,hasTransition,hasTransition,hasTransitionByPageName,hasTransitionByPageName,navigate,navigate,removePage,removePage,removeTransition,removeTransition,removeTransitionByPageName,removeTransitionByPageName"/>
          </Keywords>
       </apiClassifier>
    </apiPackage>

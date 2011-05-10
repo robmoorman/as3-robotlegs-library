@@ -11,6 +11,10 @@
 		 
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.navigator.events:NavigatorEvent</apiValueClassifier></apiValueDef><apiDesc>
 		 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.navigator.controller.page:NavigateToPageCommand:layers"><apiName>layers</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.layers.core:ILayers</apiValueClassifier></apiValueDef><apiDesc>
+		 
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.navigator.controller.page:NavigateToPageCommand:navigator"><apiName>navigator</apiName><shortdesc>
 		 
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.navigator.core:INavigator</apiValueClassifier></apiValueDef><apiDesc>

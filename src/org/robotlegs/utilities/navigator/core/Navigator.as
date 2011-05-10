@@ -18,6 +18,20 @@ package org.robotlegs.utilities.navigator.core
 	public class Navigator extends Actor implements INavigator
 	{
 		/**
+		 * @copy org.robotlegs.utilities.navigator.core.INavigator.lockLayersWhileTransitioning
+		 */
+		public function get lockLayersWhileTransitioning(): Boolean {
+			return _lockLayersWhileTransitioning
+		}
+		
+		/**
+		 * @private
+		 */
+		public function set lockLayersWhileTransitioning( value: Boolean ): void {
+			_lockLayersWhileTransitioning = value;
+		}
+		
+		/**
 		 * @copy org.robotlegs.utilities.navigator.core.INavigator.transitioning
 		 */
 		public function get transitioning(): Boolean {
@@ -76,6 +90,11 @@ package org.robotlegs.utilities.navigator.core
 		/**
 		 * @private
 		 */
+		private var _lockLayersWhileTransitioning: Boolean;
+		
+		/**
+		 * @private
+		 */
 		private var _navigating: Boolean;
 		
 		/**
@@ -119,6 +138,7 @@ package org.robotlegs.utilities.navigator.core
 			_pageMap = new Dictionary;
 			_transitionMap = new Dictionary;
 			_transitionMapByPageName = new Dictionary;
+			_lockLayersWhileTransitioning = false;
 		}
 		
 		/**

@@ -3,6 +3,7 @@ package org.robotlegs.utilities.navigator.controller.page
 	import flash.events.IEventDispatcher;
 	
 	import org.robotlegs.mvcs.Command;
+	import org.robotlegs.utilities.layers.core.ILayers;
 	import org.robotlegs.utilities.navigator.core.INavigator;
 	import org.robotlegs.utilities.navigator.error.NavigatorError;
 	import org.robotlegs.utilities.navigator.events.NavigatorEvent;
@@ -27,6 +28,12 @@ package org.robotlegs.utilities.navigator.controller.page
 		 * 
 		 */
 		public var navigator: INavigator;
+		
+		[Inject]
+		/**
+		 * 
+		 */
+		public var layers: ILayers;
 		
 		/**
 		 * @inheritDoc
@@ -61,6 +68,10 @@ package org.robotlegs.utilities.navigator.controller.page
 			
 			navigator.transitioning = true;
 			
+			if( navigator.lockLayersWhileTransitioning ) {
+				layers.lock();
+			}
+			
 			IEventDispatcher( page ).addEventListener( type, closure );
 			
 			IEventDispatcher( page ).dispatchEvent( new NavigatorEvent( transitionIn ? NavigatorEvent.TRANSITION_IN : NavigatorEvent.TRANSITION_OUT, page ));
@@ -93,6 +104,10 @@ package org.robotlegs.utilities.navigator.controller.page
 			IEventDispatcher( evt.page ).removeEventListener( NavigatorEvent.TRANSITION_IN_COMPLETE, onTransitionInComplete );
 			
 			navigator.transitioning = false;
+			
+			if( navigator.lockLayersWhileTransitioning ) {
+				layers.unlock();
+			}
 		}
 		
 		/**

@@ -1223,6 +1223,10 @@
 		 
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.navigator.events:NavigatorEvent</apiValueClassifier></apiValueDef><apiDesc>
 		 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.navigator.controller.page:NavigateToPageCommand:layers"><apiName>layers</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.layers.core:ILayers</apiValueClassifier></apiValueDef><apiDesc>
+		 
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.navigator.controller.page:NavigateToPageCommand:navigator"><apiName>navigator</apiName><shortdesc>
 		 
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.navigator.core:INavigator</apiValueClassifier></apiValueDef><apiDesc>
@@ -1315,6 +1319,10 @@
 		 
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiValueClassifier>org.robotlegs.utilities.navigator.patterns.transition:ITransition</apiValueClassifier></apiValueDef><apiDesc>
 		 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.navigator.core:INavigator:org.robotlegs.utilities.navigator.core:INavigator:lockLayersWhileTransitioning:get"><apiName>lockLayersWhileTransitioning</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Boolean"/></apiValueDef><apiDesc>
+		 
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.navigator.core:INavigator:org.robotlegs.utilities.navigator.core:INavigator:transitioning:get"><apiName>transitioning</apiName><shortdesc>
 		 
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Boolean"/></apiValueDef><apiDesc>
@@ -1357,6 +1365,8 @@
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiValueClassifier>org.robotlegs.utilities.navigator.patterns.page:IPage</apiValueClassifier></apiValueDef><apiDesc conref="org.robotlegs.utilities.navigator.core.INavigator.currentPage">
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.navigator.core:Navigator:defaultTransition:get"><apiName>defaultTransition</apiName><shortdesc conref="org.robotlegs.utilities.navigator.core.INavigator.defaultTransition">
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiValueClassifier>org.robotlegs.utilities.navigator.patterns.transition:ITransition</apiValueClassifier></apiValueDef><apiDesc conref="org.robotlegs.utilities.navigator.core.INavigator.defaultTransition">
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.navigator.core:Navigator:lockLayersWhileTransitioning:get"><apiName>lockLayersWhileTransitioning</apiName><shortdesc conref="org.robotlegs.utilities.navigator.core.INavigator.lockLayersWhileTransitioning">
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Boolean"/></apiValueDef><apiDesc conref="org.robotlegs.utilities.navigator.core.INavigator.lockLayersWhileTransitioning">
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.navigator.core:Navigator:transitioning:get"><apiName>transitioning</apiName><shortdesc conref="org.robotlegs.utilities.navigator.core.INavigator.transitioning">
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Boolean"/></apiValueDef><apiDesc conref="org.robotlegs.utilities.navigator.core.INavigator.transitioning">
 		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage><apiPackage id="org.robotlegs.utilities.navigator.error"><apiName>org.robotlegs.utilities.navigator.error</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.navigator.error:NavigatorError"><apiName>NavigatorError</apiName><shortdesc>

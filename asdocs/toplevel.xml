@@ -2290,6 +2290,11 @@
 		 
 		 ]]></description>
 </method>
+<method name='lockLayersWhileTransitioning' fullname='org.robotlegs.utilities.navigator.core:INavigator/org.robotlegs.utilities.navigator.core:INavigator:lockLayersWhileTransitioning/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Boolean'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
 <method name='transitioning' fullname='org.robotlegs.utilities.navigator.core:INavigator/org.robotlegs.utilities.navigator.core:INavigator:transitioning/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Boolean'>
 <description><![CDATA[
 		 
@@ -2306,6 +2311,11 @@
 <private><![CDATA[]]></private>
 </method>
 <method name='defaultTransition' fullname='org.robotlegs.utilities.navigator.core:INavigator/org.robotlegs.utilities.navigator.core:INavigator:defaultTransition/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='org.robotlegs.utilities.navigator.patterns.transition:ITransition' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='lockLayersWhileTransitioning' fullname='org.robotlegs.utilities.navigator.core:INavigator/org.robotlegs.utilities.navigator.core:INavigator:lockLayersWhileTransitioning/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Boolean' param_defaults='undefined' result_type='void'>
 <description><![CDATA[
 		 ]]></description>
 <private><![CDATA[]]></private>
@@ -2420,6 +2430,12 @@
 <copy><![CDATA[org.robotlegs.utilities.navigator.core.INavigator.defaultTransition
 		 ]]></copy>
 </method>
+<method name='lockLayersWhileTransitioning' fullname='org.robotlegs.utilities.navigator.core:Navigator/lockLayersWhileTransitioning/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Boolean'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.navigator.core.INavigator.lockLayersWhileTransitioning
+		 ]]></copy>
+</method>
 <method name='transitioning' fullname='org.robotlegs.utilities.navigator.core:Navigator/transitioning/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Boolean'>
 <description><![CDATA[
 		 ]]></description>
@@ -2441,6 +2457,11 @@
 		 ]]></description>
 <private><![CDATA[]]></private>
 </method>
+<method name='lockLayersWhileTransitioning' fullname='org.robotlegs.utilities.navigator.core:Navigator/lockLayersWhileTransitioning/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Boolean' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
 <method name='transitioning' fullname='org.robotlegs.utilities.navigator.core:Navigator/transitioning/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Boolean' param_defaults='undefined' result_type='void'>
 <description><![CDATA[
 		 ]]></description>
@@ -2457,6 +2478,11 @@
 <private><![CDATA[]]></private>
 </field>
 <field name='_defaultTransition' fullname='org.robotlegs.utilities.navigator.core:Navigator/private:_defaultTransition' type='org.robotlegs.utilities.navigator.patterns.transition:ITransition' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_lockLayersWhileTransitioning' fullname='org.robotlegs.utilities.navigator.core:Navigator/private:_lockLayersWhileTransitioning' type='Boolean' isStatic='false' isConst='false' >
 <description><![CDATA[
 		 ]]></description>
 <private><![CDATA[]]></private>
@@ -3392,6 +3418,11 @@
 		 ]]></param>
 </method>
 <field name='event' fullname='org.robotlegs.utilities.navigator.controller.page:NavigateToPageCommand/event' type='org.robotlegs.utilities.navigator.events:NavigatorEvent' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 
+		 ]]></description>
+</field>
+<field name='layers' fullname='org.robotlegs.utilities.navigator.controller.page:NavigateToPageCommand/layers' type='org.robotlegs.utilities.layers.core:ILayers' isStatic='false' isConst='false' >
 <description><![CDATA[
 		 
 		 ]]></description>

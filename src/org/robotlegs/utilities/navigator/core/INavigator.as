@@ -14,6 +14,16 @@ package org.robotlegs.utilities.navigator.core
 		/**
 		 * 
 		 */
+		function get lockLayersWhileTransitioning(): Boolean;
+		
+		/**
+		 * @private
+		 */
+		function set lockLayersWhileTransitioning( value: Boolean ): void;
+		
+		/**
+		 * 
+		 */
 		function get transitioning(): Boolean;
 		
 		/**
