@@ -157,7 +157,7 @@ package org.robotlegs.utilities.assetloader.patterns.asset
 			
 			_id = id;
 			_bytesLoaded = 0;
-			_bytesTotal = 1;
+			_bytesTotal = 0;
 			
 			this.url = url;
 			

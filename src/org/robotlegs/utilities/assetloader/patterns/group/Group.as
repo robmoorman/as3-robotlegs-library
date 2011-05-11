@@ -83,8 +83,9 @@ package org.robotlegs.utilities.assetloader.patterns.group
 			var asset: IAsset;
 			var bytes: uint =  0;
 			
-			for each( asset in assets )
+			for each( asset in assets ) {
 				bytes += asset.bytesLoaded;
+			}
 			
 			return bytes;
 		}
@@ -96,8 +97,9 @@ package org.robotlegs.utilities.assetloader.patterns.group
 			var asset: IAsset;
 			var bytes: uint =  0;
 			
-			for each( asset in assets )
+			for each( asset in assets ) {
 				bytes += asset.bytesTotal;
+			}
 			
 			return bytes;
 		}
@@ -106,7 +108,12 @@ package org.robotlegs.utilities.assetloader.patterns.group
 		 * @copy org.robotlegs.utilities.assetloader.patterns.asset.IAsset.percentage
 		 */
 		public function get percentage(): Number {
-			return ( bytesLoaded / bytesTotal ) * 100;
+			if( assetFileSizesDefined()) {
+				return ( bytesLoaded / bytesTotal ) * 100;
+			}
+			else {
+				return ( getLoadedAssets() / assets.length ) * 100;
+			}
 		}
 		
 		/**
@@ -262,6 +269,43 @@ package org.robotlegs.utilities.assetloader.patterns.group
 					}
 					break;
 			}
+		}
+		
+		/**
+		 * 
+		 * 
+		 * @return  
+		 */
+		final private function getLoadedAssets(): int
+		{
+			var i: int = 0;
+			var asset: IAsset;
+			
+			for each( asset in assets ) {
+				if( asset.state === AssetLoaderState.LOADED ) {
+					i++;
+				}
+			}
+			
+			return i;
+		}
+		
+		/**
+		 * 
+		 * 
+		 * @return  
+		 */
+		final private function assetFileSizesDefined(): Boolean
+		{
+			var asset: IAsset;
+			
+			for each( asset in assets ) {
+				if( asset.bytesTotal == 0 ) {
+					return false;
+				}
+			}
+			
+			return true;
 		}
 	}
 }

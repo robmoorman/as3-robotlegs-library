@@ -954,11 +954,27 @@
 <param><![CDATA[assets
 		 ]]></param>
 </method>
+<method name='assetFileSizesDefined' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/private:assetFileSizesDefined' isStatic='false' isFinal='true' isOverride='false'  result_type='Boolean'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<return><![CDATA[
+		 ]]></return>
+</method>
 <method name='dispose' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/dispose' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
 <description><![CDATA[
 		 ]]></description>
 <copy><![CDATA[org.robotlegs.utilities.assetloader.patterns.group.IGroup.dispose()
 		 ]]></copy>
+</method>
+<method name='getLoadedAssets' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/private:getLoadedAssets' isStatic='false' isFinal='true' isOverride='false'  result_type='int'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<return><![CDATA[
+		 ]]></return>
 </method>
 <method name='loadQueuedAsset' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/protected:loadQueuedAsset' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
 <description><![CDATA[
