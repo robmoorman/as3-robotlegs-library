@@ -1,80 +1,68 @@
 <apiPackage id="org.robotlegs.utilities.assetloader.patterns.group"><apiName>org.robotlegs.utilities.assetloader.patterns.group</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.assetloader.patterns.group:IGroup"><apiName>IGroup</apiName><shortdesc>
-	 
-	 
-	 </shortdesc><prolog><author>r.moorman
+	 The interface definition for a Group.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
-	 
+	 The interface definition for a <codeph>Group</codeph>.
 	 
 	 </apiDesc></apiClassifierDetail><apiOperation id="org.robotlegs.utilities.assetloader.patterns.group:IGroup:org.robotlegs.utilities.assetloader.patterns.group:IGroup:dispose"><apiName>dispose</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
-		 
+		 Trigger the Group to dispose it's references.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 Trigger the <codeph>Group</codeph> to dispose it's references.
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.patterns.group:IGroup:org.robotlegs.utilities.assetloader.patterns.group:IGroup:load"><apiName>load</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
-		 
+		 Trigger the Group to load it's Assets.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 Trigger the <codeph>Group</codeph> to load it's <codeph>Assets</codeph>.
 		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.robotlegs.utilities.assetloader.patterns.group:IGroup:org.robotlegs.utilities.assetloader.patterns.group:IGroup:assets:get"><apiName>assets</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Vector$org.robotlegs.utilities.assetloader.patterns.asset:IAsset"/></apiValueDef><apiDesc>
-		 
+		 The assets of the Group.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Vector$org.robotlegs.utilities.assetloader.patterns.asset:IAsset"/></apiValueDef><apiDesc>
+		 The assets of the <codeph>Group</codeph>.
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.patterns.group:IGroup:org.robotlegs.utilities.assetloader.patterns.group:IGroup:bytesLoaded:get"><apiName>bytesLoaded</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="uint"/></apiValueDef><apiDesc>
-		 
+		 The current total loaded bytes of the Group (from 0 till 100).</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="uint"/></apiValueDef><apiDesc>
+		 The current total loaded bytes of the <codeph>Group</codeph> (from 0 till 100).
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.patterns.group:IGroup:org.robotlegs.utilities.assetloader.patterns.group:IGroup:bytesTotal:get"><apiName>bytesTotal</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="uint"/></apiValueDef><apiDesc>
-		 
+		 The total bytes to load of the Group.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="uint"/></apiValueDef><apiDesc>
+		 The total bytes to load of the <codeph>Group</codeph>.
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.patterns.group:IGroup:org.robotlegs.utilities.assetloader.patterns.group:IGroup:closure:get"><apiName>closure</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Function"/></apiValueDef><apiDesc>
-		 
+		 Optional closure method for retrieving AssetLoaderEvents.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Function"/></apiValueDef><apiDesc>
+		 Optional closure method for retrieving <codeph>AssetLoaderEvents</codeph>.
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.patterns.group:IGroup:org.robotlegs.utilities.assetloader.patterns.group:IGroup:id:get"><apiName>id</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="String"/></apiValueDef><apiDesc>
-		 
+		 The unique id of the Group.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="String"/></apiValueDef><apiDesc>
+		 The unique id of the <codeph>Group</codeph>.
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.patterns.group:IGroup:org.robotlegs.utilities.assetloader.patterns.group:IGroup:maxConnections:get"><apiName>maxConnections</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="int"/></apiValueDef><apiDesc>
-		 
+		 The max connections before a next Asset in the queue starts loading.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="int"/></apiValueDef><apiDesc>
+		 The max connections before a next <codeph>Asset</codeph> in the queue starts loading.
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.patterns.group:IGroup:org.robotlegs.utilities.assetloader.patterns.group:IGroup:percentage:get"><apiName>percentage</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="Number"/></apiValueDef><apiDesc>
-		 
+		 The current percentage of the total loaded bytes of the Group.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="Number"/></apiValueDef><apiDesc>
+		 The current percentage of the total loaded bytes of the <codeph>Group</codeph>.
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.patterns.group:IGroup:org.robotlegs.utilities.assetloader.patterns.group:IGroup:state:get"><apiName>state</apiName><shortdesc>
+		 The current state of the Group.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
+		 The current state of the <codeph>Group</codeph>.
 		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
-		 
-		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.robotlegs.utilities.assetloader.patterns.group:Group"><apiName>Group</apiName><shortdesc>
-	 
-	 
-	 </shortdesc><prolog><author>r.moorman
+		 </apiDesc></apiValueDetail><related-links><link href="org.robotlegs.utilities.assetloader.core.xml#AssetLoaderState"><linktext>org.robotlegs.utilities.assetloader.core.AssetLoaderState</linktext></link></related-links></apiValue></apiClassifier><apiClassifier id="org.robotlegs.utilities.assetloader.patterns.group:Group"><apiName>Group</apiName><shortdesc>
+	 Abstract implementation of IGroup.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.utilities.assetloader.patterns.group:IGroup</apiBaseInterface><apiBaseClassifier>flash.events:EventDispatcher</apiBaseClassifier></apiClassifierDef><apiDesc>
-	 
+	 Abstract implementation of <codeph>IGroup</codeph>.
 	 
 	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.utilities.assetloader.patterns.group:Group:Group"><apiName>Group</apiName><shortdesc>
-		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>id</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>assets</apiItemName><apiType value="Vector$org.robotlegs.utilities.assetloader.patterns.asset:IAsset"/><apiDesc>	 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>id</apiItemName><apiType value="String"/><apiDesc>The id of the <codeph>Group</codeph>.
+		 </apiDesc></apiParam><apiParam><apiItemName>assets</apiItemName><apiType value="Vector$org.robotlegs.utilities.assetloader.patterns.asset:IAsset"/><apiDesc>The assets of the <codeph>Group</codeph>.
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
 		 Constructor.
+		 
+		 <p>At this point the state of the <codeph>Group</codeph> is <codeph>INITIALIZING</codeph>.</p>
 		 
 		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.robotlegs.utilities.assetloader.patterns.group:Group:dispose"><apiName>dispose</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.patterns.group.IGroup.dispose()">
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.patterns.group.IGroup.dispose()">
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.patterns.group:Group:protected:loadQueuedAsset"><apiName>loadQueuedAsset</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
-		 
+		 Load the next Asset in the queue.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 Load the next <codeph>Asset</codeph> in the queue.
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.patterns.group:Group:load"><apiName>load</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.patterns.group.IGroup.load()">
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.patterns.group.IGroup.load()">
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.patterns.group:Group:protected:onAssetProcess"><apiName>onAssetProcess</apiName><shortdesc>
-		 
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiFinal/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>event</apiItemName><apiOperationClassifier>org.robotlegs.utilities.assetloader.events:AssetLoaderEvent</apiOperationClassifier><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
-		 
+		 Handle AssetLoaderEvents during the load process of the current Asset.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiFinal/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>event</apiItemName><apiOperationClassifier>org.robotlegs.utilities.assetloader.events:AssetLoaderEvent</apiOperationClassifier><apiDesc>The <codeph>AssetLoaderEvent</codeph> that triggered this method (<codeph>AssetLoaderEvent.ASSET_COMPLETE</codeph>, <codeph>AssetLoaderEvent.ASSET_PROGRESS</codeph> and <codeph>AssetLoaderEvent.ASSET_ERROR</codeph>).
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Handle <codeph>AssetLoaderEvents</codeph> during the load process of the current <codeph>Asset</codeph>.
 		 
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.patterns.group:Group:protected:setState"><apiName>setState</apiName><shortdesc>
-		 
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiFinal/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>state</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
-		 
+		 Change the state of the Group.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiFinal/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>state</apiItemName><apiType value="String"/><apiDesc>The upcoming state of the <codeph>Group</codeph>.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Change the state of the <codeph>Group</codeph>.
 		 
 		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.robotlegs.utilities.assetloader.patterns.group:Group:assets:get"><apiName>assets</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.patterns.group.IGroup.assets">
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Vector$org.robotlegs.utilities.assetloader.patterns.asset:IAsset"/></apiValueDef><apiDesc conref="org.robotlegs.utilities.assetloader.patterns.group.IGroup.assets">

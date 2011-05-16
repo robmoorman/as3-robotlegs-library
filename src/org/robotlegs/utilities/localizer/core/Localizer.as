@@ -8,7 +8,7 @@ package org.robotlegs.utilities.localizer.core
 	import org.robotlegs.utilities.localizer.patterns.locale.Locale;
 	
 	/**
-	 * Abstract <code>Localizer</code> implementation.
+	 * 
 	 * 
 	 * @author r.moorman
 	 * @see https://github.com/moorinteractive/as3-robotlegs-library/wiki/localizer

@@ -7,7 +7,7 @@ package org.robotlegs.utilities.assetloader.patterns.asset.type
 	import org.robotlegs.utilities.assetloader.patterns.asset.Asset;
 
 	/**
-	 * 
+	 * Automatic assigned type of <code>Asset</code> for loading <code>Bitmaps</code> (swf).
 	 * 
 	 * @author r.moorman
 	 */
@@ -23,7 +23,7 @@ package org.robotlegs.utilities.assetloader.patterns.asset.type
  		}
 		
 		/**
-		 * 
+		 * The loaded <code>DisplayObject</code>.
 		 */
 		public function get displayObject(): DisplayObject {
 			return _displayObject;

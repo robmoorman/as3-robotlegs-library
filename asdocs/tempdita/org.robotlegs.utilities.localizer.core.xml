@@ -1,7 +1,7 @@
 <apiPackage id="org.robotlegs.utilities.localizer.core"><apiName>org.robotlegs.utilities.localizer.core</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.localizer.core:ILocalizer"><apiName>ILocalizer</apiName><shortdesc>
-	 Abstract ILocalizer interface.</shortdesc><prolog><author>r.moorman
+	 The interface definition for Localizer.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
-	 Abstract <codeph>ILocalizer</codeph> interface.
+	 The interface definition for <codeph>Localizer</codeph>.
 	 
 	 </apiDesc></apiClassifierDetail><related-links><link href="" invalidHref="https.//github.com/moorinteractive/as3-robotlegs-library/wiki/localizer.xml"><linktext>https://github.com/moorinteractive/as3-robotlegs-library/wiki/localizer</linktext></link></related-links><apiOperation id="org.robotlegs.utilities.localizer.core:ILocalizer:org.robotlegs.utilities.localizer.core:ILocalizer:addLocale"><apiName>addLocale</apiName><shortdesc>
 		 
@@ -44,9 +44,11 @@
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Boolean"/></apiValueDef><apiDesc>
 		 
 		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.robotlegs.utilities.localizer.core:Localizer"><apiName>Localizer</apiName><shortdesc>
-	 Abstract Localizer implementation.</shortdesc><prolog><author>r.moorman
+	 
+	 
+	 </shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.utilities.localizer.core:ILocalizer</apiBaseInterface><apiBaseClassifier>org.robotlegs.mvcs:Actor</apiBaseClassifier></apiClassifierDef><apiDesc>
-	 Abstract <codeph>Localizer</codeph> implementation.
+	 
 	 
 	 </apiDesc></apiClassifierDetail><related-links><link href="" invalidHref="https.//github.com/moorinteractive/as3-robotlegs-library/wiki/localizer.xml"><linktext>https://github.com/moorinteractive/as3-robotlegs-library/wiki/localizer</linktext></link></related-links><apiConstructor id="org.robotlegs.utilities.localizer.core:Localizer:Localizer"><apiName>Localizer</apiName><shortdesc>
 		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>

@@ -7,7 +7,7 @@ package org.robotlegs.utilities.assetloader.patterns.asset.type
 	import org.robotlegs.utilities.assetloader.patterns.asset.Asset;
 
 	/**
-	 * 
+	 * Automatic assigned type of <code>Asset</code> for loading stylesheets (css).
 	 * 
 	 * @author r.moorman
 	 */
@@ -23,7 +23,7 @@ package org.robotlegs.utilities.assetloader.patterns.asset.type
 		}
 		
 		/**
-		 * 
+		 * The loaded <code>Stylesheet</code>.
 		 */
 		public function get styleSheet(): StyleSheet {
 			return _styleSheet;

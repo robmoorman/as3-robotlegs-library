@@ -6,18 +6,21 @@ package org.robotlegs.utils
 	import org.robotlegs.core.IReflector;
 	
 	/**
-	 * 
+	 * Utilities for <code>Class</code> related functionalities.
 	 * 
 	 * @author r.moorman
 	 */
 	public class ClassUtil
 	{
 		/**
+		 * Get all <code>Events</code> form a provided value.
 		 * 
+		 * <p>This method is usually called by a <code>MacroCommand</code> for passing through
+		 * it's <code>Events</code> to <code>SubCommands</code>.</p>
 		 * 
-		 * @param reflector
-		 * @param value
-		 * @return 
+		 * @param reflector The <code>IReflector</code> of Robotlegs.
+		 * @param value The value to get the Events from.
+		 * @return Vector instance of all Events found in the provided value.
 		 */
 		public static function getEventsFromObject( reflector: IReflector, value: Object ): Vector.<Event>
 		{

@@ -1,40 +1,42 @@
 <apiPackage id="org.robotlegs.utilities.assetloader.events"><apiName>org.robotlegs.utilities.assetloader.events</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.assetloader.events:AssetLoaderEvent"><apiName>AssetLoaderEvent</apiName><shortdesc>
-	 
-	 
-	 </shortdesc><prolog><author>r.moorman
+	 Custom Event for AssetLoader.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>flash.events:Event</apiBaseClassifier></apiClassifierDef><apiDesc>
-	 
+	 Custom <codeph>Event</codeph> for <codeph>AssetLoader</codeph>.
 	 
 	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.utilities.assetloader.events:AssetLoaderEvent:AssetLoaderEvent"><apiName>AssetLoaderEvent</apiName><shortdesc>
-		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>type</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>asset</apiItemName><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.asset:IAsset</apiOperationClassifier><apiData>null</apiData><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>group</apiItemName><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.group:IGroup</apiOperationClassifier><apiData>null</apiData><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>bubbles</apiItemName><apiType value="Boolean"/><apiData>false</apiData><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>cancelable</apiItemName><apiType value="Boolean"/><apiData>false</apiData><apiDesc>	 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>type</apiItemName><apiType value="String"/><apiDesc>The type of <codeph>Event</codeph>.
+		 </apiDesc></apiParam><apiParam><apiItemName>asset</apiItemName><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.asset:IAsset</apiOperationClassifier><apiData>null</apiData><apiDesc>The <codeph>Asset</codeph> that triggered this <codeph>Event</codeph>.
+		 </apiDesc></apiParam><apiParam><apiItemName>group</apiItemName><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.group:IGroup</apiOperationClassifier><apiData>null</apiData><apiDesc>The optional <codeph>Group</codeph> that triggered this <codeph>Event</codeph>.
+		 </apiDesc></apiParam><apiParam><apiItemName>bubbles</apiItemName><apiType value="Boolean"/><apiData>false</apiData><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>cancelable</apiItemName><apiType value="Boolean"/><apiData>false</apiData><apiDesc>	 </apiDesc></apiParam></apiConstructorDef><apiDesc>
 		 Constructor.
 		 
 		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.robotlegs.utilities.assetloader.events:AssetLoaderEvent:clone"><apiName>clone</apiName><shortdesc>
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiIsOverride/><apiReturn><apiType value="flash.events:Event"/></apiReturn></apiOperationDef><apiDesc>
 		 </apiDesc></apiOperationDetail><apiInheritDoc/></apiOperation><apiValue id="org.robotlegs.utilities.assetloader.events:AssetLoaderEvent:ASSET_COMPLETE"><apiName>ASSET_COMPLETE</apiName><shortdesc>
-		 Dispatched when.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.ASSET_COMPLETE</apiData><apiType value="String"/></apiValueDef><apiDesc>
-		 Dispatched when.
+		 Dispatched when an Asset is successfully loaded.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.ASSET_COMPLETE</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Dispatched when an <codeph>Asset</codeph> is successfully loaded.
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.events:AssetLoaderEvent:ASSET_ERROR"><apiName>ASSET_ERROR</apiName><shortdesc>
-		 Dispatched when.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.ASSET_ERROR</apiData><apiType value="String"/></apiValueDef><apiDesc>
-		 Dispatched when.
+		 Dispatched when an Asset failed to load (due a illegal operation or a security error).</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.ASSET_ERROR</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Dispatched when an <codeph>Asset</codeph> failed to load (due a illegal operation or a security error).
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.events:AssetLoaderEvent:ASSET_PROGRESS"><apiName>ASSET_PROGRESS</apiName><shortdesc>
-		 Dispatched when.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.ASSET_PROGRESS</apiData><apiType value="String"/></apiValueDef><apiDesc>
-		 Dispatched when.
+		 Dispatched while an Asset is loading.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.ASSET_PROGRESS</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Dispatched while an <codeph>Asset</codeph> is loading.
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.events:AssetLoaderEvent:GROUP_COMPLETE"><apiName>GROUP_COMPLETE</apiName><shortdesc>
-		 Dispatched when.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.GROUP_COMPLETE</apiData><apiType value="String"/></apiValueDef><apiDesc>
-		 Dispatched when.
+		 Dispatched when a Group is successfully loaded.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.GROUP_COMPLETE</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Dispatched when a <codeph>Group</codeph> is successfully loaded.
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.events:AssetLoaderEvent:GROUP_ERROR"><apiName>GROUP_ERROR</apiName><shortdesc>
-		 Dispatched when.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.GROUP_ERROR</apiData><apiType value="String"/></apiValueDef><apiDesc>
-		 Dispatched when.
+		 Dispatched when a Group failed to load (due a illegal operation or a security error).</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.GROUP_ERROR</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Dispatched when a <codeph>Group</codeph> failed to load (due a illegal operation or a security error).
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.events:AssetLoaderEvent:GROUP_PROGRESS"><apiName>GROUP_PROGRESS</apiName><shortdesc>
-		 Dispatched when.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.GROUP_PROGRESS</apiData><apiType value="String"/></apiValueDef><apiDesc>
-		 Dispatched when.
+		 Dispatched while a Group is loading.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.GROUP_PROGRESS</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Dispatched while a <codeph>Group</codeph> is loading.
+		 
+		 <p>While a <codeph>Group</codeph> is loading, it's <codeph>Assets</codeph> will be dispatched during this progress, so you
+		 are able to handle completed <codeph>Assets</codeph> before the whole <codeph>Group</codeph> is loaded (performance better wise).</p>
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.events:AssetLoaderEvent:asset:get"><apiName>asset</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiValueClassifier>org.robotlegs.utilities.assetloader.patterns.asset:IAsset</apiValueClassifier></apiValueDef><apiDesc>
-		 
+		 The Asset that triggered this Event.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiValueClassifier>org.robotlegs.utilities.assetloader.patterns.asset:IAsset</apiValueClassifier></apiValueDef><apiDesc>
+		 The <codeph>Asset</codeph> that triggered this <codeph>Event</codeph>.
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.events:AssetLoaderEvent:group:get"><apiName>group</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiValueClassifier>org.robotlegs.utilities.assetloader.patterns.group:IGroup</apiValueClassifier></apiValueDef><apiDesc>
-		 
+		 The optional Group that triggered this Event.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiValueClassifier>org.robotlegs.utilities.assetloader.patterns.group:IGroup</apiValueClassifier></apiValueDef><apiDesc>
+		 The optional <codeph>Group</codeph> that triggered this <codeph>Event</codeph>.
 		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage>

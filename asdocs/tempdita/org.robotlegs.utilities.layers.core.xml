@@ -1,11 +1,15 @@
 <apiPackage id="org.robotlegs.utilities.layers.core"><apiName>org.robotlegs.utilities.layers.core</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.layers.core:Layers"><apiName>Layers</apiName><shortdesc>
-	 
-	 
-	 </shortdesc><prolog><author>r.moorman
+	 This utility allows you to manage your displayList in layers.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.utilities.layers.core:ILayers</apiBaseInterface><apiBaseClassifier>org.robotlegs.mvcs:Actor</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 This utility allows you to manage your displayList in layers.
 	 
+	 <p>The advantage of using <codeph>Layers</codeph> is that you have all your type of viewComponents at one place.
+	 For example all <codeph>Pages</codeph> are added in a <codeph>Layer</codeph> named <codeph>pages</codeph>. By using <codeph>Layers</codeph>
+	 you can easily switch the user interface on and off while navigating. Therefore we advice you to use <codeph>Navigator</codeph>
+	 or page transitions. Remember to set the property <codeph>lockLayersWhileTransitioning</codeph> of <codeph>Navigator</codeph>
+	 to <codeph>true</codeph></p>. You can also manually set the user interface on and off of the independend <codeph>Layers</codeph>.
 	 
-	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.utilities.layers.core:Layers:Layers"><apiName>Layers</apiName><shortdesc>
+	 </apiDesc></apiClassifierDetail><related-links><link href="org.robotlegs.utilities.navigator.core.xml#Navigator"><linktext>org.robotlegs.utilities.navigator.core.Navigator</linktext></link><link href="" invalidHref="https.//github.com/moorinteractive/as3-robotlegs-library/wiki/layers.xml"><linktext>https://github.com/moorinteractive/as3-robotlegs-library/wiki/layers</linktext></link></related-links><apiConstructor id="org.robotlegs.utilities.layers.core:Layers:Layers"><apiName>Layers</apiName><shortdesc>
 		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>
 		 Constructor.
 		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.robotlegs.utilities.layers.core:Layers:addLayer"><apiName>addLayer</apiName><shortdesc conref="org.robotlegs.utilities.layers.core.ILayers.addLayer()">
@@ -23,46 +27,42 @@
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.layers.core:Layers:unlock"><apiName>unlock</apiName><shortdesc conref="org.robotlegs.utilities.layers.core.ILayers.unlock()">
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc conref="org.robotlegs.utilities.layers.core.ILayers.unlock()">
 		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="org.robotlegs.utilities.layers.core:ILayers"><apiName>ILayers</apiName><shortdesc>
-	 
-	 
-	 </shortdesc><prolog><author>r.moorman
+	 The interface definition for Layers.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 The interface definition for <codeph>Layers</codeph>.
 	 
-	 
-	 </apiDesc></apiClassifierDetail><apiOperation id="org.robotlegs.utilities.layers.core:ILayers:org.robotlegs.utilities.layers.core:ILayers:addLayer"><apiName>addLayer</apiName><shortdesc>
-		 
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>
-		 </apiDesc><apiOperationClassifier>org.robotlegs.utilities.layers.patterns.layer:ILayer</apiOperationClassifier></apiReturn><apiParam><apiItemName>name</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
-		 
+	 </apiDesc></apiClassifierDetail><related-links><link href="org.robotlegs.utilities.navigator.core.xml#Navigator"><linktext>org.robotlegs.utilities.navigator.core.Navigator</linktext></link><link href="" invalidHref="https.//github.com/moorinteractive/as3-robotlegs-library/wiki/layers.xml"><linktext>https://github.com/moorinteractive/as3-robotlegs-library/wiki/layers</linktext></link></related-links><apiOperation id="org.robotlegs.utilities.layers.core:ILayers:org.robotlegs.utilities.layers.core:ILayers:addLayer"><apiName>addLayer</apiName><shortdesc>
+		 Add a new Layer.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>A new instance of <codeph>Layer</codeph>.
+		 </apiDesc><apiOperationClassifier>org.robotlegs.utilities.layers.patterns.layer:ILayer</apiOperationClassifier></apiReturn><apiParam><apiItemName>name</apiItemName><apiType value="String"/><apiDesc>The name of the <codeph>Layer</codeph>.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Add a new <codeph>Layer</codeph>.
 		 
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.layers.core:ILayers:org.robotlegs.utilities.layers.core:ILayers:getLayer"><apiName>getLayer</apiName><shortdesc>
-		 
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>
-		 </apiDesc><apiOperationClassifier>org.robotlegs.utilities.layers.patterns.layer:ILayer</apiOperationClassifier></apiReturn><apiParam><apiItemName>name</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
-		 
+		 Get a Layer by it's id.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>An instance of <codeph>Layer</codeph>, <codeph>null</codeph> if not found.
+		 </apiDesc><apiOperationClassifier>org.robotlegs.utilities.layers.patterns.layer:ILayer</apiOperationClassifier></apiReturn><apiParam><apiItemName>name</apiItemName><apiType value="String"/><apiDesc>The name of the <codeph>Layer</codeph>.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Get a <codeph>Layer</codeph> by it's id.
 		 
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.layers.core:ILayers:org.robotlegs.utilities.layers.core:ILayers:hasLayer"><apiName>hasLayer</apiName><shortdesc>
-		 
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>
-		 </apiDesc><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>name</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
-		 
+		 Check if a Layer exists under a name.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc><codeph>True</codeph> or <codeph>False</codeph>.
+		 </apiDesc><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>name</apiItemName><apiType value="String"/><apiDesc>The name of the <codeph>Layer</codeph>.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Check if a <codeph>Layer</codeph> exists under a name.
 		 
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.layers.core:ILayers:org.robotlegs.utilities.layers.core:ILayers:lock"><apiName>lock</apiName><shortdesc>
 		 Lock the user interface of all layers.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
 		 Lock the user interface of all layers.
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.layers.core:ILayers:org.robotlegs.utilities.layers.core:ILayers:removeLayer"><apiName>removeLayer</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>
-		 </apiDesc><apiOperationClassifier>org.robotlegs.utilities.layers.patterns.layer:ILayer</apiOperationClassifier></apiReturn><apiParam><apiItemName>name</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Remove a Layer by it's id.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>An instance of <codeph>Layer</codeph>, <codeph>null</codeph> if not found.
+		 </apiDesc><apiOperationClassifier>org.robotlegs.utilities.layers.patterns.layer:ILayer</apiOperationClassifier></apiReturn><apiParam><apiItemName>name</apiItemName><apiType value="String"/><apiDesc>The name of the <codeph>Layer</codeph>.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Remove a <codeph>Layer</codeph> by it's id.
 		 
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.layers.core:ILayers:org.robotlegs.utilities.layers.core:ILayers:transferLayer"><apiName>transferLayer</apiName><shortdesc>
-		 
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiOperationClassifier>org.robotlegs.utilities.layers.patterns.layer:ILayer</apiOperationClassifier></apiReturn><apiParam><apiItemName>name</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>index</apiItemName><apiType value="int"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
-		 
+		 Transfer a Layer to an other childIndex.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiOperationClassifier>org.robotlegs.utilities.layers.patterns.layer:ILayer</apiOperationClassifier></apiReturn><apiParam><apiItemName>name</apiItemName><apiType value="String"/><apiDesc>The name of the <codeph>Layer</codeph>.
+		 </apiDesc></apiParam><apiParam><apiItemName>index</apiItemName><apiType value="int"/><apiDesc>The upcoming childIndex.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Transfer a <codeph>Layer</codeph> to an other childIndex.
 		 
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.layers.core:ILayers:org.robotlegs.utilities.layers.core:ILayers:unlock"><apiName>unlock</apiName><shortdesc>
 		 Lock the user interface of all layers.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>

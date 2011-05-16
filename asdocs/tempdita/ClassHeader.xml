@@ -265,9 +265,7 @@
       <apiClassifier id="org.robotlegs.utilities.assetloader.core:IAssetLoader">
          <apiName>IAssetLoader</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 The interface definition for AssetLoader.</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -283,7 +281,7 @@
                <apiBaseClassifier/>
             </apiClassifierDef>
             <apiDesc>
-	 
+	 The interface definition for <codeph>AssetLoader</codeph>.
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -309,9 +307,7 @@
       <apiClassifier id="org.robotlegs.utilities.assetloader.core:AssetLoader">
          <apiName>AssetLoader</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 This utility allows you to easily load external assets into your application.</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -327,9 +323,18 @@
                <apiBaseClassifier>Object</apiBaseClassifier>
             </apiClassifierDef>
             <apiDesc>
+	 This utility allows you to easily load external assets into your application.
 	 
+	 <p>All the assets which are loaded by the <codeph>AssetLoader</codeph> are stored
+	 and can be retrieved at any time. This can be done by retrieving the asset by
+	 it's url or unique id.</p>
 	 
-	 </apiDesc>
+	              <p>The <codeph>AssetLoader</codeph> also allows you to load a group of assets at once.
+	 Therefore you will get a <codeph>Group</codeph> returned instead of an single <codeph>Asset</codeph>.
+	 That <codeph>Group</codeph> will have as well as the <codeph>Asset</codeph> an unique id you can use
+	 to retrieve it at another point within your application.</p>
+	 
+	           </apiDesc>
             <Inheritancelist>
                <BaseInterface/>
                <Inheritance>
@@ -353,9 +358,7 @@
       <apiClassifier id="org.robotlegs.utilities.assetloader.core:AssetLoaderState">
          <apiName>AssetLoaderState</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 Loading states for Assets and Groups.</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -370,7 +373,7 @@
                <apiBaseClassifier>Object</apiBaseClassifier>
             </apiClassifierDef>
             <apiDesc>
-	 
+	 Loading states for <codeph>Assets</codeph> and <codeph>Groups</codeph>.
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -392,9 +395,7 @@
       <apiClassifier id="org.robotlegs.utilities.assetloader.error:AssetLoaderError">
          <apiName>AssetLoaderError</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 Custom error Class for an AssetLoader.</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -409,7 +410,7 @@
                <apiBaseClassifier>Error</apiBaseClassifier>
             </apiClassifierDef>
             <apiDesc>
-	 
+	 Custom error <codeph>Class</codeph> for an <codeph>AssetLoader</codeph>.
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -431,9 +432,7 @@
       <apiClassifier id="org.robotlegs.utilities.assetloader.events:AssetLoaderEvent">
          <apiName>AssetLoaderEvent</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 Custom Event for AssetLoader.</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -448,7 +447,7 @@
                <apiBaseClassifier>flash.events:Event</apiBaseClassifier>
             </apiClassifierDef>
             <apiDesc>
-	 
+	 Custom <codeph>Event</codeph> for <codeph>AssetLoader</codeph>.
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -470,9 +469,7 @@
       <apiClassifier id="org.robotlegs.utilities.assetloader.patterns.asset.type:CSSAsset">
          <apiName>CSSAsset</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 Automatic assigned type of Asset for loading stylesheets (css).</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -487,7 +484,7 @@
                <apiBaseClassifier>org.robotlegs.utilities.assetloader.patterns.asset:Asset</apiBaseClassifier>
             </apiClassifierDef>
             <apiDesc>
-	 
+	 Automatic assigned type of <codeph>Asset</codeph> for loading stylesheets (css).
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -506,9 +503,7 @@
       <apiClassifier id="org.robotlegs.utilities.assetloader.patterns.asset.type:DisplayObjectAsset">
          <apiName>DisplayObjectAsset</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 Automatic assigned type of Asset for loading Bitmaps (swf).</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -523,7 +518,7 @@
                <apiBaseClassifier>org.robotlegs.utilities.assetloader.patterns.asset:Asset</apiBaseClassifier>
             </apiClassifierDef>
             <apiDesc>
-	 
+	 Automatic assigned type of <codeph>Asset</codeph> for loading <codeph>Bitmaps</codeph> (swf).
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -542,9 +537,7 @@
       <apiClassifier id="org.robotlegs.utilities.assetloader.patterns.asset.type:XMLAsset">
          <apiName>XMLAsset</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 Automatic assigned type of Asset for loading Bitmaps (xml).</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -559,7 +552,7 @@
                <apiBaseClassifier>org.robotlegs.utilities.assetloader.patterns.asset:Asset</apiBaseClassifier>
             </apiClassifierDef>
             <apiDesc>
-	 
+	 Automatic assigned type of <codeph>Asset</codeph> for loading <codeph>Bitmaps</codeph> (xml).
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -578,9 +571,7 @@
       <apiClassifier id="org.robotlegs.utilities.assetloader.patterns.asset.type:SoundAsset">
          <apiName>SoundAsset</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 Automatic assigned type of Asset for loading Bitmaps (mp3, wav, aif).</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -595,7 +586,7 @@
                <apiBaseClassifier>org.robotlegs.utilities.assetloader.patterns.asset:Asset</apiBaseClassifier>
             </apiClassifierDef>
             <apiDesc>
-	 
+	 Automatic assigned type of <codeph>Asset</codeph> for loading <codeph>Bitmaps</codeph> (mp3, wav, aif).
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -614,9 +605,7 @@
       <apiClassifier id="org.robotlegs.utilities.assetloader.patterns.asset.type:BitmapAsset">
          <apiName>BitmapAsset</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 Automatic assigned type of Asset for loading Bitmaps (png, gif, jpg and jpeg).</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -631,7 +620,7 @@
                <apiBaseClassifier>org.robotlegs.utilities.assetloader.patterns.asset:Asset</apiBaseClassifier>
             </apiClassifierDef>
             <apiDesc>
-	 
+	 Automatic assigned type of <codeph>Asset</codeph> for loading <codeph>Bitmaps</codeph> (png, gif, jpg and jpeg).
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -654,9 +643,7 @@
       <apiClassifier id="org.robotlegs.utilities.assetloader.patterns.asset:Asset">
          <apiName>Asset</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 Abstract implementation of IAsset.</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -672,7 +659,7 @@
                <apiBaseClassifier>flash.events:EventDispatcher</apiBaseClassifier>
             </apiClassifierDef>
             <apiDesc>
-	 
+	 Abstract implementation of <codeph>IAsset</codeph>.
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -698,9 +685,7 @@
       <apiClassifier id="org.robotlegs.utilities.assetloader.patterns.asset:IAsset">
          <apiName>IAsset</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 The interface definition for an Asset.</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -716,7 +701,7 @@
                <apiBaseClassifier/>
             </apiClassifierDef>
             <apiDesc>
-	 
+	 The interface definition for an <codeph>Asset</codeph>.
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -740,9 +725,7 @@
       <apiClassifier id="org.robotlegs.utilities.assetloader.patterns.group:IGroup">
          <apiName>IGroup</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 The interface definition for a Group.</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -758,7 +741,7 @@
                <apiBaseClassifier/>
             </apiClassifierDef>
             <apiDesc>
-	 
+	 The interface definition for a <codeph>Group</codeph>.
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -778,9 +761,7 @@
       <apiClassifier id="org.robotlegs.utilities.assetloader.patterns.group:Group">
          <apiName>Group</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 Abstract implementation of IGroup.</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -796,7 +777,7 @@
                <apiBaseClassifier>flash.events:EventDispatcher</apiBaseClassifier>
             </apiClassifierDef>
             <apiDesc>
-	 
+	 Abstract implementation of <codeph>IGroup</codeph>.
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -820,9 +801,7 @@
       <apiClassifier id="org.robotlegs.utilities.assetloader.utils:AssetUtil">
          <apiName>AssetUtil</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 Utilities for Asset related functionalities.</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -837,7 +816,7 @@
                <apiBaseClassifier>Object</apiBaseClassifier>
             </apiClassifierDef>
             <apiDesc>
-	 
+	 Utilities for <codeph>Asset</codeph> related functionalities.
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -904,9 +883,7 @@
       <apiClassifier id="org.robotlegs.utilities.layers.controller.layer:TransferLayerCommand">
          <apiName>TransferLayerCommand</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 Transfer a Layer to an other childIndex in the contextView.</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -921,7 +898,7 @@
                <apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier>
             </apiClassifierDef>
             <apiDesc>
-	 
+	 Transfer a <codeph>Layer</codeph> to an other childIndex in the <codeph>contextView</codeph>.
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -939,9 +916,7 @@
       <apiClassifier id="org.robotlegs.utilities.layers.controller.layer:RemoveLayerCommand">
          <apiName>RemoveLayerCommand</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 Remove a Layer from the contextView.</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -956,7 +931,7 @@
                <apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier>
             </apiClassifierDef>
             <apiDesc>
-	 
+	 Remove a <codeph>Layer</codeph> from the <codeph>contextView</codeph>.
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -974,9 +949,7 @@
       <apiClassifier id="org.robotlegs.utilities.layers.controller.layer:AddLayerCommand">
          <apiName>AddLayerCommand</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 Add a Layer to the contextView.</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -991,7 +964,7 @@
                <apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier>
             </apiClassifierDef>
             <apiDesc>
-	 
+	 Add a <codeph>Layer</codeph> to the <codeph>contextView</codeph>.
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -1013,9 +986,7 @@
       <apiClassifier id="org.robotlegs.utilities.layers.core:Layers">
          <apiName>Layers</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 This utility allows you to manage your displayList in layers.</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -1031,7 +1002,14 @@
                <apiBaseClassifier>org.robotlegs.mvcs:Actor</apiBaseClassifier>
             </apiClassifierDef>
             <apiDesc>
+	 This utility allows you to manage your displayList in layers.
 	 
+	 <p>The advantage of using <codeph>Layers</codeph> is that you have all your type of viewComponents at one place.
+	 For example all <codeph>Pages</codeph> are added in a <codeph>Layer</codeph> named <codeph>pages</codeph>. By using <codeph>Layers</codeph>
+	 you can easily switch the user interface on and off while navigating. Therefore we advice you to use <codeph>Navigator</codeph>
+	 or page transitions. Remember to set the property <codeph>lockLayersWhileTransitioning</codeph> of <codeph>Navigator</codeph>
+	 to <codeph>true</codeph>
+               </p>. You can also manually set the user interface on and off of the independend <codeph>Layers</codeph>.
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -1047,13 +1025,20 @@
                <Excludes/>
             </Inheritancelist>
          </apiClassifierDetail>
+         <related-links>
+            <link href="org.robotlegs.utilities.navigator.core.xml#Navigator">
+               <linktext>org.robotlegs.utilities.navigator.core.Navigator</linktext>
+            </link>
+            <link href=""
+                  invalidHref="https.//github.com/moorinteractive/as3-robotlegs-library/wiki/layers.xml">
+               <linktext>https://github.com/moorinteractive/as3-robotlegs-library/wiki/layers</linktext>
+            </link>
+         </related-links>
       </apiClassifier>
       <apiClassifier id="org.robotlegs.utilities.layers.core:ILayers">
          <apiName>ILayers</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 The interface definition for Layers.</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -1069,7 +1054,7 @@
                <apiBaseClassifier/>
             </apiClassifierDef>
             <apiDesc>
-	 
+	 The interface definition for <codeph>Layers</codeph>.
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -1085,6 +1070,15 @@
                <Excludes/>
             </Inheritancelist>
          </apiClassifierDetail>
+         <related-links>
+            <link href="org.robotlegs.utilities.navigator.core.xml#Navigator">
+               <linktext>org.robotlegs.utilities.navigator.core.Navigator</linktext>
+            </link>
+            <link href=""
+                  invalidHref="https.//github.com/moorinteractive/as3-robotlegs-library/wiki/layers.xml">
+               <linktext>https://github.com/moorinteractive/as3-robotlegs-library/wiki/layers</linktext>
+            </link>
+         </related-links>
       </apiClassifier>
    </apiPackage>
    <apiPackage id="org.robotlegs.utilities.layers.error">
@@ -1093,9 +1087,7 @@
       <apiClassifier id="org.robotlegs.utilities.layers.error:LayersError">
          <apiName>LayersError</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 Custom error Class for an AssetLoader.</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -1110,7 +1102,7 @@
                <apiBaseClassifier>Error</apiBaseClassifier>
             </apiClassifierDef>
             <apiDesc>
-	 
+	 Custom error <codeph>Class</codeph> for an <codeph>AssetLoader</codeph>.
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -1132,9 +1124,7 @@
       <apiClassifier id="org.robotlegs.utilities.layers.events:LayersEvent">
          <apiName>LayersEvent</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 Custom Event for Layers.</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -1149,7 +1139,7 @@
                <apiBaseClassifier>flash.events:Event</apiBaseClassifier>
             </apiClassifierDef>
             <apiDesc>
-	 
+	 Custom <codeph>Event</codeph> for <codeph>Layers</codeph>.
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -1170,12 +1160,15 @@
       <apiDetail/>
       <apiClassifier id="org.robotlegs.utilities.layers.patterns.layer:Layer">
          <apiName>Layer</apiName>
-         <shortdesc/>
+         <shortdesc>
+	 Abstract implementation of IAsset.</shortdesc>
          <prolog>
+            <author>r.moorman
+	 </author>
             <asMetadata/>
          </prolog>
             <meta name="keywords"
-               content="Layer,org.robotlegs.utilities.layers.patterns.layer.Layer,addChildAt,addChild,getChildAt,getChildByName,getChildIndex,lock,lock,removeChildAt,removeChild,unlock,unlock"/>
+               content="Layer,org.robotlegs.utilities.layers.patterns.layer.Layer,addChild,addChildAt,getChildAt,getChildByName,getChildIndex,lock,lock,removeChild,removeChildAt,unlock,unlock"/>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiAccess value="public"/>
@@ -1183,6 +1176,10 @@
                <apiBaseInterface>org.robotlegs.utilities.layers.patterns.layer:ILayer</apiBaseInterface>
                <apiBaseClassifier>flash.display:Sprite</apiBaseClassifier>
             </apiClassifierDef>
+            <apiDesc>
+	 Abstract implementation of <codeph>IAsset</codeph>.
+	 
+	 </apiDesc>
             <Inheritancelist>
                <BaseInterface/>
                <Inheritance>
@@ -1200,16 +1197,14 @@
       <apiClassifier id="org.robotlegs.utilities.layers.patterns.layer:ILayer">
          <apiName>ILayer</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 The interface definition for Layers.</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
             <asMetadata/>
          </prolog>
             <meta name="keywords"
-               content="ILayer,org.robotlegs.utilities.layers.patterns.layer.ILayer,name,addChildAt,addChild,getChildAt,getChildByName,getChildIndex,lock,lock,removeChildAt,removeChild,unlock,unlock"/>
+               content="ILayer,org.robotlegs.utilities.layers.patterns.layer.ILayer,name,addChild,addChildAt,getChildAt,getChildByName,getChildIndex,lock,lock,removeChild,removeChildAt,unlock,unlock"/>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiInterface/>
@@ -1218,7 +1213,7 @@
                <apiBaseClassifier/>
             </apiClassifierDef>
             <apiDesc>
-	 
+	 The interface definition for <codeph>Layers</codeph>.
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -1326,7 +1321,7 @@
       <apiClassifier id="org.robotlegs.utilities.localizer.core:ILocalizer">
          <apiName>ILocalizer</apiName>
          <shortdesc>
-	 Abstract ILocalizer interface.</shortdesc>
+	 The interface definition for Localizer.</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -1342,7 +1337,7 @@
                <apiBaseClassifier/>
             </apiClassifierDef>
             <apiDesc>
-	 Abstract <codeph>ILocalizer</codeph> interface.
+	 The interface definition for <codeph>Localizer</codeph>.
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -1368,7 +1363,9 @@
       <apiClassifier id="org.robotlegs.utilities.localizer.core:Localizer">
          <apiName>Localizer</apiName>
          <shortdesc>
-	 Abstract Localizer implementation.</shortdesc>
+	 
+	 
+	 </shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -1384,7 +1381,7 @@
                <apiBaseClassifier>org.robotlegs.mvcs:Actor</apiBaseClassifier>
             </apiClassifierDef>
             <apiDesc>
-	 Abstract <codeph>Localizer</codeph> implementation.
+	 
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -2626,9 +2623,9 @@
             <apiDesc>
 	 Utility to map dependencies of certain utilities.
 	 
-	 <p>Probably the place to do your mappings is in the <codeph>mapInjections</codeph> method
+	 <p>Probably the best place to define your mappings is in the <codeph>mapInjections</codeph> method
 	 of your <codeph>Context</codeph>. You can simply call the method <codeph>mapDepedencies</codeph>
-	 of <codeph>Utilities</codeph> to do all your mappings for the following utilities.</p>
+	 of <codeph>Utilities</codeph> to determine all your mappings for the following utilities.</p>
 	 
 	              <ul>
 	 	               <li>
@@ -2671,9 +2668,7 @@
       <apiClassifier id="org.robotlegs.utils:ClassUtil">
          <apiName>ClassUtil</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 Utilities for Class related functionalities.</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -2688,7 +2683,7 @@
                <apiBaseClassifier>Object</apiBaseClassifier>
             </apiClassifierDef>
             <apiDesc>
-	 
+	 Utilities for <codeph>Class</codeph> related functionalities.
 	 
 	 </apiDesc>
             <Inheritancelist>

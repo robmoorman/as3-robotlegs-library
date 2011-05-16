@@ -11,9 +11,9 @@ package org.robotlegs.utilities
 	/**
 	 * Utility to map dependencies of certain utilities.
 	 * 
-	 * <p>Probably the place to do your mappings is in the <code>mapInjections</code> method
+	 * <p>Probably the best place to define your mappings is in the <code>mapInjections</code> method
 	 * of your <code>Context</code>. You can simply call the method <code>mapDepedencies</code>
-	 * of <code>Utilities</code> to do all your mappings for the following utilities.</p>
+	 * of <code>Utilities</code> to determine all your mappings for the following utilities.</p>
 	 * 
 	 * <ul>
 	 * 	<li><code>AssetLoader</code></li>

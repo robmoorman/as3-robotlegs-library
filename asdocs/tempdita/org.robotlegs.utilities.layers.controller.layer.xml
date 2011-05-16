@@ -1,40 +1,31 @@
 <apiPackage id="org.robotlegs.utilities.layers.controller.layer"><apiName>org.robotlegs.utilities.layers.controller.layer</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.layers.controller.layer:TransferLayerCommand"><apiName>TransferLayerCommand</apiName><shortdesc>
-	 
-	 
-	 </shortdesc><prolog><author>r.moorman
+	 Transfer a Layer to an other childIndex in the contextView.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier></apiClassifierDef><apiDesc>
-	 
+	 Transfer a <codeph>Layer</codeph> to an other childIndex in the <codeph>contextView</codeph>.
 	 
 	 </apiDesc></apiClassifierDetail><apiOperation id="org.robotlegs.utilities.layers.controller.layer:TransferLayerCommand:execute"><apiName>execute</apiName><shortdesc>
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiIsOverride/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
 		 </apiDesc></apiOperationDetail><apiInheritDoc/></apiOperation><apiValue id="org.robotlegs.utilities.layers.controller.layer:TransferLayerCommand:event"><apiName>event</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.layers.events:LayersEvent</apiValueClassifier></apiValueDef><apiDesc>
-		 
+		 The LayersEvent that executed this Command.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.layers.events:LayersEvent</apiValueClassifier></apiValueDef><apiDesc>
+		 The <codeph>LayersEvent</codeph> that executed this <codeph>Command</codeph>.
 		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.robotlegs.utilities.layers.controller.layer:RemoveLayerCommand"><apiName>RemoveLayerCommand</apiName><shortdesc>
-	 
-	 
-	 </shortdesc><prolog><author>r.moorman
+	 Remove a Layer from the contextView.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier></apiClassifierDef><apiDesc>
-	 
+	 Remove a <codeph>Layer</codeph> from the <codeph>contextView</codeph>.
 	 
 	 </apiDesc></apiClassifierDetail><apiOperation id="org.robotlegs.utilities.layers.controller.layer:RemoveLayerCommand:execute"><apiName>execute</apiName><shortdesc>
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiIsOverride/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
 		 </apiDesc></apiOperationDetail><apiInheritDoc/></apiOperation><apiValue id="org.robotlegs.utilities.layers.controller.layer:RemoveLayerCommand:event"><apiName>event</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.layers.events:LayersEvent</apiValueClassifier></apiValueDef><apiDesc>
-		 
+		 The LayersEvent that executed this Command.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.layers.events:LayersEvent</apiValueClassifier></apiValueDef><apiDesc>
+		 The <codeph>LayersEvent</codeph> that executed this <codeph>Command</codeph>.
 		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.robotlegs.utilities.layers.controller.layer:AddLayerCommand"><apiName>AddLayerCommand</apiName><shortdesc>
-	 
-	 
-	 </shortdesc><prolog><author>r.moorman
+	 Add a Layer to the contextView.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier></apiClassifierDef><apiDesc>
-	 
+	 Add a <codeph>Layer</codeph> to the <codeph>contextView</codeph>.
 	 
 	 </apiDesc></apiClassifierDetail><apiOperation id="org.robotlegs.utilities.layers.controller.layer:AddLayerCommand:execute"><apiName>execute</apiName><shortdesc>
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiIsOverride/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
 		 </apiDesc></apiOperationDetail><apiInheritDoc/></apiOperation><apiValue id="org.robotlegs.utilities.layers.controller.layer:AddLayerCommand:event"><apiName>event</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.layers.events:LayersEvent</apiValueClassifier></apiValueDef><apiDesc>
-		 
+		 The LayersEvent that executed this Command.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.layers.events:LayersEvent</apiValueClassifier></apiValueDef><apiDesc>
+		 The <codeph>LayersEvent</codeph> that executed this <codeph>Command</codeph>.
 		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage>

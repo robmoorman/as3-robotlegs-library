@@ -1,15 +1,12 @@
 <apiPackage id="org.robotlegs.utilities.assetloader.utils"><apiName>org.robotlegs.utilities.assetloader.utils</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.assetloader.utils:AssetUtil"><apiName>AssetUtil</apiName><shortdesc>
-	 
-	 
-	 </shortdesc><prolog><author>r.moorman
+	 Utilities for Asset related functionalities.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
-	 
+	 Utilities for <codeph>Asset</codeph> related functionalities.
 	 
 	 </apiDesc></apiClassifierDetail><apiOperation id="org.robotlegs.utilities.assetloader.utils:AssetUtil:getAssetClassByExtension"><apiName>getAssetClassByExtension</apiName><shortdesc>
-		 
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiStatic/><apiReturn><apiDesc>
-		 </apiDesc><apiType value="Class"/></apiReturn><apiParam><apiItemName>extension</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
-		 
+		 Get the type of Asset depending on the file extension.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiStatic/><apiReturn><apiDesc>The type of <codeph>Asset</codeph>, default <codeph>Asset</codeph>.
+		 </apiDesc><apiType value="Class"/></apiReturn><apiParam><apiItemName>extension</apiItemName><apiType value="String"/><apiDesc>The extension of the file.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Get the type of <codeph>Asset</codeph> depending on the file extension.
 		 
 		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier></apiPackage>

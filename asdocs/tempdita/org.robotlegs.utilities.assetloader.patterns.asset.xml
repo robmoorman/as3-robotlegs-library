@@ -1,37 +1,35 @@
 <apiPackage id="org.robotlegs.utilities.assetloader.patterns.asset"><apiName>org.robotlegs.utilities.assetloader.patterns.asset</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.assetloader.patterns.asset:Asset"><apiName>Asset</apiName><shortdesc>
-	 
-	 
-	 </shortdesc><prolog><author>r.moorman
+	 Abstract implementation of IAsset.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.utilities.assetloader.patterns.asset:IAsset</apiBaseInterface><apiBaseClassifier>flash.events:EventDispatcher</apiBaseClassifier></apiClassifierDef><apiDesc>
-	 
+	 Abstract implementation of <codeph>IAsset</codeph>.
 	 
 	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.utilities.assetloader.patterns.asset:Asset:Asset"><apiName>Asset</apiName><shortdesc>
-		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>id</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>url</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>id</apiItemName><apiType value="String"/><apiDesc>The id of the <codeph>Asset</codeph>.
+		 </apiDesc></apiParam><apiParam><apiItemName>url</apiItemName><apiType value="String"/><apiDesc>The url of the <codeph>Asset</codeph>.
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
 		 Constructor.
 		 
+		 <p>At this point the state of the <codeph>Asset</codeph> is <codeph>INITIALIZING</codeph>.</p>
+		 
 		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.robotlegs.utilities.assetloader.patterns.asset:Asset:protected:defineEventModel"><apiName>defineEventModel</apiName><shortdesc>
-		 
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiException><apiDesc></apiDesc><apiItemName>AssetLoaderError
+		 Map eventListeners of the Asset.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiException><apiDesc></apiDesc><apiItemName>AssetLoaderError
 		</apiItemName><apiOperationClassifier>AssetLoaderError
 		</apiOperationClassifier></apiException><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
-		 
+		 Map eventListeners of the <codeph>Asset</codeph>.
 		 
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.patterns.asset:Asset:dispose"><apiName>dispose</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.patterns.asset.IAsset.dispose()">
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.patterns.asset.IAsset.dispose()">
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.patterns.asset:Asset:load"><apiName>load</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.patterns.asset.IAsset.load()">
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.patterns.asset.IAsset.load()">
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.patterns.asset:Asset:protected:onAssetProcess"><apiName>onAssetProcess</apiName><shortdesc>
-		 
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiFinal/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>evt</apiItemName><apiType value="flash.events:Event"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
-		 
+		 Handle Events during the load process of the Asset.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiFinal/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>evt</apiItemName><apiType value="flash.events:Event"/><apiDesc>The <codeph>Event</codeph> that triggered this method (<codeph>Event.COMPLETE</codeph>, <codeph>ProgressEvent.PROGRESS</codeph> and <codeph>IOErrorEvent.IO_ERROR</codeph>).
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Handle <codeph>Events</codeph> during the load process of the <codeph>Asset</codeph>.
 		 
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.patterns.asset:Asset:protected:onComplete"><apiName>onComplete</apiName><shortdesc>
-		 
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>evt</apiItemName><apiType value="flash.events:Event"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
-		 
+		 Abstract method to handle the loaded Asset.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>evt</apiItemName><apiType value="flash.events:Event"/><apiDesc>The <codeph>Event</codeph> that triggered this method (<codeph>Event.COMPLETE</codeph>).
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Abstract method to handle the loaded <codeph>Asset</codeph>.
 		 
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.patterns.asset:Asset:setOnComplete"><apiName>setOnComplete</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.patterns.asset.IAsset.setOnComplete()">
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>value</apiItemName><apiType value="Function"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.patterns.asset.IAsset.setOnComplete()">
@@ -40,15 +38,13 @@
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.patterns.asset:Asset:setOnProgress"><apiName>setOnProgress</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.patterns.asset.IAsset.setOnProgress()">
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>value</apiItemName><apiType value="Function"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.patterns.asset.IAsset.setOnProgress()">
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.patterns.asset:Asset:protected:setState"><apiName>setState</apiName><shortdesc>
-		 
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiFinal/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>state</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
-		 
+		 Change the state of the Asset.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiFinal/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>state</apiItemName><apiType value="String"/><apiDesc>The upcoming state of the <codeph>Asset</codeph>.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Change the state of the <codeph>Asset</codeph>.
 		 
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.patterns.asset:Asset:protected:undefineEventModel"><apiName>undefineEventModel</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
-		 
+		 Unmap eventListeners of the Asset.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 Unmap eventListeners of the <codeph>Asset</codeph>.
 		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.robotlegs.utilities.assetloader.patterns.asset:Asset:bytesLoaded:get"><apiName>bytesLoaded</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.patterns.asset.IAsset.bytesLoaded">
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="uint"/></apiValueDef><apiDesc conref="org.robotlegs.utilities.assetloader.patterns.asset.IAsset.bytesLoaded">
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.patterns.asset:Asset:bytesTotal:get"><apiName>bytesTotal</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.patterns.asset.IAsset.bytesTotal">
@@ -66,68 +62,54 @@
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.patterns.asset:Asset:url:get"><apiName>url</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.patterns.asset.IAsset.url">
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="String"/></apiValueDef><apiDesc conref="org.robotlegs.utilities.assetloader.patterns.asset.IAsset.url">
 		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.robotlegs.utilities.assetloader.patterns.asset:IAsset"><apiName>IAsset</apiName><shortdesc>
-	 
-	 
-	 </shortdesc><prolog><author>r.moorman
+	 The interface definition for an Asset.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
-	 
+	 The interface definition for an <codeph>Asset</codeph>.
 	 
 	 </apiDesc></apiClassifierDetail><apiOperation id="org.robotlegs.utilities.assetloader.patterns.asset:IAsset:org.robotlegs.utilities.assetloader.patterns.asset:IAsset:dispose"><apiName>dispose</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
-		 
+		 Trigger the Asset to dispose it's references.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 Trigger the <codeph>Asset</codeph> to dispose it's references.
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.patterns.asset:IAsset:org.robotlegs.utilities.assetloader.patterns.asset:IAsset:load"><apiName>load</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
-		 
+		 Trigger the Asset to load it's data.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 Trigger the <codeph>Asset</codeph> to load it's data.
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.patterns.asset:IAsset:org.robotlegs.utilities.assetloader.patterns.asset:IAsset:setOnComplete"><apiName>setOnComplete</apiName><shortdesc>
-		 
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>value</apiItemName><apiType value="Function"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
-		 
+		 Set the callback method after the Asset is successfully loaded.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>value</apiItemName><apiType value="Function"/><apiDesc>The callback method to be called.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Set the callback method after the <codeph>Asset</codeph> is successfully loaded.
 		 
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.patterns.asset:IAsset:org.robotlegs.utilities.assetloader.patterns.asset:IAsset:setOnError"><apiName>setOnError</apiName><shortdesc>
-		 
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>value</apiItemName><apiType value="Function"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
-		 
+		 Set the callback method after the Asset failed to load.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>value</apiItemName><apiType value="Function"/><apiDesc>The callback method to be called.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Set the callback method after the <codeph>Asset</codeph> failed to load.
 		 
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.patterns.asset:IAsset:org.robotlegs.utilities.assetloader.patterns.asset:IAsset:setOnProgress"><apiName>setOnProgress</apiName><shortdesc>
-		 
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>value</apiItemName><apiType value="Function"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
-		 
+		 Set the callback method while the Asset is loading.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>value</apiItemName><apiType value="Function"/><apiDesc>The callback method to be called.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Set the callback method while the <codeph>Asset</codeph> is loading.
 		 
 		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.robotlegs.utilities.assetloader.patterns.asset:IAsset:org.robotlegs.utilities.assetloader.patterns.asset:IAsset:bytesLoaded:get"><apiName>bytesLoaded</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="uint"/></apiValueDef><apiDesc>
-		 
+		 The current loaded bytes of the Asset.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="uint"/></apiValueDef><apiDesc>
+		 The current loaded bytes of the <codeph>Asset</codeph>.
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.patterns.asset:IAsset:org.robotlegs.utilities.assetloader.patterns.asset:IAsset:bytesTotal:get"><apiName>bytesTotal</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="uint"/></apiValueDef><apiDesc>
-		 
+		 The total bytes to load of the Asset.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="uint"/></apiValueDef><apiDesc>
+		 The total bytes to load of the <codeph>Asset</codeph>.
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.patterns.asset:IAsset:org.robotlegs.utilities.assetloader.patterns.asset:IAsset:closure:get"><apiName>closure</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Function"/></apiValueDef><apiDesc>
-		 
+		 Optional closure method for retrieving AssetLoaderEvents.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Function"/></apiValueDef><apiDesc>
+		 Optional closure method for retrieving <codeph>AssetLoaderEvents</codeph>.
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.patterns.asset:IAsset:org.robotlegs.utilities.assetloader.patterns.asset:IAsset:data:get"><apiName>data</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="Object"/></apiValueDef><apiDesc>
-		 
+		 The raw loaded data of the Asset.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="Object"/></apiValueDef><apiDesc>
+		 The raw loaded data of the <codeph>Asset</codeph>.
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.patterns.asset:IAsset:org.robotlegs.utilities.assetloader.patterns.asset:IAsset:id:get"><apiName>id</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
-		 
+		 The unique id of the Asset.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
+		 The unique id of the <codeph>Asset</codeph>.
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.patterns.asset:IAsset:org.robotlegs.utilities.assetloader.patterns.asset:IAsset:percentage:get"><apiName>percentage</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="Number"/></apiValueDef><apiDesc>
-		 
+		 The current percentage of the loaded bytes of the Asset (from 0 till 100).</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="Number"/></apiValueDef><apiDesc>
+		 The current percentage of the loaded bytes of the <codeph>Asset</codeph> (from 0 till 100).
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.patterns.asset:IAsset:org.robotlegs.utilities.assetloader.patterns.asset:IAsset:state:get"><apiName>state</apiName><shortdesc>
+		 The current state of the Asset.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
+		 The current state of the <codeph>Asset</codeph>.
 		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
-		 
-		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.patterns.asset:IAsset:org.robotlegs.utilities.assetloader.patterns.asset:IAsset:url:get"><apiName>url</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="String"/></apiValueDef><apiDesc>
-		 
+		 </apiDesc></apiValueDetail><related-links><link href="org.robotlegs.utilities.assetloader.core.xml#AssetLoaderState"><linktext>org.robotlegs.utilities.assetloader.core.AssetLoaderState</linktext></link></related-links></apiValue><apiValue id="org.robotlegs.utilities.assetloader.patterns.asset:IAsset:org.robotlegs.utilities.assetloader.patterns.asset:IAsset:url:get"><apiName>url</apiName><shortdesc>
+		 The url of the Asset.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="String"/></apiValueDef><apiDesc>
+		 The url of the <codeph>Asset</codeph>.
 		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage>

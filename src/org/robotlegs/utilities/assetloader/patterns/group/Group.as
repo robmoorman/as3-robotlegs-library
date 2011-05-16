@@ -7,7 +7,7 @@ package org.robotlegs.utilities.assetloader.patterns.group
 	import org.robotlegs.utilities.assetloader.patterns.asset.IAsset;
 	
 	/**
-	 * 
+	 * Abstract implementation of <code>IGroup</code>.
 	 * 
 	 * @author r.moorman
 	 */
@@ -149,8 +149,10 @@ package org.robotlegs.utilities.assetloader.patterns.group
 		/**
 		 * Constructor.
 		 * 
-		 * @param id
-		 * @param assets
+		 * <p>At this point the state of the <code>Group</code> is <code>INITIALIZING</code>.</p>
+		 * 
+		 * @param id The id of the <code>Group</code>.
+		 * @param assets The assets of the <code>Group</code>.
 		 */
 		public function Group( id: String, assets: Vector.<IAsset> )
 		{
@@ -199,7 +201,7 @@ package org.robotlegs.utilities.assetloader.patterns.group
 		}
 		
 		/**
-		 * 
+		 * Load the next <code>Asset</code> in the queue.
 		 */
 		protected function loadQueuedAsset(): void
 		{
@@ -214,9 +216,9 @@ package org.robotlegs.utilities.assetloader.patterns.group
 		}
 		
 		/**
+		 * Change the state of the <code>Group</code>.
 		 * 
-		 * 
-		 * @param state
+		 * @param state The upcoming state of the <code>Group</code>.
 		 */
 		final protected function setState( state: String ): void
 		{
@@ -224,9 +226,9 @@ package org.robotlegs.utilities.assetloader.patterns.group
 		}
 		
 		/**
+		 * Handle <code>AssetLoaderEvents</code> during the load process of the current <code>Asset</code>.
 		 * 
-		 * 
-		 * @param event
+		 * @param evt The <code>AssetLoaderEvent</code> that triggered this method (<code>AssetLoaderEvent.ASSET_COMPLETE</code>, <code>AssetLoaderEvent.ASSET_PROGRESS</code> and <code>AssetLoaderEvent.ASSET_ERROR</code>).
 		 */
 		final protected function onAssetProcess( event: AssetLoaderEvent ): void
 		{
@@ -272,9 +274,9 @@ package org.robotlegs.utilities.assetloader.patterns.group
 		}
 		
 		/**
+		 * Get the total count of loaded <code>Assets</code> in the <code>Group</code>.
 		 * 
-		 * 
-		 * @return  
+		 * @return The total count of loaded <code>Assets</code> in the <code>Group</code>.
 		 */
 		final private function getLoadedAssets(): int
 		{
@@ -291,9 +293,9 @@ package org.robotlegs.utilities.assetloader.patterns.group
 		}
 		
 		/**
+		 * Determine if all total bytes of the <code>Assets</code> are defined in the <code>Group</code>.
 		 * 
-		 * 
-		 * @return  
+		 * @return <code>True</code> or <code>False</code>.
 		 */
 		final private function assetFileSizesDefined(): Boolean
 		{

@@ -6,7 +6,7 @@ package org.robotlegs.utilities.assetloader.patterns.asset.type
 	import org.robotlegs.utilities.assetloader.patterns.asset.Asset;
 
 	/**
-	 * 
+	 * Automatic assigned type of <code>Asset</code> for loading <code>Bitmaps</code> (xml).
 	 * 
 	 * @author r.moorman
 	 */
@@ -22,7 +22,7 @@ package org.robotlegs.utilities.assetloader.patterns.asset.type
 		}
 		
 		/**
-		 * 
+		 * The loaded <code>XML</code>.
 		 */
 		public function get xml(): XML {
 			return _xml;

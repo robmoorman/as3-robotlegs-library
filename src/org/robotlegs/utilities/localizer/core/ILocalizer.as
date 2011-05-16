@@ -3,7 +3,7 @@ package org.robotlegs.utilities.localizer.core
 	import org.robotlegs.utilities.localizer.patterns.locale.ILocale;
 	
 	/**
-	 * Abstract <code>ILocalizer</code> interface.
+	 * The interface definition for <code>Localizer</code>.
 	 * 
 	 * @author r.moorman
 	 * @see https://github.com/moorinteractive/as3-robotlegs-library/wiki/localizer

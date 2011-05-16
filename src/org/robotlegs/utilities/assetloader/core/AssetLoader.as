@@ -9,7 +9,16 @@ package org.robotlegs.utilities.assetloader.core
 	import org.robotlegs.utilities.assetloader.utils.AssetUtil;
 
 	/**
+	 * This utility allows you to easily load external assets into your application.
 	 * 
+	 * <p>All the assets which are loaded by the <code>AssetLoader</code> are stored
+	 * and can be retrieved at any time. This can be done by retrieving the asset by
+	 * it's url or unique id.</p>
+	 * 
+	 * <p>The <code>AssetLoader</code> also allows you to load a group of assets at once.
+	 * Therefore you will get a <code>Group</code> returned instead of an single <code>Asset</code>.
+	 * That <code>Group</code> will have as well as the <code>Asset</code> an unique id you can use
+	 * to retrieve it at another point within your application.</p>
 	 * 
 	 * @author r.moorman
 	 * @see https://github.com/moorinteractive/as3-robotlegs-library/wiki/assetloader
@@ -50,17 +59,19 @@ package org.robotlegs.utilities.assetloader.core
 		}
 		
 		/**
-		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.load();
+		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.load()
 		 */
 		public function load( request: Object, closure: Function = null ): IAsset
 		{
 			var url: String;
 			var asset: IAsset;
 			
-			if( request is String )
+			if( request is String ) {
 				asset = instantiateAsset( request.toString());
-			else
+			}
+			else {
 				throw new AssetLoaderError( 'Request property is not of type String' );
+			}
 			
 			asset.closure = closure;
 			asset.load();
@@ -69,19 +80,22 @@ package org.robotlegs.utilities.assetloader.core
 		}
 		
 		/**
-		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.loadGroup();
+		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.loadGroup()
 		 */
 		public function loadGroup( request: Object, closure: Function = null ): IGroup
 		{
 			var urls: Vector.<String>;
 			var group: IGroup;
 			
-			if( request is Array )
+			if( request is Array ) {
 				group = instantiateGroup( Vector.<String>( request ));
-			else if( request is Vector.<String> )
+			}
+			else if( request is Vector.<String> ) {
 				group = instantiateGroup( request as Vector.<String> );
-			else
+			}
+			else {
 				throw new AssetLoaderError( 'Request property is not of type Array or Vector.<String>' );
+			}
 			
 			group.closure = closure;
 			group.load();
@@ -90,7 +104,7 @@ package org.robotlegs.utilities.assetloader.core
 		}
 		
 		/**
-		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.getAsset();
+		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.getAsset()
 		 */
 		public function getAsset( id: String ): IAsset
 		{
@@ -98,7 +112,7 @@ package org.robotlegs.utilities.assetloader.core
 		}
 		
 		/**
-		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.hasAsset();
+		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.hasAsset()
 		 */
 		public function hasAsset( id: String ): Boolean
 		{
@@ -106,7 +120,7 @@ package org.robotlegs.utilities.assetloader.core
 		}
 		
 		/**
-		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.removeAsset();
+		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.removeAsset()
 		 */
 		public function removeAsset( id: String ): void
 		{
@@ -121,7 +135,7 @@ package org.robotlegs.utilities.assetloader.core
 		}
 		
 		/**
-		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.getAssetByUrl();
+		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.getAssetByUrl()
 		 */
 		public function getAssetByUrl( url: String ): IAsset
 		{
@@ -129,7 +143,7 @@ package org.robotlegs.utilities.assetloader.core
 		}
 		
 		/**
-		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.hasAssetByUrl();
+		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.hasAssetByUrl()
 		 */
 		public function hasAssetByUrl( url: String ): Boolean
 		{
@@ -137,16 +151,17 @@ package org.robotlegs.utilities.assetloader.core
 		}
 		
 		/**
-		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.removeAssetByUrl();
+		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.removeAssetByUrl()
 		 */
 		public function removeAssetByUrl( url: String ): void
 		{
-			if( hasAssetByUrl( url ))
+			if( hasAssetByUrl( url )) {
 				removeAsset( getAssetByUrl( url ).id );
+			}
 		}
 		
 		/**
-		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.getGroup();
+		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.getGroup()
 		 */
 		public function getGroup( id: String ): IGroup
 		{
@@ -154,7 +169,7 @@ package org.robotlegs.utilities.assetloader.core
 		}
 		
 		/**
-		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.hasGroup();
+		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.hasGroup()
 		 */
 		public function hasGroup( id: String ): Boolean
 		{
@@ -162,7 +177,7 @@ package org.robotlegs.utilities.assetloader.core
 		}
 		
 		/**
-		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.removeGroup();
+		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.removeGroup()
 		 */
 		public function removeGroup( id: String ): void
 		{
@@ -175,10 +190,10 @@ package org.robotlegs.utilities.assetloader.core
 		}
 		
 		/**
+		 * Instantiate a new <code>Asset</code>.
 		 * 
-		 * 
-		 * @param url
-		 * @return 
+		 * @param url The url of the <code>Asset</code>.
+		 * @return The new instance of the <code>Asset</code>.
 		 */
 		protected function instantiateAsset( url: String ): IAsset
 		{
@@ -193,18 +208,19 @@ package org.robotlegs.utilities.assetloader.core
 		}
 		
 		/**
+		 * Instantiate a new <code>Group</code> of <code>Assets</code>.
 		 * 
-		 * 
-		 * @param urls
-		 * @return 
+		 * @param urls THe urls of the <code>Assets</code>.
+		 * @return The new instance of the <code>Group</code>.
 		 */
 		protected function instantiateGroup( urls: Vector.<String> ): IGroup
 		{
 			var url: String;
 			var assets: Vector.<IAsset> = new Vector.<IAsset>;
 			
-			for each( url in urls )
+			for each( url in urls ) {
 				assets.push( instantiateAsset( url ));
+			}
 			
 			var id: String = ( _assetIds++ ).toString();
 			var group: IGroup = new Group( id, assets );

@@ -2,7 +2,7 @@
 
 <interfaceRec name='IAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/patterns/asset/IAsset.as' namespace='org.robotlegs.utilities.assetloader.patterns.asset' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
 <description><![CDATA[
-	 
+	 The interface definition for an <code>Asset</code>.
 	 
 	 ]]></description>
 <author><![CDATA[r.moorman
@@ -10,76 +10,79 @@
 </interfaceRec>
 <method name='dispose' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:dispose' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
 <description><![CDATA[
-		 
+		 Trigger the <code>Asset</code> to dispose it's references.
 		 ]]></description>
 </method>
 <method name='load' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:load' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
 <description><![CDATA[
-		 
+		 Trigger the <code>Asset</code> to load it's data.
 		 ]]></description>
 </method>
 <method name='setOnComplete' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:setOnComplete' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Function' param_defaults='undefined' result_type='void'>
 <description><![CDATA[
-		 
+		 Set the callback method after the <code>Asset</code> is successfully loaded.
 		 
 		 ]]></description>
-<param><![CDATA[value
+<param><![CDATA[value The callback method to be called.
 		 ]]></param>
 </method>
 <method name='setOnError' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:setOnError' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Function' param_defaults='undefined' result_type='void'>
 <description><![CDATA[
-		 
+		 Set the callback method after the <code>Asset</code> failed to load.
 		 
 		 ]]></description>
-<param><![CDATA[value
+<param><![CDATA[value The callback method to be called.
 		 ]]></param>
 </method>
 <method name='setOnProgress' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:setOnProgress' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Function' param_defaults='undefined' result_type='void'>
 <description><![CDATA[
-		 
+		 Set the callback method while the <code>Asset</code> is loading.
 		 
 		 ]]></description>
-<param><![CDATA[value
+<param><![CDATA[value The callback method to be called.
 		 ]]></param>
 </method>
 <method name='bytesLoaded' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:bytesLoaded/get' isStatic='false' isFinal='false' isOverride='false'  result_type='uint'>
 <description><![CDATA[
-		 
+		 The current loaded bytes of the <code>Asset</code>.
 		 ]]></description>
 </method>
 <method name='bytesTotal' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:bytesTotal/get' isStatic='false' isFinal='false' isOverride='false'  result_type='uint'>
 <description><![CDATA[
-		 
+		 The total bytes to load of the <code>Asset</code>.
 		 ]]></description>
 </method>
 <method name='closure' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:closure/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Function'>
 <description><![CDATA[
-		 
+		 Optional closure method for retrieving <code>AssetLoaderEvents</code>.
 		 ]]></description>
 </method>
 <method name='data' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:data/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Object'>
 <description><![CDATA[
-		 
+		 The raw loaded data of the <code>Asset</code>.
 		 ]]></description>
 </method>
 <method name='id' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:id/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
 <description><![CDATA[
-		 
+		 The unique id of the <code>Asset</code>.
 		 ]]></description>
 </method>
 <method name='percentage' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:percentage/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
 <description><![CDATA[
-		 
+		 The current percentage of the loaded bytes of the <code>Asset</code> (from 0 till 100).
 		 ]]></description>
 </method>
 <method name='state' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:state/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
 <description><![CDATA[
+		 The current state of the <code>Asset</code>.
 		 
 		 ]]></description>
+<see><![CDATA[org.robotlegs.utilities.assetloader.core.AssetLoaderState
+		 ]]></see>
 </method>
 <method name='url' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:url/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
 <description><![CDATA[
-		 
+		 The url of the <code>Asset</code>.
 		 ]]></description>
 </method>
 <method name='closure' fullname='org.robotlegs.utilities.assetloader.patterns.asset:IAsset/org.robotlegs.utilities.assetloader.patterns.asset:IAsset:closure/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Function' param_defaults='undefined' result_type='void'>
@@ -94,7 +97,7 @@
 </method>
 <classRec name='Asset' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/patterns/asset/Asset.as' namespace='org.robotlegs.utilities.assetloader.patterns.asset' access='public' baseclass='flash.events:EventDispatcher' interfaces='org.robotlegs.utilities.assetloader.patterns.asset:IAsset' isFinal='false' isDynamic='false' >
 <description><![CDATA[
-	 
+	 Abstract implementation of <code>IAsset</code>.
 	 
 	 ]]></description>
 <author><![CDATA[r.moorman
@@ -104,15 +107,17 @@
 <description><![CDATA[
 		 Constructor.
 		 
+		 <p>At this point the state of the <code>Asset</code> is <code>INITIALIZING</code>.</p>
+		 
 		 ]]></description>
-<param><![CDATA[id
+<param><![CDATA[id The id of the <code>Asset</code>.
 		 ]]></param>
-<param><![CDATA[url
+<param><![CDATA[url The url of the <code>Asset</code>.
 		 ]]></param>
 </method>
 <method name='defineEventModel' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/protected:defineEventModel' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
 <description><![CDATA[
-		 
+		 Map eventListeners of the <code>Asset</code>.
 		 
 		 ]]></description>
 <throws><![CDATA[AssetLoaderError
@@ -132,18 +137,18 @@
 </method>
 <method name='onAssetProcess' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/protected:onAssetProcess' isStatic='false' isFinal='true' isOverride='false'  param_names='evt' param_types='flash.events:Event' param_defaults='undefined' result_type='void'>
 <description><![CDATA[
-		 
+		 Handle <code>Events</code> during the load process of the <code>Asset</code>.
 		 
 		 ]]></description>
-<param><![CDATA[evt
+<param><![CDATA[evt The <code>Event</code> that triggered this method (<code>Event.COMPLETE</code>, <code>ProgressEvent.PROGRESS</code> and <code>IOErrorEvent.IO_ERROR</code>).
 		 ]]></param>
 </method>
 <method name='onComplete' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/protected:onComplete' isStatic='false' isFinal='false' isOverride='false'  param_names='evt' param_types='flash.events:Event' param_defaults='undefined' result_type='void'>
 <description><![CDATA[
-		 
+		 Abstract method to handle the loaded <code>Asset</code>.
 		 
 		 ]]></description>
-<param><![CDATA[evt
+<param><![CDATA[evt The <code>Event</code> that triggered this method (<code>Event.COMPLETE</code>).
 		 ]]></param>
 </method>
 <method name='setOnComplete' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/setOnComplete' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Function' param_defaults='undefined' result_type='void'>
@@ -166,15 +171,15 @@
 </method>
 <method name='setState' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/protected:setState' isStatic='false' isFinal='true' isOverride='false'  param_names='state' param_types='String' param_defaults='undefined' result_type='void'>
 <description><![CDATA[
-		 
+		 Change the state of the <code>Asset</code>.
 		 
 		 ]]></description>
-<param><![CDATA[state
+<param><![CDATA[state The upcoming state of the <code>Asset</code>.
 		 ]]></param>
 </method>
 <method name='undefineEventModel' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/protected:undefineEventModel' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
 <description><![CDATA[
-		 
+		 Unmap eventListeners of the <code>Asset</code>.
 		 ]]></description>
 </method>
 <method name='bytesLoaded' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/bytesLoaded/get' isStatic='false' isFinal='false' isOverride='false'  result_type='uint'>
@@ -345,7 +350,7 @@
 </field>
 <interfaceRec name='ILocalizer' fullname='org.robotlegs.utilities.localizer.core:ILocalizer' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/localizer/core/ILocalizer.as' namespace='org.robotlegs.utilities.localizer.core' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
 <description><![CDATA[
-	 Abstract <code>ILocalizer</code> interface.
+	 The interface definition for <code>Localizer</code>.
 	 
 	 ]]></description>
 <author><![CDATA[r.moorman
@@ -420,7 +425,7 @@
 </method>
 <classRec name='Localizer' fullname='org.robotlegs.utilities.localizer.core:Localizer' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/localizer/core/Localizer.as' namespace='org.robotlegs.utilities.localizer.core' access='public' baseclass='org.robotlegs.mvcs:Actor' interfaces='org.robotlegs.utilities.localizer.core:ILocalizer' isFinal='false' isDynamic='false' >
 <description><![CDATA[
-	 Abstract <code>Localizer</code> implementation.
+	 
 	 
 	 ]]></description>
 <author><![CDATA[r.moorman
@@ -492,7 +497,7 @@
 </field>
 <classRec name='AssetLoaderState' fullname='org.robotlegs.utilities.assetloader.core:AssetLoaderState' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/core/AssetLoaderState.as' namespace='org.robotlegs.utilities.assetloader.core' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
 <description><![CDATA[
-	 
+	 Loading states for <code>Assets</code> and <code>Groups</code>.
 	 
 	 ]]></description>
 <author><![CDATA[r.moorman
@@ -500,27 +505,27 @@
 </classRec>
 <field name='FAILED' fullname='org.robotlegs.utilities.assetloader.core:AssetLoaderState/FAILED' type='String' isStatic='true' isConst='true' defaultValue='failed' >
 <description><![CDATA[
-		 
+		 State after the <code>Asset</code> failed to load (due a illegal operation or a security error).
 		 ]]></description>
 </field>
 <field name='INITIALIZING' fullname='org.robotlegs.utilities.assetloader.core:AssetLoaderState/INITIALIZING' type='String' isStatic='true' isConst='true' defaultValue='initializing' >
 <description><![CDATA[
-		 
+		 State after the <code>Asset</code> is instantiated and is not yet started to load.
 		 ]]></description>
 </field>
 <field name='LOADED' fullname='org.robotlegs.utilities.assetloader.core:AssetLoaderState/LOADED' type='String' isStatic='true' isConst='true' defaultValue='loaded' >
 <description><![CDATA[
-		 
+		 State after the <code>Asset</code> is successfully loaded.
 		 ]]></description>
 </field>
 <field name='LOADING' fullname='org.robotlegs.utilities.assetloader.core:AssetLoaderState/LOADING' type='String' isStatic='true' isConst='true' defaultValue='loading' >
 <description><![CDATA[
-		 
+		 State while the <code>Asset</code> is loading.
 		 ]]></description>
 </field>
 <interfaceRec name='IAssetLoader' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/core/IAssetLoader.as' namespace='org.robotlegs.utilities.assetloader.core' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
 <description><![CDATA[
-	 
+	 The interface definition for <code>AssetLoader</code>.
 	 
 	 ]]></description>
 <author><![CDATA[r.moorman
@@ -530,115 +535,138 @@
 </interfaceRec>
 <method name='getAssetByUrl' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:getAssetByUrl' isStatic='false' isFinal='false' isOverride='false'  param_names='url' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.assetloader.patterns.asset:IAsset'>
 <description><![CDATA[
-		 
+		 Get an <code>Asset</code> by it's url.
 		 
 		 ]]></description>
-<param><![CDATA[url
+<param><![CDATA[url The url of the <code>Asset</code>.
 		 ]]></param>
-<return><![CDATA[
+<return><![CDATA[An instance of <code>Asset</code>, <code>null</code> if not found.
 		 ]]></return>
 </method>
 <method name='getAsset' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:getAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.assetloader.patterns.asset:IAsset'>
 <description><![CDATA[
-		 
+		 Get an <code>Asset</code> by it's id.
 		 
 		 ]]></description>
-<param><![CDATA[id
+<param><![CDATA[id The id of the <code>Asset</code>.
 		 ]]></param>
-<return><![CDATA[
+<return><![CDATA[An instance of <code>Asset</code>, <code>null</code> if not found.
 		 ]]></return>
 </method>
 <method name='getGroup' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:getGroup' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.assetloader.patterns.group:IGroup'>
 <description><![CDATA[
-		 
+		 Get a <code>Group</code> by it's id.
 		 
 		 ]]></description>
-<param><![CDATA[id
+<param><![CDATA[id The id of the <code>Group</code>.
 		 ]]></param>
-<return><![CDATA[
+<return><![CDATA[An instance of <code>Group</code>, <code>null</code> if not found.
 		 ]]></return>
 </method>
 <method name='hasAssetByUrl' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:hasAssetByUrl' isStatic='false' isFinal='false' isOverride='false'  param_names='url' param_types='String' param_defaults='undefined' result_type='Boolean'>
 <description><![CDATA[
-		 
+		 Check if an <code>Asset</code> exists under an url.
 		 
 		 ]]></description>
-<param><![CDATA[url
+<param><![CDATA[url The url of the <code>Asset</code>.
 		 ]]></param>
-<return><![CDATA[
+<return><![CDATA[<code>True</code> or <code>False</code>.
 		 ]]></return>
 </method>
 <method name='hasAsset' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:hasAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='Boolean'>
 <description><![CDATA[
-		 
+		 Check if an <code>Asset</code> exists under an id.
 		 
 		 ]]></description>
-<param><![CDATA[id
+<param><![CDATA[id The id of the <code>Asset</code>.
 		 ]]></param>
-<return><![CDATA[
+<return><![CDATA[<code>True</code> or <code>False</code>.
 		 ]]></return>
 </method>
 <method name='hasGroup' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:hasGroup' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='Boolean'>
 <description><![CDATA[
-		 
+		 Check if a <code>Group</code> exists under an id.
 		 
 		 ]]></description>
-<param><![CDATA[id
+<param><![CDATA[id The id of the <code>Group</code>.
 		 ]]></param>
-<return><![CDATA[
+<return><![CDATA[<code>True</code> or <code>False</code>.
 		 ]]></return>
 </method>
 <method name='loadGroup' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:loadGroup' isStatic='false' isFinal='false' isOverride='false'  param_names='request;closure' param_types='Object;Function' param_defaults='undefined;null' result_type='org.robotlegs.utilities.assetloader.patterns.group:IGroup'>
 <description><![CDATA[
-		 
+		 Load a group of <code>Assets</code>.
 		 
 		 ]]></description>
-<param><![CDATA[request
+<param><![CDATA[request The urls of the <code>Assets</code> as an <code>Array</code> or <code>Vector</code> of <code>Strings</code>.
 		 ]]></param>
-<param><![CDATA[closure
+<param><![CDATA[closure Optional closure method for retrieving <code>AssetLoaderEvents</code>.
 		 ]]></param>
-<return><![CDATA[
+<return><![CDATA[A new instance of <code>Group</code>.
 		 ]]></return>
+<see><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.load()
+		 ]]></see>
 </method>
 <method name='load' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:load' isStatic='false' isFinal='false' isOverride='false'  param_names='request;closure' param_types='Object;Function' param_defaults='undefined;null' result_type='org.robotlegs.utilities.assetloader.patterns.asset:IAsset'>
 <description><![CDATA[
+		 Load a single <code>Asset</code>.
 		 
+		 <p>The <code>AssetLoader</code> automatically assigns the
+		 right asset class by checking the extension of the asset.
+		 The following type's are currently supported:</p>
+		 
+		 <ul>
+		 	<li><code>BitmapAsset</code> (png, gif, jpg and jpeg)</li>
+		 	<li><code>DisplayObjectAsset</code> (swf)</li>
+		 	<li><code>SoundAsset</code> (mp3, wav, aif)</li>
+		 	<li><code>CSSAsset</code> (css)</li>
+		 	<li><code>XMLAsset</code> (xml)</li>
+		 </ul>
 		 
 		 ]]></description>
-<param><![CDATA[request
+<param><![CDATA[request The url of the <code>Asset</code> as a <code>String</code>.
 		 ]]></param>
-<param><![CDATA[closure
+<param><![CDATA[closure Optional closure method for retrieving <code>AssetLoaderEvents</code>.
 		 ]]></param>
-<return><![CDATA[
+<return><![CDATA[A new instance of <code>Asset</code>.
 		 ]]></return>
 </method>
 <method name='removeAssetByUrl' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:removeAssetByUrl' isStatic='false' isFinal='false' isOverride='false'  param_names='url' param_types='String' param_defaults='undefined' result_type='void'>
 <description><![CDATA[
-		 
+		 Remove an <code>Asset</code> by it's url.
 		 
 		 ]]></description>
-<param><![CDATA[url
+<param><![CDATA[url The url of the <code>Asset</code>.
 		 ]]></param>
 </method>
 <method name='removeAsset' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:removeAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='void'>
 <description><![CDATA[
-		 
+		 Remove an <code>Asset</code> by it's id.
 		 
 		 ]]></description>
-<param><![CDATA[id
+<param><![CDATA[id The id of the <code>Asset</code>.
 		 ]]></param>
 </method>
 <method name='removeGroup' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:removeGroup' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='void'>
 <description><![CDATA[
-		 
+		 Remove a <code>Group</code> by it's id.
 		 
 		 ]]></description>
-<param><![CDATA[id
+<param><![CDATA[id The id of the <code>Group</code>.
 		 ]]></param>
 </method>
 <classRec name='AssetLoader' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/core/AssetLoader.as' namespace='org.robotlegs.utilities.assetloader.core' access='public' baseclass='Object' interfaces='org.robotlegs.utilities.assetloader.core:IAssetLoader' isFinal='false' isDynamic='false' >
 <description><![CDATA[
+	 This utility allows you to easily load external assets into your application.
 	 
+	 <p>All the assets which are loaded by the <code>AssetLoader</code> are stored
+	 and can be retrieved at any time. This can be done by retrieving the asset by
+	 it's url or unique id.</p>
+	 
+	 <p>The <code>AssetLoader</code> also allows you to load a group of assets at once.
+	 Therefore you will get a <code>Group</code> returned instead of an single <code>Asset</code>.
+	 That <code>Group</code> will have as well as the <code>Asset</code> an unique id you can use
+	 to retrieve it at another point within your application.</p>
 	 
 	 ]]></description>
 <author><![CDATA[r.moorman
@@ -654,87 +682,87 @@
 <method name='getAssetByUrl' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/getAssetByUrl' isStatic='false' isFinal='false' isOverride='false'  param_names='url' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.assetloader.patterns.asset:IAsset'>
 <description><![CDATA[
 		 ]]></description>
-<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.getAssetByUrl();
+<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.getAssetByUrl()
 		 ]]></copy>
 </method>
 <method name='getAsset' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/getAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.assetloader.patterns.asset:IAsset'>
 <description><![CDATA[
 		 ]]></description>
-<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.getAsset();
+<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.getAsset()
 		 ]]></copy>
 </method>
 <method name='getGroup' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/getGroup' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.assetloader.patterns.group:IGroup'>
 <description><![CDATA[
 		 ]]></description>
-<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.getGroup();
+<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.getGroup()
 		 ]]></copy>
 </method>
 <method name='hasAssetByUrl' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/hasAssetByUrl' isStatic='false' isFinal='false' isOverride='false'  param_names='url' param_types='String' param_defaults='undefined' result_type='Boolean'>
 <description><![CDATA[
 		 ]]></description>
-<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.hasAssetByUrl();
+<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.hasAssetByUrl()
 		 ]]></copy>
 </method>
 <method name='hasAsset' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/hasAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='Boolean'>
 <description><![CDATA[
 		 ]]></description>
-<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.hasAsset();
+<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.hasAsset()
 		 ]]></copy>
 </method>
 <method name='hasGroup' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/hasGroup' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='Boolean'>
 <description><![CDATA[
 		 ]]></description>
-<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.hasGroup();
+<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.hasGroup()
 		 ]]></copy>
 </method>
 <method name='instantiateAsset' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/protected:instantiateAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='url' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.assetloader.patterns.asset:IAsset'>
 <description><![CDATA[
-		 
+		 Instantiate a new <code>Asset</code>.
 		 
 		 ]]></description>
-<param><![CDATA[url
+<param><![CDATA[url The url of the <code>Asset</code>.
 		 ]]></param>
-<return><![CDATA[
+<return><![CDATA[The new instance of the <code>Asset</code>.
 		 ]]></return>
 </method>
 <method name='instantiateGroup' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/protected:instantiateGroup' isStatic='false' isFinal='false' isOverride='false'  param_names='urls' param_types='Vector$String' param_defaults='undefined' result_type='org.robotlegs.utilities.assetloader.patterns.group:IGroup'>
 <description><![CDATA[
-		 
+		 Instantiate a new <code>Group</code> of <code>Assets</code>.
 		 
 		 ]]></description>
-<param><![CDATA[urls
+<param><![CDATA[urls THe urls of the <code>Assets</code>.
 		 ]]></param>
-<return><![CDATA[
+<return><![CDATA[The new instance of the <code>Group</code>.
 		 ]]></return>
 </method>
 <method name='loadGroup' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/loadGroup' isStatic='false' isFinal='false' isOverride='false'  param_names='request;closure' param_types='Object;Function' param_defaults='undefined;null' result_type='org.robotlegs.utilities.assetloader.patterns.group:IGroup'>
 <description><![CDATA[
 		 ]]></description>
-<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.loadGroup();
+<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.loadGroup()
 		 ]]></copy>
 </method>
 <method name='load' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/load' isStatic='false' isFinal='false' isOverride='false'  param_names='request;closure' param_types='Object;Function' param_defaults='undefined;null' result_type='org.robotlegs.utilities.assetloader.patterns.asset:IAsset'>
 <description><![CDATA[
 		 ]]></description>
-<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.load();
+<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.load()
 		 ]]></copy>
 </method>
 <method name='removeAssetByUrl' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/removeAssetByUrl' isStatic='false' isFinal='false' isOverride='false'  param_names='url' param_types='String' param_defaults='undefined' result_type='void'>
 <description><![CDATA[
 		 ]]></description>
-<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.removeAssetByUrl();
+<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.removeAssetByUrl()
 		 ]]></copy>
 </method>
 <method name='removeAsset' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/removeAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='void'>
 <description><![CDATA[
 		 ]]></description>
-<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.removeAsset();
+<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.removeAsset()
 		 ]]></copy>
 </method>
 <method name='removeGroup' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/removeGroup' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='void'>
 <description><![CDATA[
 		 ]]></description>
-<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.removeGroup();
+<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.removeGroup()
 		 ]]></copy>
 </method>
 <field name='_assetIds' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/private:_assetIds' type='int' isStatic='false' isConst='false' >
@@ -860,7 +888,7 @@
 </method>
 <interfaceRec name='IGroup' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/patterns/group/IGroup.as' namespace='org.robotlegs.utilities.assetloader.patterns.group' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
 <description><![CDATA[
-	 
+	 The interface definition for a <code>Group</code>.
 	 
 	 ]]></description>
 <author><![CDATA[r.moorman
@@ -868,53 +896,56 @@
 </interfaceRec>
 <method name='dispose' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:dispose' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
 <description><![CDATA[
-		 
+		 Trigger the <code>Group</code> to dispose it's references.
 		 ]]></description>
 </method>
 <method name='load' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:load' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
 <description><![CDATA[
-		 
+		 Trigger the <code>Group</code> to load it's <code>Assets</code>.
 		 ]]></description>
 </method>
 <method name='assets' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:assets/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Vector$org.robotlegs.utilities.assetloader.patterns.asset:IAsset'>
 <description><![CDATA[
-		 
+		 The assets of the <code>Group</code>.
 		 ]]></description>
 </method>
 <method name='bytesLoaded' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:bytesLoaded/get' isStatic='false' isFinal='false' isOverride='false'  result_type='uint'>
 <description><![CDATA[
-		 
+		 The current total loaded bytes of the <code>Group</code> (from 0 till 100).
 		 ]]></description>
 </method>
 <method name='bytesTotal' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:bytesTotal/get' isStatic='false' isFinal='false' isOverride='false'  result_type='uint'>
 <description><![CDATA[
-		 
+		 The total bytes to load of the <code>Group</code>.
 		 ]]></description>
 </method>
 <method name='closure' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:closure/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Function'>
 <description><![CDATA[
-		 
+		 Optional closure method for retrieving <code>AssetLoaderEvents</code>.
 		 ]]></description>
 </method>
 <method name='id' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:id/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
 <description><![CDATA[
-		 
+		 The unique id of the <code>Group</code>.
 		 ]]></description>
 </method>
 <method name='maxConnections' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:maxConnections/get' isStatic='false' isFinal='false' isOverride='false'  result_type='int'>
 <description><![CDATA[
-		 
+		 The max connections before a next <code>Asset</code> in the queue starts loading.
 		 ]]></description>
 </method>
 <method name='percentage' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:percentage/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
 <description><![CDATA[
-		 
+		 The current percentage of the total loaded bytes of the <code>Group</code>.
 		 ]]></description>
 </method>
 <method name='state' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:state/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
 <description><![CDATA[
+		 The current state of the <code>Group</code>.
 		 
 		 ]]></description>
+<see><![CDATA[org.robotlegs.utilities.assetloader.core.AssetLoaderState
+		 ]]></see>
 </method>
 <method name='assets' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:assets/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Vector$org.robotlegs.utilities.assetloader.patterns.asset:IAsset' param_defaults='undefined' result_type='void'>
 <description><![CDATA[
@@ -938,7 +969,7 @@
 </method>
 <classRec name='Group' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/patterns/group/Group.as' namespace='org.robotlegs.utilities.assetloader.patterns.group' access='public' baseclass='flash.events:EventDispatcher' interfaces='org.robotlegs.utilities.assetloader.patterns.group:IGroup' isFinal='false' isDynamic='false' >
 <description><![CDATA[
-	 
+	 Abstract implementation of <code>IGroup</code>.
 	 
 	 ]]></description>
 <author><![CDATA[r.moorman
@@ -948,18 +979,20 @@
 <description><![CDATA[
 		 Constructor.
 		 
+		 <p>At this point the state of the <code>Group</code> is <code>INITIALIZING</code>.</p>
+		 
 		 ]]></description>
-<param><![CDATA[id
+<param><![CDATA[id The id of the <code>Group</code>.
 		 ]]></param>
-<param><![CDATA[assets
+<param><![CDATA[assets The assets of the <code>Group</code>.
 		 ]]></param>
 </method>
 <method name='assetFileSizesDefined' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/private:assetFileSizesDefined' isStatic='false' isFinal='true' isOverride='false'  result_type='Boolean'>
 <description><![CDATA[
-		 
+		 Determine if all total bytes of the <code>Assets</code> are defined in the <code>Group</code>.
 		 
 		 ]]></description>
-<return><![CDATA[
+<return><![CDATA[<code>True</code> or <code>False</code>.
 		 ]]></return>
 </method>
 <method name='dispose' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/dispose' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
@@ -970,15 +1003,15 @@
 </method>
 <method name='getLoadedAssets' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/private:getLoadedAssets' isStatic='false' isFinal='true' isOverride='false'  result_type='int'>
 <description><![CDATA[
-		 
+		 Get the total count of loaded <code>Assets</code> in the <code>Group</code>.
 		 
 		 ]]></description>
-<return><![CDATA[
+<return><![CDATA[The total count of loaded <code>Assets</code> in the <code>Group</code>.
 		 ]]></return>
 </method>
 <method name='loadQueuedAsset' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/protected:loadQueuedAsset' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
 <description><![CDATA[
-		 
+		 Load the next <code>Asset</code> in the queue.
 		 ]]></description>
 </method>
 <method name='load' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/load' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
@@ -989,18 +1022,18 @@
 </method>
 <method name='onAssetProcess' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/protected:onAssetProcess' isStatic='false' isFinal='true' isOverride='false'  param_names='event' param_types='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent' param_defaults='undefined' result_type='void'>
 <description><![CDATA[
-		 
+		 Handle <code>AssetLoaderEvents</code> during the load process of the current <code>Asset</code>.
 		 
 		 ]]></description>
-<param><![CDATA[event
+<param><![CDATA[evt The <code>AssetLoaderEvent</code> that triggered this method (<code>AssetLoaderEvent.ASSET_COMPLETE</code>, <code>AssetLoaderEvent.ASSET_PROGRESS</code> and <code>AssetLoaderEvent.ASSET_ERROR</code>).
 		 ]]></param>
 </method>
 <method name='setState' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/protected:setState' isStatic='false' isFinal='true' isOverride='false'  param_names='state' param_types='String' param_defaults='undefined' result_type='void'>
 <description><![CDATA[
-		 
+		 Change the state of the <code>Group</code>.
 		 
 		 ]]></description>
-<param><![CDATA[state
+<param><![CDATA[state The upcoming state of the <code>Group</code>.
 		 ]]></param>
 </method>
 <method name='assets' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/assets/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Vector$org.robotlegs.utilities.assetloader.patterns.asset:IAsset'>
@@ -1103,7 +1136,7 @@
 </field>
 <classRec name='AssetLoaderEvent' fullname='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/events/AssetLoaderEvent.as' namespace='org.robotlegs.utilities.assetloader.events' access='public' baseclass='flash.events:Event' isFinal='false' isDynamic='false' >
 <description><![CDATA[
-	 
+	 Custom <code>Event</code> for <code>AssetLoader</code>.
 	 
 	 ]]></description>
 <author><![CDATA[r.moorman
@@ -1114,11 +1147,11 @@
 		 Constructor.
 		 
 		 ]]></description>
-<param><![CDATA[type
+<param><![CDATA[type The type of <code>Event</code>.
 		 ]]></param>
-<param><![CDATA[asset
+<param><![CDATA[asset The <code>Asset</code> that triggered this <code>Event</code>.
 		 ]]></param>
-<param><![CDATA[group
+<param><![CDATA[group The optional <code>Group</code> that triggered this <code>Event</code>.
 		 ]]></param>
 <param><![CDATA[bubbles
 		 ]]></param>
@@ -1132,12 +1165,12 @@
 </method>
 <method name='asset' fullname='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent/asset/get' isStatic='false' isFinal='false' isOverride='false'  result_type='org.robotlegs.utilities.assetloader.patterns.asset:IAsset'>
 <description><![CDATA[
-		 
+		 The <code>Asset</code> that triggered this <code>Event</code>.
 		 ]]></description>
 </method>
 <method name='group' fullname='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent/group/get' isStatic='false' isFinal='false' isOverride='false'  result_type='org.robotlegs.utilities.assetloader.patterns.group:IGroup'>
 <description><![CDATA[
-		 
+		 The optional <code>Group</code> that triggered this <code>Event</code>.
 		 ]]></description>
 </method>
 <method name='asset' fullname='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent/asset/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='org.robotlegs.utilities.assetloader.patterns.asset:IAsset' param_defaults='undefined' result_type='void'>
@@ -1152,32 +1185,35 @@
 </method>
 <field name='ASSET_COMPLETE' fullname='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent/ASSET_COMPLETE' type='String' isStatic='true' isConst='true' defaultValue='org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.ASSET_COMPLETE' >
 <description><![CDATA[
-		 Dispatched when.
+		 Dispatched when an <code>Asset</code> is successfully loaded.
 		 ]]></description>
 </field>
 <field name='ASSET_ERROR' fullname='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent/ASSET_ERROR' type='String' isStatic='true' isConst='true' defaultValue='org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.ASSET_ERROR' >
 <description><![CDATA[
-		 Dispatched when.
+		 Dispatched when an <code>Asset</code> failed to load (due a illegal operation or a security error).
 		 ]]></description>
 </field>
 <field name='ASSET_PROGRESS' fullname='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent/ASSET_PROGRESS' type='String' isStatic='true' isConst='true' defaultValue='org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.ASSET_PROGRESS' >
 <description><![CDATA[
-		 Dispatched when.
+		 Dispatched while an <code>Asset</code> is loading.
 		 ]]></description>
 </field>
 <field name='GROUP_COMPLETE' fullname='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent/GROUP_COMPLETE' type='String' isStatic='true' isConst='true' defaultValue='org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.GROUP_COMPLETE' >
 <description><![CDATA[
-		 Dispatched when.
+		 Dispatched when a <code>Group</code> is successfully loaded.
 		 ]]></description>
 </field>
 <field name='GROUP_ERROR' fullname='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent/GROUP_ERROR' type='String' isStatic='true' isConst='true' defaultValue='org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.GROUP_ERROR' >
 <description><![CDATA[
-		 Dispatched when.
+		 Dispatched when a <code>Group</code> failed to load (due a illegal operation or a security error).
 		 ]]></description>
 </field>
 <field name='GROUP_PROGRESS' fullname='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent/GROUP_PROGRESS' type='String' isStatic='true' isConst='true' defaultValue='org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.GROUP_PROGRESS' >
 <description><![CDATA[
-		 Dispatched when.
+		 Dispatched while a <code>Group</code> is loading.
+		 
+		 <p>While a <code>Group</code> is loading, it's <code>Assets</code> will be dispatched during this progress, so you
+		 are able to handle completed <code>Assets</code> before the whole <code>Group</code> is loaded (performance better wise).</p>
 		 ]]></description>
 </field>
 <field name='_asset' fullname='org.robotlegs.utilities.assetloader.events:AssetLoaderEvent/private:_asset' type='org.robotlegs.utilities.assetloader.patterns.asset:IAsset' isStatic='false' isConst='false' >
@@ -1253,7 +1289,7 @@
 </method>
 <classRec name='AssetLoaderError' fullname='org.robotlegs.utilities.assetloader.error:AssetLoaderError' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/error/AssetLoaderError.as' namespace='org.robotlegs.utilities.assetloader.error' access='public' baseclass='Error' isFinal='false' isDynamic='false' >
 <description><![CDATA[
-	 
+	 Custom error <code>Class</code> for an <code>AssetLoader</code>.
 	 
 	 ]]></description>
 <author><![CDATA[r.moorman
@@ -1261,13 +1297,8 @@
 </classRec>
 <method name='AssetLoaderError' fullname='org.robotlegs.utilities.assetloader.error:AssetLoaderError/AssetLoaderError' isStatic='false' isFinal='false' isOverride='false'  param_names='message;id' param_types='*;*' param_defaults=';0' result_type='*'>
 <description><![CDATA[
-		 
-		 
 		 ]]></description>
-<param><![CDATA[message
-		 ]]></param>
-<param><![CDATA[id
-		 ]]></param>
+<inheritDoc><![CDATA[]]></inheritDoc>
 </method>
 <classRec name='StylesError' fullname='org.robotlegs.utilities.styles.error:StylesError' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/styles/error/StylesError.as' namespace='org.robotlegs.utilities.styles.error' access='public' baseclass='Error' isFinal='false' isDynamic='false' >
 <description><![CDATA[
@@ -1392,7 +1423,7 @@
 </field>
 <classRec name='LayersError' fullname='org.robotlegs.utilities.layers.error:LayersError' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/layers/error/LayersError.as' namespace='org.robotlegs.utilities.layers.error' access='public' baseclass='Error' isFinal='false' isDynamic='false' >
 <description><![CDATA[
-	 
+	 Custom error <code>Class</code> for an <code>AssetLoader</code>.
 	 
 	 ]]></description>
 <author><![CDATA[r.moorman
@@ -1400,13 +1431,8 @@
 </classRec>
 <method name='LayersError' fullname='org.robotlegs.utilities.layers.error:LayersError/LayersError' isStatic='false' isFinal='false' isOverride='false'  param_names='message;id' param_types='*;*' param_defaults=';0' result_type='*'>
 <description><![CDATA[
-		 
-		 
 		 ]]></description>
-<param><![CDATA[message
-		 ]]></param>
-<param><![CDATA[id
-		 ]]></param>
+<inheritDoc><![CDATA[]]></inheritDoc>
 </method>
 <classRec name='RouterError' fullname='org.robotlegs.utilities.router.error:RouterError' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/router/error/RouterError.as' namespace='org.robotlegs.utilities.router.error' access='public' baseclass='Error' isFinal='false' isDynamic='false' >
 <description><![CDATA[
@@ -2598,40 +2624,44 @@
 </method>
 <interfaceRec name='ILayers' fullname='org.robotlegs.utilities.layers.core:ILayers' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/layers/core/ILayers.as' namespace='org.robotlegs.utilities.layers.core' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
 <description><![CDATA[
-	 
+	 The interface definition for <code>Layers</code>.
 	 
 	 ]]></description>
 <author><![CDATA[r.moorman
 	 ]]></author>
+<see><![CDATA[org.robotlegs.utilities.navigator.core.Navigator
+	 ]]></see>
+<see><![CDATA[https://github.com/moorinteractive/as3-robotlegs-library/wiki/layers
+	 ]]></see>
 </interfaceRec>
 <method name='addLayer' fullname='org.robotlegs.utilities.layers.core:ILayers/org.robotlegs.utilities.layers.core:ILayers:addLayer' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.layers.patterns.layer:ILayer'>
 <description><![CDATA[
-		 
+		 Add a new <code>Layer</code>.
 		 
 		 ]]></description>
-<param><![CDATA[name
+<param><![CDATA[name The name of the <code>Layer</code>.
 		 ]]></param>
-<return><![CDATA[
+<return><![CDATA[A new instance of <code>Layer</code>.
 		 ]]></return>
 </method>
 <method name='getLayer' fullname='org.robotlegs.utilities.layers.core:ILayers/org.robotlegs.utilities.layers.core:ILayers:getLayer' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.layers.patterns.layer:ILayer'>
 <description><![CDATA[
-		 
+		 Get a <code>Layer</code> by it's id.
 		 
 		 ]]></description>
-<param><![CDATA[name
+<param><![CDATA[name The name of the <code>Layer</code>.
 		 ]]></param>
-<return><![CDATA[
+<return><![CDATA[An instance of <code>Layer</code>, <code>null</code> if not found.
 		 ]]></return>
 </method>
 <method name='hasLayer' fullname='org.robotlegs.utilities.layers.core:ILayers/org.robotlegs.utilities.layers.core:ILayers:hasLayer' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='Boolean'>
 <description><![CDATA[
-		 
+		 Check if a <code>Layer</code> exists under a name.
 		 
 		 ]]></description>
-<param><![CDATA[name
+<param><![CDATA[name The name of the <code>Layer</code>.
 		 ]]></param>
-<return><![CDATA[
+<return><![CDATA[<code>True</code> or <code>False</code>.
 		 ]]></return>
 </method>
 <method name='lock' fullname='org.robotlegs.utilities.layers.core:ILayers/org.robotlegs.utilities.layers.core:ILayers:lock' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
@@ -2641,21 +2671,22 @@
 </method>
 <method name='removeLayer' fullname='org.robotlegs.utilities.layers.core:ILayers/org.robotlegs.utilities.layers.core:ILayers:removeLayer' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.layers.patterns.layer:ILayer'>
 <description><![CDATA[
+		 Remove a <code>Layer</code> by it's id.
 		 
 		 ]]></description>
-<param><![CDATA[name
+<param><![CDATA[name The name of the <code>Layer</code>.
 		 ]]></param>
-<return><![CDATA[
+<return><![CDATA[An instance of <code>Layer</code>, <code>null</code> if not found.
 		 ]]></return>
 </method>
 <method name='transferLayer' fullname='org.robotlegs.utilities.layers.core:ILayers/org.robotlegs.utilities.layers.core:ILayers:transferLayer' isStatic='false' isFinal='false' isOverride='false'  param_names='name;index' param_types='String;int' param_defaults='undefined;undefined' result_type='org.robotlegs.utilities.layers.patterns.layer:ILayer'>
 <description><![CDATA[
-		 
+		 Transfer a <code>Layer</code> to an other childIndex.
 		 
 		 ]]></description>
-<param><![CDATA[name
+<param><![CDATA[name The name of the <code>Layer</code>.
 		 ]]></param>
-<param><![CDATA[index
+<param><![CDATA[index The upcoming childIndex.
 		 ]]></param>
 </method>
 <method name='unlock' fullname='org.robotlegs.utilities.layers.core:ILayers/org.robotlegs.utilities.layers.core:ILayers:unlock' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
@@ -2665,11 +2696,21 @@
 </method>
 <classRec name='Layers' fullname='org.robotlegs.utilities.layers.core:Layers' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/layers/core/Layers.as' namespace='org.robotlegs.utilities.layers.core' access='public' baseclass='org.robotlegs.mvcs:Actor' interfaces='org.robotlegs.utilities.layers.core:ILayers' isFinal='false' isDynamic='false' >
 <description><![CDATA[
+	 This utility allows you to manage your displayList in layers.
 	 
+	 <p>The advantage of using <code>Layers</code> is that you have all your type of viewComponents at one place.
+	 For example all <code>Pages</code> are added in a <code>Layer</code> named <code>pages</code>. By using <code>Layers</code>
+	 you can easily switch the user interface on and off while navigating. Therefore we advice you to use <code>Navigator</code>
+	 or page transitions. Remember to set the property <code>lockLayersWhileTransitioning</code> of <code>Navigator</code>
+	 to <code>true</code></p>. You can also manually set the user interface on and off of the independend <code>Layers</code>.
 	 
 	 ]]></description>
 <author><![CDATA[r.moorman
 	 ]]></author>
+<see><![CDATA[org.robotlegs.utilities.navigator.core.Navigator
+	 ]]></see>
+<see><![CDATA[https://github.com/moorinteractive/as3-robotlegs-library/wiki/layers
+	 ]]></see>
 </classRec>
 <method name='Layers' fullname='org.robotlegs.utilities.layers.core:Layers/Layers' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
 <description><![CDATA[
@@ -2783,7 +2824,7 @@
 </field>
 <classRec name='LayersEvent' fullname='org.robotlegs.utilities.layers.events:LayersEvent' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/layers/events/LayersEvent.as' namespace='org.robotlegs.utilities.layers.events' access='public' baseclass='flash.events:Event' isFinal='false' isDynamic='false' >
 <description><![CDATA[
-	 
+	 Custom <code>Event</code> for <code>Layers</code>.
 	 
 	 ]]></description>
 <author><![CDATA[r.moorman
@@ -2794,11 +2835,11 @@
 		 Constructor.
 		 
 		 ]]></description>
-<param><![CDATA[type
+<param><![CDATA[type The type of <code>Event</code>.
 		 ]]></param>
-<param><![CDATA[layer
+<param><![CDATA[layer The <code>Layer</code> to be handled.
 		 ]]></param>
-<param><![CDATA[index
+<param><![CDATA[index The childIndex to transfer the <code>Layer</code> to.
 		 ]]></param>
 <param><![CDATA[bubbles
 		 ]]></param>
@@ -2810,36 +2851,40 @@
 		 ]]></description>
 <inheritDoc><![CDATA[]]></inheritDoc>
 </method>
+<method name='index' fullname='org.robotlegs.utilities.layers.events:LayersEvent/index/get' isStatic='false' isFinal='false' isOverride='false'  result_type='int'>
+<description><![CDATA[
+		 The childIndex to transfer the <code>Layer</code> to.
+		 ]]></description>
+</method>
+<method name='layer' fullname='org.robotlegs.utilities.layers.events:LayersEvent/layer/get' isStatic='false' isFinal='false' isOverride='false'  result_type='org.robotlegs.utilities.layers.patterns.layer:ILayer'>
+<description><![CDATA[
+		 The <code>Layer</code> to be handled.
+		 ]]></description>
+</method>
 <field name='ADD_LAYER' fullname='org.robotlegs.utilities.layers.events:LayersEvent/ADD_LAYER' type='String' isStatic='true' isConst='true' defaultValue='org.robotlegs.utilities.layers.events.LayersEvent.ADD_LAYER' >
 <description><![CDATA[
-		 
+		 Dispatched when a <code>Layer</code> sould be added.
 		 ]]></description>
 </field>
 <field name='REMOVE_LAYER' fullname='org.robotlegs.utilities.layers.events:LayersEvent/REMOVE_LAYER' type='String' isStatic='true' isConst='true' defaultValue='org.robotlegs.utilities.layers.events.LayersEvent.REMOVE_LAYER' >
 <description><![CDATA[
-		 
+		 Dispatched when a <code>Layer</code> sould be removed.
 		 ]]></description>
 </field>
 <field name='TRANSFER_LAYER' fullname='org.robotlegs.utilities.layers.events:LayersEvent/TRANSFER_LAYER' type='String' isStatic='true' isConst='true' defaultValue='org.robotlegs.utilities.layers.events.LayersEvent.TRANSFER_LAYER' >
 <description><![CDATA[
-		 
+		 Dispatched when a <code>Layer</code> sould be transfered.
 		 ]]></description>
 </field>
-<field name='index' fullname='org.robotlegs.utilities.layers.events:LayersEvent/index' type='int' isStatic='false' isConst='false' >
+<field name='_index' fullname='org.robotlegs.utilities.layers.events:LayersEvent/private:_index' type='int' isStatic='false' isConst='false' >
 <description><![CDATA[
-		 
-		 
 		 ]]></description>
-<default><![CDATA[null
-		 ]]></default>
+<private><![CDATA[]]></private>
 </field>
-<field name='layer' fullname='org.robotlegs.utilities.layers.events:LayersEvent/layer' type='org.robotlegs.utilities.layers.patterns.layer:ILayer' isStatic='false' isConst='false' >
+<field name='_layer' fullname='org.robotlegs.utilities.layers.events:LayersEvent/private:_layer' type='org.robotlegs.utilities.layers.patterns.layer:ILayer' isStatic='false' isConst='false' >
 <description><![CDATA[
-		 
-		 
 		 ]]></description>
-<default><![CDATA[null
-		 ]]></default>
+<private><![CDATA[]]></private>
 </field>
 <interfaceRec name='IStyles' fullname='org.robotlegs.utilities.styles.core:IStyles' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/styles/core/IStyles.as' namespace='org.robotlegs.utilities.styles.core' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
 <description><![CDATA[
@@ -2933,7 +2978,7 @@
 </field>
 <classRec name='ClassUtil' fullname='org.robotlegs.utils:ClassUtil' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utils/ClassUtil.as' namespace='org.robotlegs.utils' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
 <description><![CDATA[
-	 
+	 Utilities for <code>Class</code> related functionalities.
 	 
 	 ]]></description>
 <author><![CDATA[r.moorman
@@ -2941,68 +2986,119 @@
 </classRec>
 <method name='getEventsFromObject' fullname='org.robotlegs.utils:ClassUtil/getEventsFromObject' isStatic='true' isFinal='false' isOverride='false'  param_names='reflector;value' param_types='org.robotlegs.core:IReflector;Object' param_defaults='undefined;undefined' result_type='Vector$flash.events:Event'>
 <description><![CDATA[
+		 Get all <code>Events</code> form a provided value.
 		 
+		 <p>This method is usually called by a <code>MacroCommand</code> for passing through
+		 it's <code>Events</code> to <code>SubCommands</code>.</p>
 		 
 		 ]]></description>
-<param><![CDATA[reflector
+<param><![CDATA[reflector The <code>IReflector</code> of Robotlegs.
 		 ]]></param>
-<param><![CDATA[value
+<param><![CDATA[value The value to get the Events from.
 		 ]]></param>
-<return><![CDATA[
+<return><![CDATA[Vector instance of all Events found in the provided value.
 		 ]]></return>
 </method>
 <interfaceRec name='ILayer' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/layers/patterns/layer/ILayer.as' namespace='org.robotlegs.utilities.layers.patterns.layer' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
 <description><![CDATA[
-	 
+	 The interface definition for <code>Layers</code>.
 	 
 	 ]]></description>
 <author><![CDATA[r.moorman
 	 ]]></author>
 </interfaceRec>
 <method name='addChildAt' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:addChildAt' isStatic='false' isFinal='false' isOverride='false'  param_names='child;index' param_types='flash.display:DisplayObject;int' param_defaults='undefined;undefined' result_type='flash.display:DisplayObject'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[flash.display.DisplayObjectContainer.addChildAt
+		 ]]></copy>
 </method>
 <method name='addChild' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:addChild' isStatic='false' isFinal='false' isOverride='false'  param_names='child' param_types='flash.display:DisplayObject' param_defaults='undefined' result_type='flash.display:DisplayObject'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[flash.display.DisplayObjectContainer.addChild
+		 ]]></copy>
 </method>
 <method name='getChildAt' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:getChildAt' isStatic='false' isFinal='false' isOverride='false'  param_names='index' param_types='int' param_defaults='undefined' result_type='flash.display:DisplayObject'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[flash.display.DisplayObjectContainer.getChildAt
+		 ]]></copy>
 </method>
 <method name='getChildByName' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:getChildByName' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='flash.display:DisplayObject'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[flash.display.DisplayObjectContainer.getChildByName
+		 ]]></copy>
 </method>
 <method name='getChildIndex' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:getChildIndex' isStatic='false' isFinal='false' isOverride='false'  param_names='child' param_types='flash.display:DisplayObject' param_defaults='undefined' result_type='int'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[flash.display.DisplayObjectContainer.getChildIndex
+		 ]]></copy>
 </method>
 <method name='lock' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:lock' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
 <description><![CDATA[
-		 Lock the user interface of the layer.
+		 Lock the user interface of the <code>Layer</code>.
 		 ]]></description>
 </method>
 <method name='removeChildAt' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:removeChildAt' isStatic='false' isFinal='false' isOverride='false'  param_names='index' param_types='int' param_defaults='undefined' result_type='flash.display:DisplayObject'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[flash.display.DisplayObjectContainer.removeChildAt
+		 ]]></copy>
 </method>
 <method name='removeChild' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:removeChild' isStatic='false' isFinal='false' isOverride='false'  param_names='child' param_types='flash.display:DisplayObject' param_defaults='undefined' result_type='flash.display:DisplayObject'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[flash.display.DisplayObjectContainer.removeChild
+		 ]]></copy>
 </method>
 <method name='unlock' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:unlock' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
 <description><![CDATA[
-		 Unlock the user interface of the layer.
+		 Unlock the user interface of the <code>Layer</code>.
 		 ]]></description>
 </method>
 <method name='name' fullname='org.robotlegs.utilities.layers.patterns.layer:ILayer/org.robotlegs.utilities.layers.patterns.layer:ILayer:name/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
 <description><![CDATA[
-		 The name of the layer.
+		 The name of the <code>Layer</code>.
 		 ]]></description>
 </method>
 <classRec name='Layer' fullname='org.robotlegs.utilities.layers.patterns.layer:Layer' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/layers/patterns/layer/Layer.as' namespace='org.robotlegs.utilities.layers.patterns.layer' access='public' baseclass='flash.display:Sprite' interfaces='org.robotlegs.utilities.layers.patterns.layer:ILayer' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Abstract implementation of <code>IAsset</code>.
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
 </classRec>
 <method name='Layer' fullname='org.robotlegs.utilities.layers.patterns.layer:Layer/Layer' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='*'>
+<description><![CDATA[
+		 Constructor.
+		 
+		 ]]></description>
+<param><![CDATA[name The name of the <code>Layer</code>.
+		 ]]></param>
 </method>
 <method name='lock' fullname='org.robotlegs.utilities.layers.patterns.layer:Layer/lock' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.layers.patterns.layer.ILayer.lock()
+		 ]]></copy>
 </method>
 <method name='unlock' fullname='org.robotlegs.utilities.layers.patterns.layer:Layer/unlock' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.layers.patterns.layer.ILayer.unlock()
+		 ]]></copy>
 </method>
 <classRec name='Utilities' fullname='org.robotlegs.utilities:Utilities' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/Utilities.as' namespace='org.robotlegs.utilities' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
 <description><![CDATA[
 	 Utility to map dependencies of certain utilities.
 	 
-	 <p>Probably the place to do your mappings is in the <code>mapInjections</code> method
+	 <p>Probably the best place to define your mappings is in the <code>mapInjections</code> method
 	 of your <code>Context</code>. You can simply call the method <code>mapDepedencies</code>
-	 of <code>Utilities</code> to do all your mappings for the following utilities.</p>
+	 of <code>Utilities</code> to determine all your mappings for the following utilities.</p>
 	 
 	 <ul>
 	 	<li><code>AssetLoader</code></li>
@@ -3249,7 +3345,7 @@
 </field>
 <classRec name='TransferLayerCommand' fullname='org.robotlegs.utilities.layers.controller.layer:TransferLayerCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/layers/controller/layer/TransferLayerCommand.as' namespace='org.robotlegs.utilities.layers.controller.layer' access='public' baseclass='org.robotlegs.mvcs:Command' isFinal='false' isDynamic='false' >
 <description><![CDATA[
-	 
+	 Transfer a <code>Layer</code> to an other childIndex in the <code>contextView</code>.
 	 
 	 ]]></description>
 <author><![CDATA[r.moorman
@@ -3262,12 +3358,12 @@
 </method>
 <field name='event' fullname='org.robotlegs.utilities.layers.controller.layer:TransferLayerCommand/event' type='org.robotlegs.utilities.layers.events:LayersEvent' isStatic='false' isConst='false' >
 <description><![CDATA[
-		 
+		 The <code>LayersEvent</code> that executed this <code>Command</code>.
 		 ]]></description>
 </field>
 <classRec name='AddLayerCommand' fullname='org.robotlegs.utilities.layers.controller.layer:AddLayerCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/layers/controller/layer/AddLayerCommand.as' namespace='org.robotlegs.utilities.layers.controller.layer' access='public' baseclass='org.robotlegs.mvcs:Command' isFinal='false' isDynamic='false' >
 <description><![CDATA[
-	 
+	 Add a <code>Layer</code> to the <code>contextView</code>.
 	 
 	 ]]></description>
 <author><![CDATA[r.moorman
@@ -3280,12 +3376,12 @@
 </method>
 <field name='event' fullname='org.robotlegs.utilities.layers.controller.layer:AddLayerCommand/event' type='org.robotlegs.utilities.layers.events:LayersEvent' isStatic='false' isConst='false' >
 <description><![CDATA[
-		 
+		 The <code>LayersEvent</code> that executed this <code>Command</code>.
 		 ]]></description>
 </field>
 <classRec name='RemoveLayerCommand' fullname='org.robotlegs.utilities.layers.controller.layer:RemoveLayerCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/layers/controller/layer/RemoveLayerCommand.as' namespace='org.robotlegs.utilities.layers.controller.layer' access='public' baseclass='org.robotlegs.mvcs:Command' isFinal='false' isDynamic='false' >
 <description><![CDATA[
-	 
+	 Remove a <code>Layer</code> from the <code>contextView</code>.
 	 
 	 ]]></description>
 <author><![CDATA[r.moorman
@@ -3298,7 +3394,7 @@
 </method>
 <field name='event' fullname='org.robotlegs.utilities.layers.controller.layer:RemoveLayerCommand/event' type='org.robotlegs.utilities.layers.events:LayersEvent' isStatic='false' isConst='false' >
 <description><![CDATA[
-		 
+		 The <code>LayersEvent</code> that executed this <code>Command</code>.
 		 ]]></description>
 </field>
 <classRec name='InstallNavigatorCommand' fullname='org.robotlegs.utilities.navigator.controller.install:InstallNavigatorCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/navigator/controller/install/InstallNavigatorCommand.as' namespace='org.robotlegs.utilities.navigator.controller.install' access='public' baseclass='org.robotlegs.mvcs:Command' isFinal='false' isDynamic='false' >
@@ -3544,7 +3640,7 @@
 </field>
 <classRec name='CSSAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:CSSAsset' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/patterns/asset/type/CSSAsset.as' namespace='org.robotlegs.utilities.assetloader.patterns.asset.type' access='public' baseclass='org.robotlegs.utilities.assetloader.patterns.asset:Asset' isFinal='false' isDynamic='false' >
 <description><![CDATA[
-	 
+	 Automatic assigned type of <code>Asset</code> for loading stylesheets (css).
 	 
 	 ]]></description>
 <author><![CDATA[r.moorman
@@ -3562,7 +3658,7 @@
 </method>
 <method name='styleSheet' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:CSSAsset/styleSheet/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.text:StyleSheet'>
 <description><![CDATA[
-		 
+		 The loaded <code>Stylesheet</code>.
 		 ]]></description>
 </method>
 <method name='url' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:CSSAsset/url/set' isStatic='false' isFinal='false' isOverride='true'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
@@ -3577,7 +3673,7 @@
 </field>
 <classRec name='SoundAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:SoundAsset' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/patterns/asset/type/SoundAsset.as' namespace='org.robotlegs.utilities.assetloader.patterns.asset.type' access='public' baseclass='org.robotlegs.utilities.assetloader.patterns.asset:Asset' isFinal='false' isDynamic='false' >
 <description><![CDATA[
-	 
+	 Automatic assigned type of <code>Asset</code> for loading <code>Bitmaps</code> (mp3, wav, aif).
 	 
 	 ]]></description>
 <author><![CDATA[r.moorman
@@ -3590,7 +3686,7 @@
 </method>
 <method name='sound' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:SoundAsset/sound/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.media:Sound'>
 <description><![CDATA[
-		 
+		 The loaded <code>Sound</code>.
 		 ]]></description>
 </method>
 <method name='url' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:SoundAsset/url/set' isStatic='false' isFinal='false' isOverride='true'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
@@ -3600,7 +3696,7 @@
 </method>
 <classRec name='XMLAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:XMLAsset' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/patterns/asset/type/XMLAsset.as' namespace='org.robotlegs.utilities.assetloader.patterns.asset.type' access='public' baseclass='org.robotlegs.utilities.assetloader.patterns.asset:Asset' isFinal='false' isDynamic='false' >
 <description><![CDATA[
-	 
+	 Automatic assigned type of <code>Asset</code> for loading <code>Bitmaps</code> (xml).
 	 
 	 ]]></description>
 <author><![CDATA[r.moorman
@@ -3618,7 +3714,7 @@
 </method>
 <method name='xml' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:XMLAsset/xml/get' isStatic='false' isFinal='false' isOverride='false'  result_type='XML'>
 <description><![CDATA[
-		 
+		 The loaded <code>XML</code>.
 		 ]]></description>
 </method>
 <method name='url' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:XMLAsset/url/set' isStatic='false' isFinal='false' isOverride='true'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
@@ -3633,7 +3729,7 @@
 </field>
 <classRec name='BitmapAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:BitmapAsset' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/patterns/asset/type/BitmapAsset.as' namespace='org.robotlegs.utilities.assetloader.patterns.asset.type' access='public' baseclass='org.robotlegs.utilities.assetloader.patterns.asset:Asset' isFinal='false' isDynamic='false' >
 <description><![CDATA[
-	 
+	 Automatic assigned type of <code>Asset</code> for loading <code>Bitmaps</code> (png, gif, jpg and jpeg).
 	 
 	 ]]></description>
 <author><![CDATA[r.moorman
@@ -3647,20 +3743,20 @@
 <method name='onComplete' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:BitmapAsset/protected:onComplete' isStatic='false' isFinal='false' isOverride='true'  param_names='evt' param_types='flash.events:Event' param_defaults='undefined' result_type='void'>
 <description><![CDATA[
 		 
-		 
+		 Abstract method to handle the loaded <code>Asset</code>.
 		 
 		 ]]></description>
-<param><![CDATA[evt
+<param><![CDATA[evt The <code>Event</code> that triggered this method (<code>Event.COMPLETE</code>).
 		 ]]></param>
 </method>
 <method name='bitmapData' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:BitmapAsset/bitmapData/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.display:BitmapData'>
 <description><![CDATA[
-		 
+		 The <code>BitmapData</code> of the loaded <code>Bitmap</code>.
 		 ]]></description>
 </method>
 <method name='bitmap' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:BitmapAsset/bitmap/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.display:Bitmap'>
 <description><![CDATA[
-		 
+		 The loaded <code>Bitmap</code>.
 		 ]]></description>
 </method>
 <method name='url' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:BitmapAsset/url/set' isStatic='false' isFinal='false' isOverride='true'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
@@ -3680,7 +3776,7 @@
 </field>
 <classRec name='DisplayObjectAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:DisplayObjectAsset' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/patterns/asset/type/DisplayObjectAsset.as' namespace='org.robotlegs.utilities.assetloader.patterns.asset.type' access='public' baseclass='org.robotlegs.utilities.assetloader.patterns.asset:Asset' isFinal='false' isDynamic='false' >
 <description><![CDATA[
-	 
+	 Automatic assigned type of <code>Asset</code> for loading <code>Bitmaps</code> (swf).
 	 
 	 ]]></description>
 <author><![CDATA[r.moorman
@@ -3698,7 +3794,7 @@
 </method>
 <method name='displayObject' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:DisplayObjectAsset/displayObject/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.display:DisplayObject'>
 <description><![CDATA[
-		 
+		 The loaded <code>DisplayObject</code>.
 		 ]]></description>
 </method>
 <method name='url' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:DisplayObjectAsset/url/set' isStatic='false' isFinal='false' isOverride='true'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
@@ -3713,7 +3809,7 @@
 </field>
 <classRec name='AssetUtil' fullname='org.robotlegs.utilities.assetloader.utils:AssetUtil' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/utils/AssetUtil.as' namespace='org.robotlegs.utilities.assetloader.utils' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
 <description><![CDATA[
-	 
+	 Utilities for <code>Asset</code> related functionalities.
 	 
 	 ]]></description>
 <author><![CDATA[r.moorman
@@ -3721,12 +3817,12 @@
 </classRec>
 <method name='getAssetClassByExtension' fullname='org.robotlegs.utilities.assetloader.utils:AssetUtil/getAssetClassByExtension' isStatic='true' isFinal='false' isOverride='false'  param_names='extension' param_types='String' param_defaults='undefined' result_type='Class'>
 <description><![CDATA[
-		 
+		 Get the type of <code>Asset</code> depending on the file extension.
 		 
 		 ]]></description>
-<param><![CDATA[extension
+<param><![CDATA[extension The extension of the file.
 		 ]]></param>
-<return><![CDATA[
+<return><![CDATA[The type of <code>Asset</code>, default <code>Asset</code>.
 		 ]]></return>
 </method>
 <classRec name='StylesTextfield' fullname='org.robotlegs.utilities.styles.view:StylesTextfield' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/styles/view/StylesTextfield.as' namespace='org.robotlegs.utilities.styles.view' access='public' baseclass='flash.text:TextField' isFinal='false' isDynamic='false' >

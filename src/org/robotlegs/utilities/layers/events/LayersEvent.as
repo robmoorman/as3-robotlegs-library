@@ -5,47 +5,57 @@ package org.robotlegs.utilities.layers.events
 	import org.robotlegs.utilities.layers.patterns.layer.ILayer;
 	
 	/**
-	 * 
+	 * Custom <code>Event</code> for <code>Layers</code>.
 	 * 
 	 * @author r.moorman
 	 */
 	public class LayersEvent extends Event
 	{
 		/**
-		 * 
+		 * Dispatched when a <code>Layer</code> sould be added.
 		 */
 		public static const ADD_LAYER: String = 'org.robotlegs.utilities.layers.events.LayersEvent.ADD_LAYER';
 		
 		/**
-		 * 
+		 * Dispatched when a <code>Layer</code> sould be removed.
 		 */
 		public static const REMOVE_LAYER: String = 'org.robotlegs.utilities.layers.events.LayersEvent.REMOVE_LAYER';
 		
 		/**
-		 * 
+		 * Dispatched when a <code>Layer</code> sould be transfered.
 		 */
 		public static const TRANSFER_LAYER: String = 'org.robotlegs.utilities.layers.events.LayersEvent.TRANSFER_LAYER';
 		
 		/**
-		 * 
-		 * 
-		 * @default null
+		 * The <code>Layer</code> to be handled.
 		 */
-		public var layer: ILayer;
+		public function get layer(): ILayer {
+			return _layer;
+		}
 		
 		/**
-		 * 
-		 * 
-		 * @default null
+		 * The childIndex to transfer the <code>Layer</code> to.
 		 */
-		public var index: int;
+		public function get index(): int {
+			return _index;
+		}
+		
+		/**
+		 * @private
+		 */
+		private var _layer: ILayer;
+		
+		/**
+		 * @private
+		 */
+		private var _index: int;
 		
 		/**
 		 * Constructor.
 		 * 
-		 * @param type
-		 * @param layer
-		 * @param index
+		 * @param type The type of <code>Event</code>.
+		 * @param layer The <code>Layer</code> to be handled.
+		 * @param index The childIndex to transfer the <code>Layer</code> to.
 		 * @param bubbles
 		 * @param cancelable
 		 */
@@ -53,8 +63,8 @@ package org.robotlegs.utilities.layers.events
 		{
 			super( type, bubbles, cancelable );
 			
-			this.layer = layer;
-			this.index = index;
+			_layer = layer;
+			_index = index;
 		}
 		
 		/**

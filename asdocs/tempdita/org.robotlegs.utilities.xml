@@ -3,9 +3,9 @@
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Utility to map dependencies of certain utilities.
 	 
-	 <p>Probably the place to do your mappings is in the <codeph>mapInjections</codeph> method
+	 <p>Probably the best place to define your mappings is in the <codeph>mapInjections</codeph> method
 	 of your <codeph>Context</codeph>. You can simply call the method <codeph>mapDepedencies</codeph>
-	 of <codeph>Utilities</codeph> to do all your mappings for the following utilities.</p>
+	 of <codeph>Utilities</codeph> to determine all your mappings for the following utilities.</p>
 	 
 	 <ul>
 	 	<li><codeph>AssetLoader</codeph></li>

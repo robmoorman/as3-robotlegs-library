@@ -14,7 +14,7 @@ package org.robotlegs.utilities.assetloader.patterns.asset
 	import org.robotlegs.utilities.assetloader.events.AssetLoaderEvent;
 
 	/**
-	 * 
+	 * Abstract implementation of <code>IAsset</code>.
 	 * 
 	 * @author r.moorman
 	 */
@@ -148,8 +148,10 @@ package org.robotlegs.utilities.assetloader.patterns.asset
 		/**
 		 * Constructor.
 		 * 
-		 * @param id
-		 * @param url
+		 * <p>At this point the state of the <code>Asset</code> is <code>INITIALIZING</code>.</p>
+		 * 
+		 * @param id The id of the <code>Asset</code>.
+		 * @param url The url of the <code>Asset</code>.
 		 */
 		public function Asset( id: String, url: String )
 		{
@@ -226,7 +228,7 @@ package org.robotlegs.utilities.assetloader.patterns.asset
 		}
 		
 		/**
-		 * 
+		 * Map eventListeners of the <code>Asset</code>.
 		 * 
 		 * @throws AssetLoaderError
 		 */
@@ -244,7 +246,7 @@ package org.robotlegs.utilities.assetloader.patterns.asset
 		}
 		
 		/**
-		 * 
+		 * Unmap eventListeners of the <code>Asset</code>.
 		 */
 		protected function undefineEventModel(): void
 		{
@@ -256,9 +258,9 @@ package org.robotlegs.utilities.assetloader.patterns.asset
 		}
 		
 		/**
+		 * Change the state of the <code>Asset</code>.
 		 * 
-		 * 
-		 * @param state
+		 * @param state The upcoming state of the <code>Asset</code>.
 		 */
 		final protected function setState( state: String ): void
 		{
@@ -266,9 +268,9 @@ package org.robotlegs.utilities.assetloader.patterns.asset
 		}
 		
 		/**
+		 * Abstract method to handle the loaded <code>Asset</code>.
 		 * 
-		 * 
-		 * @param evt
+		 * @param evt The <code>Event</code> that triggered this method (<code>Event.COMPLETE</code>).
 		 */
 		protected function onComplete( evt: Event ): void
 		{
@@ -276,9 +278,9 @@ package org.robotlegs.utilities.assetloader.patterns.asset
 		}
 		
 		/**
+		 * Handle <code>Events</code> during the load process of the <code>Asset</code>.
 		 * 
-		 * 
-		 * @param evt
+		 * @param evt The <code>Event</code> that triggered this method (<code>Event.COMPLETE</code>, <code>ProgressEvent.PROGRESS</code> and <code>IOErrorEvent.IO_ERROR</code>).
 		 */
 		final protected function onAssetProcess( evt: Event ): void
 		{

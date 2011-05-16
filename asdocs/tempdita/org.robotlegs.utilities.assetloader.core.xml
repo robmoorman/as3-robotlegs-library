@@ -1,151 +1,151 @@
 <apiPackage id="org.robotlegs.utilities.assetloader.core"><apiName>org.robotlegs.utilities.assetloader.core</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.assetloader.core:IAssetLoader"><apiName>IAssetLoader</apiName><shortdesc>
-	 
-	 
-	 </shortdesc><prolog><author>r.moorman
+	 The interface definition for AssetLoader.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
-	 
+	 The interface definition for <codeph>AssetLoader</codeph>.
 	 
 	 </apiDesc></apiClassifierDetail><related-links><link href="" invalidHref="https.//github.com/moorinteractive/as3-robotlegs-library/wiki/assetloader.xml"><linktext>https://github.com/moorinteractive/as3-robotlegs-library/wiki/assetloader</linktext></link></related-links><apiOperation id="org.robotlegs.utilities.assetloader.core:IAssetLoader:org.robotlegs.utilities.assetloader.core:IAssetLoader:getAssetByUrl"><apiName>getAssetByUrl</apiName><shortdesc>
-		 
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>
-		 </apiDesc><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.asset:IAsset</apiOperationClassifier></apiReturn><apiParam><apiItemName>url</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
-		 
+		 Get an Asset by it's url.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>An instance of <codeph>Asset</codeph>, <codeph>null</codeph> if not found.
+		 </apiDesc><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.asset:IAsset</apiOperationClassifier></apiReturn><apiParam><apiItemName>url</apiItemName><apiType value="String"/><apiDesc>The url of the <codeph>Asset</codeph>.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Get an <codeph>Asset</codeph> by it's url.
 		 
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:IAssetLoader:org.robotlegs.utilities.assetloader.core:IAssetLoader:getAsset"><apiName>getAsset</apiName><shortdesc>
-		 
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>
-		 </apiDesc><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.asset:IAsset</apiOperationClassifier></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
-		 
+		 Get an Asset by it's id.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>An instance of <codeph>Asset</codeph>, <codeph>null</codeph> if not found.
+		 </apiDesc><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.asset:IAsset</apiOperationClassifier></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/><apiDesc>The id of the <codeph>Asset</codeph>.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Get an <codeph>Asset</codeph> by it's id.
 		 
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:IAssetLoader:org.robotlegs.utilities.assetloader.core:IAssetLoader:getGroup"><apiName>getGroup</apiName><shortdesc>
-		 
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>
-		 </apiDesc><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.group:IGroup</apiOperationClassifier></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
-		 
+		 Get a Group by it's id.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>An instance of <codeph>Group</codeph>, <codeph>null</codeph> if not found.
+		 </apiDesc><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.group:IGroup</apiOperationClassifier></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/><apiDesc>The id of the <codeph>Group</codeph>.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Get a <codeph>Group</codeph> by it's id.
 		 
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:IAssetLoader:org.robotlegs.utilities.assetloader.core:IAssetLoader:hasAssetByUrl"><apiName>hasAssetByUrl</apiName><shortdesc>
-		 
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>
-		 </apiDesc><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>url</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
-		 
+		 Check if an Asset exists under an url.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc><codeph>True</codeph> or <codeph>False</codeph>.
+		 </apiDesc><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>url</apiItemName><apiType value="String"/><apiDesc>The url of the <codeph>Asset</codeph>.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Check if an <codeph>Asset</codeph> exists under an url.
 		 
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:IAssetLoader:org.robotlegs.utilities.assetloader.core:IAssetLoader:hasAsset"><apiName>hasAsset</apiName><shortdesc>
-		 
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>
-		 </apiDesc><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
-		 
+		 Check if an Asset exists under an id.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc><codeph>True</codeph> or <codeph>False</codeph>.
+		 </apiDesc><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/><apiDesc>The id of the <codeph>Asset</codeph>.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Check if an <codeph>Asset</codeph> exists under an id.
 		 
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:IAssetLoader:org.robotlegs.utilities.assetloader.core:IAssetLoader:hasGroup"><apiName>hasGroup</apiName><shortdesc>
-		 
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>
-		 </apiDesc><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
-		 
+		 Check if a Group exists under an id.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc><codeph>True</codeph> or <codeph>False</codeph>.
+		 </apiDesc><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/><apiDesc>The id of the <codeph>Group</codeph>.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Check if a <codeph>Group</codeph> exists under an id.
 		 
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:IAssetLoader:org.robotlegs.utilities.assetloader.core:IAssetLoader:loadGroup"><apiName>loadGroup</apiName><shortdesc>
+		 Load a group of Assets.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>A new instance of <codeph>Group</codeph>.
+		 </apiDesc><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.group:IGroup</apiOperationClassifier></apiReturn><apiParam><apiItemName>request</apiItemName><apiType value="Object"/><apiDesc>The urls of the <codeph>Assets</codeph> as an <codeph>Array</codeph> or <codeph>Vector</codeph> of <codeph>Strings</codeph>.
+		 </apiDesc></apiParam><apiParam><apiItemName>closure</apiItemName><apiType value="Function"/><apiData>null</apiData><apiDesc>Optional closure method for retrieving <codeph>AssetLoaderEvents</codeph>.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Load a group of <codeph>Assets</codeph>.
 		 
+		 </apiDesc></apiOperationDetail><related-links><link href="" invalidHref="org.robotlegs.utilities.assetloader.core.IAssetLoader.load().xml"><linktext>org.robotlegs.utilities.assetloader.core.IAssetLoader.load()</linktext></link></related-links></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:IAssetLoader:org.robotlegs.utilities.assetloader.core:IAssetLoader:load"><apiName>load</apiName><shortdesc>
+		 Load a single Asset.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>A new instance of <codeph>Asset</codeph>.
+		 </apiDesc><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.asset:IAsset</apiOperationClassifier></apiReturn><apiParam><apiItemName>request</apiItemName><apiType value="Object"/><apiDesc>The url of the <codeph>Asset</codeph> as a <codeph>String</codeph>.
+		 </apiDesc></apiParam><apiParam><apiItemName>closure</apiItemName><apiType value="Function"/><apiData>null</apiData><apiDesc>Optional closure method for retrieving <codeph>AssetLoaderEvents</codeph>.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Load a single <codeph>Asset</codeph>.
 		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>
-		 </apiDesc><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.group:IGroup</apiOperationClassifier></apiReturn><apiParam><apiItemName>request</apiItemName><apiType value="Object"/><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>closure</apiItemName><apiType value="Function"/><apiData>null</apiData><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 <p>The <codeph>AssetLoader</codeph> automatically assigns the
+		 right asset class by checking the extension of the asset.
+		 The following type's are currently supported:</p>
 		 
-		 
-		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:IAssetLoader:org.robotlegs.utilities.assetloader.core:IAssetLoader:load"><apiName>load</apiName><shortdesc>
-		 
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>
-		 </apiDesc><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.asset:IAsset</apiOperationClassifier></apiReturn><apiParam><apiItemName>request</apiItemName><apiType value="Object"/><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>closure</apiItemName><apiType value="Function"/><apiData>null</apiData><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
-		 
+		 <ul>
+		 	<li><codeph>BitmapAsset</codeph> (png, gif, jpg and jpeg)</li>
+		 	<li><codeph>DisplayObjectAsset</codeph> (swf)</li>
+		 	<li><codeph>SoundAsset</codeph> (mp3, wav, aif)</li>
+		 	<li><codeph>CSSAsset</codeph> (css)</li>
+		 	<li><codeph>XMLAsset</codeph> (xml)</li>
+		 </ul>
 		 
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:IAssetLoader:org.robotlegs.utilities.assetloader.core:IAssetLoader:removeAssetByUrl"><apiName>removeAssetByUrl</apiName><shortdesc>
-		 
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>url</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
-		 
+		 Remove an Asset by it's url.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>url</apiItemName><apiType value="String"/><apiDesc>The url of the <codeph>Asset</codeph>.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Remove an <codeph>Asset</codeph> by it's url.
 		 
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:IAssetLoader:org.robotlegs.utilities.assetloader.core:IAssetLoader:removeAsset"><apiName>removeAsset</apiName><shortdesc>
-		 
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
-		 
+		 Remove an Asset by it's id.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/><apiDesc>The id of the <codeph>Asset</codeph>.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Remove an <codeph>Asset</codeph> by it's id.
 		 
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:IAssetLoader:org.robotlegs.utilities.assetloader.core:IAssetLoader:removeGroup"><apiName>removeGroup</apiName><shortdesc>
-		 
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
-		 
+		 Remove a Group by it's id.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/><apiDesc>The id of the <codeph>Group</codeph>.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Remove a <codeph>Group</codeph> by it's id.
 		 
 		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="org.robotlegs.utilities.assetloader.core:AssetLoader"><apiName>AssetLoader</apiName><shortdesc>
-	 
-	 
-	 </shortdesc><prolog><author>r.moorman
+	 This utility allows you to easily load external assets into your application.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.utilities.assetloader.core:IAssetLoader</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 This utility allows you to easily load external assets into your application.
 	 
+	 <p>All the assets which are loaded by the <codeph>AssetLoader</codeph> are stored
+	 and can be retrieved at any time. This can be done by retrieving the asset by
+	 it's url or unique id.</p>
+	 
+	 <p>The <codeph>AssetLoader</codeph> also allows you to load a group of assets at once.
+	 Therefore you will get a <codeph>Group</codeph> returned instead of an single <codeph>Asset</codeph>.
+	 That <codeph>Group</codeph> will have as well as the <codeph>Asset</codeph> an unique id you can use
+	 to retrieve it at another point within your application.</p>
 	 
 	 </apiDesc></apiClassifierDetail><related-links><link href="" invalidHref="https.//github.com/moorinteractive/as3-robotlegs-library/wiki/assetloader.xml"><linktext>https://github.com/moorinteractive/as3-robotlegs-library/wiki/assetloader</linktext></link></related-links><apiConstructor id="org.robotlegs.utilities.assetloader.core:AssetLoader:AssetLoader"><apiName>AssetLoader</apiName><shortdesc>
 		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>
 		 Constructor.
-		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:getAssetByUrl"><apiName>getAssetByUrl</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.getAssetByUrl();">
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.asset:IAsset</apiOperationClassifier></apiReturn><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.getAssetByUrl();">
-		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:getAsset"><apiName>getAsset</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.getAsset();">
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.asset:IAsset</apiOperationClassifier></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.getAsset();">
-		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:getGroup"><apiName>getGroup</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.getGroup();">
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.group:IGroup</apiOperationClassifier></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.getGroup();">
-		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:hasAssetByUrl"><apiName>hasAssetByUrl</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.hasAssetByUrl();">
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.hasAssetByUrl();">
-		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:hasAsset"><apiName>hasAsset</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.hasAsset();">
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.hasAsset();">
-		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:hasGroup"><apiName>hasGroup</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.hasGroup();">
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.hasGroup();">
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:getAssetByUrl"><apiName>getAssetByUrl</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.getAssetByUrl()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.asset:IAsset</apiOperationClassifier></apiReturn><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.getAssetByUrl()">
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:getAsset"><apiName>getAsset</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.getAsset()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.asset:IAsset</apiOperationClassifier></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.getAsset()">
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:getGroup"><apiName>getGroup</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.getGroup()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.group:IGroup</apiOperationClassifier></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.getGroup()">
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:hasAssetByUrl"><apiName>hasAssetByUrl</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.hasAssetByUrl()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.hasAssetByUrl()">
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:hasAsset"><apiName>hasAsset</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.hasAsset()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.hasAsset()">
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:hasGroup"><apiName>hasGroup</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.hasGroup()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.hasGroup()">
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:protected:instantiateAsset"><apiName>instantiateAsset</apiName><shortdesc>
-		 
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiReturn><apiDesc>
-		 </apiDesc><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.asset:IAsset</apiOperationClassifier></apiReturn><apiParam><apiItemName>url</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
-		 
+		 Instantiate a new Asset.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiReturn><apiDesc>The new instance of the <codeph>Asset</codeph>.
+		 </apiDesc><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.asset:IAsset</apiOperationClassifier></apiReturn><apiParam><apiItemName>url</apiItemName><apiType value="String"/><apiDesc>The url of the <codeph>Asset</codeph>.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Instantiate a new <codeph>Asset</codeph>.
 		 
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:protected:instantiateGroup"><apiName>instantiateGroup</apiName><shortdesc>
+		 Instantiate a new Group of Assets.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiReturn><apiDesc>The new instance of the <codeph>Group</codeph>.
+		 </apiDesc><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.group:IGroup</apiOperationClassifier></apiReturn><apiParam><apiItemName>urls</apiItemName><apiType value="Vector$String"/><apiDesc>THe urls of the <codeph>Assets</codeph>.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Instantiate a new <codeph>Group</codeph> of <codeph>Assets</codeph>.
 		 
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiReturn><apiDesc>
-		 </apiDesc><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.group:IGroup</apiOperationClassifier></apiReturn><apiParam><apiItemName>urls</apiItemName><apiType value="Vector$String"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
-		 
-		 
-		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:loadGroup"><apiName>loadGroup</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.loadGroup();">
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.group:IGroup</apiOperationClassifier></apiReturn><apiParam><apiItemName>request</apiItemName><apiType value="Object"/></apiParam><apiParam><apiItemName>closure</apiItemName><apiType value="Function"/><apiData>null</apiData></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.loadGroup();">
-		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:load"><apiName>load</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.load();">
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.asset:IAsset</apiOperationClassifier></apiReturn><apiParam><apiItemName>request</apiItemName><apiType value="Object"/></apiParam><apiParam><apiItemName>closure</apiItemName><apiType value="Function"/><apiData>null</apiData></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.load();">
-		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:removeAssetByUrl"><apiName>removeAssetByUrl</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.removeAssetByUrl();">
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.removeAssetByUrl();">
-		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:removeAsset"><apiName>removeAsset</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.removeAsset();">
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.removeAsset();">
-		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:removeGroup"><apiName>removeGroup</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.removeGroup();">
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.removeGroup();">
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:loadGroup"><apiName>loadGroup</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.loadGroup()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.group:IGroup</apiOperationClassifier></apiReturn><apiParam><apiItemName>request</apiItemName><apiType value="Object"/></apiParam><apiParam><apiItemName>closure</apiItemName><apiType value="Function"/><apiData>null</apiData></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.loadGroup()">
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:load"><apiName>load</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.load()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.asset:IAsset</apiOperationClassifier></apiReturn><apiParam><apiItemName>request</apiItemName><apiType value="Object"/></apiParam><apiParam><apiItemName>closure</apiItemName><apiType value="Function"/><apiData>null</apiData></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.load()">
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:removeAssetByUrl"><apiName>removeAssetByUrl</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.removeAssetByUrl()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.removeAssetByUrl()">
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:removeAsset"><apiName>removeAsset</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.removeAsset()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.removeAsset()">
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:removeGroup"><apiName>removeGroup</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.removeGroup()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.removeGroup()">
 		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="org.robotlegs.utilities.assetloader.core:AssetLoaderState"><apiName>AssetLoaderState</apiName><shortdesc>
-	 
-	 
-	 </shortdesc><prolog><author>r.moorman
+	 Loading states for Assets and Groups.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
-	 
+	 Loading states for <codeph>Assets</codeph> and <codeph>Groups</codeph>.
 	 
 	 </apiDesc></apiClassifierDetail><apiValue id="org.robotlegs.utilities.assetloader.core:AssetLoaderState:FAILED"><apiName>FAILED</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>failed</apiData><apiType value="String"/></apiValueDef><apiDesc>
-		 
+		 State after the Asset failed to load (due a illegal operation or a security error).</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>failed</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 State after the <codeph>Asset</codeph> failed to load (due a illegal operation or a security error).
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.core:AssetLoaderState:INITIALIZING"><apiName>INITIALIZING</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>initializing</apiData><apiType value="String"/></apiValueDef><apiDesc>
-		 
+		 State after the Asset is instantiated and is not yet started to load.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>initializing</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 State after the <codeph>Asset</codeph> is instantiated and is not yet started to load.
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.core:AssetLoaderState:LOADED"><apiName>LOADED</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>loaded</apiData><apiType value="String"/></apiValueDef><apiDesc>
-		 
+		 State after the Asset is successfully loaded.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>loaded</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 State after the <codeph>Asset</codeph> is successfully loaded.
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.core:AssetLoaderState:LOADING"><apiName>LOADING</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>loading</apiData><apiType value="String"/></apiValueDef><apiDesc>
-		 
+		 State while the Asset is loading.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>loading</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 State while the <codeph>Asset</codeph> is loading.
 		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage>

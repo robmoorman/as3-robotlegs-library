@@ -5,7 +5,7 @@ package org.robotlegs.utilities.assetloader.patterns.asset.type
 	import org.robotlegs.utilities.assetloader.patterns.asset.Asset;
 
 	/**
-	 * 
+	 * Automatic assigned type of <code>Asset</code> for loading <code>Bitmaps</code> (mp3, wav, aif).
 	 * 
 	 * @author r.moorman
 	 */
@@ -21,7 +21,7 @@ package org.robotlegs.utilities.assetloader.patterns.asset.type
 		}
 		
 		/**
-		 * 
+		 * The loaded <code>Sound</code>.
 		 */
 		public function get sound(): Sound {
 			return _loader as Sound;

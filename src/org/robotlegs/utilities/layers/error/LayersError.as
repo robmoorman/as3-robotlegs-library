@@ -1,17 +1,14 @@
 package org.robotlegs.utilities.layers.error
 {
 	/**
-	 * 
+	 * Custom error <code>Class</code> for an <code>AssetLoader</code>.
 	 * 
 	 * @author r.moorman
 	 */
 	public class LayersError extends Error
 	{
 		/**
-		 * 
-		 * 
-		 * @param message
-		 * @param id
+		 * @inheritDoc
 		 */
 		public function LayersError( message: * = '', id: * = 0 )
 		{

@@ -8,7 +8,7 @@ package org.robotlegs.utilities.layers.controller.layer
 	import org.robotlegs.utilities.layers.patterns.layer.ILayer;
 	
 	/**
-	 * 
+	 * Transfer a <code>Layer</code> to an other childIndex in the <code>contextView</code>.
 	 * 
 	 * @author r.moorman
 	 */
@@ -16,7 +16,7 @@ package org.robotlegs.utilities.layers.controller.layer
 	{
 		[Inject]
 		/**
-		 * 
+		 * The <code>LayersEvent</code> that executed this <code>Command</code>.
 		 */
 		public var event: LayersEvent;
 		

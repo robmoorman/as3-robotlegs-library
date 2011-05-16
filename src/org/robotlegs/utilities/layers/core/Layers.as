@@ -8,9 +8,17 @@ package org.robotlegs.utilities.layers.core
 	import org.robotlegs.utilities.layers.patterns.layer.Layer;
 
 	/**
+	 * This utility allows you to manage your displayList in layers.
 	 * 
+	 * <p>The advantage of using <code>Layers</code> is that you have all your type of viewComponents at one place.
+	 * For example all <code>Pages</code> are added in a <code>Layer</code> named <code>pages</code>. By using <code>Layers</code>
+	 * you can easily switch the user interface on and off while navigating. Therefore we advice you to use <code>Navigator</code>
+	 * or page transitions. Remember to set the property <code>lockLayersWhileTransitioning</code> of <code>Navigator</code>
+	 * to <code>true</code></p>. You can also manually set the user interface on and off of the independend <code>Layers</code>.
 	 * 
 	 * @author r.moorman
+	 * @see org.robotlegs.utilities.navigator.core.Navigator
+	 * @see https://github.com/moorinteractive/as3-robotlegs-library/wiki/layers
 	 */
 	public class Layers extends Actor implements ILayers
 	{
