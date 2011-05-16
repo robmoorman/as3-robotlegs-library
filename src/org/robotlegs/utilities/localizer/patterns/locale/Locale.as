@@ -1,7 +1,7 @@
 package org.robotlegs.utilities.localizer.patterns.locale
 {
 	/**
-	 * Abstract <code>Locale</code> implementation.
+	 * Abstract implementation of <code>ILocale</code>.
 	 * 
 	 * @author r.moorman
 	 */
@@ -33,6 +33,9 @@ package org.robotlegs.utilities.localizer.patterns.locale
 		
 		/**
 		 * Constructor.
+		 * 
+		 * @param code The code of the <code>Locale</code>.
+		 * @param data The data to be localized.
 		 */
 		public function Locale( code: String, data: Object )
 		{

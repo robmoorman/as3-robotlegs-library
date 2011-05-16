@@ -671,9 +671,7 @@
       <apiClassifier id="org.robotlegs.utilities.localizer.controller.data:LocalizeDataCommand">
          <apiName>LocalizeDataCommand</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 Localize XML or Object data.</shortdesc>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiAccess value="public"/>
@@ -682,7 +680,7 @@
             </apiClassifierDef>
          </apiClassifierDetail>
          <apiDesc>
-	 
+	 Localize <codeph>XML</codeph> or <codeph>Object</codeph> data.
 	 
 	 </apiDesc>
       </apiClassifier>
@@ -736,9 +734,8 @@
       <apiClassifier id="org.robotlegs.utilities.localizer.core:Localizer">
          <apiName>Localizer</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 This utility allows you to automatically map iterations of XML
+	 or Object data in the Injector.</shortdesc>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiAccess value="public"/>
@@ -748,7 +745,8 @@
             </apiClassifierDef>
          </apiClassifierDetail>
          <apiDesc>
-	 
+	 This utility allows you to automatically map iterations of <codeph>XML</codeph>
+	 or <codeph>Object</codeph> data in the <codeph>Injector</codeph>.
 	 
 	 </apiDesc>
       </apiClassifier>
@@ -779,9 +777,7 @@
       <apiClassifier id="org.robotlegs.utilities.localizer.events:LocalizerEvent">
          <apiName>LocalizerEvent</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 Custom Event for Localizer.</shortdesc>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiAccess value="public"/>
@@ -790,7 +786,7 @@
             </apiClassifierDef>
          </apiClassifierDetail>
          <apiDesc>
-	 
+	 Custom <codeph>Event</codeph> for <codeph>Localizer</codeph>.
 	 
 	 </apiDesc>
       </apiClassifier>
@@ -800,7 +796,7 @@
       <apiClassifier id="org.robotlegs.utilities.localizer.patterns.locale:Locale">
          <apiName>Locale</apiName>
          <shortdesc>
-	 Abstract Locale implementation.</shortdesc>
+	 Abstract implementation of ILocale.</shortdesc>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiAccess value="public"/>
@@ -810,14 +806,14 @@
             </apiClassifierDef>
          </apiClassifierDetail>
          <apiDesc>
-	 Abstract <codeph>Locale</codeph> implementation.
+	 Abstract implementation of <codeph>ILocale</codeph>.
 	 
 	 </apiDesc>
       </apiClassifier>
       <apiClassifier id="org.robotlegs.utilities.localizer.patterns.locale:ILocale">
          <apiName>ILocale</apiName>
          <shortdesc>
-	 Abstract ILocale interface.</shortdesc>
+	 The interface definition for an Locale.</shortdesc>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiInterface/>
@@ -827,7 +823,7 @@
             </apiClassifierDef>
          </apiClassifierDetail>
          <apiDesc>
-	 Abstract <codeph>ILocale</codeph> interface.
+	 The interface definition for an <codeph>Locale</codeph>.
 	 
 	 </apiDesc>
       </apiClassifier>

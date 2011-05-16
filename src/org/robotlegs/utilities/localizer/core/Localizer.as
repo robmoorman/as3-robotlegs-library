@@ -8,32 +8,14 @@ package org.robotlegs.utilities.localizer.core
 	import org.robotlegs.utilities.localizer.patterns.locale.Locale;
 	
 	/**
-	 * 
+	 * This utility allows you to automatically map iterations of <code>XML</code>
+	 * or <code>Object</code> data in the <code>Injector</code>.
 	 * 
 	 * @author r.moorman
 	 * @see https://github.com/moorinteractive/as3-robotlegs-library/wiki/localizer
 	 */
 	public class Localizer extends Actor implements ILocalizer
 	{
-		/**
-		 * @copy org.robotlegs.utilities.localizer.core.ILocalizer.iterateObjectsInCustomData
-		 */
-		public function get iterateObjectsInCustomData(): Boolean {
-			return _iterateObjectsInCustomData;
-		}
-		
-		/**
-		 * @private
-		 */
-		public function set iterateObjectsInCustomData( value: Boolean ): void {
-			_iterateObjectsInCustomData = value;
-		}
-		
-		/**
-		 * @private
-		 */
-		private var _iterateObjectsInCustomData: Boolean;
-		
 		/**
 		 * @private
 		 */
@@ -46,7 +28,6 @@ package org.robotlegs.utilities.localizer.core
 		{
 			super();
 			
-			_iterateObjectsInCustomData = true;
 			_localeMap = new Dictionary;
 		}
 		

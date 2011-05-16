@@ -1,26 +1,27 @@
 <apiPackage id="org.robotlegs.utilities.localizer.patterns.locale"><apiName>org.robotlegs.utilities.localizer.patterns.locale</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.localizer.patterns.locale:Locale"><apiName>Locale</apiName><shortdesc>
-	 Abstract Locale implementation.</shortdesc><prolog><author>r.moorman
+	 Abstract implementation of ILocale.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.utilities.localizer.patterns.locale:ILocale</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
-	 Abstract <codeph>Locale</codeph> implementation.
+	 Abstract implementation of <codeph>ILocale</codeph>.
 	 
 	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.utilities.localizer.patterns.locale:Locale:Locale"><apiName>Locale</apiName><shortdesc>
-		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>code</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>data</apiItemName><apiType value="Object"/></apiParam></apiConstructorDef><apiDesc>
+		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>code</apiItemName><apiType value="String"/><apiDesc>The code of the <codeph>Locale</codeph>.
+		 </apiDesc></apiParam><apiParam><apiItemName>data</apiItemName><apiType value="Object"/><apiDesc>The data to be localized.
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
 		 Constructor.
+		 
 		 </apiDesc></apiConstructorDetail></apiConstructor><apiValue id="org.robotlegs.utilities.localizer.patterns.locale:Locale:code:get"><apiName>code</apiName><shortdesc conref="org.robotlegs.utilities.localizer.patterns.locale.ILocale.code">
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc conref="org.robotlegs.utilities.localizer.patterns.locale.ILocale.code">
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.localizer.patterns.locale:Locale:data:get"><apiName>data</apiName><shortdesc conref="org.robotlegs.utilities.localizer.patterns.locale.ILocale.data">
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="Object"/></apiValueDef><apiDesc conref="org.robotlegs.utilities.localizer.patterns.locale.ILocale.data">
 		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.robotlegs.utilities.localizer.patterns.locale:ILocale"><apiName>ILocale</apiName><shortdesc>
-	 Abstract ILocale interface.</shortdesc><prolog><author>r.moorman
+	 The interface definition for an Locale.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
-	 Abstract <codeph>ILocale</codeph> interface.
+	 The interface definition for an <codeph>Locale</codeph>.
 	 
 	 </apiDesc></apiClassifierDetail><apiValue id="org.robotlegs.utilities.localizer.patterns.locale:ILocale:org.robotlegs.utilities.localizer.patterns.locale:ILocale:code:get"><apiName>code</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
-		 
+		 The code of the Locale.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
+		 The code of the <codeph>Locale</codeph>.
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.localizer.patterns.locale:ILocale:org.robotlegs.utilities.localizer.patterns.locale:ILocale:data:get"><apiName>data</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="Object"/></apiValueDef><apiDesc>
-		 
+		 The data to be localized.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="Object"/></apiValueDef><apiDesc>
+		 The data to be localized.
 		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage>

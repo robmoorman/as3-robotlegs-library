@@ -11,34 +11,24 @@ package org.robotlegs.utilities.localizer.core
 	public interface ILocalizer
 	{
 		/**
-		 * 
-		 */
-		function get iterateObjectsInCustomData(): Boolean;
-		
-		/**
-		 * @private
-		 */
-		function set iterateObjectsInCustomData( value: Boolean ): void;
-		
-		/**
-		 * 
+		 * Localize a <code>Locale</code> by it's code.
 		 * 
 		 * @param code
 		 */
 		function localize( code: String ): void;
 		
 		/**
+		 * Localize custom <code>XML</code> or <code>Object</code> data.
 		 * 
-		 * 
-		 * @param data
-		 * @param prefix
+		 * @param data The data to be localized.
+		 * @param prefix Optional prefix of all iterated mappings.
 		 */
 		function localizeCustomData( data: Object, prefix: String = '' ): void;
 		
 		/**
 		 * 
 		 * 
-		 * @param code
+		 * @param code The code of the <code>Locale</code>.
 		 * @param data
 		 */
 		function addLocale( code: String, data: Object ): void;
@@ -46,7 +36,7 @@ package org.robotlegs.utilities.localizer.core
 		/**
 		 * 
 		 * 
-		 * @param code
+		 * @param code The code of the <code>Locale</code>.
 		 * @return
 		 */
 		function hasLocale( code: String ): Boolean;
@@ -54,7 +44,7 @@ package org.robotlegs.utilities.localizer.core
 		/**
 		 * 
 		 * 
-		 * @param code
+		 * @param code The code of the <code>Locale</code>.
 		 * @return
 		 */
 		function getLocale( code: String ): ILocale;
@@ -62,7 +52,7 @@ package org.robotlegs.utilities.localizer.core
 		/**
 		 * 
 		 * 
-		 * @param code
+		 * @param code The code of the <code>Locale</code>.
 		 * @return
 		 */
 		function removeLocale( code: String ): ILocale;

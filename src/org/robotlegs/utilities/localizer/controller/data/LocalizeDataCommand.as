@@ -10,7 +10,7 @@ package org.robotlegs.utilities.localizer.controller.data
 	import org.robotlegs.utilities.localizer.patterns.locale.ILocale;
 	
 	/**
-	 * 
+	 * Localize <code>XML</code> or <code>Object</code> data.
 	 * 
 	 * @author r.moorman
 	 */
@@ -18,13 +18,13 @@ package org.robotlegs.utilities.localizer.controller.data
 	{
 		[Inject]
 		/**
-		 * 
+		 * The <code>LocalizerEvent</code> that executed this <code>Command</code>.
 		 */
 		public var event: LocalizerEvent;
 		
 		[Inject]
 		/**
-		 * 
+		 * Reference to the <code>Localizer</code> utility.
 		 */
 		public var localizer: ILocalizer;
 		
@@ -58,17 +58,17 @@ package org.robotlegs.utilities.localizer.controller.data
 		}
 		
 		/**
+		 * Iterate <code>Object</code> data for mappings.
 		 * 
-		 * 
-		 * @data
-		 * @prefix
+		 * @data The data to be iterated.
+		 * @prefix The prefix of all iterated mappings.
 		 */
 		private function iterateProperties( data: Object, prefix: String ): void
 		{
 			var prop: String;
 			
 			for( prop in data ) {
-				if( localizer.iterateObjectsInCustomData && ( typeof data[ prop ]).toString().toLowerCase() === 'object' ) {
+				if(( typeof data[ prop ]).toString().toLowerCase() === 'object' ) {
 					mapValue( prop, data[ prop ], prefix );
 					
 					iterateProperties( data[ prop ], prefix + prop + '.' );
@@ -80,10 +80,10 @@ package org.robotlegs.utilities.localizer.controller.data
 		}
 		
 		/**
+		 * Iterate <code>XML</code> data for mappings.
 		 * 
-		 * 
-		 * @data
-		 * @prefix
+		 * @data The data to be iterated.
+		 * @prefix The prefix of all iterated mappings.
 		 */
 		private function iterateChilds( data: XML, prefix: String ): void
 		{
@@ -102,11 +102,11 @@ package org.robotlegs.utilities.localizer.controller.data
 		}
 		
 		/**
-		 * 
+		 * Map a value in the <code>Injector</code> under a name.
 		 * 
 		 * @param value The name under which the value should be mapped.
-		 * @param value The value to map.
-		 * @param prefix
+		 * @param value The value to be mapped.
+		 * @param prefix The prefix of the mapping.
 		 */
 		private function mapValue( name: String, value: Object, prefix: String ): void
 		{

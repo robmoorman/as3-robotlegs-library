@@ -1237,9 +1237,7 @@
       <apiClassifier id="org.robotlegs.utilities.localizer.controller.data:LocalizeDataCommand">
          <apiName>LocalizeDataCommand</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 Localize XML or Object data.</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -1254,7 +1252,7 @@
                <apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier>
             </apiClassifierDef>
             <apiDesc>
-	 
+	 Localize <codeph>XML</codeph> or <codeph>Object</codeph> data.
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -1328,7 +1326,7 @@
             <asMetadata/>
          </prolog>
             <meta name="keywords"
-               content="ILocalizer,org.robotlegs.utilities.localizer.core.ILocalizer,iterateObjectsInCustomData,iterateObjectsInCustomData,addLocale,addLocale,getLocale,getLocale,hasLocale,hasLocale,localize,localize,localizeCustomData,localizeCustomData,removeLocale,removeLocale"/>
+               content="ILocalizer,org.robotlegs.utilities.localizer.core.ILocalizer,addLocale,addLocale,getLocale,getLocale,hasLocale,hasLocale,localize,localize,localizeCustomData,localizeCustomData,removeLocale,removeLocale"/>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiInterface/>
@@ -1363,16 +1361,15 @@
       <apiClassifier id="org.robotlegs.utilities.localizer.core:Localizer">
          <apiName>Localizer</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 This utility allows you to automatically map iterations of XML
+	 or Object data in the Injector.</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
             <asMetadata/>
          </prolog>
             <meta name="keywords"
-               content="Localizer,org.robotlegs.utilities.localizer.core.Localizer,iterateObjectsInCustomData,iterateObjectsInCustomData,addLocale,addLocale,getLocale,getLocale,hasLocale,hasLocale,localize,localize,localizeCustomData,localizeCustomData,removeLocale,removeLocale"/>
+               content="Localizer,org.robotlegs.utilities.localizer.core.Localizer,addLocale,addLocale,getLocale,getLocale,hasLocale,hasLocale,localize,localize,localizeCustomData,localizeCustomData,removeLocale,removeLocale"/>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiAccess value="public"/>
@@ -1381,7 +1378,8 @@
                <apiBaseClassifier>org.robotlegs.mvcs:Actor</apiBaseClassifier>
             </apiClassifierDef>
             <apiDesc>
-	 
+	 This utility allows you to automatically map iterations of <codeph>XML</codeph>
+	 or <codeph>Object</codeph> data in the <codeph>Injector</codeph>.
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -1450,9 +1448,7 @@
       <apiClassifier id="org.robotlegs.utilities.localizer.events:LocalizerEvent">
          <apiName>LocalizerEvent</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 Custom Event for Localizer.</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -1467,7 +1463,7 @@
                <apiBaseClassifier>flash.events:Event</apiBaseClassifier>
             </apiClassifierDef>
             <apiDesc>
-	 
+	 Custom <codeph>Event</codeph> for <codeph>Localizer</codeph>.
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -1489,7 +1485,7 @@
       <apiClassifier id="org.robotlegs.utilities.localizer.patterns.locale:Locale">
          <apiName>Locale</apiName>
          <shortdesc>
-	 Abstract Locale implementation.</shortdesc>
+	 Abstract implementation of ILocale.</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -1505,7 +1501,7 @@
                <apiBaseClassifier>Object</apiBaseClassifier>
             </apiClassifierDef>
             <apiDesc>
-	 Abstract <codeph>Locale</codeph> implementation.
+	 Abstract implementation of <codeph>ILocale</codeph>.
 	 
 	 </apiDesc>
             <Inheritancelist>
@@ -1525,7 +1521,7 @@
       <apiClassifier id="org.robotlegs.utilities.localizer.patterns.locale:ILocale">
          <apiName>ILocale</apiName>
          <shortdesc>
-	 Abstract ILocale interface.</shortdesc>
+	 The interface definition for an Locale.</shortdesc>
          <prolog>
             <author>r.moorman
 	 </author>
@@ -1541,7 +1537,7 @@
                <apiBaseClassifier/>
             </apiClassifierDef>
             <apiDesc>
-	 Abstract <codeph>ILocale</codeph> interface.
+	 The interface definition for an <codeph>Locale</codeph>.
 	 
 	 </apiDesc>
             <Inheritancelist>

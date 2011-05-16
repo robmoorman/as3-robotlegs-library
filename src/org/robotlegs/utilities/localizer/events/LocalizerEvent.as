@@ -5,42 +5,36 @@ package org.robotlegs.utilities.localizer.events
 	import org.robotlegs.utilities.localizer.patterns.locale.ILocale;
 	
 	/**
-	 * 
+	 * Custom <code>Event</code> for <code>Localizer</code>.
 	 * 
 	 * @author r.moorman
 	 */
 	public class LocalizerEvent extends Event
 	{
 		/**
-		 * 
+		 * Dispatched when <code>XMl</code> or <code>Object</code> data should be localized.
 		 */
 		public static const LOCALIZE_DATA: String = 'org.robotlegs.utilities.localizer.events.LocalizerEvent.LOCALIZE_DATA';
 		
 		/**
 		 * 
-		 * 
-		 * @default null
 		 */
 		public var locale: ILocale;
 		
 		/**
 		 * 
-		 * 
-		 * @default null
 		 */
 		public var data: Object;
 		
 		/**
 		 * 
-		 * 
-		 * @default null
 		 */
 		public var prefix: String;
 		
 		/**
 		 * Constructor.
 		 * 
-		 * @param type
+		 * @param type The type of <code>Event</code>.
 		 * @param locale
 		 * @param prefix
 		 * @param bubbles

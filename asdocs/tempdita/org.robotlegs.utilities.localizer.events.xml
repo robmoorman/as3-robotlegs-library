@@ -1,39 +1,28 @@
 <apiPackage id="org.robotlegs.utilities.localizer.events"><apiName>org.robotlegs.utilities.localizer.events</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.localizer.events:LocalizerEvent"><apiName>LocalizerEvent</apiName><shortdesc>
-	 
-	 
-	 </shortdesc><prolog><author>r.moorman
+	 Custom Event for Localizer.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>flash.events:Event</apiBaseClassifier></apiClassifierDef><apiDesc>
-	 
+	 Custom <codeph>Event</codeph> for <codeph>Localizer</codeph>.
 	 
 	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.utilities.localizer.events:LocalizerEvent:LocalizerEvent"><apiName>LocalizerEvent</apiName><shortdesc>
-		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>type</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>locale</apiItemName><apiOperationClassifier>org.robotlegs.utilities.localizer.patterns.locale:ILocale</apiOperationClassifier><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>data</apiItemName><apiType value="Object"/><apiData>null</apiData><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>prefix</apiItemName><apiType value="String"/><apiData/><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>bubbles</apiItemName><apiType value="Boolean"/><apiData>false</apiData><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>cancelable</apiItemName><apiType value="Boolean"/><apiData>false</apiData></apiParam></apiConstructorDef><apiDesc>
+		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>type</apiItemName><apiType value="String"/><apiDesc>The type of <codeph>Event</codeph>.
+		 </apiDesc></apiParam><apiParam><apiItemName>locale</apiItemName><apiOperationClassifier>org.robotlegs.utilities.localizer.patterns.locale:ILocale</apiOperationClassifier><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>data</apiItemName><apiType value="Object"/><apiData>null</apiData><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>prefix</apiItemName><apiType value="String"/><apiData/><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>bubbles</apiItemName><apiType value="Boolean"/><apiData>false</apiData><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>cancelable</apiItemName><apiType value="Boolean"/><apiData>false</apiData></apiParam></apiConstructorDef><apiDesc>
 		 Constructor.
 		 
 		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.robotlegs.utilities.localizer.events:LocalizerEvent:clone"><apiName>clone</apiName><shortdesc>
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiIsOverride/><apiReturn><apiType value="flash.events:Event"/></apiReturn></apiOperationDef><apiDesc>
 		 </apiDesc></apiOperationDetail><apiInheritDoc/></apiOperation><apiValue id="org.robotlegs.utilities.localizer.events:LocalizerEvent:LOCALIZE_DATA"><apiName>LOCALIZE_DATA</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.localizer.events.LocalizerEvent.LOCALIZE_DATA</apiData><apiType value="String"/></apiValueDef><apiDesc>
-		 
+		 Dispatched when XMl or Object data should be localized.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.localizer.events.LocalizerEvent.LOCALIZE_DATA</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Dispatched when <codeph>XMl</codeph> or <codeph>Object</codeph> data should be localized.
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.localizer.events:LocalizerEvent:data"><apiName>data</apiName><shortdesc>
 		 
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiType value="Object"/><apiDefaultValue>null
-		 </apiDefaultValue></apiValueDef><apiDesc>
-		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiType value="Object"/></apiValueDef><apiDesc>
 		 
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.localizer.events:LocalizerEvent:locale"><apiName>locale</apiName><shortdesc>
 		 
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.localizer.patterns.locale:ILocale</apiValueClassifier><apiDefaultValue>null
-		 </apiDefaultValue></apiValueDef><apiDesc>
-		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.localizer.patterns.locale:ILocale</apiValueClassifier></apiValueDef><apiDesc>
 		 
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.localizer.events:LocalizerEvent:prefix"><apiName>prefix</apiName><shortdesc>
 		 
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiType value="String"/><apiDefaultValue>null
-		 </apiDefaultValue></apiValueDef><apiDesc>
-		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiType value="String"/></apiValueDef><apiDesc>
 		 
 		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage>
