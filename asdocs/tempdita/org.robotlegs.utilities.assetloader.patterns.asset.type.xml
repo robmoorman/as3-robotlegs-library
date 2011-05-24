@@ -1,4 +1,4 @@
-<apiPackage id="org.robotlegs.utilities.assetloader.patterns.asset.type"><apiName>org.robotlegs.utilities.assetloader.patterns.asset.type</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.assetloader.patterns.asset.type:CSSAsset"><apiName>CSSAsset</apiName><shortdesc>
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.utilities.assetloader.patterns.asset.type"><apiName>org.robotlegs.utilities.assetloader.patterns.asset.type</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.assetloader.patterns.asset.type:CSSAsset"><apiName>CSSAsset</apiName><shortdesc>
 	 Automatic assigned type of Asset for loading stylesheets (css).</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.robotlegs.utilities.assetloader.patterns.asset:Asset</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Automatic assigned type of <codeph>Asset</codeph> for loading stylesheets (css).

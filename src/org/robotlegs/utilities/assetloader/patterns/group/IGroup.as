@@ -80,5 +80,21 @@ package org.robotlegs.utilities.assetloader.patterns.group
 		 * Trigger the <code>Group</code> to dispose it's references.
 		 */
 		function dispose(): void;
+		
+		/**
+		 * Get an <code>Asset</code> by it's id.
+		 * 
+		 * @param id The id of the <code>Asset</code>.
+		 * @return An instance of <code>Asset</code>, <code>null</code> if not found.
+		 */
+		function getAsset( id: String ): IAsset;
+		
+		/**
+		 * Get an <code>Asset</code> by it's url.
+		 * 
+		 * @param url The url of the <code>Asset</code>.
+		 * @return An instance of <code>Asset</code>, <code>null</code> if not found.
+		 */
+		function getAssetByUrl( url: String ): IAsset;
 	}
 }

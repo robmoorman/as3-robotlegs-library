@@ -516,7 +516,7 @@
 													<xsl:if test="self::SkinPart">
 														<xsl:variable name="pkg" select="translate($classPath,'/','.')"/>
 														<xsl:variable name="class" select="ancestor::apiClassifier/apiName"/>
-														<a href="{$classPath}/{ancestor::apiClassifier/apiName}.html#SkinPart:{@name}" onclick="javascript:loadClassListFrame('{$classPath}/class-list.html');">
+														<a href="{$classPath}/{ancestor::apiClassifier/apiName}.html#skinpart:{@name}" onclick="javascript:loadClassListFrame('{$classPath}/class-list.html');">
 															<xsl:value-of select="@name"/>
 														</a>
 														<xsl:value-of select="$emdash"/>
@@ -538,8 +538,8 @@
 													<xsl:if test="self::SkinState">
 														<xsl:variable name="pkg" select="translate($classPath,'/','.')"/>
 														<xsl:variable name="class" select="ancestor::apiClassifier/apiName"/>
-														<a href="{$classPath}/{ancestor::apiClassifier/apiName}.html#SkinState:{@name}" onclick="javascript:loadClassListFrame('{$classPath}/class-list.html');">
-															<xsl:value-of select="@name"/>
+														<a href="{$classPath}/{ancestor::apiClassifier/apiName}.html#skinstate:{@name}" onclick="javascript:loadClassListFrame('{$classPath}/class-list.html');">
+															<xsl:value-of select="@name"/>Skin
 														</a>
 														<xsl:value-of select="$emdash"/>
 														<xsl:value-of select="$asdoc_terms/row[entry[1][p/text() = 'SkinState']]/entry[2]/p"/>

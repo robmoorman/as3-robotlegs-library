@@ -1,6 +1,9 @@
 # AS3 Robotlegs Library Changelog
 
 * master
+	* Added `getAsset` in `Group`
+	* Added `getAssetByUrl` in `Group`
+	* Added `baseUrl` in `AssetLoader`
 	* Added utility `Layers`
 	* Added utility `Localizer`
 	* Added utility `Styles`

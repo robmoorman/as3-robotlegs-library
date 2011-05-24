@@ -201,6 +201,38 @@ package org.robotlegs.utilities.assetloader.patterns.group
 		}
 		
 		/**
+		 * @copy org.robotlegs.utilities.assetloader.patterns.group.IGroup.getAsset()
+		 */
+		public function getAsset( id: String ): IAsset
+		{
+			var asset: IAsset;
+			
+			for each( asset in _assets ) {
+				if( asset.id === id ) {
+					return asset;
+				}
+			}
+			
+			return asset;
+		}
+		
+		/**
+		 * @copy org.robotlegs.utilities.assetloader.patterns.group.IGroup.getAssetByUrl()
+		 */
+		public function getAssetByUrl( url: String ): IAsset
+		{
+			var asset: IAsset;
+			
+			for each( asset in _assets ) {
+				if( asset.url.indexOf( url ) != -1 ) {
+					return asset;
+				}
+			}
+			
+			return asset;
+		}
+		
+		/**
 		 * Load the next <code>Asset</code> in the queue.
 		 */
 		protected function loadQueuedAsset(): void

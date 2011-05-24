@@ -1,4 +1,4 @@
-<apiPackage id="org.robotlegs.core"><apiName>org.robotlegs.core</apiName><apiDetail/><apiClassifier id="org.robotlegs.core:IASyncCommand"><apiName>IASyncCommand</apiName><shortdesc>
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.core"><apiName>org.robotlegs.core</apiName><apiDetail/><apiClassifier id="org.robotlegs.core:IASyncCommand"><apiName>IASyncCommand</apiName><shortdesc>
 	 Abstract IASyncCommand interface.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
 	 Abstract <codeph>IASyncCommand</codeph> interface.

@@ -1,4 +1,4 @@
-<apiPackage id="org.robotlegs.utilities.navigator.patterns.page"><apiName>org.robotlegs.utilities.navigator.patterns.page</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.navigator.patterns.page:Page"><apiName>Page</apiName><shortdesc>
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.utilities.navigator.patterns.page"><apiName>org.robotlegs.utilities.navigator.patterns.page</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.navigator.patterns.page:Page"><apiName>Page</apiName><shortdesc>
 	 Abstract Page implementation.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.utilities.navigator.patterns.page:IPage</apiBaseInterface><apiBaseClassifier>flash.display:Sprite</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Abstract <codeph>Page</codeph> implementation.

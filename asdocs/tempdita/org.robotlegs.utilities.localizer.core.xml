@@ -1,4 +1,4 @@
-<apiPackage id="org.robotlegs.utilities.localizer.core"><apiName>org.robotlegs.utilities.localizer.core</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.localizer.core:ILocalizer"><apiName>ILocalizer</apiName><shortdesc>
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.utilities.localizer.core"><apiName>org.robotlegs.utilities.localizer.core</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.localizer.core:ILocalizer"><apiName>ILocalizer</apiName><shortdesc>
 	 The interface definition for Localizer.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
 	 The interface definition for <codeph>Localizer</codeph>.

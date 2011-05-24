@@ -1,4 +1,4 @@
-<apiPackage id="org.robotlegs.utils"><apiName>org.robotlegs.utils</apiName><apiDetail/><apiClassifier id="org.robotlegs.utils:ClassUtil"><apiName>ClassUtil</apiName><shortdesc>
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.utils"><apiName>org.robotlegs.utils</apiName><apiDetail/><apiClassifier id="org.robotlegs.utils:ClassUtil"><apiName>ClassUtil</apiName><shortdesc>
 	 Utilities for Class related functionalities.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Utilities for <codeph>Class</codeph> related functionalities.

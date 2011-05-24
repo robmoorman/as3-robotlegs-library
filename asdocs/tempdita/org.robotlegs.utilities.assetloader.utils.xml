@@ -1,4 +1,4 @@
-<apiPackage id="org.robotlegs.utilities.assetloader.utils"><apiName>org.robotlegs.utilities.assetloader.utils</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.assetloader.utils:AssetUtil"><apiName>AssetUtil</apiName><shortdesc>
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.utilities.assetloader.utils"><apiName>org.robotlegs.utilities.assetloader.utils</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.assetloader.utils:AssetUtil"><apiName>AssetUtil</apiName><shortdesc>
 	 Utilities for Asset related functionalities.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Utilities for <codeph>Asset</codeph> related functionalities.

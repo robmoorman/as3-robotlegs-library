@@ -2549,140 +2549,8 @@
 			<script type="text/javascript">document.writeln("<xsl:call-template name="convertFullName"><xsl:with-param name="fullname" select="@fullname"/></xsl:call-template>");</script>
 		</pre>
 	</xsl:template>
-	<!-- Need to add this so that the additional xml files like Operators and Statements can have see Also links-->
-	<xsl:template name="sees_old">
-		<xsl:param name="labelClass" select="'label'"/>
-		<xsl:param name="xrefId">
-			<xsl:choose>
-				<xsl:when test="self::operator">
-					<xsl:text>operator#</xsl:text>
-				</xsl:when>
-				<xsl:when test="self::statement">
-					<xsl:text>statement#</xsl:text>
-				</xsl:when>
-				<xsl:when test="self::specialType">
-					<xsl:text>specialType#</xsl:text>
-				</xsl:when>
-				<xsl:when test="self::statements">
-					<xsl:text>statements</xsl:text>
-				</xsl:when>
-				<xsl:when test="self::operators">
-					<xsl:text>operators</xsl:text>
-				</xsl:when>
-				<xsl:when test="self::specialTypes">
-					<xsl:text>special-types</xsl:text>
-				</xsl:when>
-				<xsl:otherwise>
-					<xsl:if test="ancestor::asPackage/@name='$$Global$$' and not(ancestor-or-self::asClass)">
-						<xsl:text>global</xsl:text>
-						<xsl:if test="ancestor::asClass">
-							<xsl:text>.</xsl:text>
-						</xsl:if>
-					</xsl:if>
-					<xsl:if test="not(ancestor::asPackage/@name='$$Global$$')">
-						<xsl:value-of select="ancestor::asPackage/@name"/>
-						<xsl:if test="ancestor-or-self::asClass">
-							<xsl:text>.</xsl:text>
-						</xsl:if>
-					</xsl:if>
-					<xsl:if test="ancestor-or-self::asClass">
-						<xsl:value-of select="ancestor::asClass/@name"/>
-					</xsl:if>
-					<xsl:choose>
-						<xsl:when test="self::constructor">
-							<xsl:text>#method:</xsl:text>
-						</xsl:when>
-						<xsl:when test="self::method">
-							<xsl:text>#method:</xsl:text>
-						</xsl:when>
-						<xsl:when test="self::field">
-							<xsl:text>#property:</xsl:text>
-						</xsl:when>
-						<xsl:when test="self::event">
-							<xsl:text>#event:</xsl:text>
-						</xsl:when>
-						<xsl:when test="self::style">
-							<xsl:text>#style:</xsl:text>
-						</xsl:when>
-						<xsl:when test="self::effect">
-							<xsl:text>#effect:</xsl:text>
-						</xsl:when>
-					</xsl:choose>
-				</xsl:otherwise>
-			</xsl:choose>
-			<xsl:value-of select="@name"/>
-		</xsl:param>
-		<xsl:param name="packageName">
-			<xsl:if test="ancestor-or-self::asPackage/@name!='$$Global$$'">
-				<xsl:value-of select="ancestor-or-self::asPackage/@name"/>
-			</xsl:if>
-		</xsl:param>
-		<xsl:variable name="numSees" select="count(sees/see[normalize-space(@label) or @href])"/>
-		<xsl:if test="$numSees or $xrefs/helpreferences/helpreference[normalize-space(id/.)=$xrefId]">
-			<p>
-				<span class="{$labelClass}">
-					<xsl:call-template name="getLocalizedString">
-						<xsl:with-param name="key">seeAlso</xsl:with-param>
-					</xsl:call-template>
-				</span>
-			</p>
-			<div class="seeAlso">
-				<xsl:for-each select="sees/see[string-length(@href) or string-length(@label)]">
-					<xsl:if test="string-length(@href)">
-						<a href="{@href}">
-							<xsl:attribute name="target">
-								<xsl:if test="starts-with(@href,'http:')">
-									<xsl:text>mm_external</xsl:text>
-								</xsl:if>
-							</xsl:attribute>
-							<xsl:if test="normalize-space(@label)">
-								<xsl:value-of select="normalize-space(@label)"/>
-							</xsl:if>
-							<xsl:if test="not(normalize-space(@label))">
-								<xsl:value-of select="@href"/>
-							</xsl:if>
-						</a>
-					</xsl:if>
-					<xsl:if test="not(string-length(@href)) and string-length(@label) &gt; 0">
-						<xsl:value-of select="normalize-space(@label)"/>
-					</xsl:if>
-					<xsl:if test="position() != last()">
-						<xsl:text disable-output-escaping="yes">&lt;br/&gt;</xsl:text>
-					</xsl:if>
-				</xsl:for-each>
-				<xsl:variable name="baseRef">
-					<xsl:call-template name="getBaseRef">
-						<xsl:with-param name="packageName" select="$packageName"/>
-					</xsl:call-template>
-				</xsl:variable>
-				<xsl:for-each select="$xrefs/helpreferences/helpreference[normalize-space(id/.)=$xrefId]">
-					<xsl:if test="position()=1 and $numSees">
-						<xsl:text disable-output-escaping="yes">&lt;br/&gt;</xsl:text>
-					</xsl:if>
-					<xsl:element name="a">
-						<xsl:attribute name="href">
-							<xsl:choose>
-								<xsl:when test="not(bookfolder) or bookfolder=''">
-									<xsl:value-of select="concat($baseRef,$config/xrefs/@baseRef,href/.)"/>
-								</xsl:when>
-								<xsl:otherwise> = <xsl:value-of select="concat($baseRef,$config/xrefs/@baseRef,bookfolder/text(),'/',href/.)"/></xsl:otherwise>
-							</xsl:choose>
-						</xsl:attribute>
-						<xsl:if test="string-length($config/xrefs/@target)">
-							<xsl:attribute name="target">
-								<xsl:value-of select="$config/xrefs/@target"/>
-							</xsl:attribute>
-						</xsl:if>
-						<xsl:value-of select="title/."/>
-					</xsl:element>
-					<xsl:if test="position() != last()">
-						<xsl:text disable-output-escaping="yes">&lt;br/&gt;</xsl:text>
-					</xsl:if>
-				</xsl:for-each>
-			</div>
-		</xsl:if>
-	</xsl:template>
 	<xsl:template name="sees">
+		<xsl:param name="currentPackage" />
 		<xsl:param name="labelClass" select="'label'"/>
 		<xsl:param name="xrefId">
 			<xsl:choose>
@@ -2806,9 +2674,17 @@
 								</xsl:when>
 								<xsl:otherwise>
 									<xsl:if test="string-length($packName) &gt; 0 and not($packName=ancestor-or-self::apiPackage/apiName) and  not(contains(@href,'.htm'))">
+										<xsl:variable name="relPathParam">
+											<xsl:if test="ancestor-or-self::apiPackage/apiName">
+												<xsl:value-of select="ancestor-or-self::apiPackage/apiName"/>
+											</xsl:if>
+											<xsl:if test="not(ancestor-or-self::apiPackage/apiName)">
+												<xsl:value-of select="$currentPackage"/>
+											</xsl:if>												
+										</xsl:variable>
 										<xsl:variable name="relPath">
 											<xsl:call-template name="getRelativePath">
-												<xsl:with-param name="currentPath" select="ancestor-or-self::apiPackage/apiName"/>
+												<xsl:with-param name="currentPath" select="$relPathParam"/>
 											</xsl:call-template>
 										</xsl:variable>
 										<xsl:if test="string-length($classNameText) &gt; 0">
@@ -2839,14 +2715,23 @@
 										</xsl:if>
 										<!-- To handle the <#Array/sort() kind of stuff in a package>-->
 										<xsl:if
-											test="string-length($classNameText) &gt; 0 and not($classNameText='global') and string-length(ancestor-or-self::apiPackage/apiName) &gt; 0 and string-length($packName) = 0 ">
+											test="string-length($classNameText) &gt; 0 and not($classNameText='global') and (string-length(ancestor-or-self::apiPackage/apiName) &gt; 0 or string-length($currentPackage) &gt; 0)and string-length($packName) = 0 ">
+											<xsl:variable name="relPathParam">
+												<xsl:if test="ancestor-or-self::apiPackage/apiName">
+													<xsl:value-of select="ancestor-or-self::apiPackage/apiName"/>
+												</xsl:if>
+												<xsl:if test="not(ancestor-or-self::apiPackage/apiName)">
+													<xsl:value-of select="$currentPackage"/>
+												</xsl:if>												
+											</xsl:variable>
 											<xsl:variable name="relPath">
-												<xsl:if test="contains(ancestor-or-self::apiPackage/apiName,'.')">
+												<xsl:if test="contains($relPathParam,'.')">
 													<xsl:call-template name="getRelativePath">
-														<xsl:with-param name="currentPath" select="ancestor-or-self::apiPackage/apiName"/>
+														<xsl:with-param name="currentPath" select="$relPathParam"/>
 													</xsl:call-template>
 												</xsl:if>
 											</xsl:variable>
+											
 											<xsl:if test="string-length($methodNameText) &gt; 0">
 												<xsl:value-of select="concat($relPath,$classNameText,'.html#',$methodNameText)"/>
 											</xsl:if>
@@ -2855,10 +2740,18 @@
 											</xsl:if>
 										</xsl:if>
 										<xsl:if test="string-length($classNameText) &gt; 0 and $classNameText='global'">
+											<xsl:variable name="relPathParam">
+												<xsl:if test="ancestor-or-self::apiPackage/apiName">
+													<xsl:value-of select="ancestor-or-self::apiPackage/apiName"/>
+												</xsl:if>
+												<xsl:if test="not(ancestor-or-self::apiPackage/apiName)">
+													<xsl:value-of select="$currentPackage"/>
+												</xsl:if>												
+											</xsl:variable>
 											<xsl:variable name="relPath">
-												<xsl:if test="contains(ancestor-or-self::apiPackage/apiName,'.')">
+												<xsl:if test="contains($relPathParam,'.')">
 													<xsl:call-template name="getRelativePath">
-														<xsl:with-param name="currentPath" select="ancestor-or-self::apiPackage/apiName"/>
+														<xsl:with-param name="currentPath" select="$relPathParam"/>
 													</xsl:call-template>
 												</xsl:if>
 											</xsl:variable>
@@ -3980,96 +3873,6 @@
 			<xsl:value-of disable-output-escaping="yes" select="$closeTag"/>
 		</xsl:if>
 	</xsl:template>
-	<!-- bagrawal change start -->
-	<xsl:template name="old_sees">
-		<xsl:param name="labelClass" select="'label'"/>
-		<xsl:param name="xrefId">
-			<xsl:choose>
-				<xsl:when test="self::operator">
-					<xsl:text>operator#</xsl:text>
-				</xsl:when>
-				<xsl:when test="self::statement">
-					<xsl:text>statement#</xsl:text>
-				</xsl:when>
-				<xsl:when test="self::specialType">
-					<xsl:text>specialType#</xsl:text>
-				</xsl:when>
-				<xsl:when test="self::statements">
-					<xsl:text>statements</xsl:text>
-				</xsl:when>
-				<xsl:when test="self::operators">
-					<xsl:text>operators</xsl:text>
-				</xsl:when>
-				<xsl:when test="self::specialTypes">
-					<xsl:text>special-types</xsl:text>
-				</xsl:when>
-			</xsl:choose>
-			<xsl:value-of select="@name"/>
-		</xsl:param>
-		<xsl:variable name="numSees" select="count(sees/see[normalize-space(@label) or @href])"/>
-		<xsl:if test="$numSees or $xrefs/helpreferences/helpreference[normalize-space(id/.)=$xrefId]">
-			<p>
-				<span class="{$labelClass}">
-					<xsl:call-template name="getLocalizedString">
-						<xsl:with-param name="key">seeAlso</xsl:with-param>
-					</xsl:call-template>
-				</span>
-			</p>
-			<div class="seeAlso">
-				<xsl:for-each select="sees/see[string-length(@href) or string-length(@label)]">
-					<xsl:if test="string-length(@href)">
-						<a href="{@href}">
-							<xsl:attribute name="target">
-								<xsl:if test="starts-with(@href,'http:')">
-									<xsl:text>mm_external</xsl:text>
-								</xsl:if>
-							</xsl:attribute>
-							<xsl:if test="normalize-space(@label)">
-								<xsl:value-of select="normalize-space(@label)"/>
-							</xsl:if>
-							<xsl:if test="not(normalize-space(@label))">
-								<xsl:value-of select="@href"/>
-							</xsl:if>
-						</a>
-					</xsl:if>
-					<xsl:if test="not(string-length(@href)) and string-length(@label) &gt; 0">
-						<xsl:value-of select="normalize-space(@label)"/>
-					</xsl:if>
-					<xsl:if test="position() != last()">
-						<xsl:text disable-output-escaping="yes">&lt;br/&gt;</xsl:text>
-					</xsl:if>
-				</xsl:for-each>
-				<xsl:variable name="baseRef"/>
-				<xsl:for-each select="$xrefs/helpreferences/helpreference[normalize-space(id/.)=$xrefId]">
-					<xsl:if test="position()=1 and $numSees">
-						<xsl:text disable-output-escaping="yes">&lt;br/&gt;</xsl:text>
-					</xsl:if>
-					<xsl:element name="a">
-						<xsl:attribute name="href">
-							<xsl:choose>
-								<xsl:when test="not(bookfolder) or bookfolder=''">
-									<xsl:value-of select="concat($baseRef,$config/xrefs/@baseRef,href/.)"/>
-								</xsl:when>
-								<xsl:otherwise>
-									<xsl:value-of select="concat($baseRef,$config/xrefs/@baseRef,bookfolder/text(),'/',href/.)"/>
-								</xsl:otherwise>
-							</xsl:choose>
-						</xsl:attribute>
-						<xsl:if test="string-length($config/xrefs/@target)">
-							<xsl:attribute name="target">
-								<xsl:value-of select="$config/xrefs/@target"/>
-							</xsl:attribute>
-						</xsl:if>
-						<xsl:value-of select="title/."/>
-					</xsl:element>
-					<xsl:if test="position() != last()">
-						<xsl:text disable-output-escaping="yes">&lt;br/&gt;</xsl:text>
-					</xsl:if>
-				</xsl:for-each>
-			</div>
-		</xsl:if>
-	</xsl:template>
-	<!-- bagrawal change end-->
 	<xsl:template name="getLinkURL">
 		<xsl:param name="href"/>
 		<xsl:param name="createLinkFromRootContext" select="false()"/>

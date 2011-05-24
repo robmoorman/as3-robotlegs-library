@@ -635,6 +635,19 @@
 <param><![CDATA[id The id of the <code>Group</code>.
 		 ]]></param>
 </method>
+<method name='baseUrl' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:baseUrl/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 Set an optional base url as a prefix for all <code>Assets</code>.
+		 
+		 <p>If the requiest url of an <code>Asset</code> contains 'http://'
+		 the base url will not be added to the url.</p>
+		 ]]></description>
+</method>
+<method name='baseUrl' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:baseUrl/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
 <classRec name='AssetLoader' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/core/AssetLoader.as' namespace='org.robotlegs.utilities.assetloader.core' access='public' baseclass='Object' interfaces='org.robotlegs.utilities.assetloader.core:IAssetLoader' isFinal='false' isDynamic='false' >
 <description><![CDATA[
 	 This utility allows you to easily load external assets into your application.
@@ -745,6 +758,17 @@
 <copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.removeGroup()
 		 ]]></copy>
 </method>
+<method name='baseUrl' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/baseUrl/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.baseUrl
+		 ]]></copy>
+</method>
+<method name='baseUrl' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/baseUrl/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
 <field name='_assetIds' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/private:_assetIds' type='int' isStatic='false' isConst='false' >
 <description><![CDATA[
 		 ]]></description>
@@ -756,6 +780,11 @@
 <private><![CDATA[]]></private>
 </field>
 <field name='_assetMap' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/private:_assetMap' type='flash.utils:Dictionary' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_baseUrl' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/private:_baseUrl' type='String' isStatic='false' isConst='false' >
 <description><![CDATA[
 		 ]]></description>
 <private><![CDATA[]]></private>
@@ -879,6 +908,26 @@
 		 Trigger the <code>Group</code> to dispose it's references.
 		 ]]></description>
 </method>
+<method name='getAssetByUrl' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:getAssetByUrl' isStatic='false' isFinal='false' isOverride='false'  param_names='url' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.assetloader.patterns.asset:IAsset'>
+<description><![CDATA[
+		 Get an <code>Asset</code> by it's url.
+		 
+		 ]]></description>
+<param><![CDATA[url The url of the <code>Asset</code>.
+		 ]]></param>
+<return><![CDATA[An instance of <code>Asset</code>, <code>null</code> if not found.
+		 ]]></return>
+</method>
+<method name='getAsset' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:getAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.assetloader.patterns.asset:IAsset'>
+<description><![CDATA[
+		 Get an <code>Asset</code> by it's id.
+		 
+		 ]]></description>
+<param><![CDATA[id The id of the <code>Asset</code>.
+		 ]]></param>
+<return><![CDATA[An instance of <code>Asset</code>, <code>null</code> if not found.
+		 ]]></return>
+</method>
 <method name='load' fullname='org.robotlegs.utilities.assetloader.patterns.group:IGroup/org.robotlegs.utilities.assetloader.patterns.group:IGroup:load' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
 <description><![CDATA[
 		 Trigger the <code>Group</code> to load it's <code>Assets</code>.
@@ -979,6 +1028,18 @@
 <description><![CDATA[
 		 ]]></description>
 <copy><![CDATA[org.robotlegs.utilities.assetloader.patterns.group.IGroup.dispose()
+		 ]]></copy>
+</method>
+<method name='getAssetByUrl' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/getAssetByUrl' isStatic='false' isFinal='false' isOverride='false'  param_names='url' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.assetloader.patterns.asset:IAsset'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.patterns.group.IGroup.getAssetByUrl()
+		 ]]></copy>
+</method>
+<method name='getAsset' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/getAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.assetloader.patterns.asset:IAsset'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.patterns.group.IGroup.getAsset()
 		 ]]></copy>
 </method>
 <method name='getLoadedAssets' fullname='org.robotlegs.utilities.assetloader.patterns.group:Group/private:getLoadedAssets' isStatic='false' isFinal='true' isOverride='false'  result_type='int'>

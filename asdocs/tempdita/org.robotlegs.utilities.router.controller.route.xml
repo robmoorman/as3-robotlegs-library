@@ -1,4 +1,4 @@
-<apiPackage id="org.robotlegs.utilities.router.controller.route"><apiName>org.robotlegs.utilities.router.controller.route</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.router.controller.route:MapEventToRouteCommand"><apiName>MapEventToRouteCommand</apiName><shortdesc>
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.utilities.router.controller.route"><apiName>org.robotlegs.utilities.router.controller.route</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.router.controller.route:MapEventToRouteCommand"><apiName>MapEventToRouteCommand</apiName><shortdesc>
 	 Map a Command to a specific Route.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Map a <codeph>Command</codeph> to a specific <codeph>Route</codeph>.

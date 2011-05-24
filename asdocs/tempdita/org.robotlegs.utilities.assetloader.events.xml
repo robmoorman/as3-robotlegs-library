@@ -1,4 +1,4 @@
-<apiPackage id="org.robotlegs.utilities.assetloader.events"><apiName>org.robotlegs.utilities.assetloader.events</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.assetloader.events:AssetLoaderEvent"><apiName>AssetLoaderEvent</apiName><shortdesc>
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.utilities.assetloader.events"><apiName>org.robotlegs.utilities.assetloader.events</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.assetloader.events:AssetLoaderEvent"><apiName>AssetLoaderEvent</apiName><shortdesc>
 	 Custom Event for AssetLoader.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>flash.events:Event</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Custom <codeph>Event</codeph> for <codeph>AssetLoader</codeph>.

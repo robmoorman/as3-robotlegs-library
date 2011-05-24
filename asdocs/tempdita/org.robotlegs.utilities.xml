@@ -1,4 +1,4 @@
-<apiPackage id="org.robotlegs.utilities"><apiName>org.robotlegs.utilities</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities:Utilities"><apiName>Utilities</apiName><shortdesc>
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.utilities"><apiName>org.robotlegs.utilities</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities:Utilities"><apiName>Utilities</apiName><shortdesc>
 	 Utility to map dependencies of certain utilities.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Utility to map dependencies of certain utilities.

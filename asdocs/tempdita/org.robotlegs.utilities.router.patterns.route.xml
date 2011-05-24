@@ -1,4 +1,4 @@
-<apiPackage id="org.robotlegs.utilities.router.patterns.route"><apiName>org.robotlegs.utilities.router.patterns.route</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.router.patterns.route:Route"><apiName>Route</apiName><shortdesc>
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.utilities.router.patterns.route"><apiName>org.robotlegs.utilities.router.patterns.route</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.router.patterns.route:Route"><apiName>Route</apiName><shortdesc>
 	 Abstract Route implementation.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiDynamic/><apiBaseClassifier>flash.utils:Proxy</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Abstract <codeph>Route</codeph> implementation.

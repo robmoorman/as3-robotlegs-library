@@ -12,6 +12,19 @@ package org.robotlegs.utilities.assetloader.core
 	public interface IAssetLoader
 	{
 		/**
+		 * Set an optional base url as a prefix for all <code>Assets</code>.
+		 * 
+		 * <p>If the requiest url of an <code>Asset</code> contains 'http://'
+		 * the base url will not be added to the url.</p>
+		 */
+		function get baseUrl(): String;
+		
+		/**
+		 * @private
+		 */
+		function set baseUrl( value: String ): void;
+		
+		/**
 		 * Load a single <code>Asset</code>.
 		 * 
 		 * <p>The <code>AssetLoader</code> automatically assigns the

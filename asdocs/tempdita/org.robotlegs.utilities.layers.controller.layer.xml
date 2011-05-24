@@ -1,4 +1,4 @@
-<apiPackage id="org.robotlegs.utilities.layers.controller.layer"><apiName>org.robotlegs.utilities.layers.controller.layer</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.layers.controller.layer:TransferLayerCommand"><apiName>TransferLayerCommand</apiName><shortdesc>
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.utilities.layers.controller.layer"><apiName>org.robotlegs.utilities.layers.controller.layer</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.layers.controller.layer:TransferLayerCommand"><apiName>TransferLayerCommand</apiName><shortdesc>
 	 Transfer a Layer to an other childIndex in the contextView.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Transfer a <codeph>Layer</codeph> to an other childIndex in the <codeph>contextView</codeph>.

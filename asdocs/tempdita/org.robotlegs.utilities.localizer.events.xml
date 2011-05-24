@@ -1,4 +1,4 @@
-<apiPackage id="org.robotlegs.utilities.localizer.events"><apiName>org.robotlegs.utilities.localizer.events</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.localizer.events:LocalizerEvent"><apiName>LocalizerEvent</apiName><shortdesc>
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.utilities.localizer.events"><apiName>org.robotlegs.utilities.localizer.events</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.localizer.events:LocalizerEvent"><apiName>LocalizerEvent</apiName><shortdesc>
 	 Custom Event for Localizer.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>flash.events:Event</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Custom <codeph>Event</codeph> for <codeph>Localizer</codeph>.

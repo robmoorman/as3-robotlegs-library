@@ -26,6 +26,25 @@ package org.robotlegs.utilities.assetloader.core
 	public class AssetLoader implements IAssetLoader
 	{
 		/**
+		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.baseUrl
+		 */
+		public function get baseUrl(): String {
+			return _baseUrl;
+		}
+		
+		/**
+		 * @private
+		 */
+		public function set baseUrl( value: String ): void {
+			_baseUrl = value;
+		}
+		
+		/**
+		 * @private
+		 */
+		private var _baseUrl: String;
+		
+		/**
 		 * @private
 		 */
 		private var _assetIds: int;
@@ -198,8 +217,9 @@ package org.robotlegs.utilities.assetloader.core
 		protected function instantiateAsset( url: String ): IAsset
 		{
 			var id: String = ( _assetIds++ ).toString();
+			var prefix: String = url.indexOf( 'http://' ) == -1 && _baseUrl ? _baseUrl : '';
 			var assetClass: Class = AssetUtil.getAssetClassByExtension( String( url.split( '.' ).pop()).toLowerCase());
-			var asset: IAsset = new assetClass( id, url ) as IAsset;
+			var asset: IAsset = new assetClass( id, prefix + url ) as IAsset;
 			
 			_assetMap[ id ] = asset;
 			_assetMapByUrl[ url ] = asset;

@@ -1,4 +1,4 @@
-<apiPackage id="org.robotlegs.utilities.navigator.core"><apiName>org.robotlegs.utilities.navigator.core</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.navigator.core:INavigator"><apiName>INavigator</apiName><shortdesc>
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.utilities.navigator.core"><apiName>org.robotlegs.utilities.navigator.core</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.navigator.core:INavigator"><apiName>INavigator</apiName><shortdesc>
 	 Abstract INavigator interface.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
 	 Abstract <codeph>INavigator</codeph> interface.

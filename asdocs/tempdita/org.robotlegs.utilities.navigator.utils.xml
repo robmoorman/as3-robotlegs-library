@@ -1,4 +1,4 @@
-<apiPackage id="org.robotlegs.utilities.navigator.utils"><apiName>org.robotlegs.utilities.navigator.utils</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.navigator.utils:NavigatorUtil"><apiName>NavigatorUtil</apiName><shortdesc>
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.utilities.navigator.utils"><apiName>org.robotlegs.utilities.navigator.utils</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.navigator.utils:NavigatorUtil"><apiName>NavigatorUtil</apiName><shortdesc>
 	 Utility to provide consistent Transition methods.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Utility to provide consistent <codeph>Transition</codeph> methods.

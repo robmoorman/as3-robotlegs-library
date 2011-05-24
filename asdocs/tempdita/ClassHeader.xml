@@ -272,7 +272,7 @@
             <asMetadata/>
          </prolog>
             <meta name="keywords"
-               content="IAssetLoader,org.robotlegs.utilities.assetloader.core.IAssetLoader,getAsset,getAsset,getAssetByUrl,getAssetByUrl,getGroup,getGroup,hasAsset,hasAsset,hasAssetByUrl,hasAssetByUrl,hasGroup,hasGroup,instantiateAsset,instantiateGroup,load,load,loadGroup,loadGroup,removeAsset,removeAsset,removeAssetByUrl,removeAssetByUrl,removeGroup,removeGroup"/>
+               content="IAssetLoader,org.robotlegs.utilities.assetloader.core.IAssetLoader,FAILED,INITIALIZING,LOADED,LOADING,baseUrl,baseUrl,getAsset,getAsset,getAssetByUrl,getAssetByUrl,getGroup,getGroup,hasAsset,hasAsset,hasAssetByUrl,hasAssetByUrl,hasGroup,hasGroup,instantiateAsset,instantiateGroup,load,load,loadGroup,loadGroup,removeAsset,removeAsset,removeAssetByUrl,removeAssetByUrl,removeGroup,removeGroup"/>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiInterface/>
@@ -314,7 +314,7 @@
             <asMetadata/>
          </prolog>
             <meta name="keywords"
-               content="AssetLoader,org.robotlegs.utilities.assetloader.core.AssetLoader,getAsset,getAsset,getAssetByUrl,getAssetByUrl,getGroup,getGroup,hasAsset,hasAsset,hasAssetByUrl,hasAssetByUrl,hasGroup,hasGroup,instantiateAsset,instantiateGroup,load,load,loadGroup,loadGroup,removeAsset,removeAsset,removeAssetByUrl,removeAssetByUrl,removeGroup,removeGroup"/>
+               content="AssetLoader,org.robotlegs.utilities.assetloader.core.AssetLoader,FAILED,INITIALIZING,LOADED,LOADING,baseUrl,baseUrl,getAsset,getAsset,getAssetByUrl,getAssetByUrl,getGroup,getGroup,hasAsset,hasAsset,hasAssetByUrl,hasAssetByUrl,hasGroup,hasGroup,instantiateAsset,instantiateGroup,load,load,loadGroup,loadGroup,removeAsset,removeAsset,removeAssetByUrl,removeAssetByUrl,removeGroup,removeGroup"/>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiAccess value="public"/>
@@ -365,7 +365,7 @@
             <asMetadata/>
          </prolog>
             <meta name="keywords"
-               content="AssetLoaderState,org.robotlegs.utilities.assetloader.core.AssetLoaderState,FAILED,INITIALIZING,LOADED,LOADING"/>
+               content="AssetLoaderState,org.robotlegs.utilities.assetloader.core.AssetLoaderState,FAILED,INITIALIZING,LOADED,LOADING,baseUrl,baseUrl"/>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiAccess value="public"/>
@@ -732,7 +732,7 @@
             <asMetadata/>
          </prolog>
             <meta name="keywords"
-               content="IGroup,org.robotlegs.utilities.assetloader.patterns.group.IGroup,assets,assets,bytesLoaded,bytesLoaded,bytesTotal,bytesTotal,closure,closure,id,id,maxConnections,maxConnections,percentage,percentage,state,state,dispose,dispose,load,load,loadQueuedAsset,onAssetProcess,setState"/>
+               content="IGroup,org.robotlegs.utilities.assetloader.patterns.group.IGroup,assets,assets,bytesLoaded,bytesLoaded,bytesTotal,bytesTotal,closure,closure,id,id,maxConnections,maxConnections,percentage,percentage,state,state,dispose,dispose,getAsset,getAsset,getAssetByUrl,getAssetByUrl,load,load,loadQueuedAsset,onAssetProcess,setState"/>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiInterface/>
@@ -768,7 +768,7 @@
             <asMetadata/>
          </prolog>
             <meta name="keywords"
-               content="Group,org.robotlegs.utilities.assetloader.patterns.group.Group,assets,assets,bytesLoaded,bytesLoaded,bytesTotal,bytesTotal,closure,closure,id,id,maxConnections,maxConnections,percentage,percentage,state,state,dispose,dispose,load,load,loadQueuedAsset,onAssetProcess,setState"/>
+               content="Group,org.robotlegs.utilities.assetloader.patterns.group.Group,assets,assets,bytesLoaded,bytesLoaded,bytesTotal,bytesTotal,closure,closure,id,id,maxConnections,maxConnections,percentage,percentage,state,state,dispose,dispose,getAsset,getAsset,getAssetByUrl,getAssetByUrl,load,load,loadQueuedAsset,onAssetProcess,setState"/>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiAccess value="public"/>

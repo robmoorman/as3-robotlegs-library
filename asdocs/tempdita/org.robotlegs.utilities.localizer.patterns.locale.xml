@@ -1,4 +1,4 @@
-<apiPackage id="org.robotlegs.utilities.localizer.patterns.locale"><apiName>org.robotlegs.utilities.localizer.patterns.locale</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.localizer.patterns.locale:Locale"><apiName>Locale</apiName><shortdesc>
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.utilities.localizer.patterns.locale"><apiName>org.robotlegs.utilities.localizer.patterns.locale</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.localizer.patterns.locale:Locale"><apiName>Locale</apiName><shortdesc>
 	 Abstract implementation of ILocale.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.utilities.localizer.patterns.locale:ILocale</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Abstract implementation of <codeph>ILocale</codeph>.

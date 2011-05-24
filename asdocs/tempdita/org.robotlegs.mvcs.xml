@@ -1,4 +1,4 @@
-<apiPackage id="org.robotlegs.mvcs"><apiName>org.robotlegs.mvcs</apiName><apiDetail/><apiClassifier id="org.robotlegs.mvcs:ASyncMacroCommand"><apiName>ASyncMacroCommand</apiName><shortdesc>
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.mvcs"><apiName>org.robotlegs.mvcs</apiName><apiDetail/><apiClassifier id="org.robotlegs.mvcs:ASyncMacroCommand"><apiName>ASyncMacroCommand</apiName><shortdesc>
 	 Abstract ASyncMacroCommand implementation.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.core:IASyncCommand</apiBaseInterface><apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Abstract <codeph>ASyncMacroCommand</codeph> implementation.

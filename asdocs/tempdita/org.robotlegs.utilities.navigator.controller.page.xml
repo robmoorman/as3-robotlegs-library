@@ -1,4 +1,4 @@
-<apiPackage id="org.robotlegs.utilities.navigator.controller.page"><apiName>org.robotlegs.utilities.navigator.controller.page</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.navigator.controller.page:NavigateToPageCommand"><apiName>NavigateToPageCommand</apiName><shortdesc>
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.utilities.navigator.controller.page"><apiName>org.robotlegs.utilities.navigator.controller.page</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.navigator.controller.page:NavigateToPageCommand"><apiName>NavigateToPageCommand</apiName><shortdesc>
 	 
 	 
 	 </shortdesc><prolog><author>r.moorman
