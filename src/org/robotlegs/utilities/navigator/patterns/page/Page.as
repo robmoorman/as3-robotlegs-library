@@ -26,5 +26,13 @@ package org.robotlegs.utilities.navigator.patterns.page
 			
 			this.name = name;
 		}
+		
+		/**
+		 * @copy org.robotlegs.utilities.navigator.patterns.page.IPage.reset()
+		 */
+		public function reset(): void
+		{
+			
+		}
 	}
 }

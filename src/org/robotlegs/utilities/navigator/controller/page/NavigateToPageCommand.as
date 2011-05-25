@@ -119,6 +119,8 @@ package org.robotlegs.utilities.navigator.controller.page
 		{
 			IEventDispatcher( evt.page ).removeEventListener( NavigatorEvent.TRANSITION_OUT_COMPLETE, onTransitionOutComplete );
 			
+			evt.page.reset();
+			
 			if( navigator.choosenPage ) {
 				navigator.currentPage = navigator.choosenPage;
 				

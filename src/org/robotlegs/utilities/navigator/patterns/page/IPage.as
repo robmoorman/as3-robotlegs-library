@@ -18,5 +18,10 @@ package org.robotlegs.utilities.navigator.patterns.page
 		 * 
 		 */
 		function get content(): DisplayObject;
+		
+		/**
+		 * 
+		 */
+		function reset(): void;
 	}
 }

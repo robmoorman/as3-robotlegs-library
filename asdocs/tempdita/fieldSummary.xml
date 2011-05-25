@@ -432,6 +432,10 @@
 	 </apiDesc></apiClassifierDetail><apiValue id="org.robotlegs.utilities.localizer.events:LocalizerEvent:LOCALIZE_DATA"><apiName>LOCALIZE_DATA</apiName><shortdesc>
 		 Dispatched when XMl or Object data should be localized.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.localizer.events.LocalizerEvent.LOCALIZE_DATA</apiData><apiType value="String"/></apiValueDef><apiDesc>
 		 Dispatched when <codeph>XMl</codeph> or <codeph>Object</codeph> data should be localized.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.localizer.events:LocalizerEvent:childInjector"><apiName>childInjector</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiType value="org.robotlegs.core:IInjector"/></apiValueDef><apiDesc>
+		 
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.localizer.events:LocalizerEvent:data"><apiName>data</apiName><shortdesc>
 		 
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiType value="Object"/></apiValueDef><apiDesc>

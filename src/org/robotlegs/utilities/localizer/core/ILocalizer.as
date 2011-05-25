@@ -1,5 +1,6 @@
 package org.robotlegs.utilities.localizer.core
 {
+	import org.robotlegs.core.IInjector;
 	import org.robotlegs.utilities.localizer.patterns.locale.ILocale;
 	
 	/**
@@ -22,8 +23,9 @@ package org.robotlegs.utilities.localizer.core
 		 * 
 		 * @param data The data to be localized.
 		 * @param prefix Optional prefix of all iterated mappings.
+		 * @param prefix Optional childInjector.
 		 */
-		function localizeCustomData( data: Object, prefix: String = '' ): void;
+		function localizeCustomData( data: Object, prefix: String = '', childInjector: IInjector = null ): void;
 		
 		/**
 		 * 

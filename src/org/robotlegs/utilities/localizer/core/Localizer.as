@@ -2,6 +2,7 @@ package org.robotlegs.utilities.localizer.core
 {
 	import flash.utils.Dictionary;
 	
+	import org.robotlegs.core.IInjector;
 	import org.robotlegs.mvcs.Actor;
 	import org.robotlegs.utilities.localizer.events.LocalizerEvent;
 	import org.robotlegs.utilities.localizer.patterns.locale.ILocale;
@@ -42,9 +43,9 @@ package org.robotlegs.utilities.localizer.core
 		/**
 		 * @copy org.robotlegs.utilities.localizer.core.ILocalizer.localizeCustomData()
 		 */
-		public function localizeCustomData( data: Object, prefix: String = '' ): void
+		public function localizeCustomData( data: Object, prefix: String = '', childInjector: IInjector = null ): void
 		{
-			dispatch( new LocalizerEvent( LocalizerEvent.LOCALIZE_DATA, null, data, prefix ));
+			dispatch( new LocalizerEvent( LocalizerEvent.LOCALIZE_DATA, null, data, prefix, childInjector ));
 		}
 		
 		 /**

@@ -3,6 +3,7 @@ package org.robotlegs.utilities.localizer.controller.data
 	import flash.utils.getDefinitionByName;
 	import flash.utils.getQualifiedClassName;
 	
+	import org.robotlegs.core.IInjector;
 	import org.robotlegs.mvcs.Command;
 	import org.robotlegs.utilities.localizer.core.ILocalizer;
 	import org.robotlegs.utilities.localizer.error.LocalizerError;
@@ -111,6 +112,7 @@ package org.robotlegs.utilities.localizer.controller.data
 		private function mapValue( name: String, value: Object, prefix: String ): void
 		{
 			var named: String = prefix + name;
+			var injector: IInjector = event.childInjector ? event.childInjector : injector;
 			
 			switch(( typeof value ).toString().toLowerCase()) {
 				case 'string':

@@ -155,6 +155,8 @@ package org.robotlegs.utilities.navigator.core
 			else
 				throw new NavigatorError( 'Page already added under the name ' + page.name + '!' );
 			
+			page.reset();
+			
 			if( transitionId )
 				_transitionMapByPageName[ page.name ] = transitionId;
 		}

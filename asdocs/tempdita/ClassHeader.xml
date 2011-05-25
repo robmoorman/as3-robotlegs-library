@@ -1455,7 +1455,7 @@
             <asMetadata/>
          </prolog>
             <meta name="keywords"
-               content="LocalizerEvent,org.robotlegs.utilities.localizer.events.LocalizerEvent,LOCALIZE_DATA,data,locale,prefix,clone"/>
+               content="LocalizerEvent,org.robotlegs.utilities.localizer.events.LocalizerEvent,LOCALIZE_DATA,childInjector,data,locale,prefix,clone"/>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiAccess value="public"/>
@@ -1818,7 +1818,7 @@
             <asMetadata/>
          </prolog>
             <meta name="keywords"
-               content="Page,org.robotlegs.utilities.navigator.patterns.page.Page,content,content,name"/>
+               content="Page,org.robotlegs.utilities.navigator.patterns.page.Page,content,content,name,reset,reset"/>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiAccess value="public"/>
@@ -1854,7 +1854,7 @@
             <asMetadata/>
          </prolog>
             <meta name="keywords"
-               content="IPage,org.robotlegs.utilities.navigator.patterns.page.IPage,content,content,name"/>
+               content="IPage,org.robotlegs.utilities.navigator.patterns.page.IPage,content,content,name,reset,reset"/>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiInterface/>
