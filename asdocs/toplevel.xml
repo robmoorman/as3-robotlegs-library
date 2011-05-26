@@ -2797,6 +2797,12 @@
 <copy><![CDATA[org.robotlegs.utilities.styles.core.IStyles.addStyle()
 		 ]]></copy>
 </method>
+<method name='getStyleSheet' fullname='org.robotlegs.utilities.styles.core:Styles/getStyleSheet' isStatic='true' isFinal='false' isOverride='false'  result_type='flash.text:StyleSheet'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.styles.core.IStyles.styleSheet
+		 ]]></copy>
+</method>
 <method name='loadStyle' fullname='org.robotlegs.utilities.styles.core:Styles/loadStyle' isStatic='false' isFinal='false' isOverride='false'  param_names='url;closure' param_types='String;Function' param_defaults='undefined;null' result_type='void'>
 <description><![CDATA[
 		 ]]></description>
@@ -2827,7 +2833,7 @@
 		 ]]></description>
 <private><![CDATA[]]></private>
 </field>
-<field name='_styleSheet' fullname='org.robotlegs.utilities.styles.core:Styles/private:_styleSheet' type='flash.text:StyleSheet' isStatic='false' isConst='false' >
+<field name='_styleSheet' fullname='org.robotlegs.utilities.styles.core:Styles/private:_styleSheet' type='flash.text:StyleSheet' isStatic='true' isConst='false' >
 <description><![CDATA[
 		 ]]></description>
 <private><![CDATA[]]></private>
@@ -3899,11 +3905,6 @@
 <param><![CDATA[autoSize
 		 ]]></param>
 </method>
-<method name='onPostConstruct' fullname='org.robotlegs.utilities.styles.view:StylesTextfield/onPostConstruct' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
-<description><![CDATA[
-		 
-		 ]]></description>
-</method>
 <method name='htmlText' fullname='org.robotlegs.utilities.styles.view:StylesTextfield/htmlText/set' isStatic='false' isFinal='false' isOverride='true'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
 <description><![CDATA[
 		 ]]></description>
@@ -3923,10 +3924,5 @@
 <description><![CDATA[
 		 ]]></description>
 <private><![CDATA[]]></private>
-</field>
-<field name='styles' fullname='org.robotlegs.utilities.styles.view:StylesTextfield/styles' type='org.robotlegs.utilities.styles.core:IStyles' isStatic='false' isConst='false' >
-<description><![CDATA[
-		 
-		 ]]></description>
 </field>
 </asdoc>

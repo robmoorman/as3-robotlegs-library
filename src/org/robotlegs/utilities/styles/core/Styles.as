@@ -17,6 +17,13 @@ package org.robotlegs.utilities.styles.core
 	{
 		/**
 		 * @copy org.robotlegs.utilities.styles.core.IStyles.styleSheet
+		 */
+		public static function getStyleSheet(): StyleSheet {
+			return _styleSheet;
+		}
+		
+		/**
+		 * @copy org.robotlegs.utilities.styles.core.IStyles.styleSheet
 		 */		
 		public function get styleSheet(): StyleSheet {
 			return _styleSheet;
@@ -31,12 +38,12 @@ package org.robotlegs.utilities.styles.core
 		/**
 		 * @private
 		 */
-		private var _styleMap: Dictionary;
+		private static var _styleSheet: StyleSheet;
 		
 		/**
 		 * @private
 		 */
-		private var _styleSheet: StyleSheet;
+		private var _styleMap: Dictionary;
 		
 		/**
 		 * @private

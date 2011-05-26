@@ -789,11 +789,7 @@
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>flash.text:TextField</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 
 	 
-	 </apiDesc></apiClassifierDetail><apiValue id="org.robotlegs.utilities.styles.view:StylesTextfield:styles"><apiName>styles</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.styles.core:IStyles</apiValueClassifier></apiValueDef><apiDesc>
-		 
-		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.styles.view:StylesTextfield:htmlText:set"><apiName>htmlText</apiName><shortdesc>
+	 </apiDesc></apiClassifierDetail><apiValue id="org.robotlegs.utilities.styles.view:StylesTextfield:htmlText:set"><apiName>htmlText</apiName><shortdesc>
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiIsOverride/><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="write"/><apiType value="String"/></apiValueDef><apiDesc>
 		 </apiDesc></apiValueDetail><apiInheritDoc/></apiValue><apiValue id="org.robotlegs.utilities.styles.view:StylesTextfield:text:set"><apiName>text</apiName><shortdesc>
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiIsOverride/><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="write"/><apiType value="String"/></apiValueDef><apiDesc>

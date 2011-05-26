@@ -1736,6 +1736,8 @@
 		 Constructor.
 		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.robotlegs.utilities.styles.core:Styles:addStyle"><apiName>addStyle</apiName><shortdesc conref="org.robotlegs.utilities.styles.core.IStyles.addStyle()">
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>styleSheet</apiItemName><apiType value="flash.text:StyleSheet"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.styles.core.IStyles.addStyle()">
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.styles.core:Styles:getStyleSheet"><apiName>getStyleSheet</apiName><shortdesc conref="org.robotlegs.utilities.styles.core.IStyles.styleSheet">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiStatic/><apiReturn><apiType value="flash.text:StyleSheet"/></apiReturn></apiOperationDef><apiDesc conref="org.robotlegs.utilities.styles.core.IStyles.styleSheet">
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.styles.core:Styles:loadStyle"><apiName>loadStyle</apiName><shortdesc conref="org.robotlegs.utilities.styles.core.IStyles.loadStyle()">
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>closure</apiItemName><apiType value="Function"/><apiData>null</apiData></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.styles.core.IStyles.loadStyle()">
 		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.robotlegs.utilities.styles.core:Styles:assetLoader"><apiName>assetLoader</apiName><shortdesc>
@@ -1781,15 +1783,7 @@
 		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>styleName</apiItemName><apiType value="String"/><apiData>null</apiData><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>autoSize</apiItemName><apiType value="String"/><apiData>unknown</apiData><apiDesc>	 </apiDesc></apiParam></apiConstructorDef><apiDesc>
 		 Constructor.
 		 
-		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.robotlegs.utilities.styles.view:StylesTextfield:onPostConstruct"><apiName>onPostConstruct</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
-		 
-		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.robotlegs.utilities.styles.view:StylesTextfield:styles"><apiName>styles</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.styles.core:IStyles</apiValueClassifier></apiValueDef><apiDesc>
-		 
-		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.styles.view:StylesTextfield:htmlText:set"><apiName>htmlText</apiName><shortdesc>
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiValue id="org.robotlegs.utilities.styles.view:StylesTextfield:htmlText:set"><apiName>htmlText</apiName><shortdesc>
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiIsOverride/><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="write"/><apiType value="String"/></apiValueDef><apiDesc>
 		 </apiDesc></apiValueDetail><apiInheritDoc/></apiValue><apiValue id="org.robotlegs.utilities.styles.view:StylesTextfield:text:set"><apiName>text</apiName><shortdesc>
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiIsOverride/><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="write"/><apiType value="String"/></apiValueDef><apiDesc>

@@ -3,7 +3,7 @@ package org.robotlegs.utilities.styles.view
 	import flash.text.TextField;
 	import flash.text.TextFieldAutoSize;
 	
-	import org.robotlegs.utilities.styles.core.IStyles;
+	import org.robotlegs.utilities.styles.core.Styles;
 
 	/**
 	 * 
@@ -27,15 +27,11 @@ package org.robotlegs.utilities.styles.view
 				super.htmlText = _styleName != null ? '<span class="' + _styleName + '">' + value + '</span>' : value;
 			}
 			else {
-				_text = value;
+				super.htmlText = value;
 			}
+			
+			embedFonts = true;
 		}
-		
-		[Inject]
-		/**
-		 * 
-		 */
-		public var styles: IStyles;
 		
 		/**
 		 * @private
@@ -59,22 +55,10 @@ package org.robotlegs.utilities.styles.view
 			
 			_styleName = styleName;
 			
+			styleSheet = Styles.getStyleSheet();
 			embedFonts = true;
 			
 			this.autoSize = autoSize;
-		}
-		
-		[PostConstruct]
-		/**
-		 * 
-		 */
-		public function onPostConstruct(): void
-		{
-			styleSheet = styles.styleSheet;
-			
-			if( _text ) {
-				htmlText = _text;
-			}
 		}
 	}
 }

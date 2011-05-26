@@ -1873,7 +1873,7 @@
          </apiClassifierDetail>
          <Keywords>
             <meta name="keywords"
-                  content="IStyles,org.robotlegs.utilities.styles.core.IStyles,assetLoader,styleSheet,styleSheet,addStyle,addStyle,loadStyle,loadStyle"/>
+                  content="IStyles,org.robotlegs.utilities.styles.core.IStyles,assetLoader,styleSheet,styleSheet,addStyle,addStyle,getStyleSheet,loadStyle,loadStyle"/>
          </Keywords>
       </apiClassifier>
       <apiClassifier id="org.robotlegs.utilities.styles.core:Styles">
@@ -1901,7 +1901,7 @@
          </apiClassifierDetail>
          <Keywords>
             <meta name="keywords"
-                  content="Styles,org.robotlegs.utilities.styles.core.Styles,assetLoader,styleSheet,styleSheet,addStyle,addStyle,loadStyle,loadStyle"/>
+                  content="Styles,org.robotlegs.utilities.styles.core.Styles,assetLoader,styleSheet,styleSheet,addStyle,addStyle,getStyleSheet,loadStyle,loadStyle"/>
          </Keywords>
       </apiClassifier>
    </apiPackage>
@@ -1994,7 +1994,7 @@
          </apiClassifierDetail>
          <Keywords>
             <meta name="keywords"
-                  content="StylesTextfield,org.robotlegs.utilities.styles.view.StylesTextfield,htmlText,styles,text,onPostConstruct"/>
+                  content="StylesTextfield,org.robotlegs.utilities.styles.view.StylesTextfield,htmlText,text"/>
          </Keywords>
       </apiClassifier>
    </apiPackage>

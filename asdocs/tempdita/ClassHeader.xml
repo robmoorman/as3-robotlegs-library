@@ -2414,7 +2414,7 @@
             <asMetadata/>
          </prolog>
             <meta name="keywords"
-               content="IStyles,org.robotlegs.utilities.styles.core.IStyles,assetLoader,styleSheet,styleSheet,addStyle,addStyle,loadStyle,loadStyle"/>
+               content="IStyles,org.robotlegs.utilities.styles.core.IStyles,assetLoader,styleSheet,styleSheet,addStyle,addStyle,getStyleSheet,loadStyle,loadStyle"/>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiInterface/>
@@ -2452,7 +2452,7 @@
             <asMetadata/>
          </prolog>
             <meta name="keywords"
-               content="Styles,org.robotlegs.utilities.styles.core.Styles,assetLoader,styleSheet,styleSheet,addStyle,addStyle,loadStyle,loadStyle"/>
+               content="Styles,org.robotlegs.utilities.styles.core.Styles,assetLoader,styleSheet,styleSheet,addStyle,addStyle,getStyleSheet,loadStyle,loadStyle"/>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiAccess value="public"/>
@@ -2572,7 +2572,7 @@
             <asMetadata/>
          </prolog>
             <meta name="keywords"
-               content="StylesTextfield,org.robotlegs.utilities.styles.view.StylesTextfield,htmlText,styles,text,onPostConstruct"/>
+               content="StylesTextfield,org.robotlegs.utilities.styles.view.StylesTextfield,htmlText,text"/>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiAccess value="public"/>
