@@ -642,6 +642,17 @@
 		 
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.router.events:RouterEvent</apiValueClassifier></apiValueDef><apiDesc>
 		 
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.robotlegs.utilities.router.controller.route:RemoveEventFromRouteCommand"><apiName>RemoveEventFromRouteCommand</apiName><shortdesc>
+	 
+	 
+	 </shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 
+	 
+	 </apiDesc></apiClassifierDetail><apiValue id="org.robotlegs.utilities.router.controller.route:RemoveEventFromRouteCommand:event"><apiName>event</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.router.events:RouterEvent</apiValueClassifier></apiValueDef><apiDesc>
+		 
 		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage><apiPackage id="org.robotlegs.utilities.router.core"><apiName>org.robotlegs.utilities.router.core</apiName><apiClassifier id="org.robotlegs.utilities.router.core:IRouter"><apiName>IRouter</apiName><shortdesc>
 	 Abstract IRouter interface.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
@@ -682,6 +693,9 @@
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.router.events:RouterEvent:NO_ROUTE_FOUND"><apiName>NO_ROUTE_FOUND</apiName><shortdesc>
 		 Dispatched when the changed address doesn't match with any Route.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.router.events.RouterEvent.NO_ROUTE_FOUND</apiData><apiType value="String"/></apiValueDef><apiDesc>
 		 Dispatched when the changed address doesn't match with any <codeph>Route</codeph>.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.router.events:RouterEvent:REMOVE_EVENT_FROM_ROUTE"><apiName>REMOVE_EVENT_FROM_ROUTE</apiName><shortdesc>
+		 Dispatched when a Route should be unmapped from a Command.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.router.events.RouterEvent.REMOVE_EVENT_FROM_ROUTE</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Dispatched when a <codeph>Route</codeph> should be unmapped from a <codeph>Command</codeph>.
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.router.events:RouterEvent:payload"><apiName>payload</apiName><shortdesc>
 		 
 		 

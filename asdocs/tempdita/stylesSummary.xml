@@ -810,6 +810,19 @@
             <asMetadata/>
          </prolog>
       </apiClassifier>
+      <apiClassifier id="org.robotlegs.utilities.router.controller.route:RemoveEventFromRouteCommand">
+         <apiName>RemoveEventFromRouteCommand</apiName>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <prolog>
+            <asMetadata/>
+         </prolog>
+      </apiClassifier>
    </apiPackage>
    <apiPackage id="org.robotlegs.utilities.router.core">
       <apiName>org.robotlegs.utilities.router.core</apiName>

@@ -44,6 +44,15 @@ package org.robotlegs.utilities.router.core
 		/**
 		 * 
 		 * 
+		 * @param type
+		 * @param commandClass
+		 * @return 
+		 */
+		function removeRoute( type: String, commandClass: Class ): void;
+		
+		/**
+		 * 
+		 * 
 		 * @param value
 		 */
 		function changeAddress( value: String ): void;

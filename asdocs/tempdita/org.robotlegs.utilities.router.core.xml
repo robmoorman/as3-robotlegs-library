@@ -36,6 +36,13 @@
 		 
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
 		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.router.core:IRouter:org.robotlegs.utilities.router.core:IRouter:removeRoute"><apiName>removeRoute</apiName><shortdesc>
+		 
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>
+		 </apiDesc><apiType value="void"/></apiReturn><apiParam><apiItemName>type</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>commandClass</apiItemName><apiType value="Class"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 
+		 
 		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.robotlegs.utilities.router.core:IRouter:org.robotlegs.utilities.router.core:IRouter:active:get"><apiName>active</apiName><shortdesc>
 		 
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="Boolean"/></apiValueDef><apiDesc>
@@ -64,6 +71,8 @@
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>value</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.router.core.IRouter.changeBrowserTitle()">
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.router.core:Router:deactivate"><apiName>deactivate</apiName><shortdesc conref="org.robotlegs.utilities.router.core.IRouter.deactivate()">
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc conref="org.robotlegs.utilities.router.core.IRouter.deactivate()">
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.router.core:Router:removeRoute"><apiName>removeRoute</apiName><shortdesc conref="org.robotlegs.utilities.router.core.IRouter.removeRoute()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>type</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>commandClass</apiItemName><apiType value="Class"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.router.core.IRouter.removeRoute()">
 		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.robotlegs.utilities.router.core:Router:active:get"><apiName>active</apiName><shortdesc conref="org.robotlegs.utilities.router.core.IRouter.active">
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="Boolean"/></apiValueDef><apiDesc conref="org.robotlegs.utilities.router.core.IRouter.active">
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.router.core:Router:pathNames:get"><apiName>pathNames</apiName><shortdesc conref="org.robotlegs.utilities.router.core.IRouter.pathNames">

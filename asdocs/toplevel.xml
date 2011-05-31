@@ -1274,6 +1274,11 @@
 		 Dispatched when the changed address doesn't match with any <code>Route</code>.
 		 ]]></description>
 </field>
+<field name='REMOVE_EVENT_FROM_ROUTE' fullname='org.robotlegs.utilities.router.events:RouterEvent/REMOVE_EVENT_FROM_ROUTE' type='String' isStatic='true' isConst='true' defaultValue='org.robotlegs.utilities.router.events.RouterEvent.REMOVE_EVENT_FROM_ROUTE' >
+<description><![CDATA[
+		 Dispatched when a <code>Route</code> should be unmapped from a <code>Command</code>.
+		 ]]></description>
+</field>
 <field name='payload' fullname='org.robotlegs.utilities.router.events:RouterEvent/payload' type='Object' isStatic='false' isConst='false' >
 <description><![CDATA[
 		 
@@ -1372,6 +1377,18 @@
 		 
 		 ]]></description>
 </method>
+<method name='removeRoute' fullname='org.robotlegs.utilities.router.core:IRouter/org.robotlegs.utilities.router.core:IRouter:removeRoute' isStatic='false' isFinal='false' isOverride='false'  param_names='type;commandClass' param_types='String;Class' param_defaults='undefined;undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[type
+		 ]]></param>
+<param><![CDATA[commandClass
+		 ]]></param>
+<return><![CDATA[
+		 ]]></return>
+</method>
 <method name='active' fullname='org.robotlegs.utilities.router.core:IRouter/org.robotlegs.utilities.router.core:IRouter:active/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Boolean'>
 <description><![CDATA[
 		 
@@ -1458,6 +1475,12 @@
 		 ]]></description>
 <param><![CDATA[evt
 		 ]]></param>
+</method>
+<method name='removeRoute' fullname='org.robotlegs.utilities.router.core:Router/removeRoute' isStatic='false' isFinal='false' isOverride='false'  param_names='type;commandClass' param_types='String;Class' param_defaults='undefined;undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.router.core.IRouter.removeRoute()
+		 ]]></copy>
 </method>
 <method name='sortRoutes' fullname='org.robotlegs.utilities.router.core:Router/private:sortRoutes' isStatic='false' isFinal='false' isOverride='false'  param_names='x;y' param_types='org.robotlegs.utilities.router.patterns.route:Route;org.robotlegs.utilities.router.patterns.route:Route' param_defaults='undefined;undefined' result_type='Number'>
 <description><![CDATA[
@@ -3259,6 +3282,42 @@
 <copy><![CDATA[org.robotlegs.utilities.navigator.patterns.page.IPage.content
 		 ]]></copy>
 </method>
+<classRec name='RemoveEventFromRouteCommand' fullname='org.robotlegs.utilities.router.controller.route:RemoveEventFromRouteCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/router/controller/route/RemoveEventFromRouteCommand.as' namespace='org.robotlegs.utilities.router.controller.route' access='public' baseclass='org.robotlegs.mvcs:Command' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='execute' fullname='org.robotlegs.utilities.router.controller.route:RemoveEventFromRouteCommand/execute' isStatic='false' isFinal='false' isOverride='true'  result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<field name='event' fullname='org.robotlegs.utilities.router.controller.route:RemoveEventFromRouteCommand/event' type='org.robotlegs.utilities.router.events:RouterEvent' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 
+		 ]]></description>
+</field>
+<classRec name='MapEventToRouteCommand' fullname='org.robotlegs.utilities.router.controller.route:MapEventToRouteCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/router/controller/route/MapEventToRouteCommand.as' namespace='org.robotlegs.utilities.router.controller.route' access='public' baseclass='org.robotlegs.mvcs:Command' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Map a <code>Command</code> to a specific <code>Route</code>.
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='execute' fullname='org.robotlegs.utilities.router.controller.route:MapEventToRouteCommand/execute' isStatic='false' isFinal='false' isOverride='true'  result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<field name='event' fullname='org.robotlegs.utilities.router.controller.route:MapEventToRouteCommand/event' type='org.robotlegs.utilities.router.events:RouterEvent' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 
+		 ]]></description>
+</field>
 <classRec name='ASyncCommand' fullname='org.robotlegs.mvcs:ASyncCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/mvcs/ASyncCommand.as' namespace='org.robotlegs.mvcs' access='public' baseclass='org.robotlegs.mvcs:Command' interfaces='org.robotlegs.core:IASyncCommand' isFinal='false' isDynamic='false' >
 <description><![CDATA[
 	 Abstract <code>ASyncCommand</code> implementation.
@@ -3492,24 +3551,6 @@
 		 ]]></description>
 <inheritDoc><![CDATA[]]></inheritDoc>
 </method>
-<classRec name='MapEventToRouteCommand' fullname='org.robotlegs.utilities.router.controller.route:MapEventToRouteCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/router/controller/route/MapEventToRouteCommand.as' namespace='org.robotlegs.utilities.router.controller.route' access='public' baseclass='org.robotlegs.mvcs:Command' isFinal='false' isDynamic='false' >
-<description><![CDATA[
-	 Map a <code>Command</code> to a specific <code>Route</code>.
-	 
-	 ]]></description>
-<author><![CDATA[r.moorman
-	 ]]></author>
-</classRec>
-<method name='execute' fullname='org.robotlegs.utilities.router.controller.route:MapEventToRouteCommand/execute' isStatic='false' isFinal='false' isOverride='true'  result_type='void'>
-<description><![CDATA[
-		 ]]></description>
-<inheritDoc><![CDATA[]]></inheritDoc>
-</method>
-<field name='event' fullname='org.robotlegs.utilities.router.controller.route:MapEventToRouteCommand/event' type='org.robotlegs.utilities.router.events:RouterEvent' isStatic='false' isConst='false' >
-<description><![CDATA[
-		 
-		 ]]></description>
-</field>
 <classRec name='InstallAssetLoaderCommand' fullname='org.robotlegs.utilities.assetloader.controller.install:InstallAssetLoaderCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/controller/install/InstallAssetLoaderCommand.as' namespace='org.robotlegs.utilities.assetloader.controller.install' access='public' baseclass='org.robotlegs.mvcs:Command' isFinal='false' isDynamic='false' >
 <description><![CDATA[
 	 Map dependencies of <code>AssetLoader</code>.
@@ -3548,6 +3589,30 @@
 		 ]]></description>
 <inheritDoc><![CDATA[]]></inheritDoc>
 </method>
+<classRec name='InstallStylesCommand' fullname='org.robotlegs.utilities.styles.controller.install:InstallStylesCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/styles/controller/install/InstallStylesCommand.as' namespace='org.robotlegs.utilities.styles.controller.install' access='public' baseclass='org.robotlegs.mvcs:Command' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Map dependencies of <code>Styles</code>.
+	 
+	 <p>The following depedencies are available after executing this <code>Command</code>:</p>
+	 
+	 <ul>
+	 	<li><code>IStyles</code></li>
+	 </ul>
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='execute' fullname='org.robotlegs.utilities.styles.controller.install:InstallStylesCommand/execute' isStatic='false' isFinal='false' isOverride='true'  result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
+<field name='viewMap' fullname='org.robotlegs.utilities.styles.controller.install:InstallStylesCommand/viewMap' type='org.robotlegs.core:IViewMap' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 
+		 ]]></description>
+</field>
 <classRec name='NavigateToPageCommand' fullname='org.robotlegs.utilities.navigator.controller.page:NavigateToPageCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/navigator/controller/page/NavigateToPageCommand.as' namespace='org.robotlegs.utilities.navigator.controller.page' access='public' baseclass='org.robotlegs.mvcs:Command' isFinal='false' isDynamic='false' >
 <description><![CDATA[
 	 
@@ -3655,49 +3720,6 @@
 <field name='localizer' fullname='org.robotlegs.utilities.localizer.controller.data:LocalizeDataCommand/localizer' type='org.robotlegs.utilities.localizer.core:ILocalizer' isStatic='false' isConst='false' >
 <description><![CDATA[
 		 Reference to the <code>Localizer</code> utility.
-		 ]]></description>
-</field>
-<classRec name='InstallLayersCommand' fullname='org.robotlegs.utilities.layers.controller.install:InstallLayersCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/layers/controller/install/InstallLayersCommand.as' namespace='org.robotlegs.utilities.layers.controller.install' access='public' baseclass='org.robotlegs.mvcs:Command' isFinal='false' isDynamic='false' >
-<description><![CDATA[
-	 Map dependencies of <code>Layers</code>.
-	 
-	 <p>The following depedencies are available after executing this <code>Command</code>:</p>
-	 
-	 <ul>
-	 	<li><code>ILayers</code></li>
-	 </ul>
-	 
-	 ]]></description>
-<author><![CDATA[r.moorman
-	 ]]></author>
-</classRec>
-<method name='execute' fullname='org.robotlegs.utilities.layers.controller.install:InstallLayersCommand/execute' isStatic='false' isFinal='false' isOverride='true'  result_type='void'>
-<description><![CDATA[
-		 ]]></description>
-<inheritDoc><![CDATA[]]></inheritDoc>
-</method>
-<classRec name='InstallStylesCommand' fullname='org.robotlegs.utilities.styles.controller.install:InstallStylesCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/styles/controller/install/InstallStylesCommand.as' namespace='org.robotlegs.utilities.styles.controller.install' access='public' baseclass='org.robotlegs.mvcs:Command' isFinal='false' isDynamic='false' >
-<description><![CDATA[
-	 Map dependencies of <code>Styles</code>.
-	 
-	 <p>The following depedencies are available after executing this <code>Command</code>:</p>
-	 
-	 <ul>
-	 	<li><code>IStyles</code></li>
-	 </ul>
-	 
-	 ]]></description>
-<author><![CDATA[r.moorman
-	 ]]></author>
-</classRec>
-<method name='execute' fullname='org.robotlegs.utilities.styles.controller.install:InstallStylesCommand/execute' isStatic='false' isFinal='false' isOverride='true'  result_type='void'>
-<description><![CDATA[
-		 ]]></description>
-<inheritDoc><![CDATA[]]></inheritDoc>
-</method>
-<field name='viewMap' fullname='org.robotlegs.utilities.styles.controller.install:InstallStylesCommand/viewMap' type='org.robotlegs.core:IViewMap' isStatic='false' isConst='false' >
-<description><![CDATA[
-		 
 		 ]]></description>
 </field>
 <classRec name='CSSAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:CSSAsset' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/patterns/asset/type/CSSAsset.as' namespace='org.robotlegs.utilities.assetloader.patterns.asset.type' access='public' baseclass='org.robotlegs.utilities.assetloader.patterns.asset:Asset' isFinal='false' isDynamic='false' >
@@ -3869,6 +3891,25 @@
 		 ]]></description>
 <private><![CDATA[]]></private>
 </field>
+<classRec name='InstallLayersCommand' fullname='org.robotlegs.utilities.layers.controller.install:InstallLayersCommand' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/layers/controller/install/InstallLayersCommand.as' namespace='org.robotlegs.utilities.layers.controller.install' access='public' baseclass='org.robotlegs.mvcs:Command' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 Map dependencies of <code>Layers</code>.
+	 
+	 <p>The following depedencies are available after executing this <code>Command</code>:</p>
+	 
+	 <ul>
+	 	<li><code>ILayers</code></li>
+	 </ul>
+	 
+	 ]]></description>
+<author><![CDATA[r.moorman
+	 ]]></author>
+</classRec>
+<method name='execute' fullname='org.robotlegs.utilities.layers.controller.install:InstallLayersCommand/execute' isStatic='false' isFinal='false' isOverride='true'  result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<inheritDoc><![CDATA[]]></inheritDoc>
+</method>
 <classRec name='AssetUtil' fullname='org.robotlegs.utilities.assetloader.utils:AssetUtil' sourcefile='/Users/rmoorman/Repositories/github/as3-robotlegs-library/src/org/robotlegs/utilities/assetloader/utils/AssetUtil.as' namespace='org.robotlegs.utilities.assetloader.utils' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
 <description><![CDATA[
 	 Utilities for <code>Asset</code> related functionalities.

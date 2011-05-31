@@ -2,6 +2,7 @@ package org.robotlegs.utilities.router.controller.install
 {
 	import org.robotlegs.mvcs.Command;
 	import org.robotlegs.utilities.router.controller.route.MapEventToRouteCommand;
+	import org.robotlegs.utilities.router.controller.route.RemoveEventFromRouteCommand;
 	import org.robotlegs.utilities.router.core.IRouter;
 	import org.robotlegs.utilities.router.core.Router;
 	import org.robotlegs.utilities.router.events.RouterEvent;
@@ -26,6 +27,7 @@ package org.robotlegs.utilities.router.controller.install
 			injector.mapSingletonOf( IRouter, Router );
 			
 			commandMap.mapEvent( RouterEvent.MAP_EVENT_TO_ROUTE, MapEventToRouteCommand, RouterEvent );
+			commandMap.mapEvent( RouterEvent.REMOVE_EVENT_FROM_ROUTE, RemoveEventFromRouteCommand, RouterEvent );
 		}
 	}
 }

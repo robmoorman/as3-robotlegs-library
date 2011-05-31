@@ -19,6 +19,12 @@ package org.robotlegs.utilities.router.events
 		 */
 		public static const MAP_EVENT_TO_ROUTE: String = 'org.robotlegs.utilities.router.events.RouterEvent.MAP_EVENT_TO_ROUTE';
 		
+		
+		/**
+		 * Dispatched when a <code>Route</code> should be unmapped from a <code>Command</code>.
+		 */
+		public static const REMOVE_EVENT_FROM_ROUTE: String = 'org.robotlegs.utilities.router.events.RouterEvent.REMOVE_EVENT_FROM_ROUTE';
+		
 		/**
 		 * 
 		 * 

@@ -1589,7 +1589,34 @@
          </apiClassifierDetail>
          <Keywords>
             <meta name="keywords"
-                  content="MapEventToRouteCommand,org.robotlegs.utilities.router.controller.route.MapEventToRouteCommand,event,execute"/>
+                  content="MapEventToRouteCommand,org.robotlegs.utilities.router.controller.route.MapEventToRouteCommand,event,event,execute,execute"/>
+         </Keywords>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.utilities.router.controller.route:RemoveEventFromRouteCommand">
+         <apiName>RemoveEventFromRouteCommand</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+         </apiClassifierDetail>
+         <Keywords>
+            <meta name="keywords"
+                  content="RemoveEventFromRouteCommand,org.robotlegs.utilities.router.controller.route.RemoveEventFromRouteCommand,event,event,execute,execute"/>
          </Keywords>
       </apiClassifier>
    </apiPackage>
@@ -1625,7 +1652,7 @@
          </related-links>
          <Keywords>
             <meta name="keywords"
-                  content="IRouter,org.robotlegs.utilities.router.core.IRouter,active,active,pathNames,pathNames,activate,activate,addRoute,addRoute,changeAddress,changeAddress,changeAddressOnly,changeAddressOnly,changeBrowserTitle,changeBrowserTitle,deactivate,deactivate"/>
+                  content="IRouter,org.robotlegs.utilities.router.core.IRouter,active,active,pathNames,pathNames,activate,activate,addRoute,addRoute,changeAddress,changeAddress,changeAddressOnly,changeAddressOnly,changeBrowserTitle,changeBrowserTitle,deactivate,deactivate,removeRoute,removeRoute"/>
          </Keywords>
       </apiClassifier>
       <apiClassifier id="org.robotlegs.utilities.router.core:Router">
@@ -1657,7 +1684,7 @@
          </related-links>
          <Keywords>
             <meta name="keywords"
-                  content="Router,org.robotlegs.utilities.router.core.Router,active,active,pathNames,pathNames,activate,activate,addRoute,addRoute,changeAddress,changeAddress,changeAddressOnly,changeAddressOnly,changeBrowserTitle,changeBrowserTitle,deactivate,deactivate"/>
+                  content="Router,org.robotlegs.utilities.router.core.Router,active,active,pathNames,pathNames,activate,activate,addRoute,addRoute,changeAddress,changeAddress,changeAddressOnly,changeAddressOnly,changeBrowserTitle,changeBrowserTitle,deactivate,deactivate,removeRoute,removeRoute"/>
          </Keywords>
       </apiClassifier>
    </apiPackage>
@@ -1719,7 +1746,7 @@
          </apiClassifierDetail>
          <Keywords>
             <meta name="keywords"
-                  content="RouterEvent,org.robotlegs.utilities.router.events.RouterEvent,MAP_EVENT_TO_ROUTE,NO_ROUTE_FOUND,payload,clone"/>
+                  content="RouterEvent,org.robotlegs.utilities.router.events.RouterEvent,MAP_EVENT_TO_ROUTE,NO_ROUTE_FOUND,REMOVE_EVENT_FROM_ROUTE,payload,clone"/>
          </Keywords>
       </apiClassifier>
    </apiPackage>

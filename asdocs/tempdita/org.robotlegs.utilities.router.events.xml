@@ -17,6 +17,9 @@
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.router.events:RouterEvent:NO_ROUTE_FOUND"><apiName>NO_ROUTE_FOUND</apiName><shortdesc>
 		 Dispatched when the changed address doesn't match with any Route.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.router.events.RouterEvent.NO_ROUTE_FOUND</apiData><apiType value="String"/></apiValueDef><apiDesc>
 		 Dispatched when the changed address doesn't match with any <codeph>Route</codeph>.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.router.events:RouterEvent:REMOVE_EVENT_FROM_ROUTE"><apiName>REMOVE_EVENT_FROM_ROUTE</apiName><shortdesc>
+		 Dispatched when a Route should be unmapped from a Command.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.robotlegs.utilities.router.events.RouterEvent.REMOVE_EVENT_FROM_ROUTE</apiData><apiType value="String"/></apiValueDef><apiDesc>
+		 Dispatched when a <codeph>Route</codeph> should be unmapped from a <codeph>Command</codeph>.
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.router.events:RouterEvent:payload"><apiName>payload</apiName><shortdesc>
 		 
 		 

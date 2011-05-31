@@ -1092,6 +1092,24 @@
 	 
 	 </apiDesc>
       </apiClassifier>
+      <apiClassifier id="org.robotlegs.utilities.router.controller.route:RemoveEventFromRouteCommand">
+         <apiName>RemoveEventFromRouteCommand</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 
+	 
+	 </apiDesc>
+      </apiClassifier>
    </apiPackage>
    <apiPackage id="org.robotlegs.utilities.router.core">
       <apiName>org.robotlegs.utilities.router.core</apiName>

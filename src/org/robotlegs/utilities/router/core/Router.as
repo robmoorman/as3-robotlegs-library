@@ -81,10 +81,31 @@ package org.robotlegs.utilities.router.core
 			_routes.push( route );
 			_routes.sort( sortRoutes );
 			
-			if( commandClass )
+			if( commandClass ) {
 				dispatch( new RouterEvent( RouterEvent.MAP_EVENT_TO_ROUTE, { type:type, commandClass:commandClass }));
+			}
 			
 			return route;
+		}
+		
+		/**
+		 * @copy org.robotlegs.utilities.router.core.IRouter.removeRoute()
+		 */
+		public function removeRoute( type: String, commandClass: Class ): void
+		{
+			var route: Route;
+			
+			for each( route in _routes ) {
+				if( route.type === type ) {
+					_routes.splice( _routes.indexOf( route ), 1 );
+				}
+			}
+			
+			_routes.sort( sortRoutes );
+			
+			if( commandClass ) {
+				dispatch( new RouterEvent( RouterEvent.REMOVE_EVENT_FROM_ROUTE, { type:type, commandClass:commandClass }));
+			}
 		}
 		
 		/**
@@ -125,11 +146,11 @@ package org.robotlegs.utilities.router.core
 		private function sortRoutes( x: Route, y: Route ): Number
 		{
 			if( x.length > y.length )
-				return -1;
+				return 1;
 			else if( x.length == y.length )
 				return 0;
 			else
-				return 1;
+				return -1;
 		}
 		
 		/**
