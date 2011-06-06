@@ -1,5 +1,6 @@
 package org.robotlegs.utilities.assetloader.core
 {
+	import flash.system.LoaderContext;
 	import flash.utils.Dictionary;
 	
 	import org.robotlegs.utilities.assetloader.error.AssetLoaderError;
@@ -25,6 +26,20 @@ package org.robotlegs.utilities.assetloader.core
 	 */
 	public class AssetLoader implements IAssetLoader
 	{
+		/**
+		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.loaderContext
+		 */
+		public function get loaderContext(): LoaderContext {
+			return _loaderContext;
+		}
+		
+		/**
+		 * @private
+		 */
+		public function set loaderContext( value: LoaderContext ): void {
+			_loaderContext = value;
+		}
+
 		/**
 		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.baseUrl
 		 */
@@ -65,6 +80,16 @@ package org.robotlegs.utilities.assetloader.core
 		private var _groupMap: Dictionary;
 		
 		/**
+		 * @private
+		 */
+		private var _assetClassMap: Dictionary;
+		
+		/**
+		 * @private
+		 */
+		private var _loaderContext: LoaderContext;
+		
+		/**
 		 * Constructor.
 		 */
 		public function AssetLoader()
@@ -75,6 +100,8 @@ package org.robotlegs.utilities.assetloader.core
 			_assetMap = new Dictionary;
 			_assetMapByUrl = new Dictionary( true );
 			_groupMap = new Dictionary;
+			_assetClassMap = new Dictionary;
+			_loaderContext = null;
 		}
 		
 		/**
@@ -209,6 +236,14 @@ package org.robotlegs.utilities.assetloader.core
 		}
 		
 		/**
+		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.addAssetClass()
+		 */
+		public function addAssetClass( contains: String, assetClass: Class ): void
+		{
+			_assetClassMap[ contains ] = assetClass;
+		}
+		
+		/**
 		 * Instantiate a new <code>Asset</code>.
 		 * 
 		 * @param url The url of the <code>Asset</code>.
@@ -218,8 +253,8 @@ package org.robotlegs.utilities.assetloader.core
 		{
 			var id: String = ( _assetIds++ ).toString();
 			var prefix: String = url.indexOf( 'http://' ) == -1 && _baseUrl ? _baseUrl : '';
-			var assetClass: Class = AssetUtil.getAssetClassByExtension( String( url.split( '.' ).pop()).toLowerCase());
-			var asset: IAsset = new assetClass( id, prefix + url ) as IAsset;
+			var assetClass: Class = AssetUtil.getAssetClassByExtension( url, _assetClassMap, String( url.split( '.' ).pop()).toLowerCase());
+			var asset: IAsset = new assetClass( id, prefix + url, _loaderContext ) as IAsset;
 			
 			_assetMap[ id ] = asset;
 			_assetMapByUrl[ url ] = asset;

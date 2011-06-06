@@ -146,11 +146,11 @@ package org.robotlegs.utilities.router.core
 		private function sortRoutes( x: Route, y: Route ): Number
 		{
 			if( x.length > y.length )
-				return 1;
+				return -1;
 			else if( x.length == y.length )
 				return 0;
 			else
-				return -1;
+				return 1;
 		}
 		
 		/**
@@ -162,6 +162,8 @@ package org.robotlegs.utilities.router.core
 		{
 			if( !pathNames || !pathNames.length || !active )
 				return;
+			
+			_routes.sort( sortRoutes );
 			
 			var route: Route = getMatchedRoute( pathNames );
 			

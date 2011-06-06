@@ -303,7 +303,13 @@
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
 	 The interface definition for <codeph>AssetLoader</codeph>.
 	 
-	 </apiDesc></apiClassifierDetail><related-links><link href="" invalidHref="https.//github.com/moorinteractive/as3-robotlegs-library/wiki/assetloader.xml"><linktext>https://github.com/moorinteractive/as3-robotlegs-library/wiki/assetloader</linktext></link></related-links><apiOperation id="org.robotlegs.utilities.assetloader.core:IAssetLoader:org.robotlegs.utilities.assetloader.core:IAssetLoader:getAssetByUrl"><apiName>getAssetByUrl</apiName><shortdesc>
+	 </apiDesc></apiClassifierDetail><related-links><link href="" invalidHref="https.//github.com/moorinteractive/as3-robotlegs-library/wiki/assetloader.xml"><linktext>https://github.com/moorinteractive/as3-robotlegs-library/wiki/assetloader</linktext></link></related-links><apiOperation id="org.robotlegs.utilities.assetloader.core:IAssetLoader:org.robotlegs.utilities.assetloader.core:IAssetLoader:addAssetClass"><apiName>addAssetClass</apiName><shortdesc>
+		 
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>contains</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>assetClass</apiItemName><apiType value="Class"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:IAssetLoader:org.robotlegs.utilities.assetloader.core:IAssetLoader:getAssetByUrl"><apiName>getAssetByUrl</apiName><shortdesc>
 		 Get an Asset by it's url.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>An instance of <codeph>Asset</codeph>, <codeph>null</codeph> if not found.
 		 </apiDesc><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.asset:IAsset</apiOperationClassifier></apiReturn><apiParam><apiItemName>url</apiItemName><apiType value="String"/><apiDesc>The url of the <codeph>Asset</codeph>.
 		 </apiDesc></apiParam></apiOperationDef><apiDesc>
@@ -386,6 +392,10 @@
 		 
 		 <p>If the requiest url of an <codeph>Asset</codeph> contains 'http://'
 		 the base url will not be added to the url.</p>
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.core:IAssetLoader:org.robotlegs.utilities.assetloader.core:IAssetLoader:loaderContext:get"><apiName>loaderContext</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="flash.system:LoaderContext"/></apiValueDef><apiDesc>
+		 
 		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.robotlegs.utilities.assetloader.core:AssetLoader"><apiName>AssetLoader</apiName><shortdesc>
 	 This utility allows you to easily load external assets into your application.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.utilities.assetloader.core:IAssetLoader</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
@@ -403,7 +413,9 @@
 	 </apiDesc></apiClassifierDetail><related-links><link href="" invalidHref="https.//github.com/moorinteractive/as3-robotlegs-library/wiki/assetloader.xml"><linktext>https://github.com/moorinteractive/as3-robotlegs-library/wiki/assetloader</linktext></link></related-links><apiConstructor id="org.robotlegs.utilities.assetloader.core:AssetLoader:AssetLoader"><apiName>AssetLoader</apiName><shortdesc>
 		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>
 		 Constructor.
-		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:getAssetByUrl"><apiName>getAssetByUrl</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.getAssetByUrl()">
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:addAssetClass"><apiName>addAssetClass</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.addAssetClass()">
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>contains</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>assetClass</apiItemName><apiType value="Class"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.addAssetClass()">
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:getAssetByUrl"><apiName>getAssetByUrl</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.getAssetByUrl()">
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.asset:IAsset</apiOperationClassifier></apiReturn><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.getAssetByUrl()">
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.utilities.assetloader.core:AssetLoader:getAsset"><apiName>getAsset</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.getAsset()">
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiOperationClassifier>org.robotlegs.utilities.assetloader.patterns.asset:IAsset</apiOperationClassifier></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.getAsset()">
@@ -439,6 +451,8 @@
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.removeGroup()">
 		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.robotlegs.utilities.assetloader.core:AssetLoader:baseUrl:get"><apiName>baseUrl</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.baseUrl">
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="String"/></apiValueDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.baseUrl">
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.core:AssetLoader:loaderContext:get"><apiName>loaderContext</apiName><shortdesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.loaderContext">
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="flash.system:LoaderContext"/></apiValueDef><apiDesc conref="org.robotlegs.utilities.assetloader.core.IAssetLoader.loaderContext">
 		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.robotlegs.utilities.assetloader.core:AssetLoaderState"><apiName>AssetLoaderState</apiName><shortdesc>
 	 Loading states for Assets and Groups.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
@@ -510,7 +524,7 @@
 	 Automatic assigned type of <codeph>Asset</codeph> for loading stylesheets (css).
 	 
 	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.utilities.assetloader.patterns.asset.type:CSSAsset:CSSAsset"><apiName>CSSAsset</apiName><shortdesc>
-		 </shortdesc><prolog><asCustoms><iheritDoc/></asCustoms></prolog><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam></apiConstructorDef><apiDesc>
+		 </shortdesc><prolog><asCustoms><iheritDoc/></asCustoms></prolog><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>loaderContext</apiItemName><apiType value="flash.system:LoaderContext"/><apiData>null</apiData></apiParam></apiConstructorDef><apiDesc>
 		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.robotlegs.utilities.assetloader.patterns.asset.type:CSSAsset:protected:onComplete"><apiName>onComplete</apiName><shortdesc>
 		 </shortdesc><prolog><asCustoms><iheritDoc/></asCustoms></prolog><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiIsOverride/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>evt</apiItemName><apiType value="flash.events:Event"/></apiParam></apiOperationDef><apiDesc>
 		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.robotlegs.utilities.assetloader.patterns.asset.type:CSSAsset:styleSheet:get"><apiName>styleSheet</apiName><shortdesc>
@@ -524,7 +538,7 @@
 	 Automatic assigned type of <codeph>Asset</codeph> for loading <codeph>Bitmaps</codeph> (swf).
 	 
 	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.utilities.assetloader.patterns.asset.type:DisplayObjectAsset:DisplayObjectAsset"><apiName>DisplayObjectAsset</apiName><shortdesc>
-		 </shortdesc><prolog><asCustoms><iheritDoc/></asCustoms></prolog><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam></apiConstructorDef><apiDesc>
+		 </shortdesc><prolog><asCustoms><iheritDoc/></asCustoms></prolog><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>loaderContext</apiItemName><apiType value="flash.system:LoaderContext"/><apiData>null</apiData></apiParam></apiConstructorDef><apiDesc>
 		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.robotlegs.utilities.assetloader.patterns.asset.type:DisplayObjectAsset:protected:onComplete"><apiName>onComplete</apiName><shortdesc>
 		 </shortdesc><prolog><asCustoms><iheritDoc/></asCustoms></prolog><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiIsOverride/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>evt</apiItemName><apiType value="flash.events:Event"/></apiParam></apiOperationDef><apiDesc>
 		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.robotlegs.utilities.assetloader.patterns.asset.type:DisplayObjectAsset:displayObject:get"><apiName>displayObject</apiName><shortdesc>
@@ -538,7 +552,7 @@
 	 Automatic assigned type of <codeph>Asset</codeph> for loading <codeph>Bitmaps</codeph> (xml).
 	 
 	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.utilities.assetloader.patterns.asset.type:XMLAsset:XMLAsset"><apiName>XMLAsset</apiName><shortdesc>
-		 </shortdesc><prolog><asCustoms><iheritDoc/></asCustoms></prolog><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam></apiConstructorDef><apiDesc>
+		 </shortdesc><prolog><asCustoms><iheritDoc/></asCustoms></prolog><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>loaderContext</apiItemName><apiType value="flash.system:LoaderContext"/><apiData>null</apiData></apiParam></apiConstructorDef><apiDesc>
 		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.robotlegs.utilities.assetloader.patterns.asset.type:XMLAsset:protected:onComplete"><apiName>onComplete</apiName><shortdesc>
 		 </shortdesc><prolog><asCustoms><iheritDoc/></asCustoms></prolog><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiIsOverride/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>evt</apiItemName><apiType value="flash.events:Event"/></apiParam></apiOperationDef><apiDesc>
 		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.robotlegs.utilities.assetloader.patterns.asset.type:XMLAsset:xml:get"><apiName>xml</apiName><shortdesc>
@@ -552,7 +566,7 @@
 	 Automatic assigned type of <codeph>Asset</codeph> for loading <codeph>Bitmaps</codeph> (mp3, wav, aif).
 	 
 	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.utilities.assetloader.patterns.asset.type:SoundAsset:SoundAsset"><apiName>SoundAsset</apiName><shortdesc>
-		 </shortdesc><prolog><asCustoms><iheritDoc/></asCustoms></prolog><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam></apiConstructorDef><apiDesc>
+		 </shortdesc><prolog><asCustoms><iheritDoc/></asCustoms></prolog><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>loaderContext</apiItemName><apiType value="flash.system:LoaderContext"/><apiData>null</apiData></apiParam></apiConstructorDef><apiDesc>
 		 </apiDesc></apiConstructorDetail></apiConstructor><apiValue id="org.robotlegs.utilities.assetloader.patterns.asset.type:SoundAsset:sound:get"><apiName>sound</apiName><shortdesc>
 		 The loaded Sound.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="flash.media:Sound"/></apiValueDef><apiDesc>
 		 The loaded <codeph>Sound</codeph>.
@@ -564,7 +578,7 @@
 	 Automatic assigned type of <codeph>Asset</codeph> for loading <codeph>Bitmaps</codeph> (png, gif, jpg and jpeg).
 	 
 	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.utilities.assetloader.patterns.asset.type:BitmapAsset:BitmapAsset"><apiName>BitmapAsset</apiName><shortdesc>
-		 </shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam></apiConstructorDef><apiDesc>
+		 </shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>loaderContext</apiItemName><apiType value="flash.system:LoaderContext"/><apiData>null</apiData></apiParam></apiConstructorDef><apiDesc>
 		 </apiDesc></apiConstructorDetail><apiInheritDoc/></apiConstructor><apiOperation id="org.robotlegs.utilities.assetloader.patterns.asset.type:BitmapAsset:protected:onComplete"><apiName>onComplete</apiName><shortdesc>
 		 
 		 Abstract method to handle the loaded Asset.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiIsOverride/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>evt</apiItemName><apiType value="flash.events:Event"/><apiDesc>The <codeph>Event</codeph> that triggered this method (<codeph>Event.COMPLETE</codeph>).
@@ -590,7 +604,7 @@
 	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.utilities.assetloader.patterns.asset:Asset:Asset"><apiName>Asset</apiName><shortdesc>
 		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>id</apiItemName><apiType value="String"/><apiDesc>The id of the <codeph>Asset</codeph>.
 		 </apiDesc></apiParam><apiParam><apiItemName>url</apiItemName><apiType value="String"/><apiDesc>The url of the <codeph>Asset</codeph>.
-		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 </apiDesc></apiParam><apiParam><apiItemName>loaderContext</apiItemName><apiType value="flash.system:LoaderContext"/><apiData>null</apiData></apiParam></apiConstructorDef><apiDesc>
 		 Constructor.
 		 
 		 <p>At this point the state of the <codeph>Asset</codeph> is <codeph>INITIALIZING</codeph>.</p>
@@ -801,7 +815,8 @@
 	 
 	 </apiDesc></apiClassifierDetail><apiOperation id="org.robotlegs.utilities.assetloader.utils:AssetUtil:getAssetClassByExtension"><apiName>getAssetClassByExtension</apiName><shortdesc>
 		 Get the type of Asset depending on the file extension.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiStatic/><apiReturn><apiDesc>The type of <codeph>Asset</codeph>, default <codeph>Asset</codeph>.
-		 </apiDesc><apiType value="Class"/></apiReturn><apiParam><apiItemName>extension</apiItemName><apiType value="String"/><apiDesc>The extension of the file.
+		 </apiDesc><apiType value="Class"/></apiReturn><apiParam><apiItemName>url</apiItemName><apiType value="String"/><apiDesc>The url of the <codeph>Asset</codeph>.
+		 </apiDesc></apiParam><apiParam><apiItemName>assetClassMap</apiItemName><apiType value="flash.utils:Dictionary"/><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>extension</apiItemName><apiType value="String"/><apiDesc>The extension of the file.
 		 </apiDesc></apiParam></apiOperationDef><apiDesc>
 		 Get the type of <codeph>Asset</codeph> depending on the file extension.
 		 

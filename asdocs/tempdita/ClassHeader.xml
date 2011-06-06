@@ -272,7 +272,7 @@
             <asMetadata/>
          </prolog>
             <meta name="keywords"
-               content="IAssetLoader,org.robotlegs.utilities.assetloader.core.IAssetLoader,FAILED,INITIALIZING,LOADED,LOADING,baseUrl,baseUrl,getAsset,getAsset,getAssetByUrl,getAssetByUrl,getGroup,getGroup,hasAsset,hasAsset,hasAssetByUrl,hasAssetByUrl,hasGroup,hasGroup,instantiateAsset,instantiateGroup,load,load,loadGroup,loadGroup,removeAsset,removeAsset,removeAssetByUrl,removeAssetByUrl,removeGroup,removeGroup"/>
+               content="IAssetLoader,org.robotlegs.utilities.assetloader.core.IAssetLoader,FAILED,INITIALIZING,LOADED,LOADING,baseUrl,baseUrl,loaderContext,loaderContext,addAssetClass,addAssetClass,getAsset,getAsset,getAssetByUrl,getAssetByUrl,getGroup,getGroup,hasAsset,hasAsset,hasAssetByUrl,hasAssetByUrl,hasGroup,hasGroup,instantiateAsset,instantiateGroup,load,load,loadGroup,loadGroup,removeAsset,removeAsset,removeAssetByUrl,removeAssetByUrl,removeGroup,removeGroup"/>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiInterface/>
@@ -314,7 +314,7 @@
             <asMetadata/>
          </prolog>
             <meta name="keywords"
-               content="AssetLoader,org.robotlegs.utilities.assetloader.core.AssetLoader,FAILED,INITIALIZING,LOADED,LOADING,baseUrl,baseUrl,getAsset,getAsset,getAssetByUrl,getAssetByUrl,getGroup,getGroup,hasAsset,hasAsset,hasAssetByUrl,hasAssetByUrl,hasGroup,hasGroup,instantiateAsset,instantiateGroup,load,load,loadGroup,loadGroup,removeAsset,removeAsset,removeAssetByUrl,removeAssetByUrl,removeGroup,removeGroup"/>
+               content="AssetLoader,org.robotlegs.utilities.assetloader.core.AssetLoader,FAILED,INITIALIZING,LOADED,LOADING,baseUrl,baseUrl,loaderContext,loaderContext,addAssetClass,addAssetClass,getAsset,getAsset,getAssetByUrl,getAssetByUrl,getGroup,getGroup,hasAsset,hasAsset,hasAssetByUrl,hasAssetByUrl,hasGroup,hasGroup,instantiateAsset,instantiateGroup,load,load,loadGroup,loadGroup,removeAsset,removeAsset,removeAssetByUrl,removeAssetByUrl,removeGroup,removeGroup"/>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiAccess value="public"/>
@@ -365,7 +365,7 @@
             <asMetadata/>
          </prolog>
             <meta name="keywords"
-               content="AssetLoaderState,org.robotlegs.utilities.assetloader.core.AssetLoaderState,FAILED,INITIALIZING,LOADED,LOADING,baseUrl,baseUrl"/>
+               content="AssetLoaderState,org.robotlegs.utilities.assetloader.core.AssetLoaderState,FAILED,INITIALIZING,LOADED,LOADING,baseUrl,baseUrl,loaderContext,loaderContext"/>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiAccess value="public"/>

@@ -6,7 +6,7 @@
 	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.utilities.assetloader.patterns.asset:Asset:Asset"><apiName>Asset</apiName><shortdesc>
 		 Constructor.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>id</apiItemName><apiType value="String"/><apiDesc>The id of the <codeph>Asset</codeph>.
 		 </apiDesc></apiParam><apiParam><apiItemName>url</apiItemName><apiType value="String"/><apiDesc>The url of the <codeph>Asset</codeph>.
-		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 </apiDesc></apiParam><apiParam><apiItemName>loaderContext</apiItemName><apiType value="flash.system:LoaderContext"/><apiData>null</apiData></apiParam></apiConstructorDef><apiDesc>
 		 Constructor.
 		 
 		 <p>At this point the state of the <codeph>Asset</codeph> is <codeph>INITIALIZING</codeph>.</p>

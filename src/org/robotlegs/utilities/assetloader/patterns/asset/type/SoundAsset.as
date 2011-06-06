@@ -3,6 +3,7 @@ package org.robotlegs.utilities.assetloader.patterns.asset.type
 	import flash.media.Sound;
 	
 	import org.robotlegs.utilities.assetloader.patterns.asset.Asset;
+	import flash.system.LoaderContext;
 
 	/**
 	 * Automatic assigned type of <code>Asset</code> for loading <code>Bitmaps</code> (mp3, wav, aif).
@@ -30,9 +31,9 @@ package org.robotlegs.utilities.assetloader.patterns.asset.type
 		/**
 		 * @iheritDoc
 		 */
-		public function SoundAsset( id: String, url: String )
+		public function SoundAsset( id: String, url: String, loaderContext: LoaderContext = null )
 		{
-			super( id, url );
+			super( id, url, loaderContext );
 		}
 	}
 }

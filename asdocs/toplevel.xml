@@ -103,7 +103,7 @@
 <author><![CDATA[r.moorman
 	 ]]></author>
 </classRec>
-<method name='Asset' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/Asset' isStatic='false' isFinal='false' isOverride='false'  param_names='id;url' param_types='String;String' param_defaults='undefined;undefined' result_type='*'>
+<method name='Asset' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/Asset' isStatic='false' isFinal='false' isOverride='false'  param_names='id;url;loaderContext' param_types='String;String;flash.system:LoaderContext' param_defaults='undefined;undefined;null' result_type='*'>
 <description><![CDATA[
 		 Constructor.
 		 
@@ -265,6 +265,11 @@
 		 ]]></description>
 <private><![CDATA[]]></private>
 </field>
+<field name='_loaderContext' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/protected:_loaderContext' type='flash.system:LoaderContext' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
 <field name='_loader' fullname='org.robotlegs.utilities.assetloader.patterns.asset:Asset/protected:_loader' type='Object' isStatic='false' isConst='false' >
 <description><![CDATA[
 		 ]]></description>
@@ -391,6 +396,16 @@
 <see><![CDATA[https://github.com/moorinteractive/as3-robotlegs-library/wiki/assetloader
 	 ]]></see>
 </interfaceRec>
+<method name='addAssetClass' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:addAssetClass' isStatic='false' isFinal='false' isOverride='false'  param_names='contains;assetClass' param_types='String;Class' param_defaults='undefined;undefined' result_type='void'>
+<description><![CDATA[
+		 
+		 
+		 ]]></description>
+<param><![CDATA[contains
+		 ]]></param>
+<param><![CDATA[assetClass
+		 ]]></param>
+</method>
 <method name='getAssetByUrl' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:getAssetByUrl' isStatic='false' isFinal='false' isOverride='false'  param_names='url' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.assetloader.patterns.asset:IAsset'>
 <description><![CDATA[
 		 Get an <code>Asset</code> by it's url.
@@ -521,7 +536,17 @@
 		 the base url will not be added to the url.</p>
 		 ]]></description>
 </method>
+<method name='loaderContext' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:loaderContext/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.system:LoaderContext'>
+<description><![CDATA[
+		 
+		 ]]></description>
+</method>
 <method name='baseUrl' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:baseUrl/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='loaderContext' fullname='org.robotlegs.utilities.assetloader.core:IAssetLoader/org.robotlegs.utilities.assetloader.core:IAssetLoader:loaderContext/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='flash.system:LoaderContext' param_defaults='undefined' result_type='void'>
 <description><![CDATA[
 		 ]]></description>
 <private><![CDATA[]]></private>
@@ -549,6 +574,12 @@
 <description><![CDATA[
 		 Constructor.
 		 ]]></description>
+</method>
+<method name='addAssetClass' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/addAssetClass' isStatic='false' isFinal='false' isOverride='false'  param_names='contains;assetClass' param_types='String;Class' param_defaults='undefined;undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.addAssetClass()
+		 ]]></copy>
 </method>
 <method name='getAssetByUrl' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/getAssetByUrl' isStatic='false' isFinal='false' isOverride='false'  param_names='url' param_types='String' param_defaults='undefined' result_type='org.robotlegs.utilities.assetloader.patterns.asset:IAsset'>
 <description><![CDATA[
@@ -642,11 +673,27 @@
 <copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.baseUrl
 		 ]]></copy>
 </method>
+<method name='loaderContext' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/loaderContext/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.system:LoaderContext'>
+<description><![CDATA[
+		 ]]></description>
+<copy><![CDATA[org.robotlegs.utilities.assetloader.core.IAssetLoader.loaderContext
+		 ]]></copy>
+</method>
 <method name='baseUrl' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/baseUrl/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
 <description><![CDATA[
 		 ]]></description>
 <private><![CDATA[]]></private>
 </method>
+<method name='loaderContext' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/loaderContext/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='flash.system:LoaderContext' param_defaults='undefined' result_type='void'>
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<field name='_assetClassMap' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/private:_assetClassMap' type='flash.utils:Dictionary' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
 <field name='_assetIds' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/private:_assetIds' type='int' isStatic='false' isConst='false' >
 <description><![CDATA[
 		 ]]></description>
@@ -668,6 +715,11 @@
 <private><![CDATA[]]></private>
 </field>
 <field name='_groupMap' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/private:_groupMap' type='flash.utils:Dictionary' isStatic='false' isConst='false' >
+<description><![CDATA[
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<field name='_loaderContext' fullname='org.robotlegs.utilities.assetloader.core:AssetLoader/private:_loaderContext' type='flash.system:LoaderContext' isStatic='false' isConst='false' >
 <description><![CDATA[
 		 ]]></description>
 <private><![CDATA[]]></private>
@@ -3730,7 +3782,7 @@
 <author><![CDATA[r.moorman
 	 ]]></author>
 </classRec>
-<method name='CSSAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:CSSAsset/CSSAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id;url' param_types='String;String' param_defaults='undefined;undefined' result_type='*'>
+<method name='CSSAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:CSSAsset/CSSAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id;url;loaderContext' param_types='String;String;flash.system:LoaderContext' param_defaults='undefined;undefined;null' result_type='*'>
 <description><![CDATA[
 		 ]]></description>
 <iheritDoc><![CDATA[]]></iheritDoc>
@@ -3763,7 +3815,7 @@
 <author><![CDATA[r.moorman
 	 ]]></author>
 </classRec>
-<method name='SoundAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:SoundAsset/SoundAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id;url' param_types='String;String' param_defaults='undefined;undefined' result_type='*'>
+<method name='SoundAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:SoundAsset/SoundAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id;url;loaderContext' param_types='String;String;flash.system:LoaderContext' param_defaults='undefined;undefined;null' result_type='*'>
 <description><![CDATA[
 		 ]]></description>
 <iheritDoc><![CDATA[]]></iheritDoc>
@@ -3786,7 +3838,7 @@
 <author><![CDATA[r.moorman
 	 ]]></author>
 </classRec>
-<method name='XMLAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:XMLAsset/XMLAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id;url' param_types='String;String' param_defaults='undefined;undefined' result_type='*'>
+<method name='XMLAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:XMLAsset/XMLAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id;url;loaderContext' param_types='String;String;flash.system:LoaderContext' param_defaults='undefined;undefined;null' result_type='*'>
 <description><![CDATA[
 		 ]]></description>
 <iheritDoc><![CDATA[]]></iheritDoc>
@@ -3819,7 +3871,7 @@
 <author><![CDATA[r.moorman
 	 ]]></author>
 </classRec>
-<method name='BitmapAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:BitmapAsset/BitmapAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id;url' param_types='String;String' param_defaults='undefined;undefined' result_type='*'>
+<method name='BitmapAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:BitmapAsset/BitmapAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id;url;loaderContext' param_types='String;String;flash.system:LoaderContext' param_defaults='undefined;undefined;null' result_type='*'>
 <description><![CDATA[
 		 ]]></description>
 <inheritDoc><![CDATA[]]></inheritDoc>
@@ -3866,7 +3918,7 @@
 <author><![CDATA[r.moorman
 	 ]]></author>
 </classRec>
-<method name='DisplayObjectAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:DisplayObjectAsset/DisplayObjectAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id;url' param_types='String;String' param_defaults='undefined;undefined' result_type='*'>
+<method name='DisplayObjectAsset' fullname='org.robotlegs.utilities.assetloader.patterns.asset.type:DisplayObjectAsset/DisplayObjectAsset' isStatic='false' isFinal='false' isOverride='false'  param_names='id;url;loaderContext' param_types='String;String;flash.system:LoaderContext' param_defaults='undefined;undefined;null' result_type='*'>
 <description><![CDATA[
 		 ]]></description>
 <iheritDoc><![CDATA[]]></iheritDoc>
@@ -3918,11 +3970,15 @@
 <author><![CDATA[r.moorman
 	 ]]></author>
 </classRec>
-<method name='getAssetClassByExtension' fullname='org.robotlegs.utilities.assetloader.utils:AssetUtil/getAssetClassByExtension' isStatic='true' isFinal='false' isOverride='false'  param_names='extension' param_types='String' param_defaults='undefined' result_type='Class'>
+<method name='getAssetClassByExtension' fullname='org.robotlegs.utilities.assetloader.utils:AssetUtil/getAssetClassByExtension' isStatic='true' isFinal='false' isOverride='false'  param_names='url;assetClassMap;extension' param_types='String;flash.utils:Dictionary;String' param_defaults='undefined;undefined;undefined' result_type='Class'>
 <description><![CDATA[
 		 Get the type of <code>Asset</code> depending on the file extension.
 		 
 		 ]]></description>
+<param><![CDATA[url The url of the <code>Asset</code>.
+		 ]]></param>
+<param><![CDATA[assetClassMap
+		 ]]></param>
 <param><![CDATA[extension The extension of the file.
 		 ]]></param>
 <return><![CDATA[The type of <code>Asset</code>, default <code>Asset</code>.

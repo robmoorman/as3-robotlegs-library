@@ -27,7 +27,7 @@ package org.robotlegs.utilities.router.patterns.route
 		 * 
 		 * @return 
 		 */
-		public function get length(): int {
+		public function get length(): int {	
 			return _patterns.length;
 		}
 		

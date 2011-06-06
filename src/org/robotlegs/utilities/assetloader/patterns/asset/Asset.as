@@ -8,6 +8,7 @@ package org.robotlegs.utilities.assetloader.patterns.asset
 	import flash.media.Sound;
 	import flash.net.URLLoader;
 	import flash.net.URLRequest;
+	import flash.system.LoaderContext;
 	
 	import org.robotlegs.utilities.assetloader.core.AssetLoaderState;
 	import org.robotlegs.utilities.assetloader.error.AssetLoaderError;
@@ -146,6 +147,11 @@ package org.robotlegs.utilities.assetloader.patterns.asset
 		protected var _onError: Function;
 		
 		/**
+		 * @private
+		 */
+		protected var _loaderContext: LoaderContext;
+		
+		/**
 		 * Constructor.
 		 * 
 		 * <p>At this point the state of the <code>Asset</code> is <code>INITIALIZING</code>.</p>
@@ -153,11 +159,12 @@ package org.robotlegs.utilities.assetloader.patterns.asset
 		 * @param id The id of the <code>Asset</code>.
 		 * @param url The url of the <code>Asset</code>.
 		 */
-		public function Asset( id: String, url: String )
+		public function Asset( id: String, url: String, loaderContext: LoaderContext = null )
 		{
 			setState( AssetLoaderState.INITIALIZING );
 			
 			_id = id;
+			_loaderContext = loaderContext;
 			_bytesLoaded = 0;
 			_bytesTotal = 0;
 			
@@ -185,7 +192,12 @@ package org.robotlegs.utilities.assetloader.patterns.asset
 			
 			var request: URLRequest = new URLRequest( _url );
 			
-			_loader.load( request );
+			if( _loader is Loader ) {
+				_loader.load( request, _loaderContext );
+			}
+			else {
+				_loader.load( request );
+			}
 		}
 		
 		/**

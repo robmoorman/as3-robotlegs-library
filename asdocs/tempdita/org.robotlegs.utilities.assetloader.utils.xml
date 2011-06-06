@@ -5,7 +5,8 @@
 	 
 	 </apiDesc></apiClassifierDetail><apiOperation id="org.robotlegs.utilities.assetloader.utils:AssetUtil:getAssetClassByExtension"><apiName>getAssetClassByExtension</apiName><shortdesc>
 		 Get the type of Asset depending on the file extension.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiStatic/><apiReturn><apiDesc>The type of <codeph>Asset</codeph>, default <codeph>Asset</codeph>.
-		 </apiDesc><apiType value="Class"/></apiReturn><apiParam><apiItemName>extension</apiItemName><apiType value="String"/><apiDesc>The extension of the file.
+		 </apiDesc><apiType value="Class"/></apiReturn><apiParam><apiItemName>url</apiItemName><apiType value="String"/><apiDesc>The url of the <codeph>Asset</codeph>.
+		 </apiDesc></apiParam><apiParam><apiItemName>assetClassMap</apiItemName><apiType value="flash.utils:Dictionary"/><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>extension</apiItemName><apiType value="String"/><apiDesc>The extension of the file.
 		 </apiDesc></apiParam></apiOperationDef><apiDesc>
 		 Get the type of <codeph>Asset</codeph> depending on the file extension.
 		 

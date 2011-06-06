@@ -2,6 +2,7 @@ package org.robotlegs.utilities.assetloader.core
 {
 	import org.robotlegs.utilities.assetloader.patterns.asset.IAsset;
 	import org.robotlegs.utilities.assetloader.patterns.group.IGroup;
+	import flash.system.LoaderContext;
 
 	/**
 	 * The interface definition for <code>AssetLoader</code>.
@@ -23,6 +24,16 @@ package org.robotlegs.utilities.assetloader.core
 		 * @private
 		 */
 		function set baseUrl( value: String ): void;
+		
+		/**
+		 * 
+		 */
+		function get loaderContext(): LoaderContext;
+		
+		/**
+		 * @private
+		 */
+		function set loaderContext( value: LoaderContext ): void;
 		
 		/**
 		 * Load a single <code>Asset</code>.
@@ -123,5 +134,13 @@ package org.robotlegs.utilities.assetloader.core
 		 * @param id The id of the <code>Group</code>.
 		 */
 		function removeGroup( id: String ): void;
+		
+		/**
+		 * 
+		 * 
+		 * @param contains
+		 * @param assetClass
+		 */
+		function addAssetClass( contains: String, assetClass: Class ): void;
 	}
 }

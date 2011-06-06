@@ -4,7 +4,7 @@
 	 Automatic assigned type of <codeph>Asset</codeph> for loading stylesheets (css).
 	 
 	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.utilities.assetloader.patterns.asset.type:CSSAsset:CSSAsset"><apiName>CSSAsset</apiName><shortdesc>
-		 </shortdesc><prolog><asCustoms><iheritDoc/></asCustoms></prolog><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam></apiConstructorDef><apiDesc>
+		 </shortdesc><prolog><asCustoms><iheritDoc/></asCustoms></prolog><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>loaderContext</apiItemName><apiType value="flash.system:LoaderContext"/><apiData>null</apiData></apiParam></apiConstructorDef><apiDesc>
 		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.robotlegs.utilities.assetloader.patterns.asset.type:CSSAsset:protected:onComplete"><apiName>onComplete</apiName><shortdesc>
 		 </shortdesc><prolog><asCustoms><iheritDoc/></asCustoms></prolog><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiIsOverride/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>evt</apiItemName><apiType value="flash.events:Event"/></apiParam></apiOperationDef><apiDesc>
 		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.robotlegs.utilities.assetloader.patterns.asset.type:CSSAsset:styleSheet:get"><apiName>styleSheet</apiName><shortdesc>
@@ -18,7 +18,7 @@
 	 Automatic assigned type of <codeph>Asset</codeph> for loading <codeph>Bitmaps</codeph> (swf).
 	 
 	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.utilities.assetloader.patterns.asset.type:DisplayObjectAsset:DisplayObjectAsset"><apiName>DisplayObjectAsset</apiName><shortdesc>
-		 </shortdesc><prolog><asCustoms><iheritDoc/></asCustoms></prolog><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam></apiConstructorDef><apiDesc>
+		 </shortdesc><prolog><asCustoms><iheritDoc/></asCustoms></prolog><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>loaderContext</apiItemName><apiType value="flash.system:LoaderContext"/><apiData>null</apiData></apiParam></apiConstructorDef><apiDesc>
 		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.robotlegs.utilities.assetloader.patterns.asset.type:DisplayObjectAsset:protected:onComplete"><apiName>onComplete</apiName><shortdesc>
 		 </shortdesc><prolog><asCustoms><iheritDoc/></asCustoms></prolog><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiIsOverride/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>evt</apiItemName><apiType value="flash.events:Event"/></apiParam></apiOperationDef><apiDesc>
 		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.robotlegs.utilities.assetloader.patterns.asset.type:DisplayObjectAsset:displayObject:get"><apiName>displayObject</apiName><shortdesc>
@@ -32,7 +32,7 @@
 	 Automatic assigned type of <codeph>Asset</codeph> for loading <codeph>Bitmaps</codeph> (xml).
 	 
 	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.utilities.assetloader.patterns.asset.type:XMLAsset:XMLAsset"><apiName>XMLAsset</apiName><shortdesc>
-		 </shortdesc><prolog><asCustoms><iheritDoc/></asCustoms></prolog><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam></apiConstructorDef><apiDesc>
+		 </shortdesc><prolog><asCustoms><iheritDoc/></asCustoms></prolog><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>loaderContext</apiItemName><apiType value="flash.system:LoaderContext"/><apiData>null</apiData></apiParam></apiConstructorDef><apiDesc>
 		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.robotlegs.utilities.assetloader.patterns.asset.type:XMLAsset:protected:onComplete"><apiName>onComplete</apiName><shortdesc>
 		 </shortdesc><prolog><asCustoms><iheritDoc/></asCustoms></prolog><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiIsOverride/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>evt</apiItemName><apiType value="flash.events:Event"/></apiParam></apiOperationDef><apiDesc>
 		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.robotlegs.utilities.assetloader.patterns.asset.type:XMLAsset:xml:get"><apiName>xml</apiName><shortdesc>
@@ -46,7 +46,7 @@
 	 Automatic assigned type of <codeph>Asset</codeph> for loading <codeph>Bitmaps</codeph> (mp3, wav, aif).
 	 
 	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.utilities.assetloader.patterns.asset.type:SoundAsset:SoundAsset"><apiName>SoundAsset</apiName><shortdesc>
-		 </shortdesc><prolog><asCustoms><iheritDoc/></asCustoms></prolog><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam></apiConstructorDef><apiDesc>
+		 </shortdesc><prolog><asCustoms><iheritDoc/></asCustoms></prolog><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>loaderContext</apiItemName><apiType value="flash.system:LoaderContext"/><apiData>null</apiData></apiParam></apiConstructorDef><apiDesc>
 		 </apiDesc></apiConstructorDetail></apiConstructor><apiValue id="org.robotlegs.utilities.assetloader.patterns.asset.type:SoundAsset:sound:get"><apiName>sound</apiName><shortdesc>
 		 The loaded Sound.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="flash.media:Sound"/></apiValueDef><apiDesc>
 		 The loaded <codeph>Sound</codeph>.
@@ -58,7 +58,7 @@
 	 Automatic assigned type of <codeph>Asset</codeph> for loading <codeph>Bitmaps</codeph> (png, gif, jpg and jpeg).
 	 
 	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.utilities.assetloader.patterns.asset.type:BitmapAsset:BitmapAsset"><apiName>BitmapAsset</apiName><shortdesc>
-		 </shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam></apiConstructorDef><apiDesc>
+		 </shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>id</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>url</apiItemName><apiType value="String"/></apiParam><apiParam><apiItemName>loaderContext</apiItemName><apiType value="flash.system:LoaderContext"/><apiData>null</apiData></apiParam></apiConstructorDef><apiDesc>
 		 </apiDesc></apiConstructorDetail><apiInheritDoc/></apiConstructor><apiOperation id="org.robotlegs.utilities.assetloader.patterns.asset.type:BitmapAsset:protected:onComplete"><apiName>onComplete</apiName><shortdesc>
 		 
 		 Abstract method to handle the loaded Asset.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiIsOverride/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>evt</apiItemName><apiType value="flash.events:Event"/><apiDesc>The <codeph>Event</codeph> that triggered this method (<codeph>Event.COMPLETE</codeph>).

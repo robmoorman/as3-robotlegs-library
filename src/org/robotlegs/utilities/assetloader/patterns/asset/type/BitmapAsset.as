@@ -6,6 +6,7 @@ package org.robotlegs.utilities.assetloader.patterns.asset.type
 	import flash.events.Event;
 	
 	import org.robotlegs.utilities.assetloader.patterns.asset.Asset;
+	import flash.system.LoaderContext;
 
 	/**
 	 * Automatic assigned type of <code>Asset</code> for loading <code>Bitmaps</code> (png, gif, jpg and jpeg).
@@ -50,9 +51,9 @@ package org.robotlegs.utilities.assetloader.patterns.asset.type
 		/**
 		 * @inheritDoc
 		 */
-		public function BitmapAsset( id: String, url: String )
+		public function BitmapAsset( id: String, url: String, loaderContext: LoaderContext = null  )
 		{
-			super( id, url );
+			super( id, url, loaderContext );
 		}
 		
 		/**
