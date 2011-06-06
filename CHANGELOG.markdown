@@ -5,6 +5,7 @@
 	* Added `getAssetByUrl` in `Group`
 	* Fixed `percentage` in `Group`
 	* Added `baseUrl` in `AssetLoader`
+	* Added `loaderContext` in `AssetLoader`
 	* Added utility `Layers`
 	* Added utility `Localizer`
 	* Added utility `Styles`
