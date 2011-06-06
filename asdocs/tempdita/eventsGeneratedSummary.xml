@@ -1076,22 +1076,6 @@
    </apiPackage>
    <apiPackage id="org.robotlegs.utilities.router.controller.route">
       <apiName>org.robotlegs.utilities.router.controller.route</apiName>
-      <apiClassifier id="org.robotlegs.utilities.router.controller.route:MapEventToRouteCommand">
-         <apiName>MapEventToRouteCommand</apiName>
-         <shortdesc>
-	 Map a Command to a specific Route.</shortdesc>
-         <apiClassifierDetail>
-            <apiClassifierDef>
-               <apiAccess value="public"/>
-               <apiStatic/>
-               <apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier>
-            </apiClassifierDef>
-         </apiClassifierDetail>
-         <apiDesc>
-	 Map a <codeph>Command</codeph> to a specific <codeph>Route</codeph>.
-	 
-	 </apiDesc>
-      </apiClassifier>
       <apiClassifier id="org.robotlegs.utilities.router.controller.route:RemoveEventFromRouteCommand">
          <apiName>RemoveEventFromRouteCommand</apiName>
          <shortdesc>
@@ -1107,6 +1091,22 @@
          </apiClassifierDetail>
          <apiDesc>
 	 
+	 
+	 </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.utilities.router.controller.route:MapEventToRouteCommand">
+         <apiName>MapEventToRouteCommand</apiName>
+         <shortdesc>
+	 Map a Command to a specific Route.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 Map a <codeph>Command</codeph> to a specific <codeph>Route</codeph>.
 	 
 	 </apiDesc>
       </apiClassifier>
@@ -1278,9 +1278,7 @@
       <apiClassifier id="org.robotlegs.utilities.styles.core:IStyles">
          <apiName>IStyles</apiName>
          <shortdesc>
-	 
-	 
-	 </shortdesc>
+	 The interface definition for Styles.</shortdesc>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiInterface/>
@@ -1290,7 +1288,7 @@
             </apiClassifierDef>
          </apiClassifierDetail>
          <apiDesc>
-	 
+	 The interface definition for <codeph>Styles</codeph>.
 	 
 	 </apiDesc>
       </apiClassifier>

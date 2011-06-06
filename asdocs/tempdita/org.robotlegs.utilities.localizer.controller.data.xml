@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.utilities.localizer.controller.data"><apiName>org.robotlegs.utilities.localizer.controller.data</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.localizer.controller.data:LocalizeDataCommand"><apiName>LocalizeDataCommand</apiName><shortdesc>
+<apiPackage id="org.robotlegs.utilities.localizer.controller.data"><apiName>org.robotlegs.utilities.localizer.controller.data</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.localizer.controller.data:LocalizeDataCommand"><apiName>LocalizeDataCommand</apiName><shortdesc>
 	 Localize XML or Object data.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Localize <codeph>XML</codeph> or <codeph>Object</codeph> data.

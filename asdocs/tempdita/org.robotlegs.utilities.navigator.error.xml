@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.utilities.navigator.error"><apiName>org.robotlegs.utilities.navigator.error</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.navigator.error:NavigatorError"><apiName>NavigatorError</apiName><shortdesc>
+<apiPackage id="org.robotlegs.utilities.navigator.error"><apiName>org.robotlegs.utilities.navigator.error</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.navigator.error:NavigatorError"><apiName>NavigatorError</apiName><shortdesc>
 	 
 	 
 	 </shortdesc><prolog><author>r.moorman

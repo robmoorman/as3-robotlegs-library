@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><apiPackage id="com.asual.swfaddress"><apiName>com.asual.swfaddress</apiName><apiDetail/><apiClassifier id="com.asual.swfaddress:SWFAddress"><apiName>SWFAddress</apiName><shortdesc>
+<apiPackage id="com.asual.swfaddress"><apiName>com.asual.swfaddress</apiName><apiDetail/><apiClassifier id="com.asual.swfaddress:SWFAddress"><apiName>SWFAddress</apiName><shortdesc>
      SWFAddress class.</shortdesc><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
      SWFAddress class. 
      </apiDesc></apiClassifierDetail><adobeApiEvent id="com.asual.swfaddress:SWFAddress_com.asual.swfaddress.SWFAddressEvent_externalChange"><apiName>externalChange</apiName><shortdesc>

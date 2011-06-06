@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.utilities.router.error"><apiName>org.robotlegs.utilities.router.error</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.router.error:RouterError"><apiName>RouterError</apiName><shortdesc>
+<apiPackage id="org.robotlegs.utilities.router.error"><apiName>org.robotlegs.utilities.router.error</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.router.error:RouterError"><apiName>RouterError</apiName><shortdesc>
 	 
 	 
 	 </shortdesc><prolog><author>r.moorman

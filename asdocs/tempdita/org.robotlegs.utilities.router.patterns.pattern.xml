@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.utilities.router.patterns.pattern"><apiName>org.robotlegs.utilities.router.patterns.pattern</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.router.patterns.pattern:Pattern"><apiName>Pattern</apiName><shortdesc>
+<apiPackage id="org.robotlegs.utilities.router.patterns.pattern"><apiName>org.robotlegs.utilities.router.patterns.pattern</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.router.patterns.pattern:Pattern"><apiName>Pattern</apiName><shortdesc>
 	 Abstract Pattern implementation.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.utilities.router.patterns.pattern:IPattern</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Abstract <codeph>Pattern</codeph> implementation.

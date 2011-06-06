@@ -13,7 +13,7 @@ package org.robotlegs.utilities.styles.view
 	public class StylesTextfield extends TextField
 	{
 		/**
-		 * @inheritDoc
+		 * @copy org.robotlegs.utilities.styles.view.StylesTextfield.htmlText
 		 */
 		override public function set text( value: String ): void {
 			htmlText = value;

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.utilities.router.core"><apiName>org.robotlegs.utilities.router.core</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.router.core:IRouter"><apiName>IRouter</apiName><shortdesc>
+<apiPackage id="org.robotlegs.utilities.router.core"><apiName>org.robotlegs.utilities.router.core</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.router.core:IRouter"><apiName>IRouter</apiName><shortdesc>
 	 Abstract IRouter interface.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
 	 Abstract <codeph>IRouter</codeph> interface.

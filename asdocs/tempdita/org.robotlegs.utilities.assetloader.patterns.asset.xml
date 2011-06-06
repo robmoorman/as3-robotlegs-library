@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.utilities.assetloader.patterns.asset"><apiName>org.robotlegs.utilities.assetloader.patterns.asset</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.assetloader.patterns.asset:Asset"><apiName>Asset</apiName><shortdesc>
+<apiPackage id="org.robotlegs.utilities.assetloader.patterns.asset"><apiName>org.robotlegs.utilities.assetloader.patterns.asset</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.assetloader.patterns.asset:Asset"><apiName>Asset</apiName><shortdesc>
 	 Abstract implementation of IAsset.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.utilities.assetloader.patterns.asset:IAsset</apiBaseInterface><apiBaseClassifier>flash.events:EventDispatcher</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Abstract implementation of <codeph>IAsset</codeph>.

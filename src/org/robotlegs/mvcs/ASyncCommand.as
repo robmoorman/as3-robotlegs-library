@@ -6,6 +6,7 @@ package org.robotlegs.mvcs
 	 * Abstract <code>ASyncCommand</code> implementation.
 	 * 
 	 * @author r.moorman
+	 * https://github.com/moorinteractive/as3-robotlegs-library/wiki/asynccommand
 	 */
 	public class ASyncCommand extends Command implements IASyncCommand
 	{

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.utilities.assetloader.patterns.group"><apiName>org.robotlegs.utilities.assetloader.patterns.group</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.assetloader.patterns.group:IGroup"><apiName>IGroup</apiName><shortdesc>
+<apiPackage id="org.robotlegs.utilities.assetloader.patterns.group"><apiName>org.robotlegs.utilities.assetloader.patterns.group</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.assetloader.patterns.group:IGroup"><apiName>IGroup</apiName><shortdesc>
 	 The interface definition for a Group.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
 	 The interface definition for a <codeph>Group</codeph>.

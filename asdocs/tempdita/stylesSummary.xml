@@ -797,8 +797,8 @@
    </apiPackage>
    <apiPackage id="org.robotlegs.utilities.router.controller.route">
       <apiName>org.robotlegs.utilities.router.controller.route</apiName>
-      <apiClassifier id="org.robotlegs.utilities.router.controller.route:MapEventToRouteCommand">
-         <apiName>MapEventToRouteCommand</apiName>
+      <apiClassifier id="org.robotlegs.utilities.router.controller.route:RemoveEventFromRouteCommand">
+         <apiName>RemoveEventFromRouteCommand</apiName>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiAccess value="public"/>
@@ -810,8 +810,8 @@
             <asMetadata/>
          </prolog>
       </apiClassifier>
-      <apiClassifier id="org.robotlegs.utilities.router.controller.route:RemoveEventFromRouteCommand">
-         <apiName>RemoveEventFromRouteCommand</apiName>
+      <apiClassifier id="org.robotlegs.utilities.router.controller.route:MapEventToRouteCommand">
+         <apiName>MapEventToRouteCommand</apiName>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiAccess value="public"/>

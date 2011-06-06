@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.utilities.layers.controller.install"><apiName>org.robotlegs.utilities.layers.controller.install</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.layers.controller.install:InstallLayersCommand"><apiName>InstallLayersCommand</apiName><shortdesc>
+<apiPackage id="org.robotlegs.utilities.layers.controller.install"><apiName>org.robotlegs.utilities.layers.controller.install</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.layers.controller.install:InstallLayersCommand"><apiName>InstallLayersCommand</apiName><shortdesc>
 	 Map dependencies of Layers.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Map dependencies of <codeph>Layers</codeph>.

@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.utilities.styles.core"><apiName>org.robotlegs.utilities.styles.core</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.styles.core:IStyles"><apiName>IStyles</apiName><shortdesc>
-	 
-	 
-	 </shortdesc><prolog><author>r.moorman
+<apiPackage id="org.robotlegs.utilities.styles.core"><apiName>org.robotlegs.utilities.styles.core</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.styles.core:IStyles"><apiName>IStyles</apiName><shortdesc>
+	 The interface definition for Styles.</shortdesc><prolog><author>r.moorman
+	 https://github.com/moorinteractive/as3-robotlegs-library/wiki/styles
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
-	 
+	 The interface definition for <codeph>Styles</codeph>.
 	 
 	 </apiDesc></apiClassifierDetail><apiOperation id="org.robotlegs.utilities.styles.core:IStyles:org.robotlegs.utilities.styles.core:IStyles:addStyle"><apiName>addStyle</apiName><shortdesc>
 		 
@@ -25,6 +24,7 @@
 	 
 	 
 	 </shortdesc><prolog><author>r.moorman
+	 https://github.com/moorinteractive/as3-robotlegs-library/wiki/styles
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.utilities.styles.core:IStyles</apiBaseInterface><apiBaseClassifier>org.robotlegs.mvcs:Actor</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 
 	 

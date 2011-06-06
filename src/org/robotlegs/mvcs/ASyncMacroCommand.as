@@ -12,6 +12,7 @@ package org.robotlegs.mvcs
 	 * Abstract <code>ASyncMacroCommand</code> implementation.
 	 * 
 	 * @author r.moorman
+	 * https://github.com/moorinteractive/as3-robotlegs-library/wiki/asyncmacrocommand
 	 */
 	public class ASyncMacroCommand extends Command implements IASyncCommand
 	{

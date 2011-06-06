@@ -26,7 +26,8 @@ package org.robotlegs.utilities.assetloader.core
 		function set baseUrl( value: String ): void;
 		
 		/**
-		 * 
+		 * Set an optional <code>LoaderContext</code> for all <code>Assets</code>
+		 * which are loading their data via the <code>Loader</code>.
 		 */
 		function get loaderContext(): LoaderContext;
 		
@@ -49,10 +50,15 @@ package org.robotlegs.utilities.assetloader.core
 		 * 	<li><code>CSSAsset</code> (css)</li>
 		 * 	<li><code>XMLAsset</code> (xml)</li>
 		 * </ul>
+		 *
+		 * <p>For assigning custom types of <code>Assets</code> you can
+		 * use the method <code>addAssetClass</code>.</p>
 		 * 
 		 * @param request The url of the <code>Asset</code> as a <code>String</code>.
 		 * @param closure Optional closure method for retrieving <code>AssetLoaderEvents</code>.
 		 * @return A new instance of <code>Asset</code>.
+		 *
+		 * @see org.robotlegs.utilities.assetloader.core.IAssetLoader.addAssetClass()
 		 */
 		function load( request: Object, closure: Function = null ): IAsset;
 		
@@ -136,10 +142,10 @@ package org.robotlegs.utilities.assetloader.core
 		function removeGroup( id: String ): void;
 		
 		/**
+		 * Assign a custom type of <code>Asset</code>.
 		 * 
-		 * 
-		 * @param contains
-		 * @param assetClass
+		 * @param contains The value that should be available in the url (case-sensitive).
+		 * @param assetClass The type of <code>IAsset</code> that should be instantiated when the value in the url is available.
 		 */
 		function addAssetClass( contains: String, assetClass: Class ): void;
 	}

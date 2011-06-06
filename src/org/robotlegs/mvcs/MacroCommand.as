@@ -11,6 +11,7 @@ package org.robotlegs.mvcs
 	 * Abstract <code>MacroCommand</code> implementation.
 	 * 
 	 * @author r.moorman
+	 * https://github.com/moorinteractive/as3-robotlegs-library/wiki/macrocommand
 	 */
 	public class MacroCommand extends Command
 	{

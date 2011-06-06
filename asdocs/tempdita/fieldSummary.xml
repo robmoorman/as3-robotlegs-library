@@ -48,11 +48,13 @@
          The value of this event.
          </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage><apiPackage id="org.robotlegs.core"><apiName>org.robotlegs.core</apiName><apiClassifier id="org.robotlegs.core:IASyncCommand"><apiName>IASyncCommand</apiName><shortdesc>
 	 Abstract IASyncCommand interface.</shortdesc><prolog><author>r.moorman
+	 https://github.com/moorinteractive/as3-robotlegs-library/wiki/asyncmacrocommand
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
 	 Abstract <codeph>IASyncCommand</codeph> interface.
 	 
 	 </apiDesc></apiClassifierDetail></apiClassifier></apiPackage><apiPackage id="org.robotlegs.mvcs"><apiName>org.robotlegs.mvcs</apiName><apiClassifier id="org.robotlegs.mvcs:ASyncMacroCommand"><apiName>ASyncMacroCommand</apiName><shortdesc>
 	 Abstract ASyncMacroCommand implementation.</shortdesc><prolog><author>r.moorman
+	 https://github.com/moorinteractive/as3-robotlegs-library/wiki/asyncmacrocommand
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.core:IASyncCommand</apiBaseInterface><apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Abstract <codeph>ASyncMacroCommand</codeph> implementation.
 	 
@@ -62,6 +64,7 @@
 		 
 		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.robotlegs.mvcs:MacroCommand"><apiName>MacroCommand</apiName><shortdesc>
 	 Abstract MacroCommand implementation.</shortdesc><prolog><author>r.moorman
+	 https://github.com/moorinteractive/as3-robotlegs-library/wiki/macrocommand
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Abstract <codeph>MacroCommand</codeph> implementation.
 	 
@@ -71,6 +74,7 @@
 		 
 		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.robotlegs.mvcs:ASyncCommand"><apiName>ASyncCommand</apiName><shortdesc>
 	 Abstract ASyncCommand implementation.</shortdesc><prolog><author>r.moorman
+	 https://github.com/moorinteractive/as3-robotlegs-library/wiki/asynccommand
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.core:IASyncCommand</apiBaseInterface><apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Abstract <codeph>ASyncCommand</codeph> implementation.
 	 
@@ -97,9 +101,10 @@
 		 <p>If the requiest url of an <codeph>Asset</codeph> contains 'http://'
 		 the base url will not be added to the url.</p>
 		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.utilities.assetloader.core:IAssetLoader:org.robotlegs.utilities.assetloader.core:IAssetLoader:loaderContext:get"><apiName>loaderContext</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="flash.system:LoaderContext"/></apiValueDef><apiDesc>
-		 
+		 Set an optional LoaderContext for all Assets
+		 which are loading their data via the Loader.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="flash.system:LoaderContext"/></apiValueDef><apiDesc>
+		 Set an optional <codeph>LoaderContext</codeph> for all <codeph>Assets</codeph>
+		 which are loading their data via the <codeph>Loader</codeph>.
 		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.robotlegs.utilities.assetloader.core:AssetLoader"><apiName>AssetLoader</apiName><shortdesc>
 	 This utility allows you to easily load external assets into your application.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.utilities.assetloader.core:IAssetLoader</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
@@ -612,16 +617,7 @@
 	 	<li><codeph>IRouter</codeph></li>
 	 </ul>
 	 
-	 </apiDesc></apiClassifierDetail></apiClassifier></apiPackage><apiPackage id="org.robotlegs.utilities.router.controller.route"><apiName>org.robotlegs.utilities.router.controller.route</apiName><apiClassifier id="org.robotlegs.utilities.router.controller.route:MapEventToRouteCommand"><apiName>MapEventToRouteCommand</apiName><shortdesc>
-	 Map a Command to a specific Route.</shortdesc><prolog><author>r.moorman
-	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier></apiClassifierDef><apiDesc>
-	 Map a <codeph>Command</codeph> to a specific <codeph>Route</codeph>.
-	 
-	 </apiDesc></apiClassifierDetail><apiValue id="org.robotlegs.utilities.router.controller.route:MapEventToRouteCommand:event"><apiName>event</apiName><shortdesc>
-		 
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.router.events:RouterEvent</apiValueClassifier></apiValueDef><apiDesc>
-		 
-		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.robotlegs.utilities.router.controller.route:RemoveEventFromRouteCommand"><apiName>RemoveEventFromRouteCommand</apiName><shortdesc>
+	 </apiDesc></apiClassifierDetail></apiClassifier></apiPackage><apiPackage id="org.robotlegs.utilities.router.controller.route"><apiName>org.robotlegs.utilities.router.controller.route</apiName><apiClassifier id="org.robotlegs.utilities.router.controller.route:RemoveEventFromRouteCommand"><apiName>RemoveEventFromRouteCommand</apiName><shortdesc>
 	 
 	 
 	 </shortdesc><prolog><author>r.moorman
@@ -629,6 +625,15 @@
 	 
 	 
 	 </apiDesc></apiClassifierDetail><apiValue id="org.robotlegs.utilities.router.controller.route:RemoveEventFromRouteCommand:event"><apiName>event</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.router.events:RouterEvent</apiValueClassifier></apiValueDef><apiDesc>
+		 
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.robotlegs.utilities.router.controller.route:MapEventToRouteCommand"><apiName>MapEventToRouteCommand</apiName><shortdesc>
+	 Map a Command to a specific Route.</shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 Map a <codeph>Command</codeph> to a specific <codeph>Route</codeph>.
+	 
+	 </apiDesc></apiClassifierDetail><apiValue id="org.robotlegs.utilities.router.controller.route:MapEventToRouteCommand:event"><apiName>event</apiName><shortdesc>
 		 
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueClassifier>org.robotlegs.utilities.router.events:RouterEvent</apiValueClassifier></apiValueDef><apiDesc>
 		 
@@ -735,11 +740,10 @@
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiType value="org.robotlegs.core:IViewMap"/></apiValueDef><apiDesc>
 		 
 		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage><apiPackage id="org.robotlegs.utilities.styles.core"><apiName>org.robotlegs.utilities.styles.core</apiName><apiClassifier id="org.robotlegs.utilities.styles.core:IStyles"><apiName>IStyles</apiName><shortdesc>
-	 
-	 
-	 </shortdesc><prolog><author>r.moorman
+	 The interface definition for Styles.</shortdesc><prolog><author>r.moorman
+	 https://github.com/moorinteractive/as3-robotlegs-library/wiki/styles
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
-	 
+	 The interface definition for <codeph>Styles</codeph>.
 	 
 	 </apiDesc></apiClassifierDetail><apiValue id="org.robotlegs.utilities.styles.core:IStyles:org.robotlegs.utilities.styles.core:IStyles:styleSheet:get"><apiName>styleSheet</apiName><shortdesc>
 		 
@@ -749,6 +753,7 @@
 	 
 	 
 	 </shortdesc><prolog><author>r.moorman
+	 https://github.com/moorinteractive/as3-robotlegs-library/wiki/styles
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.utilities.styles.core:IStyles</apiBaseInterface><apiBaseClassifier>org.robotlegs.mvcs:Actor</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 
 	 
@@ -779,9 +784,7 @@
 	 
 	 </apiDesc></apiClassifierDetail><apiValue id="org.robotlegs.utilities.styles.view:StylesTextfield:htmlText:set"><apiName>htmlText</apiName><shortdesc>
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiIsOverride/><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="write"/><apiType value="String"/></apiValueDef><apiDesc>
-		 </apiDesc></apiValueDetail><apiInheritDoc/></apiValue><apiValue id="org.robotlegs.utilities.styles.view:StylesTextfield:text:set"><apiName>text</apiName><shortdesc>
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiIsOverride/><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="write"/><apiType value="String"/></apiValueDef><apiDesc>
-		 </apiDesc></apiValueDetail><apiInheritDoc/></apiValue></apiClassifier></apiPackage><apiPackage id="org.robotlegs.utilities"><apiName>org.robotlegs.utilities</apiName><apiClassifier id="org.robotlegs.utilities:Utilities"><apiName>Utilities</apiName><shortdesc>
+		 </apiDesc></apiValueDetail><apiInheritDoc/></apiValue><apiValue id="org.robotlegs.utilities.styles.view:StylesTextfield:text:set"><apiName>text</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiIsOverride/><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="write"/><apiType value="String"/></apiValueDef><apiDesc/></apiValueDetail></apiValue></apiClassifier></apiPackage><apiPackage id="org.robotlegs.utilities"><apiName>org.robotlegs.utilities</apiName><apiClassifier id="org.robotlegs.utilities:Utilities"><apiName>Utilities</apiName><shortdesc>
 	 Utility to map dependencies of certain utilities.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Utility to map dependencies of certain utilities.

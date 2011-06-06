@@ -1259,7 +1259,6 @@
 								<xsl:when test="apiValueDetail/apiValueDef/apiType">
 									<xsl:call-template name="getSimpleClassName">
 										<xsl:with-param name="fullClassName" select="apiValueDetail/apiValueDef/apiType/@value"/>
-										<xsl:with-param name="baseRef" select="$baseRef"/>
 									</xsl:call-template>
 								</xsl:when>
 								<xsl:otherwise>
@@ -1400,7 +1399,6 @@
 											<xsl:when test="apiValueDetail/apiValueDef/apiType">
 												<xsl:call-template name="getSimpleClassName">
 													<xsl:with-param name="fullClassName" select="apiValueDetail/apiValueDef/apiType/@value"/>
-													<xsl:with-param name="baseRef" select="$baseRef"/>
 												</xsl:call-template>
 											</xsl:when>
 											<xsl:otherwise>
@@ -1463,7 +1461,6 @@
 											<xsl:when test="apiValueDetail/apiValueDef/apiType">
 												<xsl:call-template name="getSimpleClassName">
 													<xsl:with-param name="fullClassName" select="apiValueDetail/apiValueDef/apiType/@value"/>
-													<xsl:with-param name="baseRef" select="$baseRef"/>
 												</xsl:call-template>
 											</xsl:when>
 											<xsl:otherwise>
@@ -2081,9 +2078,7 @@
 									<xsl:value-of select="normalize-space(@states)"/>
 									<xsl:text>.</xsl:text>
 								</xsl:if>
-								<xsl:call-template name="sees">
-									<xsl:with-param name="currentPackage" select="$currentPackage"/>
-								</xsl:call-template>	
+								<xsl:call-template name="sees"/>
 							</td>
 							<td class="summaryTableOwnerCol">
 								<xsl:choose>
@@ -2219,7 +2214,7 @@
 	    <tr class="{$rowStyle}">
 	      <td class="summaryTablePaddingCol">
 		<xsl:if test="not(ancestor::ancestors)">
-		  <a name="skinstate:{@name}"/>
+		  <a name="SkinState:{@name}"/>
 		</xsl:if>
 		<xsl:value-of select="$nbsp"/>
 	      </td>
@@ -2239,7 +2234,7 @@
 		      <xsl:variable name="h1" select="substring-after($destination,':')"/>
 		      <xsl:variable name="h2" select="substring-before($destination,':')"/>
 		      <xsl:variable name="file" select="concat($baseRef,translate($h2,'.','/'),'/',$h1,'.html')"/>
-		      <xsl:variable name="gfile" select="concat($baseRef,replace($destination, ':', '/'),'.html')"/>
+		      <xsl:variable name="gfile" select="concat($baseRef,$destination,'.html')"/>
 		      <xsl:variable name="hyperLink">
 			<xsl:if test="contains($destination,'.')">
 			  <xsl:value-of select="$file"/>
@@ -2252,7 +2247,7 @@
 			<xsl:value-of select="@name"/>
 		      </xsl:if>
 		      <xsl:if test="$hyperLink != ''">
-			<a href="{$hyperLink}#skinstate:{@name}" class="signatureLink">
+			<a href="{$hyperLink}#SkinState:{@name}" class="signatureLink">
 			  <xsl:value-of select="@name"/>
 			</a>
 		      </xsl:if>
@@ -2276,9 +2271,6 @@
 		    <xsl:with-param name="inText" select="description/."/>
 		  </xsl:call-template>
 		</xsl:if>
-		<xsl:call-template name="sees">
-			<xsl:with-param name="currentPackage" select="$currentPackage"/>
-		</xsl:call-template>
 	      </td>
 	      <td class="summaryTableOwnerCol">
 		<xsl:choose>
@@ -2287,7 +2279,7 @@
 		    <xsl:variable name="h1" select="substring-after($destination,':')"/>
 		    <xsl:variable name="h2" select="substring-before($destination,':')"/>
 		    <xsl:variable name="file" select="concat($baseRef,translate($h2,'.','/'),'/',$h1,'.html')"/>
-		    <xsl:variable name="gfile" select="concat($baseRef,replace($destination, ':', '/'),'.html')"/>
+		    <xsl:variable name="gfile" select="concat($baseRef,$destination,'.html')"/>
 		    <xsl:variable name="classLink">
 		      <xsl:if test="contains($destination,'.')">
 			<xsl:value-of select="$file"/>
@@ -2414,7 +2406,7 @@
 	    <tr class="{$rowStyle}">
 	      <td class="summaryTablePaddingCol">
 		<xsl:if test="not(ancestor::ancestors)">
-		  <a name="skinpart:{@name}"/>
+		  <a name="SkinPart:{@name}"/>
 		</xsl:if>
 		<xsl:value-of select="$nbsp"/>
 	      </td>
@@ -2428,14 +2420,13 @@
 	      </td>
 	      <td class="summaryTableSignatureCol">
 		<div class="summarySignature">
-			
 		  <xsl:choose>
 		    <xsl:when test="ancestor::ancestors">
 		      <xsl:variable name="destination" select="./@owner"/>
 		      <xsl:variable name="h1" select="substring-after($destination,':')"/>
 		      <xsl:variable name="h2" select="substring-before($destination,':')"/>
 		      <xsl:variable name="file" select="concat($baseRef,translate($h2,'.','/'),'/',$h1,'.html')"/>
-		      <xsl:variable name="gfile" select="concat($baseRef,replace($destination, ':', '/'),'.html')"/>
+		      <xsl:variable name="gfile" select="concat($baseRef,$destination,'.html')"/>
 		      <xsl:variable name="hyperLink">
 			<xsl:if test="contains($destination,'.')">
 			  <xsl:value-of select="$file"/>
@@ -2448,7 +2439,7 @@
 			<xsl:value-of select="@name"/>
 		      </xsl:if>
 		      <xsl:if test="$hyperLink != ''">
-			<a href="{$hyperLink}#skinpart:{@name}" class="signatureLink">
+			<a href="{$hyperLink}#SkinPart:{@name}" class="signatureLink">
 			  <xsl:value-of select="@name"/>
 			</a>
 		      </xsl:if>
@@ -2465,7 +2456,7 @@
 		    <xsl:variable name="h1" select="substring-after($destination,':')"/>
 		    <xsl:variable name="h2" select="substring-before($destination,':')"/>
 		    <xsl:variable name="file" select="concat($baseRef,translate($h2,'.','/'),'/',$h1,'.html')"/>
-		    <xsl:variable name="gfile" select="replace(concat($baseRef, $destination, '.html'), ':', '/')"/>
+		    <xsl:variable name="gfile" select="concat($baseRef,$destination,'.html')"/>
 		    <xsl:variable name="hyperLink">
 		      <xsl:if test="contains($destination,'.')">
 			<xsl:value-of select="$file"/>
@@ -2543,32 +2534,27 @@
 		  <xsl:variable name="destination" select="./@var_type"/>
 		  <xsl:variable name="var_type" select="substring-after($destination,':')"/>
 		  <xsl:variable name="type.value" select="replace($propdesc,'%type%',$var_type)"/>
-		  
-		  <xsl:variable name="full.type" select="replace(@type, ':', '.')"/>
-		  <xsl:if test="replace(@var_type, ':', '.')!=$full.type">
-			  <xsl:text disable-output-escaping="yes">&lt;br/&gt;</xsl:text>
-			  <xsl:value-of select="$type.value"/><xsl:text disable-output-escaping="yes"><![CDATA[&nbsp;]]></xsl:text>
-			  
-			   <xsl:variable name="display.type" >
-					<xsl:call-template name="substring-after-last">
-						<xsl:with-param name="input" select="$full.type"/>
-						<xsl:with-param name="substr" select="'.'"/>
-					</xsl:call-template>
-				</xsl:variable >
-							
-				<xsl:if test="count($classHeader_map//apiClassifier[@id=@type] ) &gt; 0">
-					<a href="{$hyperlink}">
-						<xsl:value-of select="$display.type"/>
-					</a>
-				</xsl:if>
-				<xsl:if test="not(count($classHeader_map//apiClassifier[@id=@type] ) &gt; 0)">
-					<xsl:value-of select="$display.type"/>
-				</xsl:if>
-		  </xsl:if>
+		  <xsl:text disable-output-escaping="yes">&lt;br/&gt;</xsl:text>
+		  <xsl:value-of select="$type.value"/><xsl:text disable-output-escaping="yes"><![CDATA[&nbsp;]]></xsl:text><a href="{$hyperlink}">
+		    <xsl:value-of select="substring-after(substring-after(@type,'.'),'.')"/>
+		  </a><xsl:value-of select="$asdoc_terms/row[entry[1][p/text() = 'dot']]/entry[2]/p"/>
 		</xsl:if>
-			<xsl:call-template name="sees">
-				<xsl:with-param name="currentPackage" select="$currentPackage"/>
-			</xsl:call-template>
+		<xsl:if test="@type=''">
+		  <xsl:variable name="hyperlink">
+		    <xsl:call-template name="styleTypeHyperlink">
+		      <xsl:with-param name="currentPackage" select="ancestor-or-self::apiPackage/apiName"/>
+		      <xsl:with-param name="type" select="@type"/>
+		    </xsl:call-template>
+		  </xsl:variable>
+		  <xsl:variable name="propdesc">
+		    <xsl:value-of select="$asdoc_terms/row[entry[1][p/text() = 'dynpropdesc']]/entry[2]/p"/>
+		  </xsl:variable>
+		  <xsl:variable name="destination" select="./@var_type"/>
+		  <xsl:variable name="var_type" select="substring-after($destination,':')"/>
+		  <xsl:variable name="type.value" select="replace($propdesc,'%type%',$var_type)"/>
+		  <xsl:text disable-output-escaping="yes">&lt;br/&gt;</xsl:text>
+		  <xsl:value-of select="$type.value"/><xsl:text disable-output-escaping="yes"><![CDATA[&nbsp;]]></xsl:text><xsl:value-of select="$asdoc_terms/row[entry[1][p/text() = 'unknown']]/entry[2]/p"/><xsl:value-of select="$asdoc_terms/row[entry[1][p/text() = 'dot']]/entry[2]/p"/>
+		</xsl:if>
 	      </td>
 	      <td class="summaryTableOwnerCol">
 		<xsl:choose>
@@ -3094,12 +3080,14 @@
 															<xsl:value-of select="substring-before($destination,':')"/>
 														</xsl:if>
 														<xsl:if test="not(contains($destination,':'))">
-															<xsl:value-of select="$destination"/>
+															<xsl:if test="contains($destination,'.')">
+																<xsl:value-of select="$destination"/>
+															</xsl:if>
 														</xsl:if>
 													</xsl:variable>
 													<xsl:variable name="file" select="concat($baseRef,translate($packageName,'.','/'),'/',$className,'.html')"/>
 													<xsl:variable name="gfile" select="concat($baseRef,$className,'.html')"/>
-													<xsl:if test="string-length($packageName) &gt; 0">
+													<xsl:if test="contains($packageName,'.')">
 														<xsl:choose>
 															<xsl:when test="$prog_language_name='javascript'"/>
 															<xsl:otherwise>
@@ -3107,7 +3095,7 @@
 															</xsl:otherwise>
 														</xsl:choose>
 													</xsl:if>
-													<xsl:if test="not(string-length($packageName) &gt; 0 )">
+													<xsl:if test="not(contains($packageName,'.'))">
 														<xsl:choose>
 															<xsl:when test="$prog_language_name='javascript'"/>
 															<xsl:otherwise>
@@ -4754,7 +4742,6 @@
 									<xsl:when test="not(apiOperationDetail/apiOperationDef/apiReturn/apiOperationClassifier)">
 										<xsl:call-template name="getSimpleClassName">
 											<xsl:with-param name="fullClassName" select="apiOperationDetail/apiOperationDef/apiReturn/apiType/@value"/>
-											<xsl:with-param name="baseRef" select="$baseRef"/>
 										</xsl:call-template>
 									</xsl:when>
 								</xsl:choose>

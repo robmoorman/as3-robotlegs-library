@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.utilities.layers.events"><apiName>org.robotlegs.utilities.layers.events</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.layers.events:LayersEvent"><apiName>LayersEvent</apiName><shortdesc>
+<apiPackage id="org.robotlegs.utilities.layers.events"><apiName>org.robotlegs.utilities.layers.events</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.layers.events:LayersEvent"><apiName>LayersEvent</apiName><shortdesc>
 	 Custom Event for Layers.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>flash.events:Event</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Custom <codeph>Event</codeph> for <codeph>Layers</codeph>.

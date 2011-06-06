@@ -12,6 +12,7 @@ package org.robotlegs.utilities.styles.core
 	 * 
 	 * 
 	 * @author r.moorman
+	 * https://github.com/moorinteractive/as3-robotlegs-library/wiki/styles
 	 */
 	public class Styles extends Actor implements IStyles
 	{

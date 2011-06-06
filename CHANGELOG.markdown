@@ -1,6 +1,6 @@
 # AS3 Robotlegs Library Changelog
 
-* master
+* v0.0.3
 	* Added `getAsset` in `Group`
 	* Added `getAssetByUrl` in `Group`
 	* Fixed `percentage` in `Group`

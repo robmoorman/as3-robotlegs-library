@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.mvcs"><apiName>org.robotlegs.mvcs</apiName><apiDetail/><apiClassifier id="org.robotlegs.mvcs:ASyncMacroCommand"><apiName>ASyncMacroCommand</apiName><shortdesc>
+<apiPackage id="org.robotlegs.mvcs"><apiName>org.robotlegs.mvcs</apiName><apiDetail/><apiClassifier id="org.robotlegs.mvcs:ASyncMacroCommand"><apiName>ASyncMacroCommand</apiName><shortdesc>
 	 Abstract ASyncMacroCommand implementation.</shortdesc><prolog><author>r.moorman
+	 https://github.com/moorinteractive/as3-robotlegs-library/wiki/asyncmacrocommand
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.core:IASyncCommand</apiBaseInterface><apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Abstract <codeph>ASyncMacroCommand</codeph> implementation.
 	 
@@ -36,6 +37,7 @@
 		 
 		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.robotlegs.mvcs:MacroCommand"><apiName>MacroCommand</apiName><shortdesc>
 	 Abstract MacroCommand implementation.</shortdesc><prolog><author>r.moorman
+	 https://github.com/moorinteractive/as3-robotlegs-library/wiki/macrocommand
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Abstract <codeph>MacroCommand</codeph> implementation.
 	 
@@ -66,6 +68,7 @@
 		 
 		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.robotlegs.mvcs:ASyncCommand"><apiName>ASyncCommand</apiName><shortdesc>
 	 Abstract ASyncCommand implementation.</shortdesc><prolog><author>r.moorman
+	 https://github.com/moorinteractive/as3-robotlegs-library/wiki/asynccommand
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.core:IASyncCommand</apiBaseInterface><apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 Abstract <codeph>ASyncCommand</codeph> implementation.
 	 

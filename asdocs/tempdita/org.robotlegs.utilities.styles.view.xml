@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.utilities.styles.view"><apiName>org.robotlegs.utilities.styles.view</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.styles.view:StylesTextfield"><apiName>StylesTextfield</apiName><shortdesc>
+<apiPackage id="org.robotlegs.utilities.styles.view"><apiName>org.robotlegs.utilities.styles.view</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.styles.view:StylesTextfield"><apiName>StylesTextfield</apiName><shortdesc>
 	 
 	 
 	 </shortdesc><prolog><author>r.moorman
@@ -11,6 +11,6 @@
 		 
 		 </apiDesc></apiConstructorDetail></apiConstructor><apiValue id="org.robotlegs.utilities.styles.view:StylesTextfield:htmlText:set"><apiName>htmlText</apiName><shortdesc>
 		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiIsOverride/><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="write"/><apiType value="String"/></apiValueDef><apiDesc>
-		 </apiDesc></apiValueDetail><apiInheritDoc/></apiValue><apiValue id="org.robotlegs.utilities.styles.view:StylesTextfield:text:set"><apiName>text</apiName><shortdesc>
-		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiIsOverride/><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="write"/><apiType value="String"/></apiValueDef><apiDesc>
-		 </apiDesc></apiValueDetail><apiInheritDoc/></apiValue></apiClassifier></apiPackage>
+		 </apiDesc></apiValueDetail><apiInheritDoc/></apiValue><apiValue id="org.robotlegs.utilities.styles.view:StylesTextfield:text:set"><apiName>text</apiName><shortdesc conref="org.robotlegs.utilities.styles.view.StylesTextfield.htmlText">
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiIsOverride/><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="write"/><apiType value="String"/></apiValueDef><apiDesc conref="org.robotlegs.utilities.styles.view.StylesTextfield.htmlText">
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage>

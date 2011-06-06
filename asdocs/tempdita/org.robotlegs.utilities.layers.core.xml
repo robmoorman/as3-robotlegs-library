@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.robotlegs.utilities.layers.core"><apiName>org.robotlegs.utilities.layers.core</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.layers.core:Layers"><apiName>Layers</apiName><shortdesc>
+<apiPackage id="org.robotlegs.utilities.layers.core"><apiName>org.robotlegs.utilities.layers.core</apiName><apiDetail/><apiClassifier id="org.robotlegs.utilities.layers.core:Layers"><apiName>Layers</apiName><shortdesc>
 	 This utility allows you to manage your displayList in layers.</shortdesc><prolog><author>r.moorman
 	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.robotlegs.utilities.layers.core:ILayers</apiBaseInterface><apiBaseClassifier>org.robotlegs.mvcs:Actor</apiBaseClassifier></apiClassifierDef><apiDesc>
 	 This utility allows you to manage your displayList in layers.
