@@ -29,10 +29,57 @@
          </prolog>
       </apiClassifier>
    </apiPackage>
+   <apiPackage id="org.robotlegs.adapters">
+      <apiName>org.robotlegs.adapters</apiName>
+      <apiClassifier id="org.robotlegs.adapters:ExtendedInjector">
+         <apiName>ExtendedInjector</apiName>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.robotlegs.adapters:SwiftSuspendersInjector</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <prolog>
+            <asMetadata/>
+         </prolog>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.base">
+      <apiName>org.robotlegs.base</apiName>
+      <apiClassifier id="org.robotlegs.base:PluginMap">
+         <apiName>PluginMap</apiName>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.robotlegs.core:IPluginMap</apiBaseInterface>
+               <apiBaseClassifier>org.robotlegs.base:ViewMapBase</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <prolog>
+            <asMetadata/>
+         </prolog>
+      </apiClassifier>
+   </apiPackage>
    <apiPackage id="org.robotlegs.core">
       <apiName>org.robotlegs.core</apiName>
       <apiClassifier id="org.robotlegs.core:IASyncCommand">
          <apiName>IASyncCommand</apiName>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <prolog>
+            <asMetadata/>
+         </prolog>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.core:IPluginMap">
+         <apiName>IPluginMap</apiName>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiInterface/>
@@ -83,6 +130,81 @@
                <apiStatic/>
                <apiBaseInterface>org.robotlegs.core:IASyncCommand</apiBaseInterface>
                <apiBaseClassifier>org.robotlegs.mvcs:Command</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <prolog>
+            <asMetadata/>
+         </prolog>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.mvcs:ExtendedContext">
+         <apiName>ExtendedContext</apiName>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.robotlegs.mvcs:Context</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <prolog>
+            <asMetadata/>
+         </prolog>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.patterns.plugin.type">
+      <apiName>org.robotlegs.patterns.plugin.type</apiName>
+      <apiClassifier id="org.robotlegs.patterns.plugin.type:IResize">
+         <apiName>IResize</apiName>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <prolog>
+            <asMetadata/>
+         </prolog>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.patterns.plugin.type:ResizePlugin">
+         <apiName>ResizePlugin</apiName>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.robotlegs.patterns.plugin:IPlugin</apiBaseInterface>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <prolog>
+            <asMetadata/>
+         </prolog>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.patterns.plugin">
+      <apiName>org.robotlegs.patterns.plugin</apiName>
+      <apiClassifier id="org.robotlegs.patterns.plugin:IPlugin">
+         <apiName>IPlugin</apiName>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <prolog>
+            <asMetadata/>
+         </prolog>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.patterns.plugin:Plugin">
+         <apiName>Plugin</apiName>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.robotlegs.patterns.plugin:IPlugin</apiBaseInterface>
+               <apiBaseClassifier>Object</apiBaseClassifier>
             </apiClassifierDef>
          </apiClassifierDetail>
          <prolog>

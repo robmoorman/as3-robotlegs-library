@@ -64,6 +64,69 @@
          </apiClassifierDetail>
       </apiClassifier>
    </apiPackage>
+   <apiPackage id="org.robotlegs.adapters">
+      <apiName>org.robotlegs.adapters</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.adapters:ExtendedInjector">
+         <apiName>ExtendedInjector</apiName>
+         <shortdesc/>
+         <prolog>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="ExtendedInjector,org.robotlegs.adapters.ExtendedInjector,createChild"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.robotlegs.adapters:SwiftSuspendersInjector</apiBaseClassifier>
+            </apiClassifierDef>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="org.robotlegs.adapters:SwiftSuspendersInjector"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.base">
+      <apiName>org.robotlegs.base</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.base:PluginMap">
+         <apiName>PluginMap</apiName>
+         <shortdesc/>
+         <prolog>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="PluginMap,org.robotlegs.base.PluginMap,_pluginMap,addListeners,addPlugin,hasPlugin,onViewAdded,onViewRemoved,removeListeners,removePlugin"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.robotlegs.core:IPluginMap</apiBaseInterface>
+               <apiBaseClassifier>org.robotlegs.base:ViewMapBase</apiBaseClassifier>
+            </apiClassifierDef>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="org.robotlegs.base:ViewMapBase"/>
+               </Inheritance>
+               <Implements>
+                  <Implement id="org.robotlegs.core:IPluginMap"/>
+               </Implements>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
    <apiPackage id="org.robotlegs.core">
       <apiName>org.robotlegs.core</apiName>
       <apiDetail/>
@@ -78,7 +141,7 @@
             <asMetadata/>
          </prolog>
             <meta name="keywords"
-               content="IASyncCommand,org.robotlegs.core.IASyncCommand,setOnComplete"/>
+               content="IASyncCommand,org.robotlegs.core.IASyncCommand,addPlugin,hasPlugin,removePlugin,setOnComplete"/>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiInterface/>
@@ -105,6 +168,35 @@
             </Inheritancelist>
          </apiClassifierDetail>
       </apiClassifier>
+      <apiClassifier id="org.robotlegs.core:IPluginMap">
+         <apiName>IPluginMap</apiName>
+         <shortdesc/>
+         <prolog>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="IPluginMap,org.robotlegs.core.IPluginMap,addPlugin,hasPlugin,removePlugin,setOnComplete"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id=""/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors>
+                  <Implementor id="org.robotlegs.base:PluginMap"/>
+               </Implementors>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
    </apiPackage>
    <apiPackage id="org.robotlegs.mvcs">
       <apiName>org.robotlegs.mvcs</apiName>
@@ -120,7 +212,7 @@
             <asMetadata/>
          </prolog>
             <meta name="keywords"
-               content="ASyncMacroCommand,org.robotlegs.mvcs.ASyncMacroCommand,reflector,reflector,addSubCommand,addSubCommand,commandComplete,execute,execute,executeNextCommand,initializeASyncMacroCommand,initializeMacroCommandCommand,onPostConstruct,onPostConstruct,setOnComplete,setOnComplete"/>
+               content="ASyncMacroCommand,org.robotlegs.mvcs.ASyncMacroCommand,contextView,pluginMap,reflector,reflector,addSubCommand,addSubCommand,commandComplete,createInjector,execute,execute,executeNextCommand,initializeASyncMacroCommand,initializeMacroCommandCommand,mapInjections,onPostConstruct,onPostConstruct,setOnComplete,setOnComplete"/>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiAccess value="public"/>
@@ -157,7 +249,7 @@
             <asMetadata/>
          </prolog>
             <meta name="keywords"
-               content="MacroCommand,org.robotlegs.mvcs.MacroCommand,reflector,reflector,addSubCommand,addSubCommand,commandComplete,execute,execute,executeNextCommand,initializeASyncMacroCommand,initializeMacroCommandCommand,onPostConstruct,onPostConstruct,setOnComplete,setOnComplete"/>
+               content="MacroCommand,org.robotlegs.mvcs.MacroCommand,contextView,pluginMap,reflector,reflector,addSubCommand,addSubCommand,commandComplete,createInjector,execute,execute,executeNextCommand,initializeASyncMacroCommand,initializeMacroCommandCommand,mapInjections,onPostConstruct,onPostConstruct,setOnComplete,setOnComplete"/>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiAccess value="public"/>
@@ -191,7 +283,7 @@
             <asMetadata/>
          </prolog>
             <meta name="keywords"
-               content="ASyncCommand,org.robotlegs.mvcs.ASyncCommand,addSubCommand,addSubCommand,commandComplete,execute,execute,executeNextCommand,initializeASyncMacroCommand,initializeMacroCommandCommand,onPostConstruct,onPostConstruct,setOnComplete,setOnComplete"/>
+               content="ASyncCommand,org.robotlegs.mvcs.ASyncCommand,addSubCommand,addSubCommand,commandComplete,createInjector,execute,execute,executeNextCommand,initializeASyncMacroCommand,initializeMacroCommandCommand,mapInjections,onPostConstruct,onPostConstruct,setOnComplete,setOnComplete"/>
          <apiClassifierDetail>
             <apiClassifierDef>
                <apiAccess value="public"/>
@@ -210,6 +302,164 @@
                </Inheritance>
                <Implements>
                   <Implement id="org.robotlegs.core:IASyncCommand"/>
+               </Implements>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.mvcs:ExtendedContext">
+         <apiName>ExtendedContext</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <prolog>
+            <author>r.moorman
+	 </author>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="ExtendedContext,org.robotlegs.mvcs.ExtendedContext,contextView,pluginMap,reflector,reflector,addSubCommand,addSubCommand,commandComplete,createInjector,execute,execute,executeNextCommand,initializeASyncMacroCommand,initializeMacroCommandCommand,mapInjections,onPostConstruct,onPostConstruct,setOnComplete,setOnComplete"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.robotlegs.mvcs:Context</apiBaseClassifier>
+            </apiClassifierDef>
+            <apiDesc>
+	 
+	 
+	 </apiDesc>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="org.robotlegs.mvcs:Context"/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.patterns.plugin.type">
+      <apiName>org.robotlegs.patterns.plugin.type</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.patterns.plugin.type:IResize">
+         <apiName>IResize</apiName>
+         <shortdesc/>
+         <prolog>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="IResize,org.robotlegs.patterns.plugin.type.IResize,addedToStage,initialize,onResize,removedFromStage,resize"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id=""/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.patterns.plugin.type:ResizePlugin">
+         <apiName>ResizePlugin</apiName>
+         <shortdesc/>
+         <prolog>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="ResizePlugin,org.robotlegs.patterns.plugin.type.ResizePlugin,contextView,addedToStage,initialize,onResize,removedFromStage,resize"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.robotlegs.patterns.plugin:IPlugin</apiBaseInterface>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="Object"/>
+               </Inheritance>
+               <Implements>
+                  <Implement id="org.robotlegs.patterns.plugin:IPlugin"/>
+               </Implements>
+               <Subclasses/>
+               <Implementors/>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.patterns.plugin">
+      <apiName>org.robotlegs.patterns.plugin</apiName>
+      <apiDetail/>
+      <apiClassifier id="org.robotlegs.patterns.plugin:IPlugin">
+         <apiName>IPlugin</apiName>
+         <shortdesc/>
+         <prolog>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="IPlugin,org.robotlegs.patterns.plugin.IPlugin,addedToStage,addedToStage,removedFromStage,removedFromStage"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id=""/>
+               </Inheritance>
+               <Implements/>
+               <Subclasses/>
+               <Implementors>
+                  <Implementor id="org.robotlegs.patterns.plugin:Plugin"/>
+                  <Implementor id="org.robotlegs.patterns.plugin.type:ResizePlugin"/>
+               </Implementors>
+               <Excludes/>
+            </Inheritancelist>
+         </apiClassifierDetail>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.patterns.plugin:Plugin">
+         <apiName>Plugin</apiName>
+         <shortdesc/>
+         <prolog>
+            <asMetadata/>
+         </prolog>
+            <meta name="keywords"
+               content="Plugin,org.robotlegs.patterns.plugin.Plugin,addedToStage,addedToStage,removedFromStage,removedFromStage"/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.robotlegs.patterns.plugin:IPlugin</apiBaseInterface>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+            <Inheritancelist>
+               <BaseInterface/>
+               <Inheritance>
+                  <Inherit id="Object"/>
+               </Inheritance>
+               <Implements>
+                  <Implement id="org.robotlegs.patterns.plugin:IPlugin"/>
                </Implements>
                <Subclasses/>
                <Implementors/>

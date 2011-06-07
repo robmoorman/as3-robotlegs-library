@@ -10,4 +10,20 @@
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>value</apiItemName><apiType value="Function"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
 		 
 		 
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="org.robotlegs.core:IPluginMap"><apiName>IPluginMap</apiName><shortdesc/><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef></apiClassifierDetail><apiOperation id="org.robotlegs.core:IPluginMap:org.robotlegs.core:IPluginMap:addPlugin"><apiName>addPlugin</apiName><shortdesc>
+		 
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam><apiParam><apiItemName>pluginClass</apiItemName><apiType value="Class"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.core:IPluginMap:org.robotlegs.core:IPluginMap:hasPlugin"><apiName>hasPlugin</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>
+		 </apiDesc><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.core:IPluginMap:org.robotlegs.core:IPluginMap:removePlugin"><apiName>removePlugin</apiName><shortdesc>
+		 
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>
+		 </apiDesc><apiOperationClassifier>org.robotlegs.patterns.plugin:IPlugin</apiOperationClassifier></apiReturn><apiParam><apiItemName>id</apiItemName><apiType value="String"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 
 		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier></apiPackage>

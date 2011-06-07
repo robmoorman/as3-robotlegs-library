@@ -93,6 +93,35 @@
      </apiDesc>
       </apiClassifier>
    </apiPackage>
+   <apiPackage id="org.robotlegs.adapters">
+      <apiName>org.robotlegs.adapters</apiName>
+      <apiClassifier id="org.robotlegs.adapters:ExtendedInjector">
+         <apiName>ExtendedInjector</apiName>
+         <shortdesc/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.robotlegs.adapters:SwiftSuspendersInjector</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.base">
+      <apiName>org.robotlegs.base</apiName>
+      <apiClassifier id="org.robotlegs.base:PluginMap">
+         <apiName>PluginMap</apiName>
+         <shortdesc/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.robotlegs.core:IPluginMap</apiBaseInterface>
+               <apiBaseClassifier>org.robotlegs.base:ViewMapBase</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
    <apiPackage id="org.robotlegs.core">
       <apiName>org.robotlegs.core</apiName>
       <apiClassifier id="org.robotlegs.core:IASyncCommand">
@@ -111,6 +140,18 @@
 	 Abstract <codeph>IASyncCommand</codeph> interface.
 	 
 	 </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.core:IPluginMap">
+         <apiName>IPluginMap</apiName>
+         <shortdesc/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+         </apiClassifierDetail>
       </apiClassifier>
    </apiPackage>
    <apiPackage id="org.robotlegs.mvcs">
@@ -164,6 +205,78 @@
 	 Abstract <codeph>ASyncCommand</codeph> implementation.
 	 
 	 </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.mvcs:ExtendedContext">
+         <apiName>ExtendedContext</apiName>
+         <shortdesc>
+	 
+	 
+	 </shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.robotlegs.mvcs:Context</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 
+	 
+	 </apiDesc>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.patterns.plugin.type">
+      <apiName>org.robotlegs.patterns.plugin.type</apiName>
+      <apiClassifier id="org.robotlegs.patterns.plugin.type:IResize">
+         <apiName>IResize</apiName>
+         <shortdesc/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.patterns.plugin.type:ResizePlugin">
+         <apiName>ResizePlugin</apiName>
+         <shortdesc/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.robotlegs.patterns.plugin:IPlugin</apiBaseInterface>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.robotlegs.patterns.plugin">
+      <apiName>org.robotlegs.patterns.plugin</apiName>
+      <apiClassifier id="org.robotlegs.patterns.plugin:IPlugin">
+         <apiName>IPlugin</apiName>
+         <shortdesc/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+      </apiClassifier>
+      <apiClassifier id="org.robotlegs.patterns.plugin:Plugin">
+         <apiName>Plugin</apiName>
+         <shortdesc/>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.robotlegs.patterns.plugin:IPlugin</apiBaseInterface>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
       </apiClassifier>
    </apiPackage>
    <apiPackage id="org.robotlegs.utilities.assetloader.controller.install">

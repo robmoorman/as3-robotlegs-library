@@ -78,4 +78,23 @@
 		 
 		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.robotlegs.mvcs:ASyncCommand:setOnComplete"><apiName>setOnComplete</apiName><shortdesc conref="org.robotlegs.core.IASyncCommand.setOnComplete()">
 		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiFinal/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>value</apiItemName><apiType value="Function"/></apiParam></apiOperationDef><apiDesc conref="org.robotlegs.core.IASyncCommand.setOnComplete()">
-		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier></apiPackage>
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="org.robotlegs.mvcs:ExtendedContext"><apiName>ExtendedContext</apiName><shortdesc>
+	 
+	 
+	 </shortdesc><prolog><author>r.moorman
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.robotlegs.mvcs:Context</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.robotlegs.mvcs:ExtendedContext:ExtendedContext"><apiName>ExtendedContext</apiName><shortdesc>
+		 </shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>contextView</apiItemName><apiType value="flash.display:DisplayObjectContainer"/><apiData>null</apiData></apiParam><apiParam><apiItemName>autoStartup</apiItemName><apiType value="Boolean"/><apiData>true</apiData></apiParam></apiConstructorDef><apiDesc>
+		 </apiDesc></apiConstructorDetail><apiInheritDoc/></apiConstructor><apiOperation id="org.robotlegs.mvcs:ExtendedContext:protected:createInjector"><apiName>createInjector</apiName><shortdesc>
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiIsOverride/><apiReturn><apiType value="org.robotlegs.core:IInjector"/></apiReturn></apiOperationDef><apiDesc>
+		 </apiDesc></apiOperationDetail><apiInheritDoc/></apiOperation><apiOperation id="org.robotlegs.mvcs:ExtendedContext:protected:mapInjections"><apiName>mapInjections</apiName><shortdesc>
+		 </shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="protected"/><apiIsOverride/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 </apiDesc></apiOperationDetail><apiInheritDoc/></apiOperation><apiValue id="org.robotlegs.mvcs:ExtendedContext:protected:pluginMap:get"><apiName>pluginMap</apiName><shortdesc>
+		 The IPluginMap for this IContext
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="protected"/><apiDynamic/><apiValueAccess value="read"/><apiValueClassifier>org.robotlegs.core:IPluginMap</apiValueClassifier></apiValueDef><apiDesc>
+		 The <codeph>IPluginMap</codeph> for this <codeph>IContext</codeph>
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.robotlegs.mvcs:ExtendedContext:contextView:set"><apiName>contextView</apiName><shortdesc>
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiIsOverride/><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="write"/><apiType value="flash.display:DisplayObjectContainer"/></apiValueDef><apiDesc>
+		 </apiDesc></apiValueDetail><apiInheritDoc/></apiValue></apiClassifier></apiPackage>
