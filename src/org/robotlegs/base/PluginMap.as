@@ -11,10 +11,24 @@ package org.robotlegs.base
 	import org.robotlegs.patterns.plugin.IPlugin;
 	import org.robotlegs.patterns.plugin.type.view.IViewPlugin;
 	
+	/**
+	 * Abstract implementation of <code>IPluginMap</code>.
+	 * 
+	 * @author r.moorman
+	 */
 	public class PluginMap extends ViewMapBase implements IPluginMap
 	{
+		/**
+		 * @private
+		 */
 		protected var _pluginMap: Dictionary;
 		
+		/**
+		 * 
+		 * 
+		 * @param contextView
+		 * @param injector
+		 */
 		public function PluginMap( contextView: DisplayObjectContainer, injector: IInjector )
 		{
 			super( contextView, injector );
@@ -22,6 +36,9 @@ package org.robotlegs.base
 			_pluginMap = new Dictionary;
 		}
 		
+		/**
+		 * @copy org.robotlegs.core.IPluginMap.addPlugin()
+		 */
 		public function addPlugin( plugin: IPlugin ): void
 		{
 			var pluginName: String = getQualifiedClassName( plugin );
@@ -43,6 +60,9 @@ package org.robotlegs.base
 			}
 		}
 		
+		/**
+		 * @copy org.robotlegs.core.IPluginMap.removePlugin()
+		 */
 		public function removePlugin( pluginClass: Class ): void
 		{
 			var pluginName: String = getQualifiedClassName( pluginClass );
@@ -59,11 +79,17 @@ package org.robotlegs.base
 			}
 		}
 		
+		/**
+		 * @copy org.robotlegs.core.IPluginMap.hasPlugin()
+		 */
 		public function hasPlugin( pluginClass: Class ): Boolean
 		{
 			return _pluginMap[ getQualifiedClassName( pluginClass )] != null;
 		}
 		
+		/**
+		 * @inheritDoc
+		 */
 		override protected function addListeners(): void
 		{
 			if( contextView && enabled ) {
@@ -72,6 +98,9 @@ package org.robotlegs.base
 			}
 		}
 		
+		/**
+		 * @inheritDoc
+		 */
 		override protected function removeListeners(): void
 		{
 			if( contextView ) {
@@ -80,6 +109,12 @@ package org.robotlegs.base
 			}
 		}
 		
+		/**
+		 * Iterates through the available plugins of type <code>IViewMap</code>
+		 * and execute their operations when a viewComponent is added on the <code>Stage</code>.
+		 * 
+		 * @param evt
+		 */
 		override protected function onViewAdded( evt: Event ): void
 		{
 			var plugin: IPlugin;
@@ -91,6 +126,12 @@ package org.robotlegs.base
 			}
 		}
 		
+		/**
+		 * Iterates through the available plugins of type <code>IViewMap</code>
+		 * and execute their operations when a viewComponent is removed from the <code>Stage</code>.
+		 * 
+		 * @param evt
+		 */
 		protected function onViewRemoved( evt: Event ): void
 		{
 			var plugin: IPlugin;

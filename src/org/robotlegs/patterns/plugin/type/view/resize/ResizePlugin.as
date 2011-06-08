@@ -8,24 +8,44 @@ package org.robotlegs.patterns.plugin.type.view.resize
 	
 	import org.robotlegs.patterns.plugin.type.view.IViewPlugin;
 
+	/**
+	 * 
+	 * 
+	 * @author r.moorman
+	 */
 	public class ResizePlugin implements IViewPlugin
 	{
 		[Inject]
+		/**
+		 * 
+		 */
 		public var contextView: DisplayObjectContainer;
 		
+		/**
+		 * @private
+		 */
 		private var _resizeMap: Dictionary;
 		
+		/**
+		 * @constructor
+		 */
 		public function ResizePlugin()
 		{
 			_resizeMap = new Dictionary;
 		}
 		
 		[PostConstruct]
+		/**
+		 * 
+		 */
 		public function initialize(): void
 		{
 			contextView.stage.addEventListener( Event.RESIZE, onResize, false, 0, true );
 		}
 		
+		/**
+		 * @copy org.robotlegs.patterns.plugin.type.view.IViewPlugin.addedToStage()
+		 */
 		public function addedToStage( stage: Stage, target: DisplayObject ): void
 		{
 			if( target is IResize ) {
@@ -35,6 +55,9 @@ package org.robotlegs.patterns.plugin.type.view.resize
 			}
 		}
 		
+		/**
+		 * @copy org.robotlegs.patterns.plugin.type.view.IViewPlugin.addedToStage()
+		 */
 		public function removedFromStage( stage: Stage, target: DisplayObject ): void
 		{
 			if( target is IResize ) {
@@ -42,6 +65,11 @@ package org.robotlegs.patterns.plugin.type.view.resize
 			}
 		}
 		
+		/**
+		 * 
+		 * 
+		 * @param evt
+		 */
 		protected function onResize( evt: Event ): void
 		{
 			var resize: IResize;

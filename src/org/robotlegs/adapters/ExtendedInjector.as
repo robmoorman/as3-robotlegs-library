@@ -4,6 +4,11 @@ package org.robotlegs.adapters
 	
 	import org.robotlegs.core.IInjector;
 
+	/**
+	 * 
+	 * 
+	 * @author r.moorman
+	 */
 	public class ExtendedInjector extends SwiftSuspendersInjector
 	{
 		/**
