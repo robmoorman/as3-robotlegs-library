@@ -3,6 +3,8 @@
 This package offers your some nifty utilities and extensions for the [Robotlegs framework](https://github.com/robotlegs/robotlegs-framework).
 
 * Extensions
+	* Core
+		* [PluginMap](https://github.com/moorinteractive/as3-robotlegs-library/wiki/pluginmap)
 	* Commands
 		* [MacroCommand](https://github.com/moorinteractive/as3-robotlegs-library/wiki/macrocommand)
 		* [ASyncMacroCommand](https://github.com/moorinteractive/as3-robotlegs-library/wiki/asyncmacrocommand)
