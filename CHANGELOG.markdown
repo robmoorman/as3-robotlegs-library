@@ -1,5 +1,10 @@
 # AS3 Robotlegs Library Changelog
 
+* master
+	* Added `PluginMap`
+	* Added `ExtendedInjector`
+	* Added `ExtendedContext`
+
 * v0.0.3
 	* Added `getAsset` in `Group`
 	* Added `getAssetByUrl` in `Group`
