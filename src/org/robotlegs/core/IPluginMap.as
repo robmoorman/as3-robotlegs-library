@@ -7,23 +7,22 @@ package org.robotlegs.core
 		/**
 		 * 
 		 * 
-		 * @param id
+		 * @param plugin
+		 */
+		function addPlugin( plugin: IPlugin ): void;
+		
+		/**
+		 * 
 		 * @param pluginClass
+		 * @return 
 		 */
-		function addPlugin( id: String, pluginClass: Class ): void;
+		function removePlugin( pluginClass: Class ): void;
 		
 		/**
 		 * 
-		 * @param id
+		 * @param pluginClass
 		 * @return 
 		 */
-		function removePlugin( id: String ): IPlugin;
-		
-		/**
-		 * 
-		 * @param id
-		 * @return 
-		 */
-		function hasPlugin( id: String ): Boolean;
+		function hasPlugin( pluginClass: Class ): Boolean;
 	}
 }

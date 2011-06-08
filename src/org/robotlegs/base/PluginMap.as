@@ -4,10 +4,12 @@ package org.robotlegs.base
 	import flash.display.DisplayObjectContainer;
 	import flash.events.Event;
 	import flash.utils.Dictionary;
+	import flash.utils.getQualifiedClassName;
 	
 	import org.robotlegs.core.IInjector;
 	import org.robotlegs.core.IPluginMap;
 	import org.robotlegs.patterns.plugin.IPlugin;
+	import org.robotlegs.patterns.plugin.type.view.IViewPlugin;
 	
 	public class PluginMap extends ViewMapBase implements IPluginMap
 	{
@@ -20,41 +22,46 @@ package org.robotlegs.base
 			_pluginMap = new Dictionary;
 		}
 		
-		public function addPlugin( id: String, pluginClass: Class ): void
+		public function addPlugin( plugin: IPlugin ): void
 		{
-			if( _pluginMap[ id ]) {
+			var pluginName: String = getQualifiedClassName( plugin );
+			
+			if( _pluginMap[ pluginName ]) {
 				return;
 			}
 			
-			_pluginMap[ id ] = injector.instantiate( pluginClass );
+			injector.injectInto( plugin );
 			
-			viewListenerCount++;
+			_pluginMap[ pluginName ] = plugin;
 			
-			if( viewListenerCount == 1 ) {
-				addListeners();
+			if( plugin is IViewPlugin ) {
+				viewListenerCount++;
+				
+				if( viewListenerCount == 1 ) {
+					addListeners();
+				}
 			}
 		}
 		
-		public function removePlugin( id: String ): IPlugin
+		public function removePlugin( pluginClass: Class ): void
 		{
-			var plugin: IPlugin = _pluginMap[ id ];
+			var pluginName: String = getQualifiedClassName( pluginClass );
+			var plugin: IPlugin = _pluginMap[ pluginName ];
 			
-			delete _pluginMap[ id ];
+			delete _pluginMap[ pluginName ];
 			
-			if( plugin ) {
+			if( plugin is IViewPlugin ) {
 				viewListenerCount--;
 				
 				if( viewListenerCount == 0 ) {
 					removeListeners();
 				}
 			}
-			
-			return plugin;
 		}
 		
-		public function hasPlugin( id: String ): Boolean
+		public function hasPlugin( pluginClass: Class ): Boolean
 		{
-			return _pluginMap[ id ] != null;
+			return _pluginMap[ getQualifiedClassName( pluginClass )] != null;
 		}
 		
 		override protected function addListeners(): void
@@ -78,7 +85,9 @@ package org.robotlegs.base
 			var plugin: IPlugin;
 			
 			for each( plugin in _pluginMap ) {
-				plugin.addedToStage( contextView.stage, evt.target as DisplayObject );
+				if( plugin is IViewPlugin ) {
+					( plugin as IViewPlugin ).addedToStage( contextView.stage, evt.target as DisplayObject );
+				}
 			}
 		}
 		
@@ -87,7 +96,9 @@ package org.robotlegs.base
 			var plugin: IPlugin;
 			
 			for each( plugin in _pluginMap ) {
-				plugin.removedFromStage( contextView.stage, evt.target as DisplayObject );
+				if( plugin is IViewPlugin ) {
+					( plugin as IViewPlugin ).removedFromStage( contextView.stage, evt.target as DisplayObject );
+				}
 			}
 		}
 	}
