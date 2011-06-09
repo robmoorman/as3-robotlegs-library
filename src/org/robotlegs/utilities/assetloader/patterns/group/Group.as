@@ -213,7 +213,7 @@ package org.robotlegs.utilities.assetloader.patterns.group
 				}
 			}
 			
-			return asset;
+			return null;
 		}
 		
 		/**
@@ -229,7 +229,7 @@ package org.robotlegs.utilities.assetloader.patterns.group
 				}
 			}
 			
-			return asset;
+			return null;
 		}
 		
 		/**
