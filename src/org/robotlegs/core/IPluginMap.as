@@ -19,7 +19,7 @@ package org.robotlegs.core
 		 * 	<li><code>IViewPlugin</code></li>
 		 * </ul>
 		 * 
-		 * <p><code>PluginMap</code> comes with some pre-programmed plugins:</code></p>
+		 * <p><code>PluginMap</code> comes with some pre-programmed plugins:</p>
 		 * 
 		 * <ul>
 		 * 	<li><code>DeallocPlugin</code></li>

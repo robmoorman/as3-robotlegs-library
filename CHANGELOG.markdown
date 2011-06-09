@@ -1,6 +1,6 @@
 # AS3 Robotlegs Library Changelog
 
-* master
+* v0.0.4
 	* Added `PluginMap`
 	* Added `ExtendedInjector`
 	* Added `ExtendedContext`
