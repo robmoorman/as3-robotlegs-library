@@ -312,7 +312,7 @@ package org.robotlegs.utilities.navigator.core
 				return false;
 		}
 
-		private function checkForCreationOnDemand(name : String) : void
+		public function checkForCreationOnDemand(name : String) : void
 		{
 			var page : IPage;
 			if ( _pageMap[ name ] == null)

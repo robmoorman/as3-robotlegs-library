@@ -173,6 +173,6 @@ package org.robotlegs.utilities.navigator.core
 		 * 
 		 * @param name
 		 */
-		function checkForCreationOnDemand( name: String ): Boolean;
+		function checkForCreationOnDemand( name: String ): void;
 	}
 }
