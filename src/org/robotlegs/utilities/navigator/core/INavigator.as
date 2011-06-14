@@ -1,5 +1,7 @@
 package org.robotlegs.utilities.navigator.core
 {
+	import flash.display.DisplayObjectContainer;
+	import flash.display.DisplayObject;
 	import org.robotlegs.utilities.navigator.patterns.page.IPage;
 	import org.robotlegs.utilities.navigator.patterns.transition.ITransition;
 
@@ -61,13 +63,23 @@ package org.robotlegs.utilities.navigator.core
 		 */
 		function set defaultTransition( value: ITransition ): void;
 		
+		 /**
+         * 
+         * 
+         * @param page
+         * @param transitionId
+         */
+        function addPage( page: IPage, transitionId: String = null ): void;
+		
 		/**
 		 * 
 		 * 
 		 * @param page
+		 * @param pagename
+		 * @param parent
 		 * @param transitionId
 		 */
-		function addPage( page: IPage, transitionId: String = null ): void;
+		function addPageOnDemand( page: Class, pagename:String, parent:DisplayObjectContainer, transitionId: String = null ): void;
 		
 		/**
 		 * 
@@ -156,5 +168,11 @@ package org.robotlegs.utilities.navigator.core
 		 * @return 
 		 */
 		function navigate( name: String ): Boolean;
+		
+		/**
+		 * 
+		 * @param name
+		 */
+		function checkForCreationOnDemand( name: String ): void;
 	}
 }
