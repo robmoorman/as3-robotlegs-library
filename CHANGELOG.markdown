@@ -1,5 +1,8 @@
 # AS3 Robotlegs Library Changelog
 
+* master
+	* Fixed `group` in `AssetLoaderEvent`
+
 * v0.0.4
 	* Added `PluginMap`
 	* Added `ExtendedInjector`

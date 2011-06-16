@@ -264,6 +264,8 @@ package org.robotlegs.utilities.assetloader.patterns.group
 		 */
 		final protected function onAssetProcess( event: AssetLoaderEvent ): void
 		{
+			event.group = this;
+			
 			switch( event.type ) {
 				case AssetLoaderEvent.ASSET_COMPLETE:
 					_maxConnections++;
