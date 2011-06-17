@@ -33,6 +33,11 @@ package org.robotlegs.utilities.assetloader.events
 		public static const GROUP_COMPLETE: String = 'org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.GROUP_COMPLETE';
 		
 		/**
+		 * Dispatched when a <code>Group</code> is successfully loaded, but has failed <code>Assets</code>.
+		 */
+		public static const GROUP_COMPLETE_WITH_FAILED_ASSETS: String = 'org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.GROUP_COMPLETE_WITH_FAILED_ASSETS';
+		
+		/**
 		 * Dispatched while a <code>Group</code> is loading.
 		 * 
 		 * <p>While a <code>Group</code> is loading, it's <code>Assets</code> will be dispatched during this progress, so you
