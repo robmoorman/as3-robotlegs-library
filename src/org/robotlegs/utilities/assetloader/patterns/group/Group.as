@@ -264,6 +264,11 @@ package org.robotlegs.utilities.assetloader.patterns.group
 		 */
 		final protected function onAssetProcess( event: AssetLoaderEvent ): void
 		{
+			var asset: IAsset;
+			var completed: Boolean;
+			
+			event.group = this;
+			
 			switch( event.type ) {
 				case AssetLoaderEvent.ASSET_COMPLETE:
 					_maxConnections++;
@@ -271,8 +276,7 @@ package org.robotlegs.utilities.assetloader.patterns.group
 					if( _closure != null ) {
 						dispatchEvent( event );
 						
-						var asset: IAsset;
-						var completed: Boolean = true;
+						completed = true;
 						
 						for each( asset in _assets ) {
 							if( asset.state != AssetLoaderState.LOADED ) {
@@ -295,11 +299,27 @@ package org.robotlegs.utilities.assetloader.patterns.group
 					}
 					break;
 				case AssetLoaderEvent.ASSET_ERROR:
+					_maxConnections++;
+					
 					setState( AssetLoaderState.FAILED );
 					
 					if( _closure != null ) {
 						dispatchEvent( event );
-						dispatchEvent( new AssetLoaderEvent( AssetLoaderEvent.GROUP_ERROR, event.asset, this ));
+						
+						completed = true;
+						
+						for each( asset in _assets ) {
+							if( asset.state != AssetLoaderState.LOADED || asset.state != AssetLoaderState.FAILED ) {
+								completed = false;
+								
+								break;
+							}
+						}
+						
+						if( completed )
+							dispatchEvent( new AssetLoaderEvent( AssetLoaderEvent.GROUP_COMPLETE_WITH_FAILED_ASSETS, event.asset, this ));
+						else
+							loadQueuedAsset();
 					}
 					break;
 			}
