@@ -1,11 +1,12 @@
 package org.robotlegs.utilities.assetloader.patterns.asset
 {
+	import flash.events.IEventDispatcher;
 	/**
 	 * The interface definition for an <code>Asset</code>.
 	 * 
 	 * @author r.moorman
 	 */
-	public interface IAsset
+	public interface IAsset extends IEventDispatcher
 	{
 		/**
 		 * The unique id of the <code>Asset</code>.

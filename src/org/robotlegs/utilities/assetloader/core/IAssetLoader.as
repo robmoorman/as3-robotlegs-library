@@ -26,6 +26,15 @@ package org.robotlegs.utilities.assetloader.core
 		function set baseUrl( value: String ): void;
 		
 		/**
+		 * Set the maximum downloads the <code>AssetLoader</code> can do at the same time.
+		 * 
+		 * <p>When the maximum amount of assets is downloading they will be stored in a que</p>
+		 */
+		function set maxConnections(value:int):void;
+		
+		function get maxConnections():int;
+		
+		/**
 		 * Set an optional <code>LoaderContext</code> for all <code>Assets</code>
 		 * which are loading their data via the <code>Loader</code>.
 		 */

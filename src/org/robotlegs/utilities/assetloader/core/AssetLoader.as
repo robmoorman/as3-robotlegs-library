@@ -1,13 +1,14 @@
 package org.robotlegs.utilities.assetloader.core
 {
-	import flash.system.LoaderContext;
-	import flash.utils.Dictionary;
-	
 	import org.robotlegs.utilities.assetloader.error.AssetLoaderError;
+	import org.robotlegs.utilities.assetloader.events.AssetLoaderEvent;
 	import org.robotlegs.utilities.assetloader.patterns.asset.IAsset;
 	import org.robotlegs.utilities.assetloader.patterns.group.Group;
 	import org.robotlegs.utilities.assetloader.patterns.group.IGroup;
 	import org.robotlegs.utilities.assetloader.utils.AssetUtil;
+
+	import flash.system.LoaderContext;
+	import flash.utils.Dictionary;
 
 	/**
 	 * This utility allows you to easily load external assets into your application.
@@ -47,12 +48,25 @@ package org.robotlegs.utilities.assetloader.core
 			return _baseUrl;
 		}
 		
-		/**
-		 * @private
-		 */
 		public function set baseUrl( value: String ): void {
 			_baseUrl = value;
 		}
+		
+		/**
+		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.maxConnections
+		 */
+		public function set maxConnections(value:int):void{
+			_maxConnections = value;
+		}
+		
+		public function get maxConnections():int{
+			return _maxConnections;
+		}
+		
+		/**
+		 * @private
+		 */
+		private var _maxConnections: int = 3;
 		
 		/**
 		 * @private
@@ -90,6 +104,16 @@ package org.robotlegs.utilities.assetloader.core
 		private var _loaderContext: LoaderContext;
 		
 		/**
+		 * @private
+		 */
+		private var currentConnections:int = 0;
+
+		/**
+		 * @private
+		 */
+		private var que:Array = [];
+				
+		/**
 		 * Constructor.
 		 */
 		public function AssetLoader()
@@ -109,7 +133,6 @@ package org.robotlegs.utilities.assetloader.core
 		 */
 		public function load( request: Object, closure: Function = null ): IAsset
 		{
-			var url: String;
 			var asset: IAsset;
 			
 			if( request is String ) {
@@ -120,9 +143,44 @@ package org.robotlegs.utilities.assetloader.core
 			}
 			
 			asset.closure = closure;
-			asset.load();
+			addToCue(asset);
 			
 			return asset;
+		}
+		
+		/**
+		 * @private
+		 */
+		private function addToCue(asset : IAsset) : void
+		{
+			que.push( asset );
+			shiftQue();
+		}
+		
+		/**
+		 * @private
+		 */
+		private function shiftQue() : void
+		{
+			if(currentConnections == maxConnections || que.length == 0)
+				return;
+			else
+			{
+				var asset:IAsset = que.shift();
+				asset.addEventListener( AssetLoaderEvent.ASSET_COMPLETE, onAssetComplete,false,0,true);
+				asset.load();
+				currentConnections++;
+			}
+			
+		}
+
+		/**
+		 * @private
+		 */
+		private function onAssetComplete(event : AssetLoaderEvent) : void
+		{
+			currentConnections--;
+			shiftQue();
 		}
 		
 		/**
