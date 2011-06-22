@@ -24,7 +24,7 @@ package org.robotlegs.utilities.navigator.core
 		 */
 		public function get lockLayersWhileTransitioning() : Boolean
 		{
-			return _lockLayersWhileTransitioning
+			return _lockLayersWhileTransitioning;
 		}
 
 		/**
@@ -192,6 +192,7 @@ package org.robotlegs.utilities.navigator.core
 		 */
 		public function hasPage(name : String) : Boolean
 		{
+			checkForCreationOnDemand(name);
 			return _pageMap[ name ] != null;
 		}
 
@@ -299,7 +300,6 @@ package org.robotlegs.utilities.navigator.core
 		public function navigate(name : String) : Boolean
 		{
 
-			checkForCreationOnDemand(name);
 			if ( hasPage(name) && !_navigating )
 			{
 				var page : IPage = getPage(name);

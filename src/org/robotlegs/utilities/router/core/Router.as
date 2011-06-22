@@ -184,7 +184,7 @@ package org.robotlegs.utilities.router.core
 			var route: Route;
 			
 			for each( route in _routes )
-				if( route.match( pathNames ))
+				if( route.match( pathNames ) )
 					return route;
 			
 			return null;

@@ -7,6 +7,8 @@ package org.robotlegs.patterns.plugin.type.view.resize
 	 */
 	public interface IResize
 	{
+		
+		
 		/**
 		 * Resize the viewComponent according the dimensions of the <code>Stage</code>.
 		 * 
