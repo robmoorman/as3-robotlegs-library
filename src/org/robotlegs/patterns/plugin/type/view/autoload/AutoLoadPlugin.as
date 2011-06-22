@@ -14,46 +14,49 @@ package org.robotlegs.patterns.plugin.type.view.autoload
 	 */
 	public class AutoLoadPlugin implements IViewPlugin
 	{
-		
 		[Inject]
-		public var loader:IAssetLoader;
+		public var loader : IAssetLoader;
+		[Inject]
+		public var contextView : DisplayObjectContainer;
+		protected var callBacks : Dictionary = new Dictionary();
 
-		[Inject]
-		public var contextView: DisplayObjectContainer;
-		
-		protected var callBacks:Dictionary= new Dictionary();
-		
 		/**
 		 * @copy org.robotlegs.patterns.plugin.type.view.IViewPlugin.addedToStage()
 		 */
-		public function addedToStage( stage: Stage, target: DisplayObject ): void
+		public function addedToStage(stage : Stage, target : DisplayObject) : void
 		{
-			if( target is AbstractAutoLoad ) {
-				var iLoad:AbstractAutoLoad = (target as AbstractAutoLoad);
-				
-				if(iLoad.isLoaded)
-					return;
-					
-				callBacks[ iLoad.url ] = iLoad;
-				loader.load( iLoad.url ,onLoadProcess);
-			}
-		}
-		
-		private function onLoadProcess(e : AssetLoaderEvent):void {
-			if(e.type == AssetLoaderEvent.ASSET_COMPLETE )
+			if ( target is AbstractAutoLoad )
 			{
-				(callBacks[ e.asset.url ] as AbstractAutoLoad).callBack(e.asset.data);
-				(callBacks[ e.asset.url ] as AbstractAutoLoad).isLoaded = true;
+				var iLoad : AbstractAutoLoad = (target as AbstractAutoLoad);
+
+				if (iLoad.isLoaded)
+					return;
+
+				callBacks[ iLoad.url ] = iLoad;
+				loader.load(iLoad.url, onLoadProcess);
 			}
 		}
-		
+
+		private function onLoadProcess(e : AssetLoaderEvent) : void
+		{
+			if (e.type == AssetLoaderEvent.ASSET_COMPLETE )
+			{
+				if ((callBacks[ e.asset.url ] as AbstractAutoLoad))
+				{
+					(callBacks[ e.asset.url ] as AbstractAutoLoad).callBack(e.asset.data);
+					(callBacks[ e.asset.url ] as AbstractAutoLoad).isLoaded = true;
+				}
+			}
+		}
+
 		/**
 		 * @copy org.robotlegs.patterns.plugin.type.view.IViewPlugin.addedToStage()
 		 */
-		public function removedFromStage( stage: Stage, target: DisplayObject ): void
+		public function removedFromStage(stage : Stage, target : DisplayObject) : void
 		{
-			if( target is AbstractAutoLoad ) {
-				var iLoad:AbstractAutoLoad = (target as AbstractAutoLoad);
+			if ( target is AbstractAutoLoad )
+			{
+				var iLoad : AbstractAutoLoad = (target as AbstractAutoLoad);
 				callBacks[ iLoad.url ] = null;
 			}
 		}
