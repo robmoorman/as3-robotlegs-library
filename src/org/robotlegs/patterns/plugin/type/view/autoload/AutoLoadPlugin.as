@@ -1,5 +1,6 @@
 package org.robotlegs.patterns.plugin.type.view.autoload
 {
+	import org.robotlegs.utilities.assetloader.patterns.asset.IAsset;
 	import org.robotlegs.patterns.plugin.type.view.IViewPlugin;
 	import org.robotlegs.utilities.assetloader.core.IAssetLoader;
 	import org.robotlegs.utilities.assetloader.events.AssetLoaderEvent;
@@ -32,8 +33,8 @@ package org.robotlegs.patterns.plugin.type.view.autoload
 				if (iLoad.isLoaded)
 					return;
 
-				callBacks[ iLoad.url ] = iLoad;
-				loader.load(iLoad.url, onLoadProcess);
+				var asset:IAsset = loader.load(iLoad.url, onLoadProcess);
+				callBacks[asset ] = iLoad;
 			}
 		}
 
@@ -41,10 +42,10 @@ package org.robotlegs.patterns.plugin.type.view.autoload
 		{
 			if (e.type == AssetLoaderEvent.ASSET_COMPLETE )
 			{
-				if ((callBacks[ e.asset.url ] as AbstractAutoLoad))
+				if ((callBacks[ e.asset ] as AbstractAutoLoad))
 				{
-					(callBacks[ e.asset.url ] as AbstractAutoLoad).callBack(e.asset.data);
-					(callBacks[ e.asset.url ] as AbstractAutoLoad).isLoaded = true;
+					(callBacks[ e.asset ] as AbstractAutoLoad).callBack(e.asset.data);
+					(callBacks[ e.asset ] as AbstractAutoLoad).isLoaded = true;
 				}
 			}
 		}
