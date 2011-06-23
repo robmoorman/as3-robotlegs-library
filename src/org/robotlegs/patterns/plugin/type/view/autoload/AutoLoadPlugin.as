@@ -17,8 +17,10 @@ package org.robotlegs.patterns.plugin.type.view.autoload
 	{
 		[Inject]
 		public var loader : IAssetLoader;
+		
 		[Inject]
 		public var contextView : DisplayObjectContainer;
+		
 		protected var callBacks : Dictionary = new Dictionary();
 
 		/**
@@ -30,10 +32,10 @@ package org.robotlegs.patterns.plugin.type.view.autoload
 			{
 				var iLoad : AbstractAutoLoad = (target as AbstractAutoLoad);
 
-				if (iLoad.isLoaded)
+				if ( iLoad.isLoaded || !iLoad.url )
 					return;
 
-				var asset:IAsset = loader.load(iLoad.url, onLoadProcess);
+				var asset : IAsset = loader.load(iLoad.url, onLoadProcess);
 				callBacks[asset ] = iLoad;
 			}
 		}
