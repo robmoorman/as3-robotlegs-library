@@ -104,7 +104,7 @@ package org.robotlegs.utilities.assetloader.core
 		/**
 		 * @private
 		 */
-		private var currentConnections : int = 2;
+		private var currentConnections : int = 0;
 		/**
 		 * @private
 		 */

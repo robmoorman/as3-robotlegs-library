@@ -17,6 +17,7 @@ package org.robotlegs.patterns.plugin.type.view.autoload
 		
 		public function callBack(payLoad : Object) : void
 		{
+			
 		}
 
 		public function get url() : String

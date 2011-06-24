@@ -22,6 +22,7 @@ package org.robotlegs.patterns.plugin.type.view.autoload
 		public var contextView : DisplayObjectContainer;
 		
 		protected var callBacks : Dictionary = new Dictionary();
+		protected var targets : Dictionary = new Dictionary();
 
 		/**
 		 * @copy org.robotlegs.patterns.plugin.type.view.IViewPlugin.addedToStage()
@@ -31,12 +32,12 @@ package org.robotlegs.patterns.plugin.type.view.autoload
 			if ( target is AbstractAutoLoad )
 			{
 				var iLoad : AbstractAutoLoad = (target as AbstractAutoLoad);
-
-				if ( iLoad.isLoaded || !iLoad.url )
+				if ( iLoad.isLoaded || !iLoad.url || targets[ iLoad ] == iLoad.url)
 					return;
 
 				var asset : IAsset = loader.load(iLoad.url, onLoadProcess);
-				callBacks[asset ] = iLoad;
+				callBacks[ asset ] = iLoad;
+				targets[ iLoad ] = iLoad.url;
 			}
 		}
 
