@@ -181,6 +181,19 @@ package org.robotlegs.utilities.assetloader.patterns.group
 		}
 		
 		/**
+		 * @copy org.robotlegs.utilities.assetloader.patterns.group.IGroup.stop()
+		 */
+		public function stop(): void
+		{
+			setState( AssetLoaderState.STOPPED );
+			
+			if( _closure != null )
+				dispatchEvent( new AssetLoaderEvent( AssetLoaderEvent.ASSET_STOP, null, this ) );
+			
+			dispose();
+		}
+		
+		/**
 		 * @copy org.robotlegs.utilities.assetloader.patterns.group.IGroup.dispose()
 		 */
 		public function dispose(): void
@@ -237,7 +250,8 @@ package org.robotlegs.utilities.assetloader.patterns.group
 		 */
 		protected function loadQueuedAsset(): void
 		{
-			if( _maxConnections ) {
+			if( _maxConnections && _queuedAsset < _assets.length ) 
+			{
 				_maxConnections--;
 				
 				var asset: IAsset = _assets[ _queuedAsset++ ];

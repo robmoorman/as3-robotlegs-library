@@ -201,6 +201,36 @@ package org.robotlegs.utilities.assetloader.patterns.asset
 		}
 		
 		/**
+		 * @copy org.robotlegs.utilities.assetloader.patterns.asset.IAsset.stop()
+		 * 
+		 * It is not possible to stop the loading of an asset in AS3 unless somehow the garbage
+		 * collector finds it with no references, but that ain't math. 
+		 * 
+		 * So instead, we stop all event propagation so that if this is part of a chain (which
+		 * it usually is when it matters to use this), we let this one finish and break the
+		 * loading queue in its parent Group. 
+		 */
+		
+		public function stop(): void
+		{
+			trace( this, ' state was ', this._state );
+			
+			if( _closure != null )
+				dispatchEvent( new AssetLoaderEvent( AssetLoaderEvent.ASSET_STOP, this ) );
+			
+			_onComplete = _onError = _onProgress = null;
+			dispose();
+			setState( AssetLoaderState.STOPPED );
+			
+			if( _loader is Loader )
+				Loader( _loader ).unloadAndStop( true );	
+			
+			// Does little, but what the hell.
+			if( _state == AssetLoaderState.LOADING ) 
+				_loader.close();
+		}
+		
+		/**
 		 * @copy org.robotlegs.utilities.assetloader.patterns.asset.IAsset.dispose()
 		 */
 		public function dispose(): void

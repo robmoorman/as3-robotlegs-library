@@ -150,6 +150,21 @@ package org.robotlegs.utilities.assetloader.core
 		}
 		
 		/**
+		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.stop()
+		 */
+		public function stop(): void 
+		{
+			var asset: IAsset
+			for each( asset in _assetMap )
+				asset.stop();
+			
+			var group: IGroup;
+			for each( group in _groupMap )
+				group.stop();
+		}
+		
+		
+		/**
 		 * @copy org.robotlegs.utilities.assetloader.core.IAssetLoader.getAsset()
 		 */
 		public function getAsset( id: String ): IAsset
