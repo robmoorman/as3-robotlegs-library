@@ -13,6 +13,7 @@ package org.robotlegs.utilities.assetloader.patterns.asset
 	import org.robotlegs.utilities.assetloader.core.AssetLoaderState;
 	import org.robotlegs.utilities.assetloader.error.AssetLoaderError;
 	import org.robotlegs.utilities.assetloader.events.AssetLoaderEvent;
+	import Error;
 
 	/**
 	 * Abstract implementation of <code>IAsset</code>.
@@ -174,6 +175,14 @@ package org.robotlegs.utilities.assetloader.patterns.asset
 				_loader = new URLLoader;
 			
 			defineEventModel();
+		}
+		
+		public function stop(): void
+		{
+			try {
+				_loader.unloadAndStop();
+			}
+			catch( e: Error ) {}
 		}
 		
 		/**
