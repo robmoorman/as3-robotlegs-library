@@ -23,6 +23,11 @@ package org.robotlegs.utilities.assetloader.core
 		public static const LOADING: String = 'loading';
 		
 		/**
+		 * State after being stopped manually.
+		 */
+		public static const STOPPED: String = 'stopped';
+		
+		/**
 		 * State after the <code>Asset</code> failed to load (due a illegal operation or a security error).
 		 */
 		public static const FAILED: String = 'failed';

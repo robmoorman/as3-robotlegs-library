@@ -72,6 +72,14 @@ package org.robotlegs.utilities.assetloader.core
 		 */
 		function loadGroup( request: Object, closure: Function = null ): IGroup;
 		
+		/** 
+		 * Stops and clears the currently loading file(s), clears the entire loading queue. 
+		 * Cannot be resumed.
+		 * @see org.robotlegs.utilities.assetloader.core.IAssetLoader.stop()
+		 */
+		
+		function stop(): void;
+		
 		/**
 		 * Get an <code>Asset</code> by it's id.
 		 * 

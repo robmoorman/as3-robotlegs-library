@@ -60,12 +60,17 @@ package org.robotlegs.utilities.assetloader.patterns.asset
 		function get percentage(): Number;
 		
 		/**
-		 * Trigger the <code>Asset</code> to load it's data.
+		 * Trigger the <code>Asset</code> to load its data.
 		 */
 		function load(): void;
 		
 		/**
-		 * Trigger the <code>Asset</code> to dispose it's references.
+		 * Cancels the loading process.
+		 */
+		function stop(): void;
+		
+		/**
+		 * Trigger the <code>Asset</code> to dispose its references.
 		 */
 		function dispose(): void;
 		
