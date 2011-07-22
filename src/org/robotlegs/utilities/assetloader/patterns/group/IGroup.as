@@ -75,6 +75,11 @@ package org.robotlegs.utilities.assetloader.patterns.group
 		 * Trigger the <code>Group</code> to load it's <code>Assets</code>.
 		 */
 		function load(): void;
+
+		/**
+		 * Stops all loading and prevents further event propagation. 
+		 */
+		function stop(): void;
 		
 		/**
 		 * Trigger the <code>Group</code> to dispose it's references.

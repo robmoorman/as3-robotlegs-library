@@ -28,6 +28,11 @@ package org.robotlegs.utilities.assetloader.events
 		public static const ASSET_ERROR: String = 'org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.ASSET_ERROR';
 		
 		/**
+		 * Dispatched when the <code>Asset</code> has been directed to stop loading and stop further event propagation. 
+		 */
+		public static const ASSET_STOP: String = 'org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.ASSET_STOP';
+		
+		/**
 		 * Dispatched when a <code>Group</code> is successfully loaded.
 		 */
 		public static const GROUP_COMPLETE: String = 'org.robotlegs.utilities.assetloader.events.AssetLoaderEvent.GROUP_COMPLETE';
