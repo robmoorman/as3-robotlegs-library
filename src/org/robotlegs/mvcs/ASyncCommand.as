@@ -28,7 +28,8 @@ package org.robotlegs.mvcs
 		 */
 		final protected function commandComplete(): void
 		{
-			onComplete && onComplete.apply( this );
+			if( onComplete != null )
+				onComplete.apply( this );
 		}
 	}
 }

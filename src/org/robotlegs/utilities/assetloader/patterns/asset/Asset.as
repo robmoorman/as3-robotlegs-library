@@ -177,14 +177,6 @@ package org.robotlegs.utilities.assetloader.patterns.asset
 			defineEventModel();
 		}
 		
-		public function stop(): void
-		{
-			try {
-				_loader.unloadAndStop();
-			}
-			catch( e: Error ) {}
-		}
-		
 		/**
 		 * @copy org.robotlegs.utilities.assetloader.patterns.asset.IAsset.load()
 		 */
