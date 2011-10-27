@@ -160,6 +160,9 @@ package org.robotlegs.utilities.router.core
 		 */
 		private function checkRoutesOnAddressChange( pathNames: Array ): void
 		{
+			if( !_active )
+				return;
+			
 			_routes = _routes.sort( sortRoutes );
 			
 			var route: Route = getMatchedRoute( pathNames );
