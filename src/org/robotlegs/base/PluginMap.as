@@ -88,6 +88,18 @@ package org.robotlegs.base
 		}
 		
 		/**
+		 * @copy org.robotlegs.core.IPluginMap.getPlugin()
+		 */
+		public function getPlugin( pluginClass: Class ): IPlugin
+		{
+			if( hasPlugin( pluginClass )) {
+				return _pluginMap[ getQualifiedClassName( pluginClass )] as IPlugin;
+			}
+			
+			return null;
+		}
+		
+		/**
 		 * @inheritDoc
 		 */
 		override protected function addListeners(): void

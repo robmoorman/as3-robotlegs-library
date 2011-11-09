@@ -49,5 +49,7 @@ package org.robotlegs.core
 		 * @return 
 		 */
 		function hasPlugin( pluginClass: Class ): Boolean;
+		
+		function getPlugin( pluginClass: Class ): IPlugin;
 	}
 }
