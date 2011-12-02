@@ -16,6 +16,13 @@ package org.robotlegs.utilities.router.core
 	public class Router extends Actor implements IRouter
 	{
 		/**
+		 * @copy org.robotlegs.utilities.router.core.IRouter.history
+		 */	
+		public function get history(): Array {
+			return _history;
+		}
+		
+		/**
 		 * @copy org.robotlegs.utilities.router.core.IRouter.active
 		 */	
 		public function get active(): Boolean {
@@ -28,6 +35,11 @@ package org.robotlegs.utilities.router.core
 		public function get pathNames(): Array {
 			return SWFAddress.getPathNames();
 		}
+		
+		/**
+		 * @private
+		 */
+		private var _history: Array;
 		
 		/**
 		 * @private
@@ -46,6 +58,7 @@ package org.robotlegs.utilities.router.core
 		{
 			super();
 			
+			_history = [];
 			_active = false;
 			_routes = new Vector.<Route>;
 			
@@ -167,10 +180,14 @@ package org.robotlegs.utilities.router.core
 			
 			var route: Route = getMatchedRoute( pathNames );
 			
-			if( !route || !pathNames || !pathNames.length )
+			if( !route || !pathNames || !pathNames.length ) {
 				dispatch( new RouterEvent( RouterEvent.NO_ROUTE_FOUND, pathNames ));
-			else
+			}
+			else {
+				_history.push( '/' + pathNames.join( '/' ) + '/' );
+				
 				dispatch( new RouterEvent( route.type, route.getPayload( pathNames )));
+			}
 		}
 		
 		/**

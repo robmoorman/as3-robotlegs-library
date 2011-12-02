@@ -13,6 +13,11 @@ package org.robotlegs.utilities.router.core
 		/**
 		 * 
 		 */
+		function get history(): Array;
+		
+		/**
+		 * 
+		 */
 		function get active(): Boolean;
 		
 		/**
