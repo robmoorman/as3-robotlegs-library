@@ -117,7 +117,7 @@ package org.robotlegs.utilities.localizer.controller.data
 			switch(( typeof value ).toString().toLowerCase()) {
 				case 'string':
 					if( value.toString().toLowerCase() === 'true' || value.toString().toLowerCase() === 'false' ) {
-						injector.mapValue( Boolean, value.toString().toUpperCase() === 'true', named );
+						injector.mapValue( Boolean, value.toString().toLowerCase() === 'true', named );
 					}
 					else {
 						injector.mapValue( String, value.toString(), named );
