@@ -267,7 +267,7 @@ package org.robotlegs.utilities.assetloader.core
 		protected function instantiateAsset( url: String ): IAsset
 		{
 			var id: String = ( _assetIds++ ).toString();
-			var prefix: String = ( url.indexOf( 'http://' ) == -1 || url.indexOf( 'https://' ) == -1 ) && _baseUrl ? _baseUrl : '';
+			var prefix: String = ( url.indexOf( 'http://' ) == -1 && url.indexOf( 'https://' ) == -1 ) && _baseUrl ? _baseUrl : '';
 			var assetClass: Class = AssetUtil.getAssetClassByExtension( url, _assetClassMap, String( url.split( '.' ).pop()).toLowerCase());
 			var asset: IAsset = new assetClass( id, prefix + url, _loaderContext ) as IAsset;
 			
